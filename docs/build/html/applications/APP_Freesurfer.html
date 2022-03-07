@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Freesurfer (TODO) &mdash; HIP user documentation 0.1 documentation</title>
+  <title>Freesurfer &mdash; HIP user documentation 0.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="HiBoP (TODO)" href="APP_HiBoP.html" />
-    <link rel="prev" title="FSL (TODO)" href="APP_FSL.html" /> 
+    <link rel="next" title="HiBoP" href="APP_HiBoP.html" />
+    <link rel="prev" title="FSL" href="APP_FSL.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -65,16 +65,21 @@
 <li class="toctree-l1"><a class="reference internal" href="APP_AnyWave.html">AnyWave</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_BIDS_Manager.html">BIDS Manager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_Brainstorm.html">Brainstorm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="APP_CCEP_Manager.html">CCEP Manager [TODO]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="APP_dcm2niix.html">dcm2niix [TODO]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="APP_FSL.html">FSL [TODO]</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Freesurfer [TODO]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="APP_HiBoP.html">HiBoP [TODO]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="APP_IntrAnat.html">IntrAnat [TODO]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="APP_Localizer.html">Localizer [TODO]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="APP_MRIcroGL.html">MRIcroGL [TODO]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="APP_3D_Slicer.html">3D Slicer [TODO]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="APP_The_Virtual_Brain.html">The Virtual Brain [TODO]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APP_CCEP_Manager.html">CCEP Manager [U/C]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APP_dcm2niix.html">dcm2niix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APP_FSL.html">FSL</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Freesurfer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#official-ressources">Official ressources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-start-freesurfer-on-the-hip">How to start Freesurfer on the HIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="APP_HiBoP.html">HiBoP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APP_IntrAnat.html">IntrAnat [U/C]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APP_Localizer.html">Localizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APP_MRIcroGL.html">MRIcroGL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APP_3D_Slicer.html">3D Slicer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APP_The_Virtual_Brain.html">The Virtual Brain</a></li>
 </ul>
 
         </div>
@@ -91,7 +96,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Freesurfer (TODO)</li>
+      <li>Freesurfer</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/applications/APP_Freesurfer.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -101,16 +106,81 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="freesurfer-todo">
-<h1>Freesurfer (TODO)<a class="headerlink" href="#freesurfer-todo" title="Permalink to this headline"></a></h1>
+  <section id="freesurfer">
+<h1>Freesurfer<a class="headerlink" href="#freesurfer" title="Permalink to this headline"></a></h1>
+<p>Freesurfer is a an open source neuroimaging toolkit for processing, analyzing, and visualizing human brain MR images.
+Freesurfer is developed by the <a class="reference external" href="https://www.nmr.mgh.harvard.edu/lab/lcn">Laboratory for Computational Neuroimaging</a>
+at the <a class="reference external" href="http://martinos.org/">Athinoula A. Martinos Center for Biomedical Imaging</a>.</p>
+<section id="official-ressources">
+<h2>Official ressources<a class="headerlink" href="#official-ressources" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/">Freesurfer website</a></p></li>
+<li><p><a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki">Freesurfer wiki</a></p></li>
+<li><p><a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/Tutorials">Freesurfer tutorials</a></p></li>
+<li><p><a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall">Freesurfer download</a></p></li>
+<li><p><a class="reference external" href="https://github.com/freesurfer/freesurfer">Freesurfer GitHub</a></p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="how-to-start-freesurfer-on-the-hip">
+<h2>How to start Freesurfer on the HIP<a class="headerlink" href="#how-to-start-freesurfer-on-the-hip" title="Permalink to this headline"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>Connect to the HIP</strong>. You can manage your files in the default page.</p></li>
+</ol>
+<img alt="../_images/Files.jfif" class="align-center" src="../_images/Files.jfif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>On the top line, click on the HIP to <strong>access application sessions</strong></p></li>
+</ol>
+<img alt="../_images/Apps.jfif" class="align-center" src="../_images/Apps.jfif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Click on the Freesurfer icon.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/FreesurferIcon.jfif"><img alt="../_images/FreesurferIcon.jfif" class="align-center" src="../_images/FreesurferIcon.jfif" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>You can choose to create a new <strong>session for Freesurfer</strong> or to run it in an existing session (in this example #1)</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/OpenSession.jfif"><img alt="../_images/OpenSession.jfif" class="align-center" src="../_images/OpenSession.jfif" style="width: 150px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>A terminal opens with Freesurfer installed. You can run any Freesurfer command in it (see <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki">Freesurfer wiki</a> for more information), e.g. recon-all to process anatomical images.</p></li>
+</ol>
+<img alt="../_images/SessionRunFreesurfer.jfif" class="align-center" src="../_images/SessionRunFreesurfer.jfif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>You can also use Freeview command to display an image</p></li>
+</ol>
+<img alt="../_images/Freeview.jfif" class="align-center" src="../_images/Freeview.jfif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The processed data from your subjects will be preserved even after closing sessions in the AppData directory of Freesurfer.</p>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>
+<p>If you use Freesurfer in your research, use <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferMethodsCitation">the dedicated page</a> to cite the relevant publication(s).</p>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="APP_FSL.html" class="btn btn-neutral float-left" title="FSL (TODO)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="APP_HiBoP.html" class="btn btn-neutral float-right" title="HiBoP (TODO)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="APP_FSL.html" class="btn btn-neutral float-left" title="FSL" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="APP_HiBoP.html" class="btn btn-neutral float-right" title="HiBoP" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

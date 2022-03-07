@@ -2,8 +2,8 @@ BIDS Manager
 *************
 
 BIDS Manager is a Python package to collect, organise and manage neuroscience data in Brain Imaging Data Structure (BIDS) format.
-([Roehri_2021]_). Find more information regarding the standard on the `official website <https://bids.neuroimaging.io/>`_ 
-and `online documentation <https://bids-specification.readthedocs.io/en/stable/>`_.
+([Roehri_2021]_). Find more information regarding the BIDS standard on the `official website <https://bids.neuroimaging.io/>`_ 
+and the associated `documentation <https://bids-specification.readthedocs.io/en/stable/>`_.
 
 Official ressources
 ===================

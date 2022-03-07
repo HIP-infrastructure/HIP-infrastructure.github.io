@@ -10,7 +10,7 @@ The `HIP <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-p
 and analysis of multiscale Human iEEG data at the international level. 
 
 The HIP is fully integrated in `EBRAINS <https://ebrains.eu/>`_ , a sustainable European Research Infrastructure providing tools and services in brain
-research and brain-inspired technologies.
+research and brain-inspired technologies created by the EU-funded `Human Brain Project <https://www.humanbrainproject.eu>`_.
 	
 User documentation
 **********************
@@ -75,14 +75,14 @@ The most commonly encountered issues and their solution.
    AnyWave<applications/APP_AnyWave>
    BIDS Manager<applications/APP_BIDS_Manager>
    Brainstorm<applications/APP_Brainstorm>
-   CCEP Manager [TODO]<applications/APP_CCEP_Manager>
-   dcm2niix [TODO]<applications/APP_dcm2niix>
-   FSL [TODO]<applications/APP_FSL>
-   Freesurfer [TODO]<applications/APP_Freesurfer>
-   HiBoP [TODO]<applications/APP_HiBoP>
-   IntrAnat [TODO]<applications/APP_IntrAnat>
-   Localizer [TODO]<applications/APP_Localizer>
-   MRIcroGL [TODO]<applications/APP_MRIcroGL>
-   3D Slicer [TODO]<applications/APP_3D_Slicer>
-   The Virtual Brain [TODO]<applications/APP_The_Virtual_Brain>
+   CCEP Manager [U/C]<applications/APP_CCEP_Manager>
+   dcm2niix<applications/APP_dcm2niix>
+   FSL<applications/APP_FSL>
+   Freesurfer<applications/APP_Freesurfer>
+   HiBoP<applications/APP_HiBoP>
+   IntrAnat [U/C]<applications/APP_IntrAnat>
+   Localizer<applications/APP_Localizer>
+   MRIcroGL<applications/APP_MRIcroGL>
+   3D Slicer<applications/APP_3D_Slicer>
+   The Virtual Brain<applications/APP_The_Virtual_Brain>
 

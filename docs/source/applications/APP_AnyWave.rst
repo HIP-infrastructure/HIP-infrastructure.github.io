@@ -8,13 +8,14 @@ Official ressources
 ===================
 
 	
-	* `AnyWave website <https://meg.univ-amu.fr/wiki/AnyWave>`_ 
+	* `AnyWave wiki <https://meg.univ-amu.fr/wiki/AnyWave>`_ 
 	* `AnyWave tutorials <https://meg.univ-amu.fr/wiki/AnyWave:Tutorials>`_ 
 	* `AnyWave download <https://meg.univ-amu.fr/wiki/AnyWave:Download>`_ 
-	* `AnyWave GitLab <https://gitlab-dynamap.timone.univ-amu.fr/anywave/anywave/-/wikis/home>`_
+	* `AnyWave GitLab <https://gitlab-dynamap.timone.univ-amu.fr/anywave/anywave>`_	
+	* `AnyWave GitLab's wiki <https://gitlab-dynamap.timone.univ-amu.fr/anywave/anywave/-/wikis/home>`_
 	
 
 References
 ===========
 
-.. [Colombet_2015] Colombet B, Woodman M, Badier JM, Bénar CG. AnyWave: a cross-platform and modular software for visualizing and processing electrophysiological signals. Journal of neuroscience methods 242., 2015: 118-26.
+.. [Colombet_2015] Colombet B, Woodman M, Badier JM, Bénar CG. AnyWave: a cross-platform and modular software for visualizing and processing electrophysiological signals. Journal of neuroscience methods 242., 2015, 118-26.

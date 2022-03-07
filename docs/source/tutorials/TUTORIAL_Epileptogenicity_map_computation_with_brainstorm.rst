@@ -1,7 +1,7 @@
 Epileptogenicity map computation with Brainstorm
 **************************************************
 
-.. figure:: /art/tutorial_epileptogenicity_header.png
+.. figure:: /tutorials/art/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm/tutorial_epileptogenicity_header.png
 	:width: 600px
 	:align: center
 
@@ -108,5 +108,5 @@ If you work on your own imaging data and wish to generate a dedicated implantati
 References
 ==========
 
-.. [Bartolomei_2008] Bartolomei F, Chauvel P, Wendling F. Epileptogenicity of brain structures in human temporal lobe epilepsy: a quantified study from intracerebral EEG. Brain., 2008:131(Pt 7):1818-30.
+.. [Bartolomei_2008] Bartolomei F, Chauvel P, Wendling F. Epileptogenicity of brain structures in human temporal lobe epilepsy: a quantified study from intracerebral EEG. Brain., 2008, 131(Pt 7):1818-30.
 

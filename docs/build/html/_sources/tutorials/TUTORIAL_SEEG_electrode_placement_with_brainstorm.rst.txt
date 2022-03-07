@@ -1,7 +1,7 @@
 SEEG electrode placement with Brainstorm
 *****************************************
 
-.. figure:: /art/tutorial_seeg_placement_brainstorm_header.png
+.. figure:: /tutorials/art/TUTORIAL_SEEG_electrode_placement_with_brainstorm/tutorial_seeg_placement_brainstorm_header.png
 	:width: 600px
 	:align: center
 
