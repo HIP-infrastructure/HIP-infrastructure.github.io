@@ -57,24 +57,24 @@ The most commonly encountered issues and their solution.
    :hidden:   
    
    SEEG electrode placement with IntrAnat [TODO]<tutorials/TUTORIAL_SEEG_electrode_placement_with_intranat>
-   SEEG electrode placement with Brainstorm [U/C]<tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>
-   Epileptogenicity map computation with Brainstorm [U/C]<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>
+   SEEG electrode placement with Brainstorm<tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>
+   Epileptogenicity map computation with Brainstorm<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>
 
    
 .. toctree:: 
    :caption: HIP datasets
    :hidden:
 	
-   Epimap tutorial dataset [U/C]<datasets/DATASET_Epimap>
+   Epimap tutorial dataset<datasets/DATASET_Epimap>
    COGEPISTIM database [TODO]<datasets/DATASET_Cogepistim>	
    
 .. toctree::
    :caption: HIP apps
    :hidden:   
    
-   AnyWave [TODO]<applications/APP_AnyWave>
-   BIDS Manager [TODO]<applications/APP_BIDS_Manager>
-   Brainstorm [U/C]<applications/APP_Brainstorm>
+   AnyWave<applications/APP_AnyWave>
+   BIDS Manager<applications/APP_BIDS_Manager>
+   Brainstorm<applications/APP_Brainstorm>
    CCEP Manager [TODO]<applications/APP_CCEP_Manager>
    dcm2niix [TODO]<applications/APP_dcm2niix>
    FSL [TODO]<applications/APP_FSL>

@@ -1,5 +1,5 @@
 Brainstorm
-******************
+**********
 
 Brainstorm is an application dedicated to the analysis of brain recordings:
 MEG, EEG, fNIRS, ECoG, depth electrodes and multiunit electrophysiology ([Tadel_2011]_).
