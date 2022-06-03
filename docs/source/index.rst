@@ -44,11 +44,11 @@ The most commonly encountered issues and their solution.
    :hidden:
    
    How to create a HIP account [TODO]<guides/GUIDE_How_to_create_a_HIP_account>
-   How to connect to the HIP portal and access its_services [TODO]<guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>
+   How to connect to the HIP portal and access its services [TODO]<guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>
    How to prepare and upload data to the HIP [TODO]<guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>
    How to convert data to BIDS format [TODO]<guides/GUIDE_How_to_convert_data_to_BIDS_format>
    How to use the HIP spaces and share data with other users [TODO]<guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>
-   How to use the application library and working sessions [TODO]<guides/GUIDE_How_to_use_the_application_library_and_working_sessions>
+   How to use Desktops and run applications from the App Catalog [U/C]<guides/GUIDE_How_to_use_the_application_library_and_working_sessions>
    How to use and create new workflows [TODO]<guides/GUIDE_How_to_use_and_create_new_workflows>
    How to use and create new studies [TODO]<guides/GUIDE_How_to_use_and_create_new_studies>  
    

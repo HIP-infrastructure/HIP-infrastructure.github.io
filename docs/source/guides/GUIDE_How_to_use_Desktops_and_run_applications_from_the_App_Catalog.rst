@@ -1,4 +1,4 @@
-How to use the application library and working sessions (TODO)
+How to use Desktops and run applications from the App Catalog (U/C)
 ***********************************************************************
 
 
