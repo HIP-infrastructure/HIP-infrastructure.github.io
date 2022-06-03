@@ -22,13 +22,13 @@ demonstration video explaining how to:
 	* create, display, pause/resume and switch between Desktop environments
 	* start one or several applications simultaneously in a Desktop environment
 
-This guide also explains essential rules regarding data accessibility and persistence inside a Desktop envionnement.  
+This guide also explains essential rules regarding data accessibility and persistence inside a Desktop environment.  
 
 Scope 
 ------
 
 This guide focuses on how to create and operate Desktops. It does not cover the uses of the various applications available in the App Catalog.
-In this perspective, the *HIP APPS* and *HIP TUTORIALS* sections accessible in the sidebar menu contain documentations, tutorials and
+In this perspective, the *HIP APPS* and *HIP TUTORIALS* sections accessible in the sidebar menu contain documentation, tutorials and
 links to external resources.
 
 Use Desktops and run applications from the App Catalog
