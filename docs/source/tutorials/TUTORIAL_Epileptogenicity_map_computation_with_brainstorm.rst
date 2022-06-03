@@ -79,7 +79,7 @@ If you don't know how to do this please refer to the :doc:`How to use the HIP sp
 
 **Start a new working session with Brainstorm**: This tutorial only requires the use of Brainstorm for
 the computation of epileptogenicity maps. It is advised to initiate a new working session with a fresh instance of Brainstorm running.
-If you don't know how to do this please refer to the :doc:`How to use the application library and working sessions </guides/GUIDE_How_to_use_the_application_library_and_working_sessions>` guide.
+If you don't know how to do this please refer to the :doc:`How to use Desktops and run applications from the App Catalog </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` guide.
 
 .. _compute_epileptogenicity_brainstorm:
 
