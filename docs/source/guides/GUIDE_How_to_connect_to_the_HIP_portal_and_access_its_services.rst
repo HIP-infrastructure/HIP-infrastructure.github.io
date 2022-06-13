@@ -1,5 +1,5 @@
-How to connect to the HIP portal and access its services (TODO)
-*****************************************************************************
+How to connect to the HIP portal and access its services
+*********************************************************
 
 Connecting to the HIP
 =====================
@@ -94,3 +94,8 @@ Here is an example running Freesurfer app.
 
 .. Notes: dashboard, data uploading, HIP spaces, sessions, application library, workflows, studies, internal tools, documentation, wiki, support
 
+|
+
+For more information regarding HIP Virtual Desktops please refer to the following HIP GUIDE:
+
+	* :doc:`How to use Desktops and run applications from the App Catalog</guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>`

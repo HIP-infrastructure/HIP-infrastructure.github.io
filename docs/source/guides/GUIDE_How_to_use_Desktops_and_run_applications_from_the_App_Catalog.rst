@@ -14,53 +14,52 @@ Objective
 ---------
 
 The objective of this guide is to introduce HIP users to Desktops and how to use them 
-in order to run the various applications available in the App Catalog.
+in order to run applications available in the App Catalog.
 
-This guide briefly describes the basic principles of Desktops on the HIP, which are illustrated in a short
-demonstration video explaining how to: 
+This guide briefly describes the basic principles of Desktops on the HIP, which are also illustrated in a short video guide explaining how to: 
 
 	* create, display, pause/resume and switch between Desktop environments
 	* start one or several applications simultaneously in a Desktop environment
 
-This guide also explains essential rules regarding data accessibility and persistence inside a Desktop environment.  
+This guide also explains essential rules regarding data access and persistence inside a Desktop environment.  
 
 Scope 
 ------
 
 This guide focuses on how to create and operate Desktops. It does not cover the uses of the various applications available in the App Catalog.
-In this perspective, the *HIP APPS* and *HIP TUTORIALS* sections accessible in the sidebar menu contain documentation, tutorials and
+In this perspective, the *HIP APPS* and *HIP TUTORIALS* sections accessible in the table of contents contain documentation, tutorials and
 links to external resources.
 
 Use Desktops and run applications from the App Catalog
 =======================================================
 
-Desktops are remote virtual computers running on a secure infrastructure where HIP users can launch applications from the App Catalog
+Desktops are remote virtual computers running on a secure infrastructure where HIP users can run applications from the App Catalog
 to work on their data. 
-They operate similarly to a personal computer and support most common features such as: drag and drop, a clipboard, a fullscreen mode, a virtual keyboard.
+Desktops operate similarly to a personal computer and support most common features (drag and drop, full screen mode, clipboard, virtual keyboard).
 
-Any application from the App Catalog, regardless if it is GUI- or CLI- based, can be launched in a Desktop environment.
-Desktops are available in all 3 HIP spaces: the private, collaborative and public spaces, and work in a similar way.
+Any application from the App Catalog, regardless if it is GUI- or CLI- based, can be run in a Desktop environment.
+Desktops are available in all 3 HIP spaces: the Private, Collaborative and Public spaces, and work in a similar way.
 
 Desktops and data persistence
 -----------------------------
 
-Once it has been initiated, a Desktop will persists until it is manually terminated. HIP users can log off and/or close their web browser and
-the pending Desktops will remain accessible and unaltered.
+Once it has been initiated, a Desktop will persist until it is manually terminated. HIP users can safely log off and/or close their web browser. 
+Pending Desktops will remain unaltered and accessible for later use.
 
-The applications running in a Desktop environment have access to the HIP user's private space data under the */home/<HIP_USER>* directory.
-It is important to note that any data and/or configuration file outside the */home/<HIP_USER>* directory will be lost when the application is closed
-as */home/<HIP_USER>* is the only persistent directory, tied to the HIP user's private space at application startup.
+Applications running in a Desktop environment have access to HIP user's private space data under the */home/<HIP_USER>* directory.
+Any data and/or configuration file outside this directory will be lost when the application or desktop are closed.
+This is the only persistent directory as it is tied to the HIP user's private space at application startup.
 
-Demonstration video
---------------------
+Video guide
+------------
 
-The following demonstration video (3'30'') serves as an introduction to Desktops and shows how to run applications from the App Catalog:  
+The following video guide (2'30'') serves as an introduction to Desktops and shows how to run applications from the App Catalog:  
 
 .. raw:: html
 
    <center>	
-   <video width="680"  poster="todo.png" controls>
-   <source src="todo.mp4" type="video/mp4">
+   <video width="680"  poster="https://thehip.app/apps/sharingpath/aboyer/Public/Guide%20-%20Use%20Desktops%20and%20run%20Apps/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Use%20Desktops%20and%20run%20Apps.png" controls>
+   <source src="https://thehip.app/apps/sharingpath/aboyer/Public/Guide%20-%20Use%20Desktops%20and%20run%20Apps/Videos/HIP%20Guide%20-%20Use%20Desktops%20and%20run%20Apps.mp4" type="video/mp4">
    Your browser does not support the video tag.
    </video>
    </center>
