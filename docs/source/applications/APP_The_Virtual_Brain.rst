@@ -16,7 +16,7 @@ Official ressources
 	* `TVB download <https://www.thevirtualbrain.org/tvb/zwei/brainsimulator-software>`_ 
 	* `TVB App GitHub <https://github.com/ins-amu/hip-tvb-app>`_
 	* `TVB Pipeline GitHub <https://github.com/ins-amu/tvb-pipeline>`_
-	* `The Bayesian Virtual Epileptic Patient GitHub <https://github.com/ins-amu/tvb-pipeline>`_
+	* `The Bayesian Virtual Epileptic Patient GitHub <https://github.com/ins-amu/BVEP>`_
 	
 
 References

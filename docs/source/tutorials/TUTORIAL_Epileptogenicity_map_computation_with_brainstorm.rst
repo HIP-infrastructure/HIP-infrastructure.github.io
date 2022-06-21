@@ -92,7 +92,7 @@ be used in this tutorial.
 If you work on your own imaging data and wish to generate a dedicated implantation file, you can follow one of the following tutorials:
 
 	* :doc:`SEEG electrode placement with IntrAnat [TODO] </tutorials/TUTORIAL_SEEG_electrode_placement_with_intranat>`
-	* :doc:`SEEG electrode placement with Brainstorm [U/C] </tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>`
+	* :doc:`SEEG electrode placement with Brainstorm </tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>`
 
 .. raw:: html
 
