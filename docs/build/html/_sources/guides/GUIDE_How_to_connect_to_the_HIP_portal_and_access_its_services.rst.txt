@@ -1,5 +1,5 @@
-How to connect to the HIP portal and access its services
-*********************************************************
+How to connect to the HIP portal and access its services (U/C)
+**************************************************************
 
 Connecting to the HIP
 =====================

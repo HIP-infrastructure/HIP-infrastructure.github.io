@@ -7,10 +7,13 @@
 |	
 		
 The `HIP <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_ is an open-source platform designed for large scale and optimized collection, storage, curation, sharing
-and analysis of multiscale Human iEEG data at the international level. 
+and analysis of multiscale Human iEEG data at the international level. The HIP covers the entire field of iEEG-based research; i.e. multi-scale investigation of cognition, consciousness, connectomics and related disorders.
 
-The HIP is fully integrated in `EBRAINS <https://ebrains.eu/>`_ , a sustainable European Research Infrastructure providing tools and services in brain
+The HIP is also fully integrated in `EBRAINS <https://ebrains.eu/>`_ , a sustainable European Research Infrastructure providing tools and services in brain
 research and brain-inspired technologies created by the EU-funded `Human Brain Project <https://www.humanbrainproject.eu>`_.
+The HIP will enable the use of EBRAINS HPC resources and will offer links to other EBRAINS services, like the `Knowledge Graph <https://kg.ebrains.eu/>`_ and the `Human Brain Atlases <https://ebrains.eu/services#category1>`_. 
+In line with the `FAIR principles <https://www.go-fair.org/fair-principles/>`_ , it will fully respect ethics and data privacy regulations, and optimise end-user access management. 
+
 	
 User documentation
 **********************
@@ -43,8 +46,8 @@ The most commonly encountered issues and their solution.
    :caption: HIP guides
    :hidden:
    
-   How to create a HIP account [TODO]<guides/GUIDE_How_to_create_a_HIP_account>
-   How to connect to the HIP portal and access its services<guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>
+   How to create a HIP account [U/C]<guides/GUIDE_How_to_create_a_HIP_account>
+   How to connect to the HIP portal and access its services [U/C]<guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>
    How to prepare and upload data to the HIP [TODO]<guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>
    How to convert data to BIDS format [U/C]<guides/GUIDE_How_to_convert_data_to_BIDS_format>
    How to use the HIP spaces and share data with other users [TODO]<guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>
@@ -66,7 +69,7 @@ The most commonly encountered issues and their solution.
    :hidden:
 	
    Epimap tutorial dataset<datasets/DATASET_Epimap>
-   COGEPISTIM database [TODO]<datasets/DATASET_Cogepistim>	
+   COGEPISTIM database [U/C]<datasets/DATASET_Cogepistim>	
    
 .. toctree::
    :caption: HIP apps
