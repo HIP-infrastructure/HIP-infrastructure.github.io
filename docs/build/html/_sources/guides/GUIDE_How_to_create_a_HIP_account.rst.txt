@@ -13,7 +13,7 @@ Part of EBRAINS resources are available publicly without an account. Other resou
 Before applying for a HIP account you need to `register for a EBRAINS account <https://iam.ebrains.eu/auth/realms/hbp/protocol/openid-connect/registrations?response_type=code&client_id=xwiki&redirect_uri=https://wiki.ebrains.eu>`_.
 New users with a personal institutional e-mail from a pre-identified institution will be provided an expedited registration process. 
 If the institution is not yet on EBRAINS list, you can either contact `EBRAINS High Level Support Team (HLST) <mailto:support@ebrains.eu?subject=Register%20from%20a%20new%20institution&body=Please%20add%20my%20institution%20for%20expedited%20registration.%20My%20institutional%20e-mail%20address%20is:_____>`_  
-or by filling out the `dedicated form <https://ebrains.eu/support/>`_.
+or fill in the `dedicated form <https://ebrains.eu/support/>`_.
 If you cannot provide an institutional e-mail, it is still possible to request an EBRAINS account from a personal e-mail `with a short motivation <mailto:support@ebrains.eu?subject=Request%20for%20a%20user%20account>`_ (max 100 words).
 
 Create a HIP account
@@ -58,7 +58,7 @@ All HIP users are member of at least one group corresponding to pre-identified i
 
 .. admonition:: Unlisted institutions
 
-   The HIP is in closed beta and non-listed institutions will be able to request access to the platform upon release.
+   The HIP is in closed beta and users from non-listed institutions will be able to request access to the platform upon release.
    For more information please `contact HIP support <mailto:todo****@hip.eu?subject=Unlisted%20institution>`_.
 
 
@@ -71,9 +71,8 @@ To register for a HIP account please send an `e-mail to HIP support <mailto:todo
 	* **Backup e-mail**\*: A backup e-mail.
 	* **ORCID**: Open Researcher and Contributor ID.
 	
-Once your application has been validated, a confirmation e-mail will be sent to your institutional e-mail inviting you to join the HIP group on EBRAINS.
-You can `request membership to the HIP group on EBRAINS <https://wiki.ebrains.eu/bin/view/Identity/?srid=aSu9g2sU#/groups/HIP>`_ clicking the "Request to join" button.
-Once your request has been accepted, you are free to :doc:`connect to the HIP portal and access its services </guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>` logging in with your EBRAINS account,
+Once your application has been validated, a confirmation e-mail will be sent to your institutional e-mail and you will be added to the HIP group on EBRAINS.
+You are then free to :doc:`connect to the HIP portal and access its services </guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>` logging in with your EBRAINS account,
 and have access to the shared folders of each group you belong to. 
 
 .. admonition:: Accounts and groups
