@@ -30,16 +30,17 @@ It contains the following sections:
 	  and without warranty of any kind, express, implied or otherwise, The entire risk as to the quality and performance of software
 	  is with the user.
 	
+.. TOADD:
        
-Frequently Asked Questions
-==========================
+   Frequently Asked Questions
+   ==========================
 
-The most frequently asked questions.
+   The most frequently asked questions.
 
-Troubleshooting
-================
+   Troubleshooting
+   ================
 
-The most commonly encountered issues and their solution.
+   The most commonly encountered issues and their solution.
 
 
 .. toctree::
@@ -48,20 +49,28 @@ The most commonly encountered issues and their solution.
    
    How to create a HIP account [U/C]<guides/GUIDE_How_to_create_a_HIP_account>
    How to connect to the HIP portal and access its services [U/C]<guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>
-   How to prepare and upload data to the HIP [TODO]<guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>
+   How to prepare and upload data to the HIP [U/C]<guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>
    How to convert data to BIDS format [U/C]<guides/GUIDE_How_to_convert_data_to_BIDS_format>
-   How to use the HIP spaces and share data with other users [TODO]<guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>
    How to use Desktops and run applications from the App Catalog<guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>
+   How to transfer data from Micromed software to the HIP [U/C]<guides/GUIDE_How_to_transfer_data_from_Micromed_software_to_the_HIP>
+   How to use the HIP spaces and share data with other users [U/C]<guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>
+
+.. TOADD:
+
    How to use and create new workflows [TODO]<guides/GUIDE_How_to_use_and_create_new_workflows>
    How to use and create new studies [TODO]<guides/GUIDE_How_to_use_and_create_new_studies>  
+
    
 .. toctree::
    :caption: HIP tutorials 
    :hidden:   
    
-   SEEG electrode placement with IntrAnat [TODO]<tutorials/TUTORIAL_SEEG_electrode_placement_with_intranat>
    SEEG electrode placement with Brainstorm<tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>
    Epileptogenicity map computation with Brainstorm<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>
+
+.. TOADD:
+
+   SEEG electrode placement with IntrAnat [TODO]<tutorials/TUTORIAL_SEEG_electrode_placement_with_intranat>
 
    
 .. toctree:: 

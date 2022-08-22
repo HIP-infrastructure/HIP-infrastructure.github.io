@@ -87,8 +87,8 @@ procedure in order to place SEEG electrodes and generate a standardized implanta
 .. raw:: html
 
    <center>	
-   <video width="680"  poster="https://thehip.app/apps/sharingpath/aboyer/Public/Tutorial%20-%20SEEG%20electrode%20placement%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20Thumbnail%20-%20SEEG%20electrode%20placement%20with%20Brainstorm.png" controls>
-   <source src="https://thehip.app/apps/sharingpath/aboyer/Public/Tutorial%20-%20SEEG%20electrode%20placement%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20SEEG%20electrode%20placement%20with%20Brainstorm.mp4" type="video/mp4">
+   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20SEEG%20electrode%20placement%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20Thumbnail%20-%20SEEG%20electrode%20placement%20with%20Brainstorm.png" controls>
+   <source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20SEEG%20electrode%20placement%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20SEEG%20electrode%20placement%20with%20Brainstorm.mp4" type="video/mp4">
    Your browser does not support the video tag.
    </video>
    </center>

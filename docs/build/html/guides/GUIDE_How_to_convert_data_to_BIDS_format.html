@@ -18,8 +18,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="How to use the HIP spaces and share data with other users (TODO)" href="GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html" />
-    <link rel="prev" title="How to prepare and upload data to the HIP (TODO)" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html" /> 
+    <link rel="next" title="How to use Desktops and run applications from the App Catalog" href="GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html" />
+    <link rel="prev" title="How to prepare and upload data to the HIP (U/C)" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,9 +40,9 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">HIP guides</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_create_a_HIP_account.html">How to create a HIP account [TODO]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services.html">How to connect to the HIP portal and access its services</a></li>
-<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html">How to prepare and upload data to the HIP [TODO]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_create_a_HIP_account.html">How to create a HIP account [U/C]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services.html">How to connect to the HIP portal and access its services [U/C]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html">How to prepare and upload data to the HIP [U/C]</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">How to convert data to BIDS format [U/C]</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#about-this-tutorial">About this tutorial</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#objective">Objective</a></li>
@@ -60,21 +60,19 @@
 <li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html">How to use the HIP spaces and share data with other users [TODO]</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html">How to use Desktops and run applications from the App Catalog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_use_and_create_new_workflows.html">How to use and create new workflows [TODO]</a></li>
-<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_use_and_create_new_studies.html">How to use and create new studies [TODO]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_transfer_data_from_Micromed_software_to_the_HIP.html">How to transfer data from Micromed software to the HIP [U/C]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html">How to use the HIP spaces and share data with other users [U/C]</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP tutorials</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_SEEG_electrode_placement_with_intranat.html">SEEG electrode placement with IntrAnat [TODO]</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm.html">SEEG electrode placement with Brainstorm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html">Epileptogenicity map computation with Brainstorm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP datasets</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Epimap.html">Epimap tutorial dataset</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Cogepistim.html">COGEPISTIM database [TODO]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Cogepistim.html">COGEPISTIM database [U/C]</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP apps</span></p>
 <ul>
@@ -155,7 +153,7 @@ nor goes into all the intricacies of the <a class="reference external" href="htt
 </section>
 </section>
 <section id="the-brain-imaging-data-structure">
-<h2>The Brain Imaging Data Structure<a class="headerlink" href="#the-brain-imaging-data-structure" title="Permalink to this headline"></a></h2>
+<span id="bids-introduction"></span><h2>The Brain Imaging Data Structure<a class="headerlink" href="#the-brain-imaging-data-structure" title="Permalink to this headline"></a></h2>
 <p>The Brain Imaging Data Structure (BIDS) is a community driven standard for organizing, annotating, and describing neuroimaging, neurophysiological and
 behavioral data. It is a framework for organizing data that standardizes file organization and dataset description.</p>
 <p>For more details regarding the standard, please refer to the following external resources:</p>
@@ -232,11 +230,11 @@ BIDS entities are key-value pairs chained with underscores and are used to struc
 <figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../_images/GUIDE_BIDS_entities.png"><img alt="../_images/GUIDE_BIDS_entities.png" src="../_images/GUIDE_BIDS_entities.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>BIDS file naming.</strong> <em>File names are structured using BIDS entities (key-value pairs) connected with underscores and ending with a suffix and file extension.</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>BIDS file naming.</strong> <em>File names are structured using BIDS entities (key-value pairs) connected with underscores and ending with a suffix and a file extension.</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>BIDS entities are used at the subject level on raw data and associated metadata files, between- and within-subjects,
-but may not be used on some study-level metadata files (e.g. dataset_description.json, participants.tsv, *sessions.tsv, *scans.tsv)</p>
+but may not be used on some study-level metadata files (e.g. <em>dataset_description.json</em>, <em>participants.tsv</em>, <em>*sessions.tsv</em>, <em>*scans.tsv</em>)</p>
 <p>BIDS entities have a definite order. Keys are alphanumeric while values can be either alphanumeric or integers depending on the considered entity.
 BIDS entities can be required or optional, depending on the modality and design choices of the BIDS database, and some have to be consistent across subjects/sessions when used.</p>
 <p>The following table is an example of BIDS entities which can be found in a BIDS database:</p>
@@ -340,17 +338,17 @@ the BIDS importer.</p>
 </div>
 <div class="admonition-derivatives-files admonition">
 <p class="admonition-title">Derivatives files</p>
-<p>Data files which have been processed and that cannot be considered as raw data anymore should go to BIDS <strong>derivatives</strong> folder. This is not supported by
+<p>Data files which have been processed and that cannot be considered as raw data anymore should go to BIDS <em>derivatives</em> folder. This is not supported by
 the BIDS importer.</p>
 </div>
 </section>
 </section>
 <section id="the-bids-importer">
-<h2>The BIDS Importer<a class="headerlink" href="#the-bids-importer" title="Permalink to this headline"></a></h2>
+<span id="bids-importer"></span><h2>The BIDS Importer<a class="headerlink" href="#the-bids-importer" title="Permalink to this headline"></a></h2>
 <p>The BIDS importer is a step-by-step tool designed specifically for the platform and allowing its users to import raw data into a BIDS database.
 The BIDS importer emphasizes simplicity, readability and safeguarding. It purposefully restrains the importation procedure to a selection of modalities
 and is limited to mandatory BIDS entities with a few exceptions.</p>
-<p>Data types and corresponding BIDS modalities available in the BIDS importer are as follows:</p>
+<p id="bids-importer-dtypes">Data types and corresponding BIDS modalities available in the BIDS importer are as follows:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>anat</strong>: T1w, T2w, T1rho, T1map, T2map, T2start, FLAIR, PD, Pdmap, PDT2, inplanteT1, inplanteT2, angio, defacemask, CT</p></li>
@@ -366,7 +364,7 @@ and is limited to mandatory BIDS entities with a few exceptions.</p>
 <li><p><strong>petGlobalSidecars</strong>: blood</p></li>
 </ul>
 </div></blockquote>
-<p>Data file formats compatible with the BIDS importer (with targeted file extension) are as follows:</p>
+<p id="bids-importer-formats">Data file formats compatible with the BIDS importer (with targeted file extension) are as follows:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>Micromed</strong>: .trc (.trc)</p></li>
@@ -420,8 +418,8 @@ Your browser does not support the video tag.
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html" class="btn btn-neutral float-left" title="How to prepare and upload data to the HIP (TODO)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html" class="btn btn-neutral float-right" title="How to use the HIP spaces and share data with other users (TODO)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html" class="btn btn-neutral float-left" title="How to prepare and upload data to the HIP (U/C)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html" class="btn btn-neutral float-right" title="How to use Desktops and run applications from the App Catalog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

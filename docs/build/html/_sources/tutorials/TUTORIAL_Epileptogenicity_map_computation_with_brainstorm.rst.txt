@@ -89,16 +89,14 @@ Compute a map of epileptogenicity
 It is mandatory to have the 3D positions of the recording contacts of the SEEG electrodes in order to compute epileptogenicity maps. 
 The contact names and coordinates of the SEEG electrodes are provided in the *elec_pos_patient.txt* implantation file that will
 be used in this tutorial.
-If you work on your own imaging data and wish to generate a dedicated implantation file, you can follow one of the following tutorials:
-
-	* :doc:`SEEG electrode placement with IntrAnat [TODO] </tutorials/TUTORIAL_SEEG_electrode_placement_with_intranat>`
-	* :doc:`SEEG electrode placement with Brainstorm </tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>`
+If you work on your own imaging data and wish to generate a dedicated implantation file, you may want to look at 
+the :doc:`SEEG electrode placement with Brainstorm </tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>` tutorial.
 
 .. raw:: html
 
    <center>	
-   <video width="680"  poster="https://thehip.app/apps/sharingpath/aboyer/Public/Tutorial%20-%20Epileptogenicity%20map%20computation%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20Thumbnail%20-%20Epileptogenicity%20map%20computation%20with%20Brainstorm.png" controls>
-   <source src="https://thehip.app/apps/sharingpath/aboyer/Public/Tutorial%20-%20Epileptogenicity%20map%20computation%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20Epileptogenicity%20map%20computation%20with%20Brainstorm.mp4" type="video/mp4">
+   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20Epileptogenicity%20map%20computation%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20Thumbnail%20-%20Epileptogenicity%20map%20computation%20with%20Brainstorm.png" controls>
+   <source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20Epileptogenicity%20map%20computation%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20Epileptogenicity%20map%20computation%20with%20Brainstorm.mp4" type="video/mp4">
    Your browser does not support the video tag.
    </video>
    </center>

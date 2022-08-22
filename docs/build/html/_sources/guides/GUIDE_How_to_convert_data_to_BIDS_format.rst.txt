@@ -38,6 +38,7 @@ using the :doc:`BIDS Manager </applications/APP_BIDS_Manager>`, available on the
 This guide does not explain :doc:`how to prepare and upload data to the HIP </guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>`,
 nor goes into all the intricacies of the `BIDS standard <https://bids-specification.readthedocs.io/en/stable/>`_.
 
+.. _BIDS_introduction:
 
 The Brain Imaging Data Structure
 =================================
@@ -115,10 +116,10 @@ BIDS entities are key-value pairs chained with underscores and are used to struc
 	:width: 800px
 	:align: center
 
-	**BIDS file naming.** *File names are structured using BIDS entities (key-value pairs) connected with underscores and ending with a suffix and file extension.*
+	**BIDS file naming.** *File names are structured using BIDS entities (key-value pairs) connected with underscores and ending with a suffix and a file extension.*
 
 BIDS entities are used at the subject level on raw data and associated metadata files, between- and within-subjects, 
-but may not be used on some study-level metadata files (e.g. dataset_description.json, participants.tsv, \*sessions.tsv, \*scans.tsv)		
+but may not be used on some study-level metadata files (e.g. *dataset_description.json*, *participants.tsv*, *\*sessions.tsv*, *\*scans.tsv*)		
 	
 BIDS entities have a definite order. Keys are alphanumeric while values can be either alphanumeric or integers depending on the considered entity.
 BIDS entities can be required or optional, depending on the modality and design choices of the BIDS database, and some have to be consistent across subjects/sessions when used.	
@@ -171,9 +172,10 @@ The following table is an example of BIDS entities which can be found in a BIDS 
    
 .. admonition:: Derivatives files
 
-   Data files which have been processed and that cannot be considered as raw data anymore should go to BIDS **derivatives** folder. This is not supported by 
+   Data files which have been processed and that cannot be considered as raw data anymore should go to BIDS *derivatives* folder. This is not supported by 
    the BIDS importer.	
 	
+.. _BIDS_importer:
 
 The BIDS Importer
 ==================
@@ -181,6 +183,8 @@ The BIDS Importer
 The BIDS importer is a step-by-step tool designed specifically for the platform and allowing its users to import raw data into a BIDS database.
 The BIDS importer emphasizes simplicity, readability and safeguarding. It purposefully restrains the importation procedure to a selection of modalities 
 and is limited to mandatory BIDS entities with a few exceptions. 
+
+.. _BIDS_importer_dtypes:
 
 Data types and corresponding BIDS modalities available in the BIDS importer are as follows:
 
@@ -195,7 +199,9 @@ Data types and corresponding BIDS modalities available in the BIDS importer are 
 	* **ieegGlobalSidecars**: electrodes, coordsystem, photo
 	* **eegGlobalSidecars**: electrodes, coordsystem, photo
 	* **petGlobalSidecars**: blood
-	
+
+.. _BIDS_importer_formats:	
+
 Data file formats compatible with the BIDS importer (with targeted file extension) are as follows:
 
 	* **Micromed**: .trc (.trc)

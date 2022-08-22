@@ -1,7 +1,20 @@
 How to create a HIP account (U/C)
 **********************************
 
-The HIP is fully integrated in `EBRAINS <https://ebrains.eu/>`_ and an EBRAINS account is required in order to access the HIP and use all of its services. 
+.. figure:: /guides/art/GUIDE_How_to_create_a_HIP_account/GUIDE_create_account.png
+	:width: 800px
+	:align: center
+
+	**The HIP.** *A platform for state-of-the-art processing and international sharing of HUMAN iEEG data.*
+	
+The HIP is fully integrated in `EBRAINS <https://ebrains.eu/>`_ and an EBRAINS account is required in order to access the HIP 
+and use all of its services. 
+
+.. admonition:: Terms of Use
+
+   By applying for a HIP account, future HIP Users accept the EBRAINS General Terms of Use, so to indicate acceptance and compliance with all applicable laws,
+   regulations, rules and approvals in the use and sharing of the data on EBRAINS, including, but not limited to, the General Data Protection
+   Regulation (GDPR). They also adhere to the HIP Charter which defines the principles, rules and processes that govern the management of the data and research outputs.
 
 Create an EBRAINS account
 =========================
@@ -65,14 +78,14 @@ All HIP users are member of at least one group corresponding to pre-identified i
 To register for a HIP account please send an `e-mail to HIP support <mailto:todo****@hip.eu?subject=HIP%20account%20request%20>`_ with the following information (items marked with an asterisk are mandatory):
 
 	* **Full name**\*: First name and surname.
-	* **HIP group(s)**\*: At least one group from the :ref:`table above <list_identified_hip_groups>` you are affiliated with.
+	* **HIP group(s)**\*: At least one :ref:`HIP group <list_identified_hip_groups>` you are affiliated with.
 	* **EBRAINS username**\*: The username you use when logging into EBRAINS services.
 	* **Institutional e-mail**\*: The e-mail that will be used by the HIP support team to contact you.
 	* **Backup e-mail**\*: A backup e-mail.
 	* **ORCID**: Open Researcher and Contributor ID.
 	
 Once your application has been validated, a confirmation e-mail will be sent to your institutional e-mail and you will be added to the HIP group on EBRAINS.
-You are then free to :doc:`connect to the HIP portal and access its services </guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>` logging in with your EBRAINS account,
+You can then :doc:`connect to the HIP portal and access its services </guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>`, logging in with your EBRAINS account,
 and have access to the shared folders of each group you belong to. 
 
 .. admonition:: Accounts and groups
