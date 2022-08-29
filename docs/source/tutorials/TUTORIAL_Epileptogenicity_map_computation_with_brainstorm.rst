@@ -1,3 +1,5 @@
+.. include:: ../hip_beta_warning.rst
+
 Epileptogenicity map computation with Brainstorm
 **************************************************
 

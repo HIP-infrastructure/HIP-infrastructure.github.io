@@ -1,3 +1,5 @@
+.. include:: ../hip_beta_warning.rst
+
 Epimap tutorial dataset
 ************************
 

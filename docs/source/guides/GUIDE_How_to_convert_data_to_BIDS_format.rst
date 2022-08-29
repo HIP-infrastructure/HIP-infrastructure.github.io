@@ -1,5 +1,7 @@
-How to convert data to BIDS format (U/C)
-****************************************
+.. include:: ../hip_beta_warning.rst
+
+How to convert data to BIDS format
+***********************************
 
 .. figure:: /guides/art/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog/GUIDE_desktops_header.png
 	:width: 600px

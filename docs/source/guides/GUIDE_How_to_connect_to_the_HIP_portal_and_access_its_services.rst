@@ -1,5 +1,7 @@
-How to connect to the HIP portal and access its services (U/C)
-**************************************************************
+.. include:: ../hip_beta_warning.rst
+
+How to connect to the HIP portal and access its services
+**********************************************************
 
 Connecting to the HIP
 =====================

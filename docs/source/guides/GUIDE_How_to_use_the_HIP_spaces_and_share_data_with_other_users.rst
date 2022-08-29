@@ -1,5 +1,7 @@
-How to use the HIP spaces and share data with other users (U/C)
-*****************************************************************
+.. include:: ../hip_beta_warning.rst
+
+How to use the HIP spaces and share data with other users
+**********************************************************
 
 .. figure:: /guides/art/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users/GUIDE_spaces_header.png
 	:width: 800px

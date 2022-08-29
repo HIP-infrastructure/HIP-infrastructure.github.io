@@ -1,3 +1,5 @@
+.. include:: ../hip_beta_warning.rst
+
 How to use Desktops and run applications from the App Catalog 
 **************************************************************
 
@@ -14,12 +16,11 @@ Objective
 ---------
 
 The objective of this guide is to introduce HIP users to Desktops and how to use them 
-in order to run applications available in the App Catalog.
+in order to run applications available in the App Catalog. This guide briefly describes the basic principles of Desktops on the HIP,
+which are also illustrated in a short video guide explaining how to: 
 
-This guide briefly describes the basic principles of Desktops on the HIP, which are also illustrated in a short video guide explaining how to: 
-
-	* create, display, pause/resume and switch between Desktop environments
-	* start one or several applications simultaneously in a Desktop environment
+	* Create, display, pause/resume and switch between Desktop environments.
+	* Start one or several applications simultaneously in a Desktop environment.
 
 This guide also explains essential rules regarding data access and persistence inside a Desktop environment.  
 
@@ -46,9 +47,10 @@ Desktops and data persistence
 Once it has been initiated, a Desktop will persist until it is manually terminated. HIP users can safely log off and/or close their web browser. 
 Pending Desktops will remain unaltered and accessible for later use.
 
-Applications running in a Desktop environment have access to HIP user's private space data under the */home/<HIP_USER>* directory.
-Any data and/or configuration file outside this directory will be lost when the application or desktop are closed.
-This is the only persistent directory as it is tied to the HIP user's private space at application startup.
+.. important::
+   Applications running in a Desktop environment have access to HIP user's private space data under the */home/<HIP_USER>/Nextcloud* directory.
+   Any data and/or configuration file outside this directory will be lost when the application or desktop are closed.
+   This is the only persistent directory as it is tied to the HIP user's private space at application startup.
 
 Video guide
 ------------

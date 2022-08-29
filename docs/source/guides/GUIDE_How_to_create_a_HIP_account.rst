@@ -1,5 +1,7 @@
-How to create a HIP account (U/C)
-**********************************
+.. include:: ../hip_beta_warning.rst
+
+How to create a HIP account
+*****************************
 
 .. figure:: /guides/art/GUIDE_How_to_create_a_HIP_account/GUIDE_create_account.png
 	:width: 800px

@@ -1,11 +1,13 @@
 .. HIP user documentation documentation master file, created by
    sphinx-quickstart on Tue Feb 15 17:05:36 2022.
 
+.. include:: hip_beta_warning.rst
+
 .. figure:: /art/hip_documentation_header.png
 	:align: center	
 	
 |	
-		
+	
 The `HIP <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_ is an open-source platform designed for large scale and optimized collection, storage, curation, sharing
 and analysis of multiscale Human iEEG data at the international level. The HIP covers the entire field of iEEG-based research; i.e. multi-scale investigation of cognition, consciousness, connectomics and related disorders.
 
@@ -42,24 +44,22 @@ It contains the following sections:
 
    The most commonly encountered issues and their solution.
 
-
+.. toctree::
+   :hidden:   
+   
+   > > > > > HIP Beta onboarding < < < < < <hip_beta_onboarding>
+   
 .. toctree::
    :caption: HIP guides
    :hidden:
    
-   How to create a HIP account [U/C]<guides/GUIDE_How_to_create_a_HIP_account>
-   How to connect to the HIP portal and access its services [U/C]<guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>
-   How to prepare and upload data to the HIP [U/C]<guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>
-   How to convert data to BIDS format [U/C]<guides/GUIDE_How_to_convert_data_to_BIDS_format>
+   How to create a HIP account<guides/GUIDE_How_to_create_a_HIP_account>
+   How to connect to the HIP portal and access its services<guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>
+   How to prepare and upload data to the HIP<guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>
+   How to convert data to BIDS format<guides/GUIDE_How_to_convert_data_to_BIDS_format>
    How to use Desktops and run applications from the App Catalog<guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>
-   How to transfer data from Micromed software to the HIP [U/C]<guides/GUIDE_How_to_transfer_data_from_Micromed_software_to_the_HIP>
-   How to use the HIP spaces and share data with other users [U/C]<guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>
-
-.. TOADD:
-
-   How to use and create new workflows [TODO]<guides/GUIDE_How_to_use_and_create_new_workflows>
-   How to use and create new studies [TODO]<guides/GUIDE_How_to_use_and_create_new_studies>  
-
+   How to transfer data from Micromed software to the HIP<guides/GUIDE_How_to_transfer_data_from_Micromed_software_to_the_HIP>
+   How to use the HIP spaces and share data with other users<guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>
    
 .. toctree::
    :caption: HIP tutorials 
@@ -68,17 +68,12 @@ It contains the following sections:
    SEEG electrode placement with Brainstorm<tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>
    Epileptogenicity map computation with Brainstorm<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>
 
-.. TOADD:
-
-   SEEG electrode placement with IntrAnat [TODO]<tutorials/TUTORIAL_SEEG_electrode_placement_with_intranat>
-
-   
 .. toctree:: 
    :caption: HIP datasets
    :hidden:
 	
    Epimap tutorial dataset<datasets/DATASET_Epimap>
-   COGEPISTIM database [U/C]<datasets/DATASET_Cogepistim>	
+   COGEPISTIM database<datasets/DATASET_Cogepistim>	
    
 .. toctree::
    :caption: HIP apps
@@ -87,14 +82,14 @@ It contains the following sections:
    AnyWave<applications/APP_AnyWave>
    BIDS Manager<applications/APP_BIDS_Manager>
    Brainstorm<applications/APP_Brainstorm>
-   CCEP Manager [U/C]<applications/APP_CCEP_Manager>
+   CCEP Manager<applications/APP_CCEP_Manager>
    dcm2niix<applications/APP_dcm2niix>
    FSL<applications/APP_FSL>
    Freesurfer<applications/APP_Freesurfer>
    HiBoP<applications/APP_HiBoP>
-   IntrAnat [U/C]<applications/APP_IntrAnat>
+   IntrAnat<applications/APP_IntrAnat>
    Localizer<applications/APP_Localizer>
+   MNE<applications/APP_MNE>
    MRIcroGL<applications/APP_MRIcroGL>
    3D Slicer<applications/APP_3D_Slicer>
    The Virtual Brain<applications/APP_The_Virtual_Brain>
-

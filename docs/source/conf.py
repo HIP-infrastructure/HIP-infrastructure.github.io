@@ -49,7 +49,7 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
-html_logo = 'art/hip_logo.png'
+html_logo = 'art/hip_beta_logo.png'
 
 # Cloud
 #html_theme = "cloud" # cloud

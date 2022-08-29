@@ -1,5 +1,7 @@
-COGEPISTIM database (U/C)
-***************************
+.. include:: ../hip_beta_warning.rst
+
+COGEPISTIM database
+*******************
 
 .. TODO:
 	Ask for localizers description.

@@ -1,5 +1,7 @@
-How to prepare and upload data to the HIP (U/C)
-************************************************
+.. include:: ../hip_beta_warning.rst
+
+How to prepare and upload data to the HIP
+******************************************
 
 .. figure:: /guides/art/GUIDE_How_to_prepare_and_upload_data_to_the_HIP/GUIDE_upload_hip.png
 	:width: 600px
