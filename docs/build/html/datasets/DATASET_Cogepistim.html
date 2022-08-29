@@ -39,7 +39,7 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../onboarding_new_users.html">&gt; &gt; &gt; &gt; &gt; HIP Beta onboarding &lt; &lt; &lt; &lt; &lt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hip_beta_onboarding.html">&gt; &gt; &gt; &gt; &gt; HIP Beta onboarding &lt; &lt; &lt; &lt; &lt;</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP guides</span></p>
 <ul>
@@ -122,7 +122,7 @@
              
   <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The HIP is in closed beta and is subject to change. The documentation may not fully relfect the current state of the platform.</p>
+<p>The HIP is in closed beta and is subject to change. The documentation may not fully reflect the current state of the platform.</p>
 </div>
 <section id="cogepistim-database">
 <h1>COGEPISTIM database<a class="headerlink" href="#cogepistim-database" title="Permalink to this headline"></a></h1>
@@ -270,7 +270,7 @@ Signals were acquired at a sampling frequency which varied between 512 Hz and 20
 <blockquote id="ftract-imaging-method">
 <div><ul class="simple">
 <li><p><strong>Imaging</strong> - The electrode contacts were localised and anatomically labelled using
-the <a class="reference internal" href="../applications/APP_IntrAnat.html"><span class="doc">IntrAnat Electrodes software</span></a> (<span id="id3">[Deman_2018]</span>) compatible with the <a class="reference external" href="http://brainvisa.info">BrainVisa software</a>
+the <a class="reference internal" href="../applications/APP_IntrAnat.html"><span class="doc">IntrAnat Electrodes software</span></a> (<a class="reference internal" href="#deman-2018" id="id3"><span>[Deman_2018]</span></a>) compatible with the <a class="reference external" href="http://brainvisa.info">BrainVisa software</a>
 (<a class="reference internal" href="#riviere-2009" id="id4"><span>[Rivière_2009]</span></a>). Briefly, the volumetric images acquired before and after the electrode implantation were co-registered using a rigid-body
 transformation computed either by ANTs (<a class="reference internal" href="#avants-2011" id="id5"><span>[Avants_2011]</span></a>) or SPM12 (<a class="reference internal" href="#ashburner-2009" id="id6"><span>[Ashburner_2009]</span></a>) software.
 The grey and white matter volumes were segmented from the pre-implantation MRI using Morphologist as included in BrainVisa.
@@ -280,7 +280,7 @@ For each patient, cortical parcels were obtained for different anatomical atlase
 (Brodmann (<a class="reference internal" href="#brodmann-1909" id="id10"><span>[Brodmann_1909]</span></a>), Automated Anatomical Labeling AAL (<a class="reference internal" href="#tzourio-mazoyer-2002" id="id11"><span>[Tzourio-Mazoyer_2002]</span></a>), MaxProbMap (<a class="reference internal" href="#hammers-2003" id="id12"><span>[Hammers_2003]</span></a>),
 and Human Connectome Project (<a class="reference internal" href="#glasser-2016" id="id13"><span>[Glasser_2016]</span></a>)).
 Each electrode contact was assigned to the grey or white matter and to specific anatomical parcels by taking the most frequent voxel
-label in a sphere of 3 mm radius around each contact centre (<span id="id14">[Deman_2018]</span>).</p></li>
+label in a sphere of 3 mm radius around each contact centre (<a class="reference internal" href="#deman-2018" id="id14"><span>[Deman_2018]</span></a>).</p></li>
 <li><p><strong>Neurophysiology</strong>  - The SEEG signals were pre-processed automatically using a pipeline composed of the following steps,
 supervised at the end for data quality check: i) detection and cropping of each stimulation run from stimulation artefacts
 in raw iEEG files (i.e. a set a pulses consecutively applied between the same pair of contacts); ii) bad channels detection
@@ -291,7 +291,7 @@ variance, spatio-temporal correlation and non-linear properties.</p></li>
 </div></blockquote>
 <p>Operationally, the data was extracted from the F-TRACT infrastructure of <a class="reference external" href="https://www.univ-grenoble-alpes.fr/">Université Grenoble Alpes (UGA)</a> , as an independent folder created
 by a F-TRACT to BIDS converter developed by <a class="reference external" href="https://www.univ-amu.fr/">Aix-Marseille Université (AMU)</a>  for UGA’s use.
-F-TRACT to BIDS converter is a module of <a class="reference internal" href="../applications/APP_BIDS_Manager.html"><span class="doc">BIDS Manager software</span></a> (BIDS Manager and Pipeline, version 0.2.4) developed by AMU to organise any database in BIDS format (<a class="reference internal" href="#roehri-2021" id="id16"><span>[Roehri_2021]</span></a>).</p>
+F-TRACT to BIDS converter is a module of <a class="reference internal" href="../applications/APP_BIDS_Manager.html"><span class="doc">BIDS Manager software</span></a> (BIDS Manager and Pipeline, version 0.2.4) developed by AMU to organise any database in BIDS format (<a class="reference internal" href="#roehri-2021a" id="id16"><span>[Roehri_2021a]</span></a>).</p>
 </section>
 </section>
 <section id="isd-data-description">
@@ -425,7 +425,7 @@ For questions, please contact Olivier David, PhD (<a class="reference external" 
 <dt class="label" id="riviere-2009"><span class="brackets"><a class="fn-backref" href="#id4">Rivière_2009</a></span></dt>
 <dd><p>Rivière, D., Geffroy, D., Denghien, I., Souedet, N., Cointepas, Y., 2009. BrainVISA: an extensible software environment for sharing multimodal neuroimaging data and processing tools. NeuroImage 47, S163. doi:10.1016/S1053-8119(09)71720-3.</p>
 </dd>
-<dt class="label" id="roehri-2021"><span class="brackets"><a class="fn-backref" href="#id16">Roehri_2021</a></span></dt>
+<dt class="label" id="roehri-2021a"><span class="brackets"><a class="fn-backref" href="#id16">Roehri_2021a</a></span></dt>
 <dd><p>Roehri N, Medina Villalon S, Jegou A, Colombet B, Giusiano B, Ponz A, Bartolomeo F, Bénar CG. Transfer, Collection and Organisation of Electrophysiological and Imaging Data for Multicentre Studies. Neuroinform., 2021.</p>
 </dd>
 <dt class="label" id="trebaul-2018"><span class="brackets"><a class="fn-backref" href="#id2">Trebaul_2018</a></span></dt>

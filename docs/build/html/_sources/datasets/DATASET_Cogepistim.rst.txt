@@ -177,7 +177,7 @@ The main steps required to generate the database are as follows (see [Trebaul_20
 	  
 Operationally, the data was extracted from the F-TRACT infrastructure of `Université Grenoble Alpes (UGA) <https://www.univ-grenoble-alpes.fr/>`_ , as an independent folder created 
 by a F-TRACT to BIDS converter developed by `Aix-Marseille Université (AMU) <https://www.univ-amu.fr/>`_  for UGA’s use. 
-F-TRACT to BIDS converter is a module of :doc:`BIDS Manager software</applications/APP_BIDS_Manager>` (BIDS Manager and Pipeline, version 0.2.4) developed by AMU to organise any database in BIDS format ([Roehri_2021]_).
+F-TRACT to BIDS converter is a module of :doc:`BIDS Manager software</applications/APP_BIDS_Manager>` (BIDS Manager and Pipeline, version 0.2.4) developed by AMU to organise any database in BIDS format ([Roehri_2021a]_).
 
 
 ISD data description
@@ -294,7 +294,7 @@ References
 
 .. [Rivière_2009] Rivière, D., Geffroy, D., Denghien, I., Souedet, N., Cointepas, Y., 2009. BrainVISA: an extensible software environment for sharing multimodal neuroimaging data and processing tools. NeuroImage 47, S163. doi:10.1016/S1053-8119(09)71720-3.
 
-.. [Roehri_2021] Roehri N, Medina Villalon S, Jegou A, Colombet B, Giusiano B, Ponz A, Bartolomeo F, Bénar CG. Transfer, Collection and Organisation of Electrophysiological and Imaging Data for Multicentre Studies. Neuroinform., 2021.
+.. [Roehri_2021a] Roehri N, Medina Villalon S, Jegou A, Colombet B, Giusiano B, Ponz A, Bartolomeo F, Bénar CG. Transfer, Collection and Organisation of Electrophysiological and Imaging Data for Multicentre Studies. Neuroinform., 2021.
 
 .. [Trebaul_2018] Trebaul, L., Deman, P., Tuyisenge, V., Jedynak, M., Hugues, E., Rudrauf, D., Bhattacharjee, M., Tadel, F., Chanteloup-Forêt, B., Saubat, C., Reyes Mejia, G.C., Adam, C., Nica, A., Pail, M., Dubeau, F., Rheims, S., Trébuchon, A., Wang, H., Liu, S., Blauwblomme, T., Garces, M., De Palma, L., Valentín, A., Metsahonkala, E.-L., Petrescu, A.M., Landré, E., Szurhaj, W., Hirsch, E., Valton, L., Rocamora, R., Schulze-Bonhage, A., Mîndruţă, I., Francione, S., Maillard, L., Taussig, D., Kahane, P., David, O., 2018. Probabilistic functional tractography of the human cortex revisited. NeuroImage 181, 414–429. doi:10.1016/j.neuroimage.2018.07.039.
 
