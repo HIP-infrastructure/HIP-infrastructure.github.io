@@ -48,9 +48,9 @@ Once it has been initiated, a Desktop will persist until it is manually terminat
 Pending Desktops will remain unaltered and accessible for later use.
 
 .. important::
-   Applications running in a Desktop environment have access to HIP user's private space data under the */home/<HIP_USER>/Nextcloud* directory.
-   Any data and/or configuration file outside this directory will be lost when the application or desktop are closed.
-   This is the only persistent directory as it is tied to the HIP user's private space at application startup.
+   Applications running in a Desktop environment have access to HIP user's Private Space data under the */home/<HIP_USER>/Nextcloud* directory.
+   Any data and/or configuration file outside of this directory will be lost when the application or desktop are closed.
+   This is the only persistent directory as it is tied to the HIP user's Private Space at application startup.
 
 Video guide
 ------------

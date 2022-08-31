@@ -25,7 +25,7 @@ Create an EBRAINS account
 research and brain-inspired technologies created by the EU-funded `Human Brain Project <https://www.humanbrainproject.eu>`_.
 Part of EBRAINS resources are available publicly without an account. Other resources, such as the HIP, are accessible only to registered users.
 
-Before applying for a HIP account you need to `register for a EBRAINS account <https://iam.ebrains.eu/auth/realms/hbp/protocol/openid-connect/registrations?response_type=code&client_id=xwiki&redirect_uri=https://wiki.ebrains.eu>`_.
+Before applying for a HIP account you need to `register for an EBRAINS account <https://iam.ebrains.eu/auth/realms/hbp/protocol/openid-connect/registrations?response_type=code&client_id=xwiki&redirect_uri=https://wiki.ebrains.eu>`_.
 New users with a personal institutional e-mail from a pre-identified institution will be provided an expedited registration process. 
 If the institution is not yet on EBRAINS list, you can either contact `EBRAINS High Level Support Team (HLST) <mailto:support@ebrains.eu?subject=Register%20from%20a%20new%20institution&body=Please%20add%20my%20institution%20for%20expedited%20registration.%20My%20institutional%20e-mail%20address%20is:_____>`_  
 or fill in the `dedicated form <https://ebrains.eu/support/>`_.
@@ -36,9 +36,9 @@ Create a HIP account
 
 You need an EBRAINS account to apply for a HIP account.
 
-All HIP users are member of at least one group corresponding to pre-identified institutions (laboratory, hospital, university...) listed in the following table:
-
 .. _list_identified_hip_groups:
+
+All HIP users are member of at least one group corresponding to pre-identified institutions (laboratory, hospital, university...) listed in the following table:
 
 .. table::
 	:align: center
@@ -88,7 +88,7 @@ To register for a HIP account please send an `e-mail to HIP support <mailto:todo
 	
 Once your application has been validated, a confirmation e-mail will be sent to your institutional e-mail and you will be added to the HIP group on EBRAINS.
 You can then :doc:`connect to the HIP portal and access its services </guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>`, logging in with your EBRAINS account,
-and have access to the shared folders of each group you belong to. 
+and have access to the shared folder of each group you belong to. 
 
 .. admonition:: Accounts and groups
 

@@ -15,7 +15,7 @@ from the lesion towards the temporal lobe, bilaterally.
 Data files
 -----------
 
-The dataset is accessible in a `publicly shared folder <https://thehip.app/apps/files/?dir=/Public/Tutorial%20-%20Datasets/Epimap%20tutorial%20dataset&fileid=713412>`_
+The dataset is accessible in a `publicly shared folder <https://thehip.app/apps/files/?dir=/tutorial_data/Epimap%20tutorial%20dataset&fileid=717246>`_
 and includes the following files:
 
 	* anat/MRI/3DT1\*_deface.nii: Subject T1 MRI before and after SEEG implantation, de-identified with FreeSurfer's mri_deface

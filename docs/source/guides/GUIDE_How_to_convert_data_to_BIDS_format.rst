@@ -3,7 +3,7 @@
 How to convert data to BIDS format
 ***********************************
 
-.. figure:: /guides/art/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog/GUIDE_desktops_header.png
+.. figure:: /guides/art/GUIDE_How_to_convert_data_to_BIDS_format/GUIDE_BIDS_importer.png
 	:width: 600px
 	:align: center
 
@@ -222,7 +222,7 @@ The following video guide (X'XX'') serves as an introduction to the BIDS importe
 .. raw:: html
 
    <center>	
-   <video width="680"  poster="todo.png" controls>
+   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20BIDS%20importer/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
    <source src="todo.mp4" type="video/mp4">
    Your browser does not support the video tag.
    </video>

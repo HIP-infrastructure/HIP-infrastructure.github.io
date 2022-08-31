@@ -63,10 +63,8 @@ HIP dataset used in this tutorial:
 Prepare the working environment
 ==================================
 
-**Get the dataset**: This tutorial relies on data available in the :doc:`Epimap tutorial dataset </datasets/DATASET_Epimap>`
-which can be accessed in the corresponding `publicly shared folder <https://thehip.app/apps/files/?dir=/HIP%20tutorials/Epileptogenicity%20map%20computation%20with%20Brainstorm/Datasets&fileid=682152>`_.
-
-The following files will be used for this tutorial:
+This tutorial relies on data available in the :doc:`Epimap tutorial dataset </datasets/DATASET_Epimap>`,
+and the following files will be used:
 
 	* anat/MRI/3DT1pre_deface.nii
 	* anat/MRI/3DT1post_deface.nii
@@ -79,7 +77,7 @@ The following files will be used for this tutorial:
 Transfer those files into your private space so it is easier to access and use them.
 If you don't know how to do this please refer to the :doc:`How to use the HIP spaces </guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>` guide.
 
-**Start a new working session with Brainstorm**: This tutorial only requires the use of Brainstorm for
+This tutorial only requires the use of Brainstorm for
 the computation of epileptogenicity maps. It is advised to initiate a new working session with a fresh instance of Brainstorm running.
 If you don't know how to do this please refer to the :doc:`How to use Desktops and run applications from the App Catalog </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` guide.
 

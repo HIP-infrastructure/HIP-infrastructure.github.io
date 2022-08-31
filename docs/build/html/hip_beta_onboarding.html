@@ -39,7 +39,16 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">&gt; &gt; &gt; &gt; &gt; HIP Beta onboarding &lt; &lt; &lt; &lt; &lt;</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">&gt; &gt; &gt; &gt; &gt; HIP Beta onboarding &lt; &lt; &lt; &lt; &lt;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#get-a-hip-account">Get a HIP account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hip-services-overview">HIP services overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upload-and-download-data">Upload and download data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use-desktops-and-run-applications">Use desktops and run applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tutorials">Tutorials</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP guides</span></p>
 <ul>
@@ -103,10 +112,133 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="hip-beta-onboarding">
+  <figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/hip_documentation_header_beta_onboarding.png"><img alt="_images/hip_documentation_header_beta_onboarding.png" src="_images/hip_documentation_header_beta_onboarding.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>The HIP.</strong> <em>An open-source platform designed for large scale and optimized
+collection, storage, curation, sharing and analysis of multiscale Human iEEG data at the international level.</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="hip-beta-onboarding">
 <h1>HIP Beta onboarding<a class="headerlink" href="#hip-beta-onboarding" title="Permalink to this headline"></a></h1>
-<p>(Create a HIP account, Connect and use the HIP portal, Upload data to the HIP, Use desktops and run applications, Place SEEG electrodes with
-FSL and 3D slicer using the demo dataset)</p>
+<p>This quick start guide serves as an introduction to the HIP and briefly explains how to apply for a HIP account,
+access the platform and operate its main features and services.
+For more in depth information please refer to the <a class="reference internal" href="index.html"><span class="doc">full documentation</span></a>.</p>
+<section id="get-a-hip-account">
+<h2>Get a HIP account<a class="headerlink" href="#get-a-hip-account" title="Permalink to this headline"></a></h2>
+<p>An <a class="reference external" href="https://ebrains.eu/">EBRAINS</a> account is required to access the HIP and use all of its services.
+Apply for an EBRAINS account using the following <a class="reference external" href="https://iam.ebrains.eu/auth/realms/hbp/protocol/openid-connect/registrations?response_type=code&amp;client_id=xwiki&amp;redirect_uri=https://wiki.ebrains.eu">registration form</a>.</p>
+<p>Once your EBRAINS account has been activated, you can apply for a HIP account sending
+an <a class="reference external" href="mailto:todo****&#37;&#52;&#48;hip&#46;eu?subject=HIP%20account%20request%20">e-mail to HIP support team</a> with the following
+information (items marked with an asterisk are mandatory):</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Full name</strong>*: First name and surname.</p></li>
+<li><p><strong>HIP group(s)</strong>*: At least one <a class="reference internal" href="guides/GUIDE_How_to_create_a_HIP_account.html#list-identified-hip-groups"><span class="std std-ref">HIP group</span></a> you are affiliated with.</p></li>
+<li><p><strong>EBRAINS username</strong>*: The username you use when logging into EBRAINS services.</p></li>
+<li><p><strong>Institutional e-mail</strong>*: The e-mail that will be used by the HIP support team to contact you.</p></li>
+<li><p><strong>Backup e-mail</strong>*: A backup e-mail.</p></li>
+<li><p><strong>ORCID</strong>: Open Researcher and Contributor ID.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition-affiliations-and-hip-groups admonition">
+<p class="admonition-title">Affiliations and HIP groups</p>
+<p>All HIP users are also member of at least one group corresponding to pre-identified institutions
+listed in the table of <a class="reference internal" href="guides/GUIDE_How_to_create_a_HIP_account.html#list-identified-hip-groups"><span class="std std-ref">HIP groups</span></a>.
+Affiliations are cross-checked during the registration process.</p>
+</div>
+<p>Once your application has been validated, a confirmation e-mail will be sent to your institutional e-mail and you will be added to the HIP group
+on EBRAINS so you can <a class="reference external" href="https://thehip.app/login">login</a> to the HIP using your EBRAINS credentials.
+For more information regarding HIP accounts, please refer to the <a class="reference internal" href="guides/GUIDE_How_to_create_a_HIP_account.html"><span class="doc">How to create a HIP account</span></a> guide.</p>
+</section>
+<section id="hip-services-overview">
+<h2>HIP services overview<a class="headerlink" href="#hip-services-overview" title="Permalink to this headline"></a></h2>
+<p><a class="reference external" href="https://thehip.app/login">Login</a> to the HIP portal using your EBRAINS account. Once connected you will be redirected to
+your Dashboard. The Dashboard gives an overview of the opened Desktops and BIDS databases available in all 3 HIP spaces.
+Note that only the Private Space is available during the Beta phase. For more details regarding HIP Spaces, please refer
+to the <a class="reference internal" href="guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html"><span class="doc">How to use the HIP spaces and share data with other users</span></a> guide.</p>
+<p>From the side navigation menu, it is also possible to access the App Catalog, which lists all the applications made available to the HIP users
+so they can process their data. Applications from the App Catalog are used from virtual <a class="reference internal" href="#onboarding-desktops-and-apps"><span class="std std-ref">Desktops</span></a>, which operate as remote computers.</p>
+<p>The following video (X’XX’’), from the <a class="reference internal" href="guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services.html"><span class="doc">How to connect to the HIP portal and access its services</span></a> guide,
+gives an overview of HIP services.</p>
+<center>
+<video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Connect%20and%20access/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
+<source src="todo.mp4">
+Your browser does not support the video tag.
+</video>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="upload-and-download-data">
+<h2>Upload and download data<a class="headerlink" href="#upload-and-download-data" title="Permalink to this headline"></a></h2>
+<div class="admonition-data-transfer-agreement-dta admonition">
+<p class="admonition-title">Data Transfer Agreement (DTA)</p>
+<p>A Data Transfer Agreement has to be signed between the participating institution and the CHUV prior to any data transfer taking place.</p>
+</div>
+<p>The HIP user uploading data to the HIP qualify as Data Controller for the corresponding data.
+It is the Data Controller responsibility to secure proper data pseudonymised/anonymised prior to the transfer, depending on the DTA.
+Data can only be uploaded in the Private Space of the HIP user doing the transfer.
+HIP users also have read and write access to the shared folder of each HIP group they belong to.
+The shared folder is named according to the corresponding HIP group.</p>
+<p>There are currently 2 solutions for uploading data to the HIP as explained in the <a class="reference internal" href="guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html"><span class="doc">How to prepare and upload data to the HIP</span></a> guide.
+It is advised to set up a synchronized folder using the Nextcloud client as illustrated in the following video (2’27’’):</p>
+<center>
+<video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Upload%20data/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Upload%20data.png" controls>
+<source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Upload%20data/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Upload%20data.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition-data-type admonition">
+<p class="admonition-title">Data type</p>
+<p>The HIP is an open-source European platform dedicated to Human intracerebral EEG data and only iEEG data
+and relevant health-related or research-related data should be uploaded to the platform.</p>
+</div>
+</section>
+<section id="use-desktops-and-run-applications">
+<span id="onboarding-desktops-and-apps"></span><h2>Use desktops and run applications<a class="headerlink" href="#use-desktops-and-run-applications" title="Permalink to this headline"></a></h2>
+<p>Desktops operate as remote virtual computers where HIP users can run applications from the App Catalog to process data located in their Private Space.
+Once it has been initiated, a Desktop will persist until it is manually terminated. HIP users can safely log off and/or close their web browser.
+Pending Desktops will remain unaltered and accessible for later use.</p>
+<p>Before using Desktops for the first time, it is necessary to configure an application password that will be used when starting applications.
+This has to be done once, from your security settings, has illustrated in the following clip:</p>
+<center>
+<video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Connect%20and%20access/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
+<source src="todo.mp4">
+Your browser does not support the video tag.
+</video>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Once the application password has been configured, it is possible to open a Desktop and start applications from the App Catalog as illustrated in
+the following video (2’30’’), from the <a class="reference internal" href="guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html"><span class="doc">How to use Desktops and run applications from the App Catalog</span></a> guide:</p>
+<center>
+<video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Use%20Desktops%20and%20run%20Apps/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Use%20Desktops%20and%20run%20Apps.png" controls>
+<source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Use%20Desktops%20and%20run%20Apps/Videos/HIP%20Guide%20-%20Use%20Desktops%20and%20run%20Apps.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition-data-persistence admonition">
+<p class="admonition-title">Data persistence</p>
+<p>Applications running in a Desktop have access to the HIP user’s Private Space data under the <em>/home/&lt;HIP_USER&gt;/Nextcloud</em> directory.
+Any data and/or configuration file outside of this directory will be lost when the application or desktop are closed.
+This is the only persistent directory as it is tied to the HIP user’s Private Space at application startup.</p>
+</div>
+<section id="tutorials">
+<h3>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline"></a></h3>
+<p>There are several tutorials available that can be used to get familiar with the platform:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm.html"><span class="doc">SEEG electrode placement with Brainstorm</span></a></p></li>
+<li><p><a class="reference internal" href="tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html"><span class="doc">Epileptogenicity map computation with Brainstorm</span></a></p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
 </section>
 
 
