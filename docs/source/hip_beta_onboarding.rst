@@ -42,6 +42,14 @@ For more information regarding HIP accounts, please refer to the :doc:`How to cr
 HIP services overview
 ======================
 
+.. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_overview.png
+	:width: 600px
+	:align: center
+
+	**HIP Dashboard.** *The HIP web interface provides services (5: Files, 6: Talk, 7: HIP) which can be selected and have their own
+	interface (menu and view), that can be searched (1). The HIP account can be managed using the profile (4),
+	contacts (3) and notifications (2) buttons.*
+	
 `Log in the HIP portal <https://thehip.app/login>`_ using your EBRAINS account. Once connected you will be redirected to
 your Dashboard. The Dashboard gives an overview of the opened Desktops and BIDS databases available in all 3 HIP spaces.
 Note that only the Private Space is available during the Beta phase. For more details regarding HIP Spaces, please refer

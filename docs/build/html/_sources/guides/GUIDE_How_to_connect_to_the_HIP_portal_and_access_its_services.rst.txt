@@ -36,8 +36,8 @@ HIP services
 	:width: 600px
 	:align: center
 
-	**HIP overview.** *The HIP web interface provides services (5: Files, 6: Talk, 7: HIP) which can be selected and have with their own
-	interface (menu and view), that can be searched (1). The HIP account can be managed, by clicking the profile (4),
+	**HIP interface overview.** *The HIP web interface provides services (5: Files, 6: Talk, 7: HIP) which can be selected and have their own
+	interface (menu and view), that can be searched (1). The HIP account can be managed using the profile (4),
 	contacts (3) and notifications (2) buttons.*
 
 Dashboard
