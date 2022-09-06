@@ -63,11 +63,13 @@
 <p class="caption" role="heading"><span class="caption-text">HIP tutorials</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm.html">SEEG electrode placement with Brainstorm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/TUTORIAL_SEEG_electrode_placement_with_3d_slicer.html">SEEG electrode placement with 3D Slicer [U/C]</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html">Epileptogenicity map computation with Brainstorm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP datasets</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="datasets/DATASET_Epimap.html">Epimap tutorial dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets/DATASET_Cico.html">Cico tutorial dataset [U/C]</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datasets/DATASET_Cogepistim.html">COGEPISTIM database</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP apps</span></p>
@@ -112,11 +114,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <figure class="align-center" id="id2">
+  <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="_images/hip_documentation_header_beta_onboarding.png"><img alt="_images/hip_documentation_header_beta_onboarding.png" src="_images/hip_documentation_header_beta_onboarding.png" style="width: 800px;" /></a>
 <figcaption>
 <p><span class="caption-text"><strong>The HIP.</strong> <em>An open-source platform designed for large scale and optimized
-collection, storage, curation, sharing and analysis of multiscale Human iEEG data at the international level.</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+collection, storage, curation, sharing and analysis of multiscale Human iEEG data at the international level.</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="hip-beta-onboarding">
@@ -148,22 +150,22 @@ listed in the table of <a class="reference internal" href="guides/GUIDE_How_to_c
 Affiliations are cross-checked during the registration process.</p>
 </div>
 <p>Once your application has been validated, a confirmation e-mail will be sent to your institutional e-mail and you will be added to the HIP group
-on EBRAINS so you can <a class="reference external" href="https://thehip.app/login">login</a> to the HIP using your EBRAINS credentials.
+on EBRAINS so you can <a class="reference external" href="https://thehip.app/login">log in the HIP</a> using your EBRAINS credentials.
 For more information regarding HIP accounts, please refer to the <a class="reference internal" href="guides/GUIDE_How_to_create_a_HIP_account.html"><span class="doc">How to create a HIP account</span></a> guide.</p>
 </section>
 <section id="hip-services-overview">
 <h2>HIP services overview<a class="headerlink" href="#hip-services-overview" title="Permalink to this headline"></a></h2>
-<p><a class="reference external" href="https://thehip.app/login">Login</a> to the HIP portal using your EBRAINS account. Once connected you will be redirected to
+<p><a class="reference external" href="https://thehip.app/login">Log in the HIP portal</a> using your EBRAINS account. Once connected you will be redirected to
 your Dashboard. The Dashboard gives an overview of the opened Desktops and BIDS databases available in all 3 HIP spaces.
 Note that only the Private Space is available during the Beta phase. For more details regarding HIP Spaces, please refer
 to the <a class="reference internal" href="guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html"><span class="doc">How to use the HIP spaces and share data with other users</span></a> guide.</p>
 <p>From the side navigation menu, it is also possible to access the App Catalog, which lists all the applications made available to the HIP users
 so they can process their data. Applications from the App Catalog are used from virtual <a class="reference internal" href="#onboarding-desktops-and-apps"><span class="std std-ref">Desktops</span></a>, which operate as remote computers.</p>
-<p>The following video (X’XX’’), from the <a class="reference internal" href="guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services.html"><span class="doc">How to connect to the HIP portal and access its services</span></a> guide,
-gives an overview of HIP services.</p>
+<p>The following video (2’15’’), from the <a class="reference internal" href="guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services.html"><span class="doc">How to connect to the HIP portal and access its services</span></a> guide,
+shows the connection procedure and gives an overview of HIP services.</p>
 <center>
-<video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Connect%20and%20access/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
-<source src="todo.mp4">
+<video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Connect%20and%20overview/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Connect%20and%20overview.png" controls>
+<source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Connect%20and%20overview/Videos/HIP%20Guide%20-%20Connect%20and%20overview.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 </center><div class="line-block">
@@ -202,17 +204,7 @@ and relevant health-related or research-related data should be uploaded to the p
 <p>Desktops operate as remote virtual computers where HIP users can run applications from the App Catalog to process data located in their Private Space.
 Once it has been initiated, a Desktop will persist until it is manually terminated. HIP users can safely log off and/or close their web browser.
 Pending Desktops will remain unaltered and accessible for later use.</p>
-<p>Before using Desktops for the first time, it is necessary to configure an application password that will be used when starting applications.
-This has to be done once, from your security settings, has illustrated in the following clip:</p>
-<center>
-<video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Connect%20and%20access/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
-<source src="todo.mp4">
-Your browser does not support the video tag.
-</video>
-</center><div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>Once the application password has been configured, it is possible to open a Desktop and start applications from the App Catalog as illustrated in
+<p>The procedure to open a Desktop and start applications from the App Catalog is illustrated in
 the following video (2’30’’), from the <a class="reference internal" href="guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html"><span class="doc">How to use Desktops and run applications from the App Catalog</span></a> guide:</p>
 <center>
 <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Use%20Desktops%20and%20run%20Apps/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Use%20Desktops%20and%20run%20Apps.png" controls>

@@ -45,11 +45,14 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_create_a_HIP_account.html">How to create a HIP account</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">How to connect to the HIP portal and access its services</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#connecting-to-the-hip">Connecting to the HIP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#the-hip-dashboard">The HIP Dashboard</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#files-and-directories">Files and directories</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#hip-interface">HIP interface</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#hip-virtual-desktops">HIP Virtual Desktops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connect-to-the-hip">Connect to the HIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hip-services">HIP services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dashboard">Dashboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#files">Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#talk">Talk</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#video-guide">Video guide</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html">How to prepare and upload data to the HIP</a></li>
@@ -61,11 +64,13 @@
 <p class="caption" role="heading"><span class="caption-text">HIP tutorials</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm.html">SEEG electrode placement with Brainstorm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_SEEG_electrode_placement_with_3d_slicer.html">SEEG electrode placement with 3D Slicer [U/C]</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html">Epileptogenicity map computation with Brainstorm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP datasets</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Epimap.html">Epimap tutorial dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Cico.html">Cico tutorial dataset [U/C]</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Cogepistim.html">COGEPISTIM database</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP apps</span></p>
@@ -116,103 +121,84 @@
 </div>
 <section id="how-to-connect-to-the-hip-portal-and-access-its-services">
 <h1>How to connect to the HIP portal and access its services<a class="headerlink" href="#how-to-connect-to-the-hip-portal-and-access-its-services" title="Permalink to this headline"></a></h1>
-<section id="connecting-to-the-hip">
-<h2>Connecting to the HIP<a class="headerlink" href="#connecting-to-the-hip" title="Permalink to this headline"></a></h2>
-<p>In your browser, go to <a class="reference external" href="https://thehip.app">the HIP website</a> and enter your login and password.</p>
-<img alt="../_images/GUIDE_Connect_01_Login.jpg" class="align-center" src="../_images/GUIDE_Connect_01_Login.jpg" />
-<div class="line-block">
-<div class="line"><br /></div>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/GUIDE_create_account.png"><img alt="../_images/GUIDE_create_account.png" src="../_images/GUIDE_create_account.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>The HIP portal.</strong> <em>Access all HIP services from the dedicated web portal.</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="connect-to-the-hip">
+<h2>Connect to the HIP<a class="headerlink" href="#connect-to-the-hip" title="Permalink to this headline"></a></h2>
+<p>The HIP is a web-based platform which can be accessed using any recent web browser.
+For the best experience with the HIP web interface, we recommend that you use the latest and supported version of a browser from the following list:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Microsoft Edge</p></li>
+<li><p>Mozilla Firefox</p></li>
+<li><p>Google Chrome/Chromium</p></li>
+<li><p>Apple Safari</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition-user-experience admonition">
+<p class="admonition-title">User experience</p>
+<p>The HIP is an online platform designed for desktop uses,
+a stable and high-performance internet connection is strongly recommended for the best experience.</p>
 </div>
+<p>Once your <a class="reference internal" href="GUIDE_How_to_create_a_HIP_account.html"><span class="doc">HIP account has been created</span></a>, access the
+<a class="reference external" href="https://thehip.app">HIP web portal</a> and log in with EBRAINS (use your EBRAINS credentials),
+you will be automatically redirected to your HIP Dashboard.</p>
 </section>
-<section id="the-hip-dashboard">
-<h2>The HIP Dashboard<a class="headerlink" href="#the-hip-dashboard" title="Permalink to this headline"></a></h2>
-<p>After connecting the Dashboard is displayed.
-On the top left, three icons allow you to go to the dashboard, your files and directories, and the HIP applications.
-On the top right you can find your user settings.</p>
-<img alt="../_images/GUIDE_Connect_02_Dashboard.jpg" class="align-center" src="../_images/GUIDE_Connect_02_Dashboard.jpg" />
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-</section>
-<section id="files-and-directories">
-<h2>Files and directories<a class="headerlink" href="#files-and-directories" title="Permalink to this headline"></a></h2>
-<p>Click on <strong>Files</strong> on the top left of the dashboard.
-<a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html"><span class="doc">Here is a detailed guide to uploading data to the HIP.</span></a></p>
-<p>You now have access to the files and directories of you private space as well as shared files.</p>
-<img alt="../_images/GUIDE_Connect_03_Files.jpg" class="align-center" src="../_images/GUIDE_Connect_03_Files.jpg" />
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>From this interface, you can upload a few files using the ‘+’ menu.</p>
-<img alt="../_images/GUIDE_Connect_04_Upload.jpg" class="align-center" src="../_images/GUIDE_Connect_04_Upload.jpg" />
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-</section>
-<section id="hip-interface">
-<h2>HIP interface<a class="headerlink" href="#hip-interface" title="Permalink to this headline"></a></h2>
-<p>From the Dashboard, click on the <strong>HIP</strong> icon on the top left of the page.</p>
+<section id="hip-services">
+<h2>HIP services<a class="headerlink" href="#hip-services" title="Permalink to this headline"></a></h2>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/GUIDE_HIP_overview.png"><img alt="../_images/GUIDE_HIP_overview.png" src="../_images/GUIDE_HIP_overview.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>HIP overview.</strong> <em>The HIP web interface provides services (5: Files, 6: Talk, 7: HIP) which can be selected and have with their own
+interface (menu and view), that can be searched (1). The HIP account can be managed, by clicking the profile (4),
+contacts (3) and notifications (2) buttons.</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="dashboard">
+<h3>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline"></a></h3>
+<p>The Dashboard gives an overview of the opened Desktops and BIDS databases available in all 3 HIP spaces, namely, <a class="reference internal" href="GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html"><span class="doc">the Private Space, the Collaborative
+Space and the Public Space</span></a>.
+Note that only the Private Space is available during the Beta phase.</p>
+<p>From the side navigation menu, you can also access the following items:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>The main HIP interface is displayed.</p></li>
-</ul>
-</div></blockquote>
-<img alt="../_images/GUIDE_Connect_05_HIP.jpg" class="align-center" src="../_images/GUIDE_Connect_05_HIP.jpg" />
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>On the left menu, there are links to go back to the dashboard, to an app catalago, to documentation.</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>The app catalog lists applications available for use on the HIP.</p></li>
-</ul>
-</div></blockquote>
-<img alt="../_images/GUIDE_Connect_06_AppCatalog.jpg" class="align-center" src="../_images/GUIDE_Connect_06_AppCatalog.jpg" />
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<blockquote>
-<div><ul class="simple">
-<li><p>The documentation links to this user documentation, technical documentation and so on</p></li>
-</ul>
-</div></blockquote>
-<img alt="../_images/GUIDE_Connect_07_Doc.jpg" class="align-center" src="../_images/GUIDE_Connect_07_Doc.jpg" />
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<blockquote>
-<div><blockquote>
-<div><blockquote>
-<div><ul class="simple">
-<li><p><strong>My Private Space</strong> sub-menu</p></li>
-</ul>
-</div></blockquote>
-<p>Data explorer and BIDS importer allow to create and explore BIDS databases on your private space.
-Desktops are virtual machines in which HIP apps can be run.</p>
-</div></blockquote>
-<ul class="simple">
-<li><p><strong>Shared</strong> and <strong>Public spaces</strong> will be used for collaborations. Functionality is in development.</p></li>
+<li><p>App Catalog: A comprehensive list of all the applications made available to the HIP users so they can process their data.</p></li>
+<li><p>Documentation: Links to the <a class="reference internal" href="../index.html"><span class="doc">user documentation</span></a>, <a class="reference external" href="https://github.com/HIP-infrastructure/hip-doc">technical documentation</a> and <a class="reference external" href="https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/">HIP website</a>.</p></li>
+<li><p>Desktops: <a class="reference internal" href="GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html"><span class="doc">Desktops</span></a> operate
+as remote virtual computers where HIP users can run applications from the App Catalog to process
+data <a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html"><span class="doc">uploaded</span></a> or <a class="reference internal" href="GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html#the-private-space"><span class="std std-ref">shared in their Private Space</span></a>.</p></li>
+<li><p>BIDS: <a class="reference internal" href="GUIDE_How_to_convert_data_to_BIDS_format.html#bids-importer"><span class="std std-ref">The BIDS importer</span></a> is a step-by-step tool that can be used to import raw data into a BIDS database.</p></li>
 </ul>
 </div></blockquote>
 </section>
-<section id="hip-virtual-desktops">
-<h2>HIP Virtual Desktops<a class="headerlink" href="#hip-virtual-desktops" title="Permalink to this headline"></a></h2>
-<p>In the Private area, <strong>Desktops</strong> gives you access to virtual machines to run apps.</p>
-<img alt="../_images/GUIDE_Connect_08_PrivateDesktops.jpg" class="align-center" src="../_images/GUIDE_Connect_08_PrivateDesktops.jpg" />
-<p>You can click on “Create desktop” to create a new virtual desktop.
-For running desktops, you can close them or open them in your browser (eye icon).</p>
-<p>Once running a virtual desktop, you can run HIP apps in them using the right-side menu of the virtual desktop.
-Here is an example running Freesurfer app.</p>
-<img alt="../_images/GUIDE_Connect_09_FreeviewDesktop.jpg" class="align-center" src="../_images/GUIDE_Connect_09_FreeviewDesktop.jpg" />
-<div class="line-block">
+<section id="files">
+<h3>Files<a class="headerlink" href="#files" title="Permalink to this headline"></a></h3>
+<p>The Files service lets you browse the folders and files available in your Private Space.
+You can upload data to your Private Space by simply dragging and dropping files into the file browser, although it is advised to
+upload data using the Nexclout client as explained in the <a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html"><span class="doc">How to prepare and upload data to the HIP</span></a> guide.
+The Private Space also contains the shared folders of the <a class="reference internal" href="GUIDE_How_to_create_a_HIP_account.html#list-identified-hip-groups"><span class="std std-ref">HIP groups</span></a> you are a member of.</p>
+</section>
+<section id="talk">
+<h3>Talk<a class="headerlink" href="#talk" title="Permalink to this headline"></a></h3>
+<p>The Talk service lets you discuss with other HIP users, group members, and the HIP support team.
+The Talk service is not yet available.</p>
+</section>
+</section>
+<section id="video-guide">
+<h2>Video guide<a class="headerlink" href="#video-guide" title="Permalink to this headline"></a></h2>
+<p>The following video (2’15’’) shows the connection procedure and gives an overview of HIP services.</p>
+<center>
+<video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Connect%20and%20overview/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Connect%20and%20overview.png" controls>
+<source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Connect%20and%20overview/Videos/HIP%20Guide%20-%20Connect%20and%20overview.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</center><div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>For more information regarding HIP Virtual Desktops please refer to the following HIP GUIDE:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><a class="reference internal" href="GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html"><span class="doc">How to use Desktops and run applications from the App Catalog</span></a></p></li>
-</ul>
-</div></blockquote>
 </section>
 </section>
 

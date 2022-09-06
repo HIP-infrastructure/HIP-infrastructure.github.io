@@ -18,6 +18,7 @@ The Private Space, the Collaborative Space and the Public Space.
    such as intellectual property rights and the protection of privacy, ethical considerations and security regulations
    when designing rules and conditions for access and the use of the platform in any of the aforementioned spaces.
 
+.. _the_private_space:
 
 The Private Space
 ==================

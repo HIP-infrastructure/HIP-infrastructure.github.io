@@ -64,6 +64,7 @@ It contains the following sections:
    :hidden:   
    
    SEEG electrode placement with Brainstorm<tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>
+   SEEG electrode placement with 3D Slicer [U/C]<tutorials/TUTORIAL_SEEG_electrode_placement_with_3d_slicer>
    Epileptogenicity map computation with Brainstorm<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>
 
 .. toctree:: 
@@ -71,7 +72,9 @@ It contains the following sections:
    :hidden:
 	
    Epimap tutorial dataset<datasets/DATASET_Epimap>
+   Cico tutorial dataset [U/C]<datasets/DATASET_Cico>	
    COGEPISTIM database<datasets/DATASET_Cogepistim>	
+
    
 .. toctree::
    :caption: HIP apps

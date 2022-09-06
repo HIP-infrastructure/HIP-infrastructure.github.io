@@ -36,13 +36,13 @@ information (items marked with an asterisk are mandatory):
    Affiliations are cross-checked during the registration process.
 	
 Once your application has been validated, a confirmation e-mail will be sent to your institutional e-mail and you will be added to the HIP group
-on EBRAINS so you can `login <https://thehip.app/login>`_ to the HIP using your EBRAINS credentials.
+on EBRAINS so you can `log in the HIP <https://thehip.app/login>`_ using your EBRAINS credentials.
 For more information regarding HIP accounts, please refer to the :doc:`How to create a HIP account </guides/GUIDE_How_to_create_a_HIP_account>` guide.
   
 HIP services overview
 ======================
 
-`Login <https://thehip.app/login>`_ to the HIP portal using your EBRAINS account. Once connected you will be redirected to
+`Log in the HIP portal <https://thehip.app/login>`_ using your EBRAINS account. Once connected you will be redirected to
 your Dashboard. The Dashboard gives an overview of the opened Desktops and BIDS databases available in all 3 HIP spaces.
 Note that only the Private Space is available during the Beta phase. For more details regarding HIP Spaces, please refer
 to the :doc:`How to use the HIP spaces and share data with other users </guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>` guide.
@@ -50,14 +50,14 @@ to the :doc:`How to use the HIP spaces and share data with other users </guides/
 From the side navigation menu, it is also possible to access the App Catalog, which lists all the applications made available to the HIP users 
 so they can process their data. Applications from the App Catalog are used from virtual :ref:`Desktops <onboarding_desktops_and_apps>`, which operate as remote computers.
 
-The following video (X'XX''), from the :doc:`How to connect to the HIP portal and access its services </guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>` guide,
-gives an overview of HIP services.
+The following video (2'15''), from the :doc:`How to connect to the HIP portal and access its services </guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>` guide,
+shows the connection procedure and gives an overview of HIP services.
 
 .. raw:: html
 
    <center>	
-   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Connect%20and%20access/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
-   <source src="todo.mp4">
+   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Connect%20and%20overview/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Connect%20and%20overview.png" controls>
+   <source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Connect%20and%20overview/Videos/HIP%20Guide%20-%20Connect%20and%20overview.mp4" type="video/mp4">
    Your browser does not support the video tag.
    </video>
    </center>
@@ -104,22 +104,8 @@ Use desktops and run applications
 Desktops operate as remote virtual computers where HIP users can run applications from the App Catalog to process data located in their Private Space. 
 Once it has been initiated, a Desktop will persist until it is manually terminated. HIP users can safely log off and/or close their web browser.
 Pending Desktops will remain unaltered and accessible for later use.
-
-Before using Desktops for the first time, it is necessary to configure an application password that will be used when starting applications.
-This has to be done once, from your security settings, has illustrated in the following clip:
-
-.. raw:: html
-
-   <center>	
-   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Connect%20and%20access/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
-   <source src="todo.mp4">
-   Your browser does not support the video tag.
-   </video>
-   </center>
-	
-| 
-
-Once the application password has been configured, it is possible to open a Desktop and start applications from the App Catalog as illustrated in
+  
+The procedure to open a Desktop and start applications from the App Catalog is illustrated in
 the following video (2'30''), from the :doc:`How to use Desktops and run applications from the App Catalog</guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` guide:
 
 .. raw:: html
