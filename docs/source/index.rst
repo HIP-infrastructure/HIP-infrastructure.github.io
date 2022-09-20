@@ -64,7 +64,7 @@ It contains the following sections:
    :hidden:   
    
    SEEG electrode placement with Brainstorm<tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>
-   SEEG electrode placement with 3D Slicer [U/C]<tutorials/TUTORIAL_SEEG_electrode_placement_with_3d_slicer>
+   SEEG electrode placement using Cico's Pipeline<tutorials/TUTORIAL_SEEG_electrode_placement_using_cicos_pipeline>
    Epileptogenicity map computation with Brainstorm<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>
 
 .. toctree:: 
@@ -72,7 +72,7 @@ It contains the following sections:
    :hidden:
 	
    Epimap tutorial dataset<datasets/DATASET_Epimap>
-   Cico tutorial dataset [U/C]<datasets/DATASET_Cico>	
+   Cico tutorial dataset<datasets/DATASET_Cico>	
    COGEPISTIM database<datasets/DATASET_Cogepistim>	
 
    

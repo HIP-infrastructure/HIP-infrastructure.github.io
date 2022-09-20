@@ -19,7 +19,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Epimap tutorial dataset" href="../datasets/DATASET_Epimap.html" />
-    <link rel="prev" title="SEEG electrode placement with 3D Slicer [U/C]" href="TUTORIAL_SEEG_electrode_placement_with_3d_slicer.html" /> 
+    <link rel="prev" title="SEEG electrode placement using Cico’s pipeline" href="TUTORIAL_SEEG_electrode_placement_using_cicos_pipeline.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -54,12 +54,10 @@
 <p class="caption" role="heading"><span class="caption-text">HIP tutorials</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="TUTORIAL_SEEG_electrode_placement_with_brainstorm.html">SEEG electrode placement with Brainstorm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TUTORIAL_SEEG_electrode_placement_with_3d_slicer.html">SEEG electrode placement with 3D Slicer [U/C]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TUTORIAL_SEEG_electrode_placement_using_cicos_pipeline.html">SEEG electrode placement using Cico's Pipeline</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Epileptogenicity map computation with Brainstorm</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#disclaimer">Disclaimer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#about-this-tutorial">About this tutorial</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#objective">Objective</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#scope">Scope</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#requirements">Requirements</a></li>
 </ul>
 </li>
@@ -72,7 +70,7 @@
 <p class="caption" role="heading"><span class="caption-text">HIP datasets</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Epimap.html">Epimap tutorial dataset</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Cico.html">Cico tutorial dataset [U/C]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Cico.html">Cico tutorial dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Cogepistim.html">COGEPISTIM database</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP apps</span></p>
@@ -136,34 +134,25 @@ research purposes only.</p>
 </section>
 <section id="about-this-tutorial">
 <h2>About this tutorial<a class="headerlink" href="#about-this-tutorial" title="Permalink to this headline"></a></h2>
-<section id="objective">
-<h3>Objective<a class="headerlink" href="#objective" title="Permalink to this headline"></a></h3>
-<p>The objective of this tutorial is to guide HIP users in computing maps of epileptogenicity from ictal iEEG recordings.</p>
-<p>Epileptogenicity maps show the spatial distribution, and eventually the temporal evolution,
+<p>The objective of this tutorial is to guide HIP users in computing maps of epileptogenicity from ictal iEEG recordings.
+Epileptogenicity maps show the spatial distribution, and eventually the temporal evolution,
 of the Epileptogenicity Index (EI) in the subject’s brain.
 The EI, is based on both spectral and temporal properties of iEEG signals
 and quantifies the presence of high-frequency oscillations also referred as <em>rapid discharges</em>.
 <em>Rapid discharges</em> have long been recognized as a characteristic electrophysiological pattern of the epileptogenic zone
-and can help identify brain regions generating seizures (<a class="reference internal" href="#bartolomei-2008" id="id1"><span>[Bartolomei_2008]</span></a>).</p>
-<p>This tutorial consists of 2 parts which cover <a class="reference internal" href="#prepare-environment-epileptogenicity-brainstorm"><span class="std std-ref">the preparation of the working environment</span></a> and
-<a class="reference internal" href="#compute-epileptogenicity-brainstorm"><span class="std std-ref">the computation of an epileptogenicty map</span></a>.</p>
-</section>
-<section id="scope">
-<h3>Scope<a class="headerlink" href="#scope" title="Permalink to this headline"></a></h3>
-<p>This tutorial illustrates the minimal steps to compute an epileptogenicity map on the HIP
-and primarly consists of video demonstration backed with a brief description of the performed steps.
-This tutorial should be viewed as a starter guide as it does not go into all the intricacies of epileptogenicity map computation.</p>
+and can help identify brain regions generating seizures (<a class="reference internal" href="#bartolomei-2008" id="id1"><span>[Bartolomei_2008]</span></a>).
+This tutorial primarliy consists of a video demonstration and should be viewed as an introductory tutorial as it does not go into all the intricacies
+of the computation of epileptogenicity maps.</p>
 <p>For more in-depth information regarding the computation of epileptogenicity maps using Brainstorm
-please refer to the following tutorial:</p>
+please refer to the official tutorial:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><a class="reference external" href="https://neuroimage.usc.edu/brainstorm/Tutorials/Epileptogenicity">Brainstorm’s SEEG epileptogenicity maps tutorial</a></p></li>
 </ul>
 </div></blockquote>
-</section>
 <section id="requirements">
 <h3>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline"></a></h3>
-<p>There are no techincal requirements to follow this tutorial as the needed dataset and software are available on the HIP.</p>
+<p>There are no techincal requirements to follow this tutorial as the dataset and software are available on the HIP.</p>
 <p>HIP software used in this tutorial:</p>
 <blockquote>
 <div><ul class="simple">
@@ -192,14 +181,20 @@ and the following files will be used:</p>
 <li><p>seeg/SZ3.TRC</p></li>
 </ul>
 </div></blockquote>
-<p>Transfer those files into your private space so it is easier to access and use them.
-If you don’t know how to do this please refer to the <a class="reference internal" href="../guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html"><span class="doc">How to use the HIP spaces</span></a> guide.</p>
-<p>This tutorial only requires the use of Brainstorm for
-the computation of epileptogenicity maps. It is advised to initiate a new working session with a fresh instance of Brainstorm running.
+<p>Copy those files into your private space so they can be processed.
+If you don’t know how to do this please refer to the <a class="reference internal" href="../guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html"><span class="doc">How to use the HIP spaces</span></a> guide.
+It is also advised to initiate a new Deskop.
 If you don’t know how to do this please refer to the <a class="reference internal" href="../guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html"><span class="doc">How to use Desktops and run applications from the App Catalog</span></a> guide.</p>
 </section>
 <section id="compute-a-map-of-epileptogenicity">
 <span id="compute-epileptogenicity-brainstorm"></span><h2>Compute a map of epileptogenicity<a class="headerlink" href="#compute-a-map-of-epileptogenicity" title="Permalink to this headline"></a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Applications running in a Desktop environment have access to HIP user’s Private Space data under the <em>/home/&lt;HIP_USER&gt;/nextcloud</em> directory.
+Any data and/or configuration file outside of this directory will be lost when the application or desktop are closed.
+This is the only persistent directory as it is tied to the HIP user’s Private Space at application startup.
+<strong>Make sure you are always working within the /home/&lt;HIP_USER&gt;/nextcloud directory</strong>.</p>
+</div>
 <p>It is mandatory to have the 3D positions of the recording contacts of the SEEG electrodes in order to compute epileptogenicity maps.
 The contact names and coordinates of the SEEG electrodes are provided in the <em>elec_pos_patient.txt</em> implantation file that will
 be used in this tutorial.
@@ -228,7 +223,7 @@ Your browser does not support the video tag.
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="TUTORIAL_SEEG_electrode_placement_with_3d_slicer.html" class="btn btn-neutral float-left" title="SEEG electrode placement with 3D Slicer [U/C]" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="TUTORIAL_SEEG_electrode_placement_using_cicos_pipeline.html" class="btn btn-neutral float-left" title="SEEG electrode placement using Cico’s pipeline" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../datasets/DATASET_Epimap.html" class="btn btn-neutral float-right" title="Epimap tutorial dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

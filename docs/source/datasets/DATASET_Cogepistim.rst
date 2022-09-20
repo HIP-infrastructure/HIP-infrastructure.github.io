@@ -1,7 +1,11 @@
 .. include:: ../hip_beta_warning.rst
 
+.. warning::
+
+    The COGEPISTIM database is not yet available on the HIP.
+
 COGEPISTIM database
-*******************
+********************
 
 .. TODO:
 	Ask for localizers description.

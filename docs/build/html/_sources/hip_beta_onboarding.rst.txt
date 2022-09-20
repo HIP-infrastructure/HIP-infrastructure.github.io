@@ -1,3 +1,5 @@
+.. include:: hip_beta_warning.rst
+
 .. figure:: /art/hip_documentation_header_beta_onboarding.png
 	:width: 800px
 	:align: center
@@ -140,7 +142,22 @@ Tutorials
 There are several tutorials available that can be used to get familiar with the platform:
 
 	* :doc:`SEEG electrode placement with Brainstorm<tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>`
+	* :doc:`SEEG electrode placement using Cico’s pipeline<tutorials/TUTORIAL_SEEG_electrode_placement_using_cicos_pipeline>`
 	* :doc:`Epileptogenicity map computation with Brainstorm<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>`
+	
+The Cico's pipeline, for example, can be used to place (non-rigid) SEEG electrodes on a post-implantation volume: 
+	
+.. raw:: html
+
+   <center>	
+   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20SEEG%20electrode%20placement%20using%20Cico%20pipeline/HIP%20Tutorial%20-%20Thumbnail%20-%20EEG%20electrode%20placement%20using%20Cico%20pipeline.png" controls>
+   <source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20SEEG%20electrode%20placement%20using%20Cico%20pipeline/HIP%20Tutorial%20-%20EEG%20electrode%20placement%20using%20Cico%20pipeline.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+   </video>
+   </center>
+
+|
+
 
 	
 

@@ -18,37 +18,25 @@ research purposes only.
 About this tutorial
 ====================
 
-Objective
----------
-
 The objective of this tutorial is to guide HIP users in computing maps of epileptogenicity from ictal iEEG recordings.
-
 Epileptogenicity maps show the spatial distribution, and eventually the temporal evolution,
 of the Epileptogenicity Index (EI) in the subject's brain.
 The EI, is based on both spectral and temporal properties of iEEG signals
 and quantifies the presence of high-frequency oscillations also referred as *rapid discharges*.
 *Rapid discharges* have long been recognized as a characteristic electrophysiological pattern of the epileptogenic zone
 and can help identify brain regions generating seizures ([Bartolomei_2008]_).
-
-This tutorial consists of 2 parts which cover :ref:`the preparation of the working environment <prepare_environment_epileptogenicity_brainstorm>` and
-:ref:`the computation of an epileptogenicty map<compute_epileptogenicity_brainstorm>`.
-
-Scope 
------
-
-This tutorial illustrates the minimal steps to compute an epileptogenicity map on the HIP
-and primarly consists of video demonstration backed with a brief description of the performed steps.
-This tutorial should be viewed as a starter guide as it does not go into all the intricacies of epileptogenicity map computation.
+This tutorial primarliy consists of a video demonstration and should be viewed as an introductory tutorial as it does not go into all the intricacies
+of the computation of epileptogenicity maps.
 
 For more in-depth information regarding the computation of epileptogenicity maps using Brainstorm
-please refer to the following tutorial:
+please refer to the official tutorial:
 
 	* `Brainstorm's SEEG epileptogenicity maps tutorial <https://neuroimage.usc.edu/brainstorm/Tutorials/Epileptogenicity>`_
 
 Requirements
 ------------
 
-There are no techincal requirements to follow this tutorial as the needed dataset and software are available on the HIP.
+There are no techincal requirements to follow this tutorial as the dataset and software are available on the HIP.
 
 HIP software used in this tutorial:
 
@@ -74,17 +62,21 @@ and the following files will be used:
 	* seeg/SZ3.TRC
 
 
-Transfer those files into your private space so it is easier to access and use them.
+Copy those files into your private space so they can be processed.
 If you don't know how to do this please refer to the :doc:`How to use the HIP spaces </guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>` guide.
-
-This tutorial only requires the use of Brainstorm for
-the computation of epileptogenicity maps. It is advised to initiate a new working session with a fresh instance of Brainstorm running.
+It is also advised to initiate a new Deskop.
 If you don't know how to do this please refer to the :doc:`How to use Desktops and run applications from the App Catalog </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` guide.
 
 .. _compute_epileptogenicity_brainstorm:
 
 Compute a map of epileptogenicity
 =================================
+
+.. important::
+   Applications running in a Desktop environment have access to HIP user's Private Space data under the */home/<HIP_USER>/nextcloud* directory.
+   Any data and/or configuration file outside of this directory will be lost when the application or desktop are closed.
+   This is the only persistent directory as it is tied to the HIP user's Private Space at application startup.
+   **Make sure you are always working within the /home/<HIP_USER>/nextcloud directory**.
 
 It is mandatory to have the 3D positions of the recording contacts of the SEEG electrodes in order to compute epileptogenicity maps. 
 The contact names and coordinates of the SEEG electrodes are provided in the *elec_pos_patient.txt* implantation file that will
