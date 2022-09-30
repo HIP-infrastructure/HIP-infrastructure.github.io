@@ -111,4 +111,5 @@ License
 
 This tutorial dataset (SEEG and MRI data) is the property of the Centre Hospitalier Universitaire de Lausanne, Swiss.
 Its use and transfer outside this HIP tutorial, e.g. for research purposes, is prohibited without written consent.
-For questions, please contact Carolina Ciumas, MD, PhD (Carolina.Ciumas@chuv.ch).
+For questions, please contact `Carolina Ciumas, MD, PhD <mailto:Carolina.Ciumas@chuv.ch?subject=HIP%20Cico%20dataset%20>`_.
+

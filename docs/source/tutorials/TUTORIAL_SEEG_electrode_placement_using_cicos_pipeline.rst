@@ -12,14 +12,14 @@ SEEG electrode placement using Cico's pipeline
 Disclaimer
 ==========
 
-The methods and softwares used in this tutorial have not been certified for clinical practice and should be considered for 
+The methods and software used in this tutorial have not been certified for clinical practice and should be considered for 
 research purposes only.  
 
 About this tutorial
 ====================
 
 The objective of this tutorial is to guide HIP users in placing (non-rigid) SEEG electrodes on a post-implantation volume using Cico's pipeline.
-It primarily  consists of a video demonstration and should be viewed as an introductory tutorial as it does not go into all
+It primarily  consists of a video demonstration and should be viewed as an introductory tutorial because it does not go into all
 the intricacies of the placement of SEEG electrodes.
 For more in-depth information regarding electrode placement using 3D Slicer, please refer to
 the `dedicated documentation <https://slicer.readthedocs.io/en/latest/user_guide/modules/markups.html>`_.
@@ -27,7 +27,7 @@ the `dedicated documentation <https://slicer.readthedocs.io/en/latest/user_guide
 Requirements
 ------------
 
-There are no technical requirements to follow this tutorial as the dataset and software are available on the HIP.
+There are no technical requirements to follow this tutorial because the dataset and software are available on the HIP.
 
 HIP softwares used in this tutorial:
 
@@ -51,7 +51,7 @@ and the following folder has to be copied in your Private Space (this is demonst
 
 
 This tutorial requires to use several softwares, all available on the HIP, and it is advised to initiate a new Desktop.
-If you don't know how to do this please refer to the :doc:`How to use Desktops and run applications from the App Catalog </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` guide.
+Please, refer to the :doc:`How to use Desktops and run applications from the App Catalog </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` guide if you need help with this step.
 
 .. _place_SEEG_cico:
 
@@ -65,13 +65,13 @@ Cico's pipeline
    **Make sure you are always working within the /home/<HIP_USER>/nextcloud directory**.
 
 The accurate placement of SEEG electrodes requires some knowledge and a good understanding of the implantation procedure
-(an implantation scheme or equivalent), of the type of material that has been implanted (SEEG electrode type/characteristics),
+(an implantation scheme or equivalent) and of the type of material that has been implanted (SEEG electrode type/characteristics)
 and some expertise in brain anatomy. 
-It is also important to work on a high-resolution CT scan or T1 MRI scan acquired after the implantation of the depth electrodes so
-the recording contacts appear either in hypersignal or hyposignal.
+It is also important to work on a high-resolution CT scan or T1 MRI scan acquired after the implantation of the depth electrodes so that
+the recording contacts appear either in hypersignal or in hyposignal.
 
 This video tutorial relies on data publicly available on the HIP and
-desribes the different steps of the Cico's pipeline, from the preparation of the imaging data, using MRIcroGL and FSL, to the 
+desribes the different steps of the Cico's pipeline, from the preparation of the imaging data using MRIcroGL and FSL, to the 
 placement and exportation of SEEG electrodes using 3D Slicer.
 
 .. raw:: html

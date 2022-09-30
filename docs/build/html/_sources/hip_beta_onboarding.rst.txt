@@ -21,8 +21,7 @@ An `EBRAINS <https://ebrains.eu/>`_ account is required to access the HIP and us
 Apply for an EBRAINS account using the following `registration form <https://iam.ebrains.eu/auth/realms/hbp/protocol/openid-connect/registrations?response_type=code&client_id=xwiki&redirect_uri=https://wiki.ebrains.eu>`_.
 
 Once your EBRAINS account has been activated, you can apply for a HIP account sending
-an `e-mail to HIP support team <mailto:todo****@hip.eu?subject=HIP%20account%20request%20>`_ with the following 
-information (items marked with an asterisk are mandatory):
+an `e-mail to HIP support team <mailto:Samira.Najih-Besson@chuv.ch?subject=HIP%20account%20request%20>`_ with the following information (items marked with an asterisk are mandatory):
 
 	* **Full name**\*: First name and surname.
 	* **HIP group(s)**\*: At least one :ref:`HIP group <list_identified_hip_groups>` you are affiliated with.

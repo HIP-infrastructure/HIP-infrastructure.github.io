@@ -71,13 +71,13 @@ Tutorial data
 
 The HIP provides several datasets which are listed in the *HIP DATASETS* section of this documentation and which come with different terms of use.
 Their transfer and/or use outside their intended framework, e.g. for research purposes, is prohibited without written consent.
-In practice, those datasets are available in a dedicated shared folder called "tutorial_data" accessible from the Private Space.
+In practice, those datasets are available in a dedicated read-only shared folder called "tutorial_data" accessible from the Private Space.
  
 .. figure:: /guides/art/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users/GUIDE_spaces_tutorial.png
 	:width: 600px
 	:align: center
 
-	**Tutorial data.** *A shared folder called "tutorial_data" is available from the Private Space and contains tutorial datasets.*
+	**Tutorial data.** *A read-only shared folder called "tutorial_data" is available from the Private Space and contains tutorial datasets.*
 
 
 Research studies and publications

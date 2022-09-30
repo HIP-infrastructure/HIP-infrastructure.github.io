@@ -12,17 +12,17 @@ SEEG electrode placement with Brainstorm
 Disclaimer
 ==========
 
-The methods and softwares used in this tutorial have not been certified for clinical practice and should be considered for 
+The methods and software used in this tutorial have not been certified for clinical practice and should be considered for 
 research purposes only.  
 
 About this tutorial
 ====================
 
 The objective of this tutorial is to guide HIP users in placing SEEG electrodes on a post-implantation volume using Brainstorm.
-It primarily consists of a video demonstration and should be viewed as an introductory tutorial as it does not go into all the intricacies of
+It primarily consists of a video demonstration and should be viewed as an introductory tutorial because it does not go into all the intricacies of
 the placement of SEEG electrodes.
 
-For more in-depth information regarding the placement of SEEG electrodes using Brainstorm
+For more in-depth information regarding the placement of SEEG electrodes using Brainstorm,
 please refer to the following official tutorials:
 
 	* `Brainstorm's "Editing implantation without recordings" tutorial <https://neuroimage.usc.edu/brainstorm/Tutorials/Epileptogenicity#Editing_implantation_without_recordings>`_   
@@ -31,7 +31,7 @@ please refer to the following official tutorials:
 Requirements
 ------------
 
-There are no technical requirements to follow this tutorial as the dataset and software are available on the HIP.
+There are no technical requirements to follow this tutorial because the dataset and software are available on the HIP.
 
 HIP software used in this tutorial:
 
@@ -51,10 +51,10 @@ and the following file will be used:
 
 	* anat/MRI/3DT1post_deface.nii
 
-Copy this file into your private space so it can be processed.
-If you don't know how to do this please refer to the :doc:`How to use the HIP spaces </guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>` guide.
+Copy this file into your private space so that it can be processed.
+Please, refer to the :doc:`How to use the HIP spaces </guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>` guide if you need help with this step.
 It is also advised to initiate a new Desktop.
-If you don't know how to do this please refer to the :doc:`How to use Desktops and run applications from the App Catalog </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` guide.
+Pleases refer to the :doc:`How to use Desktops and run applications from the App Catalog </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` guide if you need help with this step.
 
 .. _place_SEEG_brainstorm:
 
@@ -68,13 +68,13 @@ Place SEEG electrodes with Brainstorm
    **Make sure you are always working within the /home/<HIP_USER>/nextcloud directory**.
 
 The accurate placement of SEEG electrodes requires some knowledge and a good understanding of the implantation procedure
-(an implantation scheme or equivalent), of the type of material that has been implanted (SEEG electrode type/characteristics),
+(an implantation scheme or equivalent) and of the type of material that has been implanted (SEEG electrode type/characteristics)
 and some expertise in brain anatomy. 
-It is also important to work on a high-resolution CT scan or T1 MRI scan acquired after the implantation of the depth electrodes so
-the recording contacts appear either in hypersignal or hyposignal.
+It is also important to work on a high-resolution CT scan or T1 MRI scan acquired after the implantation of the depth electrodes so that
+the recording contacts appear either in hypersignal or in hyposignal.
 
 For confidentiality reasons, the implantation scheme will not be disclosed for this tutorial and the video demonstration focuses on the technical
-procedure in order to place SEEG electrodes and generate a standardized implantation file using Brainstorm.
+procedure to place SEEG electrodes and generate a standardized implantation file using Brainstorm.
 
 
 .. raw:: html

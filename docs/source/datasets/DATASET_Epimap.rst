@@ -43,7 +43,7 @@ License
 
 This tutorial dataset (EEG and MRI data) is the property of the Grenoble University Hospital, France.
 Its use and transfer outside the ImaGIN tutorial, e.g. for research purposes, is prohibited without written consent.
-For questions, please contact Olivier David, PhD (olivier.david@univ-grenoble-alpes.fr).
+For questions, please contact `Olivier David, PhD <mailto:Olivier.David@univ-amu.fr?subject=HIP%20Epimap%20dataset%20>`_.
 
 References
 ==========
