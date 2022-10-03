@@ -74,9 +74,9 @@ All HIP users are member of at least one group corresponding to pre-identified i
 .. admonition:: Unlisted institutions
 
    The HIP is in closed beta and users from non-listed institutions will be able to request access to the platform upon release.
-   For more information please `contact HIP support <mailto:Samira.Najih-Besson@chuv.ch?subject=New%20HIP%20institution%20request%20>`_.
+   For more information please `contact HIP support <mailto:support@thehip.app?subject=New%20HIP%20institution%20request%20>`_.
 
-To register for a HIP account please send an `e-mail to HIP support <mailto:Samira.Najih-Besson@chuv.ch?subject=HIP%20account%20request%20>`_ with the following information (items marked with an asterisk are mandatory):
+To register for a HIP account please send an `e-mail to HIP support <mailto:support@thehip.app?subject=HIP%20account%20request%20>`_ with the following information (items marked with an asterisk are mandatory):
 
 	* **Full name**\*: First name and surname.
 	* **HIP group(s)**\*: At least one :ref:`HIP group <list_identified_hip_groups>` you are affiliated with.
@@ -92,6 +92,6 @@ and have access to the shared folder of each group you belong to.
 .. admonition:: Accounts and groups
 
    HIP users are not authorized to create a second account (1 EBRAINS account = 1 HIP account) but can be part of multiple groups.
-   HIP users may `contact the HIP support team <mailto:Samira.Najih-Besson@chuv.ch?subject=HIP%20institution%20modification%20>`_ 
+   HIP users may `contact the HIP support team <mailto:support@thehip.app?subject=HIP%20institution%20modification%20>`_ 
    to request group changes (please use the institutional e-mail you specified during the creation of your HIP account and indicate your EBRAINS username). 
 
