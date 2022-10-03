@@ -251,7 +251,7 @@ License
 
 The COGEPISTIM database (iEEG and imaging data) is the property of `Aix-Marseille Université (AMU) <https://www.univ-amu.fr/>`_, France.
 Its transfer and use outside the HIP, e.g. for research purposes, is prohibited without written consent.
-For questions, please contact Olivier David, PhD (Olivier.David@univ-amu.fr).
+For questions, please contact `Olivier David, PhD <mailto:Olivier.David@univ-amu.fr?subject=HIP%20COGEPISTIM%20dataset%20>`_.
 
 Code availability
 =================
