@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'HIP user documentation'
-copyright = '2022, The Human Intracerebral EEG Platform'
+copyright = '2022, The Human Intracerebral EEG Platform. Contact: support@thehip.app'
 author = 'HIP documentation team'
 
 # The full version, including alpha/beta/rc tags
