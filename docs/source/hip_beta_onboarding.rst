@@ -144,15 +144,13 @@ There are several tutorials available that can be used to get familiar with the 
 .. raw:: html
 
    <center>	
-   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20SEEG%20electrode%20placement%20using%20Cico%20pipeline/HIP%20Tutorial%20-%20Thumbnail%20-%20EEG%20electrode%20placement%20using%20Cico%20pipeline.png" controls>
-   <source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20SEEG%20electrode%20placement%20using%20Cico%20pipeline/HIP%20Tutorial%20-%20EEG%20electrode%20placement%20using%20Cico%20pipeline.mp4" type="video/mp4">
+   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20Epileptogenicity%20map%20computation%20with%203D%20Slicer/Videos/HIP%20Tutorial%20-%20Thumbnail%20-%20EEG%20electrode%20placement%20with%203D%20Slicer.png" controls>
+   <source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20Epileptogenicity%20map%20computation%20with%203D%20Slicer/Videos/HIP%20Tutorial%20-%20EEG%20electrode%20placement%20with%203D%20Slicer.mp4" type="video/mp4">
    Your browser does not support the video tag.
    </video>
    </center>
 
 |
 
-
-	
 
 
