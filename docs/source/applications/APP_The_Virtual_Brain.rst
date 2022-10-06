@@ -1,3 +1,7 @@
+.. warning::
+
+    The Virtual Brains is not yet available on the HIP.
+	
 The Virtual Brain
 ******************
 

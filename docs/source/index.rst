@@ -64,7 +64,7 @@ It contains the following sections:
    :hidden:   
    
    SEEG electrode placement with Brainstorm<tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>
-   SEEG electrode placement using Cico's Pipeline<tutorials/TUTORIAL_SEEG_electrode_placement_using_cicos_pipeline>
+   SEEG electrode placement with 3D Slicer<tutorials/TUTORIAL_SEEG_electrode_placement_with_3D_slicer>
    Epileptogenicity map computation with Brainstorm<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>
 
 .. toctree:: 
@@ -72,14 +72,16 @@ It contains the following sections:
    :hidden:
 	
    Epimap tutorial dataset<datasets/DATASET_Epimap>
-   Cico tutorial dataset<datasets/DATASET_Cico>	
    COGEPISTIM database<datasets/DATASET_Cogepistim>	
+   Data for electrodes labelling<datasets/DATASET_Data_for_electrodes_labelling.rst>	
+   iEEG cognitive task<datasets/DATASET_iEEG_task_cognitive.rst>	
 
    
 .. toctree::
    :caption: HIP apps
    :hidden:   
    
+   3D Slicer<applications/APP_3D_Slicer>
    AnyWave<applications/APP_AnyWave>
    BIDS Manager<applications/APP_BIDS_Manager>
    Brainstorm<applications/APP_Brainstorm>
@@ -92,5 +94,5 @@ It contains the following sections:
    Localizer<applications/APP_Localizer>
    MNE<applications/APP_MNE>
    MRIcroGL<applications/APP_MRIcroGL>
-   3D Slicer<applications/APP_3D_Slicer>
+   MRI Deface<applications/APP_MRI_Deface>
    The Virtual Brain<applications/APP_The_Virtual_Brain>

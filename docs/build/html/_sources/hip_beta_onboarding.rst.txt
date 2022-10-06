@@ -141,10 +141,10 @@ Tutorials
 There are several tutorials available that can be used to get familiar with the platform:
 
 	* :doc:`SEEG electrode placement with Brainstorm<tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>`
-	* :doc:`SEEG electrode placement using Cico’s pipeline<tutorials/TUTORIAL_SEEG_electrode_placement_using_cicos_pipeline>`
+	* :doc:`SEEG electrode placement with 3D Slicer<tutorials/TUTORIAL_SEEG_electrode_placement_with_3D_slicer>`
 	* :doc:`Epileptogenicity map computation with Brainstorm<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>`
 	
-The Cico's pipeline, for example, can be used to place (non-rigid) SEEG electrodes on a post-implantation volume: 
+3D Slicer, for example, can be used to place (non-rigid) SEEG electrodes on a post-implantation volume: 
 	
 .. raw:: html
 

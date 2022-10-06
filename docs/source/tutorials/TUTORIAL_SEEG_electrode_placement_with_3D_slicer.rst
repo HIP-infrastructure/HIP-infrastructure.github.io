@@ -1,9 +1,9 @@
 .. include:: ../hip_beta_warning.rst
 
-SEEG electrode placement using Cico's pipeline
-**********************************************
+SEEG electrode placement with 3D Slicer
+*****************************************
 
-.. figure:: /tutorials/art/TUTORIAL_SEEG_electrode_placement_using_cicos_pipeline/tutorial_cico_header.png
+.. figure:: /tutorials/art/TUTORIAL_SEEG_electrode_placement_with_3D_slicer/tutorial_3dslicer_header.png
 	:width: 650px
 	:align: center
 
@@ -18,7 +18,7 @@ research purposes only.
 About this tutorial
 ====================
 
-The objective of this tutorial is to guide HIP users in placing (non-rigid) SEEG electrodes on a post-implantation volume using Cico's pipeline.
+The objective of this tutorial is to guide HIP users in placing (non-rigid) SEEG electrodes on a post-implantation volume using 3D Slicer.
 It primarily  consists of a video demonstration and should be viewed as an introductory tutorial because it does not go into all
 the intricacies of the placement of SEEG electrodes.
 For more in-depth information regarding electrode placement using 3D Slicer, please refer to
@@ -37,17 +37,17 @@ HIP softwares used in this tutorial:
 
 HIP dataset used in this tutorial:
 
-	* :doc:`Cico tutorial dataset </datasets/DATASET_Cico>` (rev1.0)
+	* :doc:`Data for electrodes labelling </datasets/DATASET_Data_for_electrodes_labelling>` (rev1.0)
 	
 .. _prepare_environment_cico:
 
 Prepare the working environment
 ==================================
 
-This tutorial relies on data available in the :doc:`Cico tutorial dataset </datasets/DATASET_Cico>`, 
+This tutorial relies on data available in the dataset named :doc:`Data for electrodes labelling </datasets/DATASET_Data_for_electrodes_labelling>`, 
 and the following folder has to be copied in your Private Space (this is demonstrated in the video tutorial):
 
-	* /Cico tutorial dataset/Case1
+	* /Data_for_electrodes_labelling/Case1
 
 
 This tutorial requires to use several softwares, all available on the HIP, and it is advised to initiate a new Desktop.
@@ -55,8 +55,8 @@ Please, refer to the :doc:`How to use Desktops and run applications from the App
 
 .. _place_SEEG_cico:
 
-Cico's pipeline
-================
+Place SEEG electrodes with 3D Slicer
+====================================
 
 .. important::
    Applications running in a Desktop environment have access to HIP user's Private Space data under the */home/<HIP_USER>/nextcloud* directory.
@@ -71,8 +71,8 @@ It is also important to work on a high-resolution CT scan or T1 MRI scan acquire
 the recording contacts appear either in hypersignal or in hyposignal.
 
 This video tutorial relies on data publicly available on the HIP and
-desribes the different steps of the Cico's pipeline, from the preparation of the imaging data using MRIcroGL and FSL, to the 
-placement and exportation of SEEG electrodes using 3D Slicer.
+desribes the different steps to label (non-rigid) SEEG electrodes, from the preparation of the imaging data using MRIcroGL and FSL, to the 
+placement and exportation of SEEG contacts using 3D Slicer.
 
 .. raw:: html
 

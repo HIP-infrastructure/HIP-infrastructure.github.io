@@ -1,7 +1,7 @@
 .. include:: ../hip_beta_warning.rst
 
-Cico tutorial dataset
-***********************
+Data for electrodes labelling
+******************************
 
 .. TOADD:
    De-identification procedure ?
@@ -13,21 +13,20 @@ Cico tutorial dataset
 Description
 ===========
 
-This dataset includes imaging data and SEEG recordings for 4 subjects:
-3 subjects have a similar set of files which includes pre- and post- implantation imaging data (T1, T2, CT, braincase, DTI) and SEEG recordings (ictal, interictal, sleep)
+This dataset includes imaging data and SEEG recordings for 3 subjects which include
+pre- and post- implantation imaging data (T1, T2, CT, braincase, DTI) and SEEG recordings (ictal, interictal, sleep, electrical stimulation)
 with corresponding implantation scheme.
-The 4th subject has pre- and post- implantation imaging data (T1, DTI) and SEEG data recorded while performing a cognitive task.
 
 Data files
 -----------
 
-The dataset is accessible in a `publicly shared folder <https://thehip.app/apps/files/?dir=/tutorial_data/Cico%20tutorial%20dataset&fileid=717735>`_.
+The dataset is accessible in a `publicly shared folder <https://thehip.app/apps/files/?dir=/tutorial_data/Data_for_electrodes_labelling&fileid=717735>`_.
 
 File and directory structure:
 
 ::
 
-	/Cico tutorial dataset
+	/Data_for_electrodes_labelling
 	.. /Case<case_nb>
 	.... /Anatomical_data
 	...... anon_t1_mprage_case<case_nb>.nii
@@ -55,20 +54,9 @@ File and directory structure:
 	...... case<case_nb>_schema<scheme_idx>.png
 	...... case<case_nb>-implantation-map<map_idx>.png
 	.... /SEEG	
-	...... case<case_nb>EEG_<hip_id>_<task>.TRC
-	.. /SEEG-task-cognitif
-	.... /Anatomical_data
-	...... anon_T1_implated-cognitive-dataset.nii
-	...... anon_T1_mprage-cognitive-dataset.nii
-	...... Diffusion-cognitive-dataset.bval
-	...... Diffusion-cognitive-dataset.bvec
-	...... Diffusion-cognitive-dataset.json
-	...... Diffusion-cognitive-dataset.nii
-	...... T1_implanted-cognitive-dataset.json
-	...... T1_mprage-cognitive-dataset.json
-	.... /TRC	
-	...... task-SEEG_<hip_id>.TRC
-	...... task-SEEG_<hip_id>.TRC
+	...... case<case_nb>EEG_<hip_id>_<task>.TRC	
+	.... /Stimulation_data	
+	...... case<case_nb>EEG_<stim_run><task>.TRC	
 	
 Complementary information regarding file formats and file-internal data structures:
 
@@ -82,11 +70,10 @@ Complementary information regarding file formats and file-internal data structur
 Directory description:
 
 	* /Case<case_nb> → Subject directory. 
-	* /SEEG-task-cognitif → Subject directory.
 	* /Implatation schema →  Implantation schemes.
 	* /DTI_case<case_nb> → Diffusion Tensor Imaging data.
 	* /Anatomical_data → Anatomical imaging (T1, T2, CT) and Diffusion Tensor Imaging data.
-	* /SEEG and /TRC → intracranial electroencephalography data.
+	* /SEEG and /Stimulation_data → SEEG data.
 	
 File description:
 
@@ -104,12 +91,13 @@ Naming convention:
 	* <case_nb> → Case number. Integer.
 	* <scheme_idx> and <map_idx> → Implantation scheme index. Integer.
 	* <hip_id> → Unique identifier of a SEEG file. Alphanumeric.
+	* <stim_run> → Stimulation run. Integer.
 	* <task> → Task identifier of a SEEG files. Alphanumeric.
 	
 License
 =======
 
-This tutorial dataset (SEEG and MRI data) is the property of the Centre Hospitalier Universitaire de Lausanne, Swiss.
+This tutorial dataset (SEEG and imaging data) is the property of the Centre Hospitalier Universitaire de Lausanne, Swiss.
 Its use and transfer outside this HIP tutorial, e.g. for research purposes, is prohibited without written consent.
 For questions, please contact `Carolina Ciumas, MD, PhD <mailto:Carolina.Ciumas@chuv.ch?subject=HIP%20Cico%20dataset%20>`_.
 
