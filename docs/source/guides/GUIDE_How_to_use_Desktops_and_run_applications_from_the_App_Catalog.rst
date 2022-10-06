@@ -47,10 +47,7 @@ Desktops and data persistence
 Once it has been initiated, a Desktop will persist until it is manually terminated. HIP users can safely log off and/or close their web browser. 
 Pending Desktops will remain unaltered and accessible for later use.
 
-.. important::
-   Applications running in a Desktop environment have access to HIP user's Private Space data under the */home/<HIP_USER>/nextcloud* directory.
-   Any data and/or configuration file outside of this directory will be lost when the application or desktop are closed.
-   This is the only persistent directory as it is tied to the HIP user's Private Space at application startup.
+.. include:: ../hip_beta_data_persistence.rst
 
 Video guide
 ------------

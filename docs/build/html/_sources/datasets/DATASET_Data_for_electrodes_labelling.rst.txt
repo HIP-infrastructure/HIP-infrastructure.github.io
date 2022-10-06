@@ -13,8 +13,8 @@ Data for electrodes labelling
 Description
 ===========
 
-This dataset includes imaging data and SEEG recordings for 3 subjects which include
-pre- and post- implantation imaging data (T1, T2, CT, braincase, DTI) and SEEG recordings (ictal, interictal, sleep, electrical stimulation)
+This dataset includes imaging data and SEEG recordings for 3 subjects. Data include pre- and post- implantation
+imaging data (T1, T2, CT, braincase, DTI) and SEEG recordings (ictal, interictal, sleep, electrical stimulation)
 with corresponding implantation scheme.
 
 Data files

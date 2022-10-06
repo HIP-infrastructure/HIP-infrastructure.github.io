@@ -128,12 +128,7 @@ the following video (2'30''), from the :doc:`How to use Desktops and run applica
 	
 |
 
-.. admonition:: Data persistence 
-
-   Applications running in a Desktop have access to the HIP user's Private Space data under the */home/<HIP_USER>/Nextcloud* directory.
-   Any data and/or configuration file outside of this directory will be lost when the application or desktop are closed.
-   This is the only persistent directory as it is tied to the HIP user's Private Space at application startup.
-
+.. include:: hip_beta_data_persistence.rst
 
 Tutorials
 ---------

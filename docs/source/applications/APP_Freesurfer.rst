@@ -1,6 +1,8 @@
 Freesurfer
 ***********
 
+.. include:: ../hip_beta_data_persistence.rst
+
 Freesurfer is a an open source neuroimaging toolkit for processing, analyzing, and visualizing human brain MR images.
 Freesurfer is developed by the `Laboratory for Computational Neuroimaging <https://www.nmr.mgh.harvard.edu/lab/lcn>`_ 
 at the `Athinoula A. Martinos Center for Biomedical Imaging <http://martinos.org/>`_.

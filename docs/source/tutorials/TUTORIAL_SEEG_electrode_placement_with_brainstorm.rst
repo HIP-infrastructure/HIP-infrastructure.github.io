@@ -61,11 +61,7 @@ Pleases refer to the :doc:`How to use Desktops and run applications from the App
 Place SEEG electrodes with Brainstorm
 =======================================
 
-.. important::
-   Applications running in a Desktop environment have access to HIP user's Private Space data under the */home/<HIP_USER>/nextcloud* directory.
-   Any data and/or configuration file outside of this directory will be lost when the application or desktop are closed.
-   This is the only persistent directory as it is tied to the HIP user's Private Space at application startup.
-   **Make sure you are always working within the /home/<HIP_USER>/nextcloud directory**.
+.. include:: ../hip_beta_data_persistence.rst
 
 The accurate placement of SEEG electrodes requires some knowledge and a good understanding of the implantation procedure
 (an implantation scheme or equivalent) and of the type of material that has been implanted (SEEG electrode type/characteristics)

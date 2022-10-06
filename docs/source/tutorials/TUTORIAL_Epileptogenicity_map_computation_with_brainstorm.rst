@@ -72,11 +72,7 @@ Please, refer to the :doc:`How to use Desktops and run applications from the App
 Compute a map of epileptogenicity
 =================================
 
-.. important::
-   Applications running in a Desktop environment have access to HIP user's Private Space data under the */home/<HIP_USER>/nextcloud* directory.
-   Any data and/or configuration file outside of this directory will be lost when the application or desktop are closed.
-   This is the only persistent directory as it is tied to the HIP user's Private Space at application startup.
-   **Make sure you are always working within the /home/<HIP_USER>/nextcloud directory**.
+.. include:: ../hip_beta_data_persistence.rst
 
 It is mandatory to have the 3D positions of the recording contacts of the SEEG electrodes to compute epileptogenicity maps. 
 The contact names and coordinates of the SEEG electrodes are provided in the *elec_pos_patient.txt* implantation file that will
