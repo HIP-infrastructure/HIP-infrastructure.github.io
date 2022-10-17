@@ -27,48 +27,100 @@ For the best experience with the HIP web interface, we recommend that you use th
 
 Once your :doc:`HIP account has been created </guides/GUIDE_How_to_create_a_HIP_account>`, access the
 `HIP web portal <https://thehip.app>`_ and log in with EBRAINS (use your EBRAINS credentials), 
-you will be automatically redirected to your HIP Dashboard.
+you will be automatically redirected to the HIP home page.
 
 HIP services
 =============
 
-.. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_overview.png
+Home page
+---------
+
+.. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_homepage.png
 	:width: 600px
 	:align: center
 
-	**HIP interface overview.** *The HIP web interface provides services (5: Files, 6: Talk, 7: HIP) which can be selected and have their own
-	interface (menu and view), that can be searched (1). The HIP account can be managed using the profile (4),
-	contacts (3) and notifications (2) buttons.*
+	**Home page.** *The HIP home page provides a set of services (1: Files, 2: Talk, 3: Forms, 4: HIP) which come with their own
+	interface (menu and view) that can be searched (5). The HIP account can be managed using the profile (8),
+	contacts (7) and notifications (6) buttons.*
 
-Dashboard
-----------
+When connecting to the HIP you are automatically redirected to the **home page** from which you can access the platform main features using the side navigation menu:
 
-The Dashboard gives an overview of the opened Desktops and BIDS databases available in all 3 HIP spaces, namely, :doc:`the Private Space, the Collaborative
-Space and the Public Space </guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>`.
-Note that only the Private Space is available during the Beta phase. 
-
-From the side navigation menu, you can also access the following items:
-
-	* App Catalog: A comprehensive list of all the applications made available to the HIP users so they can process their data. 
-	* Documentation: Links to the :doc:`user documentation <../index>`, `technical documentation <https://github.com/HIP-infrastructure/hip-doc>`_ and `HIP website <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_.
-	* Desktops: :doc:`Desktops </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` operate
+	* **Dashboard**: Displays various information regarding your institution and its members to whom you can send messages using :ref:`Talk <hip_service_talk>`.
+	  The Dashboard also shows an overview of the opened :doc:`Desktops </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` and available BIDS databases.
+	* **Desktops**: :doc:`Desktops </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` operate
 	  as remote virtual computers where HIP users can run applications from the App Catalog to process 
 	  data :doc:`uploaded</guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>` or :ref:`shared in their Private Space <the_private_space>`.
-	* BIDS: :ref:`The BIDS importer <BIDS_importer>` is a step-by-step tool that can be used to import raw data into a BIDS database.
+	* **BIDS**: :ref:`The BIDS importer <BIDS_importer>` is a step-by-step tool that can be used to import raw data into a BIDS database.
+	* **About**: The HIP home page. It contains links to the `HIP website <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_, the :doc:`onboarding guide <../hip_beta_onboarding>` and the `feedback forms <https://thehip.app/apps/forms/>`_.
+	* **App Catalog**: A comprehensive list of all the applications made available to the HIP users so they can process their data. 
+	* **Documentation**: The documentation page contains links to the :doc:`user documentation <../index>`, the `technical documentation <https://github.com/HIP-infrastructure/hip-doc>`_ and the `HIP website <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_.
+	* **Bug Report**: A direct link to the bug report form. 
+	* **Feedback**: A direct link to the feedback form.
+	* **Centers**: This section lists all the institutions currently participating in the HIP as well as their respective members to whom you can send messages using :ref:`Talk <hip_service_talk>`.
 
-Files
+The HIP offers several services, all available at the top of the home page:
+
+	* **Files**: Browse the folders and files available in your Private Space. 
+	* **Talk**: Discuss with other HIP members (HIP users and the support team).
+	* **Forms**: Create a new form to share with others or submit your feedback to the HIP team.
+	* **HIP**: The HIP home page. 
+
+Forms
 ------
 
-The Files service lets you browse the folders and files available in your Private Space.
-You can upload data to your Private Space by simply dragging and dropping files into the file browser, although it is advised to
-upload data using the Nexclout client as explained in the :doc:`How to prepare and upload data to the HIP </guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>` guide.
-The Private Space also contains the shared folders of the :ref:`HIP groups <list_identified_hip_groups>` you are a member of. 
+.. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_forms.png
+	:width: 600px
+	:align: center
+
+	**Forms.** *Create custom forms to share with others and give us feedback on the platform.*
+	
+The **Forms** service lets you create custom forms (e.g. using checkboxes, dropdown lists, short answers)
+that you can restrict to some HIP users (specific users or groups) or share publicly (via a share link) and consult the results.
+
+2 forms are currently available for all HIP users:
+
+    * **Feedback form**: Designed to help us improve our products and services. We appreciate your feedback and will use it to make our products and services better.
+    * **Bug report form**: Designed to help us fix bugs on the platform. Please include as much detail as possible, including steps to reproduce the bug, and what you expected to happen.
+
+
+.. _hip_service_talk:
+
 
 Talk
 -----
 
-The Talk service lets you discuss with other HIP users, group members, and the HIP support team.
-The Talk service is not yet available.
+.. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_talk.png
+	:width: 600px
+	:align: center
+
+	**Talk.** *Discuss with other HIP users, group members and the HIP support team.*
+	
+Use the **Talk** service to create your own conversation, choose its visibility, and invite other HIP users (individual users or groups of users)
+or guests using a link that you can protect with a password.
+At any time, you can select a conversation and see its members, the attachments that have been shared and that have been saved in your Private Space, inside the "*/Talk*" folder.
+Click the "*Talk settings*" at the bottom left of the page to configure your webcam and microphone so you can "*Start a call*" with the members of the active conversation.
+Similarly, click on the "*...*" button next to any conversation to access its settings and manage notifications. 
+
+There are currently 3 conversations visible to all HIP users:
+
+    * **HIP Announcements**: Locked conversation for important announcements regarding the HIP.
+    * **HIP General**: Global conversation open to all HIP users.
+    * **Talk updates**: News and patch notes regarding the Talk service.
+
+
+Files
+------
+
+.. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_files.png
+	:width: 600px
+	:align: center
+
+	**Files.** *Browse the folders and files available in your Private Space.*
+
+The **Files** service lets you browse the folders and files available in your Private Space.
+You can upload data to your Private Space by simply dragging and dropping files into the file browser, although it is advised to
+upload data using the Nexclout client as explained in the :doc:`How to prepare and upload data to the HIP </guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>` guide.
+The Private Space also contains the shared folders of the :ref:`HIP groups <list_identified_hip_groups>` you are a member of. 
 
 
 Video guide

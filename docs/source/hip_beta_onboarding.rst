@@ -43,24 +43,25 @@ For more information regarding HIP accounts, please refer to the :doc:`How to cr
 HIP services overview
 ======================
 
-.. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_overview.png
+.. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_homepage.png
 	:width: 600px
 	:align: center
 
-	**HIP Dashboard.** *The HIP web interface provides services (5: Files, 6: Talk, 7: HIP) which can be selected and have their own
-	interface (menu and view), that can be searched (1). The HIP account can be managed using the profile (4),
-	contacts (3) and notifications (2) buttons.*
+	**Home page.** *The HIP home page provides a set of services (1: Files, 2: Talk, 3: Forms, 4: HIP) which come with their own
+	interface (menu and view) that can be searched (5). The HIP account can be managed using the profile (8),
+	contacts (7) and notifications (6) buttons.*
 	
-`Log in the HIP portal <https://thehip.app/login>`_ using your EBRAINS account. Once connected you will be redirected to
-your Dashboard. The Dashboard gives an overview of the opened Desktops and BIDS databases available in all 3 HIP spaces.
-Note that only the Private Space is available during the Beta phase. For more details regarding HIP Spaces, please refer
+`Log in the HIP portal <https://thehip.app/login>`_ using your EBRAINS account. Once connected to the HIP you will be automatically redirected to your home page from which you can access the platform main features using the side navigation menu.
+From this menu, it is possible to access the Dashboard which displays various information regarding your institution and its members to whom you can send messages using the :ref:`Talk <hip_service_talk>` service.
+The Dashboard also shows an overview of the opened :doc:`Desktops </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` and available BIDS databases in your Private Space.
+Please note that only the Private Space is available during the Beta phase. For more details regarding the various HIP Spaces, please refer
 to the :doc:`How to use the HIP spaces and share data with other users </guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>` guide.
 
 From the side navigation menu, it is also possible to access the App Catalog, which lists all the applications made available to the HIP users 
 so they can process their data. Applications from the App Catalog are used from virtual :ref:`Desktops <onboarding_desktops_and_apps>`, which operate as remote computers.
 
 The following video (2'15''), from the :doc:`How to connect to the HIP portal and access its services </guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>` guide,
-shows the connection procedure and gives an overview of HIP services.
+shows the connection procedure and gives an overview of all HIP services.
 
 .. raw:: html
 
@@ -131,7 +132,7 @@ the following video (2'30''), from the :doc:`How to use Desktops and run applica
 .. include:: hip_beta_data_persistence.rst
 
 Tutorials
----------
+==========
 
 There are several tutorials available that can be used to get familiar with the platform:
 
@@ -152,5 +153,9 @@ There are several tutorials available that can be used to get familiar with the 
 
 |
 
+Feedback
+=========
 
+The HIP is in closed beta and we need your feedback to improve our products and fix bugs on the platform. 
+Feel free to fill out the dedicated `feedback forms <https://thehip.app/apps/forms/>`_ available on the platform, your input is greatly appreciated.
 
