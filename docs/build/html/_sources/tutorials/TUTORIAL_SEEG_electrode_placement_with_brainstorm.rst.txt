@@ -29,7 +29,7 @@ please refer to the following official tutorials:
 	* `Brainstorm's "Edit the contacts positions" tutorial <https://neuroimage.usc.edu/brainstorm/Tutorials/Epileptogenicity#Edit_the_contacts_positions>`_
 
 Requirements
-------------
+=============
 
 There are no technical requirements to follow this tutorial because the dataset and software are available on the HIP.
 

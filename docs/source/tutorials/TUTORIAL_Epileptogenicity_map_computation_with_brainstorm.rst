@@ -34,7 +34,7 @@ please refer to the official tutorial:
 	* `Brainstorm's SEEG epileptogenicity maps tutorial <https://neuroimage.usc.edu/brainstorm/Tutorials/Epileptogenicity>`_
 
 Requirements
-------------
+=============
 
 There are no technical requirements to follow this tutorial because the dataset and software are available on the HIP.
 

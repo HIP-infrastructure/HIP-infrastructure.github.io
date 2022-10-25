@@ -97,7 +97,7 @@ Talk
 	
 Use the **Talk** service to create your own conversation, choose its visibility, and invite other HIP users (individual users or groups of users)
 or guests using a link that you can protect with a password.
-At any time, you can select a conversation and see its members, the attachments that have been shared and that have been saved in your Private Space, inside the "*/Talk*" folder.
+At any time, you can select a conversation and see its members, the attachments that have been shared and saved in your Private Space, inside the "*/Talk*" folder.
 Click the "*Talk settings*" at the bottom left of the page to configure your webcam and microphone so you can "*Start a call*" with the members of the active conversation.
 Similarly, click on the "*...*" button next to any conversation to access its settings and manage notifications. 
 

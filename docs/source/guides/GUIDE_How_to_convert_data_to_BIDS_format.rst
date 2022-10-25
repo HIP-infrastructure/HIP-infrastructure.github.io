@@ -222,7 +222,7 @@ The following video guide (X'XX'') serves as an introduction to the BIDS importe
 .. raw:: html
 
    <center>	
-   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20BIDS%20importer/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
+   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
    <source src="todo.mp4" type="video/mp4">
    Your browser does not support the video tag.
    </video>

@@ -25,7 +25,7 @@ For more in-depth information regarding electrode placement using 3D Slicer, ple
 the `dedicated documentation <https://slicer.readthedocs.io/en/latest/user_guide/modules/markups.html>`_.
 
 Requirements
-------------
+=============
 
 There are no technical requirements to follow this tutorial because the dataset and software are available on the HIP.
 
@@ -66,7 +66,7 @@ and some expertise in brain anatomy.
 It is also important to work on a high-resolution CT scan or T1 MRI scan acquired after the implantation of the depth electrodes so that
 the recording contacts appear either in hypersignal or in hyposignal.
 
-This video tutorial relies on data publicly available on the HIP and
+This video tutorial (19'30'') relies on data publicly available on the HIP and
 desribes the different steps to label (non-rigid) SEEG electrodes, from the preparation of the imaging data using MRIcroGL and FSL, to the 
 placement and exportation of SEEG contacts using 3D Slicer.
 

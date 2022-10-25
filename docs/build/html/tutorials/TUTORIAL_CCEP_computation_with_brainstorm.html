@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SEEG electrode placement with 3D Slicer &mdash; HIP user documentation 0.1 documentation</title>
+  <title>CCEP computation with Brainstorm &mdash; HIP user documentation 0.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Epileptogenicity map computation with Brainstorm" href="TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html" />
-    <link rel="prev" title="SEEG electrode placement with Brainstorm" href="TUTORIAL_SEEG_electrode_placement_with_brainstorm.html" /> 
+    <link rel="next" title="Epimap tutorial dataset" href="../datasets/DATASET_Epimap.html" />
+    <link rel="prev" title="Epileptogenicity map computation with Brainstorm" href="TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -54,16 +54,17 @@
 <p class="caption" role="heading"><span class="caption-text">HIP tutorials</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="TUTORIAL_SEEG_electrode_placement_with_brainstorm.html">SEEG electrode placement with Brainstorm</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">SEEG electrode placement with 3D Slicer</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="TUTORIAL_SEEG_electrode_placement_with_3D_slicer.html">SEEG electrode placement with 3D Slicer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html">Epileptogenicity map computation with Brainstorm</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CCEP computation with Brainstorm</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#disclaimer">Disclaimer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#about-this-tutorial">About this tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#prepare-the-working-environment">Prepare the working environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#place-seeg-electrodes-with-3d-slicer">Place SEEG electrodes with 3D Slicer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compute-cortico-cortical-evoked-potentials">Compute cortico-cortical evoked potentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html">Epileptogenicity map computation with Brainstorm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TUTORIAL_CCEP_computation_with_brainstorm.html">CCEP computation with Brainstorm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP datasets</span></p>
 <ul>
@@ -105,9 +106,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>SEEG electrode placement with 3D Slicer</li>
+      <li>CCEP computation with Brainstorm</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorials/TUTORIAL_SEEG_electrode_placement_with_3D_slicer.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorials/TUTORIAL_CCEP_computation_with_brainstorm.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -119,12 +120,12 @@
 <p class="admonition-title">Warning</p>
 <p>The HIP is in closed beta and is subject to change. The documentation may not fully reflect the current state of the platform.</p>
 </div>
-<section id="seeg-electrode-placement-with-3d-slicer">
-<h1>SEEG electrode placement with 3D Slicer<a class="headerlink" href="#seeg-electrode-placement-with-3d-slicer" title="Permalink to this headline"></a></h1>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../_images/tutorial_3dslicer_header.png"><img alt="../_images/tutorial_3dslicer_header.png" src="../_images/tutorial_3dslicer_header.png" style="width: 650px;" /></a>
+<section id="ccep-computation-with-brainstorm">
+<h1>CCEP computation with Brainstorm<a class="headerlink" href="#ccep-computation-with-brainstorm" title="Permalink to this headline"></a></h1>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/tutorial_ccep_header.png"><img alt="../_images/tutorial_ccep_header.png" src="../_images/tutorial_ccep_header.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>3D visualization of SEEG electrodes.</strong> <em>SEEG electrodes have been generated and placed using</em> <a class="reference internal" href="../applications/APP_3D_Slicer.html"><span class="doc">3D Slicer</span></a> <em>.</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>Visualization of CCEPs.</strong> <em>The average response of a stimulation train was extracted from SEEG data using</em> <a class="reference internal" href="../applications/APP_Brainstorm.html"><span class="doc">Brainstorm</span></a> <em>.</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="disclaimer">
@@ -134,44 +135,52 @@ research purposes only.</p>
 </section>
 <section id="about-this-tutorial">
 <h2>About this tutorial<a class="headerlink" href="#about-this-tutorial" title="Permalink to this headline"></a></h2>
-<p>The objective of this tutorial is to guide HIP users in placing (non-rigid) SEEG electrodes on a post-implantation volume using 3D Slicer.
-It primarily  consists of a video demonstration and should be viewed as an introductory tutorial because it does not go into all
-the intricacies of the placement of SEEG electrodes.
-For more in-depth information regarding electrode placement using 3D Slicer, please refer to
-the <a class="reference external" href="https://slicer.readthedocs.io/en/latest/user_guide/modules/markups.html">dedicated documentation</a>.</p>
+<p>Electrical stimulation applied (sub)cortically can elicit CCEPs, recorded remotely from the stimulation site.
+The objective of this tutorial is to guide HIP users in computing the average response of a stimulation train extracted from a SEEG file using Brainstorm.
+It primarily consists of a video demonstration and should be viewed as an introductory tutorial because it does not go into all the intricacies of
+the processing steps used to compute CCEPs.</p>
+<p>For more in-depth information regarding some of the processing steps illustrated in the video,
+please refer to the following official tutorials:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://neuroimage.usc.edu/brainstorm/Tutorials/BadChannels">Brainstorm’s “Bad channels” tutorial</a></p></li>
+<li><p><a class="reference external" href="https://neuroimage.usc.edu/brainstorm/Tutorials/MontageEditor">Brainstorm’s “Montage editor” tutorial</a></p></li>
+<li><p><a class="reference external" href="https://neuroimage.usc.edu/brainstorm/Tutorials/ArtifactsDetect">Brainstorm’s “Artifact detection” tutorial</a></p></li>
+<li><p><a class="reference external" href="https://neuroimage.usc.edu/brainstorm/Tutorials/ArtifactsFilter">Brainstorm’s “Power spectrum and frequency filters” tutorial</a></p></li>
+<li><p><a class="reference external" href="https://neuroimage.usc.edu/brainstorm/Tutorials/Averaging">Brainstorm’s “Average response” tutorial</a></p></li>
+</ul>
+</div></blockquote>
 </section>
 <section id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline"></a></h2>
 <p>There are no technical requirements to follow this tutorial because the dataset and software are available on the HIP.</p>
-<p>HIP softwares used in this tutorial:</p>
+<p>HIP software used in this tutorial:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="reference internal" href="../applications/APP_MRIcroGL.html"><span class="doc">MRIcroGL</span></a> (1.2)</p></li>
-<li><p><a class="reference internal" href="../applications/APP_FSL.html"><span class="doc">FSL</span></a> (6.0.5.2)</p></li>
-<li><p><a class="reference internal" href="../applications/APP_3D_Slicer.html"><span class="doc">3D Slicer</span></a> (4.11)</p></li>
+<li><p><a class="reference internal" href="../applications/APP_Brainstorm.html"><span class="doc">Brainstorm</span></a> (07-Jan-2022)</p></li>
 </ul>
 </div></blockquote>
 <p>HIP dataset used in this tutorial:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="reference internal" href="../datasets/DATASET_Data_for_electrodes_labelling.html"><span class="doc">Data for electrodes labelling</span></a> (rev1.0)</p></li>
+<li><p>“CCEP tutorial dataset” located in the shared <a class="reference internal" href="../guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html#tutorial-data"><span class="std std-ref">tutorial_data</span></a> folder.</p></li>
 </ul>
 </div></blockquote>
 </section>
 <section id="prepare-the-working-environment">
-<span id="prepare-environment-cico"></span><h2>Prepare the working environment<a class="headerlink" href="#prepare-the-working-environment" title="Permalink to this headline"></a></h2>
-<p>This tutorial relies on data available in the dataset named <a class="reference internal" href="../datasets/DATASET_Data_for_electrodes_labelling.html"><span class="doc">Data for electrodes labelling</span></a>,
-and the following folder has to be copied in your Private Space (this is demonstrated in the video tutorial):</p>
+<h2>Prepare the working environment<a class="headerlink" href="#prepare-the-working-environment" title="Permalink to this headline"></a></h2>
+<p>This tutorial relies on data available in the “CCEP tutorial dataset” located in the read-only shared folder called <a class="reference internal" href="../guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html#tutorial-data"><span class="std std-ref">tutorial_data</span></a>,
+and the following file has to be copied in your Private Space (this is demonstrated in the video tutorial):</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>/Data_for_electrodes_labelling/Case1</p></li>
+<li><p>sub-anon_task-stimulation_run-01.edf</p></li>
 </ul>
 </div></blockquote>
-<p>This tutorial requires to use several softwares, all available on the HIP, and it is advised to initiate a new Desktop.
+<p>This tutorial requires to use Brainstorm, which is available on the HIP, and it is advised to initiate a new Desktop.
 Please, refer to the <a class="reference internal" href="../guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html"><span class="doc">How to use Desktops and run applications from the App Catalog</span></a> guide if you need help with this step.</p>
 </section>
-<section id="place-seeg-electrodes-with-3d-slicer">
-<span id="place-seeg-cico"></span><h2>Place SEEG electrodes with 3D Slicer<a class="headerlink" href="#place-seeg-electrodes-with-3d-slicer" title="Permalink to this headline"></a></h2>
+<section id="compute-cortico-cortical-evoked-potentials">
+<h2>Compute cortico-cortical evoked potentials<a class="headerlink" href="#compute-cortico-cortical-evoked-potentials" title="Permalink to this headline"></a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Applications running in a Desktop environment have access to your Private Space data under the <em>/home/&lt;HIP_USER&gt;/nextcloud</em> directory.
@@ -179,22 +188,30 @@ Any data and/or configuration file outside of this directory will be lost when t
 This is the only persistent directory as it is tied to the HIP user’s Private Space at application startup.
 <strong>Make sure you are always working within the /home/&lt;HIP_USER&gt;/nextcloud directory when using applications</strong>.</p>
 </div>
-<p>The accurate placement of SEEG electrodes requires some knowledge and a good understanding of the implantation procedure
-(an implantation scheme or equivalent) and of the type of material that has been implanted (SEEG electrode type/characteristics)
-and some expertise in brain anatomy.
-It is also important to work on a high-resolution CT scan or T1 MRI scan acquired after the implantation of the depth electrodes so that
-the recording contacts appear either in hypersignal or in hyposignal.</p>
-<p>This video tutorial (19’30’’) relies on data publicly available on the HIP and
-desribes the different steps to label (non-rigid) SEEG electrodes, from the preparation of the imaging data using MRIcroGL and FSL, to the
-placement and exportation of SEEG contacts using 3D Slicer.</p>
+<p>There are different ways to compute CCEPs depending on your data and the analyzes you want to perform.
+The processing steps used in this tutorial are derived from a pipeline developed during <a class="reference external" href="https://f-tract.eu/">The Functional Brain Tractography Project</a>
+(see <a class="reference internal" href="#trebaul-2018" id="id1"><span>[Trebaul_2018]</span></a> for full scientific details) which has been simplified for demonstration purposes. Notably, this tutorial shows how to: (1) import raw SEEG data into Brainstorm; (2) extract a stimulation train; (3) mark bad channels;
+(4) detect the stimulation artifacts (individual pulses); (5) apply bipolar montage; (6) remove stimulation artifacts; (7) apply a band-pass filter; (8) compute the average response
+across all pulses.
+Depending on your objective, some of these steps might not be relevant/necessary or might be executed in a different order.</p>
+<p>This video tutorial (14’04’’) relies on data publicly available on the HIP and
+describes the different steps to compute CCEPs using Brainstorm:</p>
 <center>
-<video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20Epileptogenicity%20map%20computation%20with%203D%20Slicer/Videos/HIP%20Tutorial%20-%20Thumbnail%20-%20EEG%20electrode%20placement%20with%203D%20Slicer.png" controls>
-<source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20Epileptogenicity%20map%20computation%20with%203D%20Slicer/Videos/HIP%20Tutorial%20-%20EEG%20electrode%20placement%20with%203D%20Slicer.mp4" type="video/mp4">
+<video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20CCEP%20computation%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20Thumbnail%20-%20CCEP%20computation%20with%20Brainstorm.png" controls>
+<source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Tutorial%20-%20CCEP%20computation%20with%20Brainstorm/Videos/HIP%20Tutorial%20-%20CCEP%20computation%20with%20Brainstorm.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 </center><div class="line-block">
 <div class="line"><br /></div>
 </div>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>
+<dl class="citation">
+<dt class="label" id="trebaul-2018"><span class="brackets"><a class="fn-backref" href="#id1">Trebaul_2018</a></span></dt>
+<dd><p>Trebaul, L., Deman, P., Tuyisenge, V., Jedynak, M., Hugues, E., Rudrauf, D., Bhattacharjee, M., Tadel, F., Chanteloup-Forêt, B., Saubat, C., Reyes Mejia, G.C., Adam, C., Nica, A., Pail, M., Dubeau, F., Rheims, S., Trébuchon, A., Wang, H., Liu, S., Blauwblomme, T., Garces, M., De Palma, L., Valentín, A., Metsahonkala, E.-L., Petrescu, A.M., Landré, E., Szurhaj, W., Hirsch, E., Valton, L., Rocamora, R., Schulze-Bonhage, A., Mîndruţă, I., Francione, S., Maillard, L., Taussig, D., Kahane, P., David, O., 2018. Probabilistic functional tractography of the human cortex revisited. NeuroImage 181, 414–429. doi:10.1016/j.neuroimage.2018.07.039.</p>
+</dd>
+</dl>
 </section>
 </section>
 
@@ -202,8 +219,8 @@ Your browser does not support the video tag.
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="TUTORIAL_SEEG_electrode_placement_with_brainstorm.html" class="btn btn-neutral float-left" title="SEEG electrode placement with Brainstorm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html" class="btn btn-neutral float-right" title="Epileptogenicity map computation with Brainstorm" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html" class="btn btn-neutral float-left" title="Epileptogenicity map computation with Brainstorm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../datasets/DATASET_Epimap.html" class="btn btn-neutral float-right" title="Epimap tutorial dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

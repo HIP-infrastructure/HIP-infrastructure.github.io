@@ -66,6 +66,8 @@ Pursuant to the EBRAINS Access Policy, access to such data shall not require an 
 Decision to move data from the Private or Collaborative Space to the Public Space can only be taken by the Data Controller of the
 corresponding data, provided that the latter has been fully anonymised and patient’s informed consent to make his data public was provided. 
 
+.. _tutorial_data:
+
 Tutorial data
 ==============
 
