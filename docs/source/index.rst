@@ -16,6 +16,16 @@ research and brain-inspired technologies created by the EU-funded `Human Brain P
 The HIP will enable the use of EBRAINS HPC resources and will offer links to other EBRAINS services, like the `Knowledge Graph <https://kg.ebrains.eu/>`_ and the `Human Brain Atlases <https://ebrains.eu/services#category1>`_. 
 In line with the `FAIR principles <https://www.go-fair.org/fair-principles/>`_ , it will fully respect ethics and data privacy regulations, and optimise end-user access management. 
 
+.. raw:: html
+
+   <center>	
+   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Quick%20overview/Videos/HIP%20Guide%20-%20Thumbnail%20-%20quick%20overview.png" controls>
+   <source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Quick%20overview/Videos/HIP%20Guide%20-%20quick%20overview.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+   </video>
+   </center>
+
+|
 	
 User documentation
 **********************
@@ -29,7 +39,7 @@ It contains the following sections:
 	* **HIP Apps**: A catalog of applications is available to explore and process data. Through the use of softwares,
 	  HIP users agree to be bound by the terms and conditions of their respective licences. Softwares are provided “as is”
 	  and without warranty of any kind, express, implied or otherwise.
-	
+	  
 .. TOADD:
        
    Frequently Asked Questions

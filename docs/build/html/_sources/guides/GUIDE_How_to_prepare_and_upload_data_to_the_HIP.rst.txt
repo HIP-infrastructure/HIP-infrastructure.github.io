@@ -117,10 +117,10 @@ will not resume where it stopped.
 
 .. _upload_nextcloud:
 
-Using the Nexcloud client
+Using the Nextcloud client
 --------------------------
 
-The Nexcloud client uses the WebDAV protocol to seamlessly synchronize data between the HIP user's Private Space and the local desktop where 
+The Nextcloud client uses the WebDAV protocol to seamlessly synchronize data between the HIP user's Private Space and the local desktop where 
 the client is installed.
 
 The following video guide (2'27'') shows how to download, install and configure the Nextcloud client to set up a synchronized folder:  
