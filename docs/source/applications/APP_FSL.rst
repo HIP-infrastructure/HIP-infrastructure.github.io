@@ -1,7 +1,7 @@
 FSL
 ****
 
-FSL is a comprehensive library of analysis tools for FMRI, MRI and DTI brain imaging data. ([Jenkinson_2012]_).
+FSL is a comprehensive library of analysis tools for FMRI, MRI and DTI brain imaging data ([Jenkinson_2012]_).
 
 Official ressources
 ===================

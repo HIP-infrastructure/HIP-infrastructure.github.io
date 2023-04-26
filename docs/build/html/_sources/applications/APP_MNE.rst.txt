@@ -1,6 +1,4 @@
-.. warning::
-
-    MNE is not yet available on the HIP.
+.. include:: ../hip_app_not_available.rst
 	
 MNE
 ****

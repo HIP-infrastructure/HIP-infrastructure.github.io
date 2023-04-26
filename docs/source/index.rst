@@ -13,7 +13,8 @@ and analysis of multiscale Human iEEG data at the international level. The HIP c
 
 The HIP is also fully integrated in `EBRAINS <https://ebrains.eu/>`_ , a sustainable European Research Infrastructure providing tools and services in brain
 research and brain-inspired technologies created by the EU-funded `Human Brain Project <https://www.humanbrainproject.eu>`_.
-The HIP will enable the use of EBRAINS HPC resources and will offer links to other EBRAINS services, like the `Knowledge Graph <https://kg.ebrains.eu/>`_ and the `Human Brain Atlases <https://ebrains.eu/services#category1>`_. 
+The HIP will offer links to other EBRAINS services, like the `Knowledge Graph <https://kg.ebrains.eu/>`_ and the `Human Brain Atlases <https://ebrains.eu/services#category1>`_. 
+
 In line with the `FAIR principles <https://www.go-fair.org/fair-principles/>`_ , it will fully respect ethics and data privacy regulations, and optimise end-user access management. 
 
 .. raw:: html
@@ -98,12 +99,16 @@ It contains the following sections:
    Brainstorm<applications/APP_Brainstorm>
    CCEP Manager<applications/APP_CCEP_Manager>
    dcm2niix<applications/APP_dcm2niix>
-   FSL<applications/APP_FSL>
+   GARDEL<applications/APP_GARDEL>
+   FileManager<applications/APP_FileManager>
    Freesurfer<applications/APP_Freesurfer>
+   FSL<applications/APP_FSL>
    HiBoP<applications/APP_HiBoP>
    IntrAnat<applications/APP_IntrAnat>
+   LibreOffice<applications/APP_LibreOffice>
    Localizer<applications/APP_Localizer>
    MNE<applications/APP_MNE>
    MRIcroGL<applications/APP_MRIcroGL>
    MRI Deface<applications/APP_MRI_Deface>
    The Virtual Brain<applications/APP_The_Virtual_Brain>
+   Visual Studio Code<applications/APP_VisualStudioCode>

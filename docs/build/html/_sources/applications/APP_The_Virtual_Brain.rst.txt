@@ -1,7 +1,3 @@
-.. warning::
-
-    The Virtual Brains is not yet available on the HIP.
-	
 The Virtual Brain
 ******************
 
@@ -10,7 +6,7 @@ magnetic resonance imaging (MRI) processing pipelines to extract structural and 
 combined simulation of large-scale brain networks with small-scale spiking networks;
 automatic conversion of user-specified model equations into fast simulation code; simulation-ready brain models of patients and healthy volunteers;
 Bayesian parameter optimization in epilepsy patient models; data and software for mouse brain simulation;
-and extensive educational material. ([Sanz_Leon_2013]_, [Schirner_2022]_).
+and extensive educational material ([Sanz_Leon_2013]_, [Schirner_2022]_).
 
 Official ressources
 ===================

@@ -1,12 +1,10 @@
-.. warning::
-
-    IntrAnat is not yet available on the HIP.
+.. include:: ../hip_app_not_available.rst
 	
 IntrAnat
 *********
 
 IntrAnat is a free database and visualization software for Intracranial Electroencephalographic (iEEG) data that allows
-to locate and register intracerebral electrodes for individual cases as well as for group studies. ([Deman_2018a]_).
+to locate and register intracerebral electrodes for individual cases as well as for group studies ([Deman_2018a]_).
 
 Official ressources
 ===================

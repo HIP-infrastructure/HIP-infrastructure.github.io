@@ -18,8 +18,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="HiBoP" href="APP_HiBoP.html" />
-    <link rel="prev" title="FSL" href="APP_FSL.html" /> 
+    <link rel="next" title="FSL" href="APP_FSL.html" />
+    <link rel="prev" title="FileManager (PCManFM)" href="APP_FileManager.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -27,12 +27,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: black" >
-            <a href="../index.html" class="icon icon-home"> HIP user documentation
-            <img src="../_static/hip_beta_logo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            HIP user documentation
+              <img src="../_static/hip_beta_logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -73,19 +77,23 @@
 <li class="toctree-l1"><a class="reference internal" href="APP_Brainstorm.html">Brainstorm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_CCEP_Manager.html">CCEP Manager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_dcm2niix.html">dcm2niix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="APP_FSL.html">FSL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APP_GARDEL.html">GARDEL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APP_FileManager.html">FileManager</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Freesurfer</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#official-ressources">Official ressources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="APP_FSL.html">FSL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_HiBoP.html">HiBoP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_IntrAnat.html">IntrAnat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APP_LibreOffice.html">LibreOffice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_Localizer.html">Localizer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_MNE.html">MNE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_MRIcroGL.html">MRIcroGL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_MRI_Deface.html">MRI Deface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_The_Virtual_Brain.html">The Virtual Brain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="APP_VisualStudioCode.html">Visual Studio Code</a></li>
 </ul>
 
         </div>
@@ -101,8 +109,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Freesurfer</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Freesurfer</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/applications/APP_Freesurfer.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -114,13 +122,6 @@
              
   <section id="freesurfer">
 <h1>Freesurfer<a class="headerlink" href="#freesurfer" title="Permalink to this headline"></a></h1>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Applications running in a Desktop environment have access to your Private Space data under the <em>/home/&lt;HIP_USER&gt;/nextcloud</em> directory.
-Any data and/or configuration file outside of this directory will be lost when the application or desktop are closed.
-This is the only persistent directory as it is tied to the HIP user’s Private Space at application startup.
-<strong>Make sure you are always working within the /home/&lt;HIP_USER&gt;/nextcloud directory when using applications</strong>.</p>
-</div>
 <p>Freesurfer is a an open source neuroimaging toolkit for processing, analyzing, and visualizing human brain MR images.
 Freesurfer is developed by the <a class="reference external" href="https://www.nmr.mgh.harvard.edu/lab/lcn">Laboratory for Computational Neuroimaging</a>
 at the <a class="reference external" href="http://martinos.org/">Athinoula A. Martinos Center for Biomedical Imaging</a>.</p>
@@ -146,14 +147,14 @@ at the <a class="reference external" href="http://martinos.org/">Athinoula A. Ma
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="APP_FSL.html" class="btn btn-neutral float-left" title="FSL" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="APP_HiBoP.html" class="btn btn-neutral float-right" title="HiBoP" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="APP_FileManager.html" class="btn btn-neutral float-left" title="FileManager (PCManFM)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="APP_FSL.html" class="btn btn-neutral float-right" title="FSL" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, The Human Intracerebral EEG Platform. Contact: support@thehip.app.</p>
+    <p>&#169; Copyright 2023, The Human Intracerebral EEG Platform. Contact: support@thehip.app.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

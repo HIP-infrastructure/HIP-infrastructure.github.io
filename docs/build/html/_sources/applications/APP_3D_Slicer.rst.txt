@@ -2,7 +2,7 @@
 ***********
 
 3D Slicer is a free, open source and multi-platform software package widely used for medical, biomedical,
-and related imaging research. ([Fedorov_2012]_).
+and related imaging research ([Fedorov_2012]_).
 
 Official ressources
 ===================
