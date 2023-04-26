@@ -102,6 +102,7 @@ It contains the following sections:
    GARDEL<applications/APP_GARDEL>
    FileManager<applications/APP_FileManager>
    Freesurfer<applications/APP_Freesurfer>
+   Frites<applications/APP_Frites>
    FSL<applications/APP_FSL>
    HiBoP<applications/APP_HiBoP>
    IntrAnat<applications/APP_IntrAnat>
