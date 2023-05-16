@@ -3,7 +3,7 @@ MRI Deface
 
 MRI Deface is an automated Defacing Tools ([Bischoff-Grethe_2007]_).
 
-Official ressources
+Official resources
 ===================
 
 	

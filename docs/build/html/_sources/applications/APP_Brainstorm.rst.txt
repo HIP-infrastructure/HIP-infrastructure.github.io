@@ -4,7 +4,7 @@ Brainstorm
 Brainstorm is an application dedicated to the analysis of brain recordings:
 MEG, EEG, fNIRS, ECoG, depth electrodes and multiunit electrophysiology ([Tadel_2011]_).
 
-Official ressources
+Official resources
 ===================
 
 	
@@ -13,7 +13,7 @@ Official ressources
 	* `Brainstorm download <https://neuroimage.usc.edu/bst/download.php>`_ 
 	
 
-HIP ressources
+HIP resources
 ===============
 
 The following HIP tutorials are available:

@@ -6,7 +6,7 @@ Freesurfer is developed by the `Laboratory for Computational Neuroimaging <https
 at the `Athinoula A. Martinos Center for Biomedical Imaging <http://martinos.org/>`_.
 
 
-Official ressources
+Official resources
 ===================
 
 	

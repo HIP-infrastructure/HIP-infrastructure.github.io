@@ -4,7 +4,7 @@ AnyWave
 AnyWave is a software designed to easily open and view data recorded by EEG or MEG acquisition systems.
 AnyWave is modular and can load additionnal plug-ins to enhance its features and capabilities ([Colombet_2015]_).
 
-Official ressources
+Official resources
 ===================
 
 	

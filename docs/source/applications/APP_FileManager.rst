@@ -7,7 +7,7 @@ FileManager (PCManFM) is a Qt-based file manager which uses GLib for file manage
 FileManager (PCManFM) helps you organize, list, and locate files and directories on the HIP.
 
 
-Official ressources
+Official resources
 ===================
 
 	

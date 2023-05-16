@@ -7,7 +7,7 @@ Frites is a Python toolbox for assessing information-theorical measures on human
 (i.e modulated by the task). The toolbox also includes directed and undirected connectivity metrics such as group-level statistics ([Combrisson_2022a]_, [Combrisson_2022b]_). 
 
 
-Official ressources
+Official resources
 ===================
 
 	

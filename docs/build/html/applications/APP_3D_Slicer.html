@@ -72,7 +72,8 @@
 <p class="caption" role="heading"><span class="caption-text">HIP apps</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">3D Slicer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#official-ressources">Official ressources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#official-resources">Official resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configure-3d-slicer-to-use-extra-modules-and-extensions">Configure 3D Slicer to use extra modules and extensions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
 </ul>
 </li>
@@ -125,8 +126,8 @@
 <h1>3D Slicer<a class="headerlink" href="#d-slicer" title="Permalink to this headline"></a></h1>
 <p>3D Slicer is a free, open source and multi-platform software package widely used for medical, biomedical,
 and related imaging research (<a class="reference internal" href="#fedorov-2012" id="id1"><span>[Fedorov_2012]</span></a>).</p>
-<section id="official-ressources">
-<h2>Official ressources<a class="headerlink" href="#official-ressources" title="Permalink to this headline"></a></h2>
+<section id="official-resources">
+<h2>Official resources<a class="headerlink" href="#official-resources" title="Permalink to this headline"></a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><p><a class="reference external" href="https://www.slicer.org/">3D Slicer website</a></p></li>
@@ -137,6 +138,64 @@ and related imaging research (<a class="reference internal" href="#fedorov-2012"
 <li><p><a class="reference external" href="https://github.com/Slicer/Slicer">3D Slicer GitHub</a></p></li>
 </ul>
 </div></blockquote>
+</section>
+<section id="configure-3d-slicer-to-use-extra-modules-and-extensions">
+<h2>Configure 3D Slicer to use extra modules and extensions<a class="headerlink" href="#configure-3d-slicer-to-use-extra-modules-and-extensions" title="Permalink to this headline"></a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These configuration steps only need to be performed once.</p>
+</div>
+<p>This section explains how to configure 3D Slicer so extra modules and extensions from the “Extensions Manager” can be installed.</p>
+<p>Start 3D Slicer in a new <a class="reference internal" href="../guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html"><span class="doc">Desktop</span></a> and take the following steps:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/APP_3DSLICER_settings.png"><img alt="../_images/APP_3DSLICER_settings.png" src="../_images/APP_3DSLICER_settings.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>1. Open 3D Slicer settings.</strong> In the menu bar, select “Edit” &gt; “Application Settings”.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/APP_3DSLICER_modules.png"><img alt="../_images/APP_3DSLICER_modules.png" src="../_images/APP_3DSLICER_modules.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>2. Add a new module path.</strong> In the “Settings” side menu, select “Modules” and click on the “Add” button under the “Paths” section. This will open a file browser.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/APP_3DSLICER_browse.png"><img alt="../_images/APP_3DSLICER_browse.png" src="../_images/APP_3DSLICER_browse.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>3. Select your nextcloud folder.</strong> In the file browser, browse to your /home/&lt;HIP_USER&gt; directory where &lt;HIP_USER&gt; is your HIP username and select the “nextcloud” folder before clicking on the “Choose” button.
+The file browser will close itself.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/APP_3DSLICER_validate.png"><img alt="../_images/APP_3DSLICER_validate.png" src="../_images/APP_3DSLICER_validate.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>4. Save modifications.</strong> The path to your nextcloud folder should now appear in the panel titled “Additional module paths”.
+At the bottom of the “Settings” window, click on the “OK” button to save your modifications.</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/APP_3DSLICER_restart.png"><img alt="../_images/APP_3DSLICER_restart.png" src="../_images/APP_3DSLICER_restart.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>5. Restart 3D Slicer.</strong> A pop-up window will ask you to restart 3D Slicer. Click “Yes”.</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>3D Slicer will automatically close itself but will not restart. Please wait for the application to be fully shutdown and restart it manually.</p>
+<p>You are now ready to install and use extensions from 3D Slicer “Extensions Manager”:</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/APP_3DSLICER_extmanager.png"><img alt="../_images/APP_3DSLICER_extmanager.png" src="../_images/APP_3DSLICER_extmanager.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>6. Open 3D Slicer Extensions Manager.</strong> In the menu bar, select “View” &gt; “Extensions Manager”.</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/APP_3DSLICER_exinstall.png"><img alt="../_images/APP_3DSLICER_exinstall.png" src="../_images/APP_3DSLICER_exinstall.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>7. Install extensions.</strong> The middle tab “Install Extensions” lets you browse and install new extensions from an online catalog.
+Seamlessly install the desired extensions by clicking on the associated “INSTALL” button.
+You will have to restart 3D Slicer after installing new extensions as prompted in the interface. Remember that 3D Slicer will automatically close itself but needs to be restarted manually.
+The left tab “Manage Extensions (X)” where X is the number of installed extensions, lets you disable and/or uninstall any previously installed extensions.</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>

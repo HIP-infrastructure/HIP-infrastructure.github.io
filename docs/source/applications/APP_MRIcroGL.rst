@@ -4,7 +4,7 @@ MRIcroGL
 MRIcroGL is a cross-platform tool for viewing DICOM and NIfTI format images. It provides a drag-and-drop user interface
 as well as a scripting language. ([Rorden_2000]_).
 
-Official ressources
+Official resources
 ===================
 
 	

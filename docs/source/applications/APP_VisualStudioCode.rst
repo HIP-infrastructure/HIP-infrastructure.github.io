@@ -7,7 +7,7 @@ Visual Studio Code, also commonly referred to as VS Code, is a source-code edito
 syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add functionality.
 
 
-Official ressources
+Official resources
 ===================
 
 	

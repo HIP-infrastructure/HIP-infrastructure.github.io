@@ -4,7 +4,7 @@ HiBoP
 HiBoP is an application dedicated to the visualization of intracranial brain recordings such as intracranial electroencephalography
 (iEEG), cortico-cortical evoked potentials (CCEP) and functional magnetic resonance imaging (fMRI).
 
-Official ressources
+Official resources
 ===================
 
 	* `HiBoP GitHub <https://github.com/hbp-HiBoP/HiBoP>`_

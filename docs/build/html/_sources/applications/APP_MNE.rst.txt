@@ -6,7 +6,7 @@ MNE
 MNE is an open-source Python package for exploring, visualizing, and analyzing human neurophysiological data:
 MEG, EEG, sEEG, ECoG, NIRS ([Gramfort_2013]_).
 
-Official ressources
+Official resources
 ===================
 
 	

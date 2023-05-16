@@ -8,7 +8,7 @@ automatic conversion of user-specified model equations into fast simulation code
 Bayesian parameter optimization in epilepsy patient models; data and software for mouse brain simulation;
 and extensive educational material ([Sanz_Leon_2013]_, [Schirner_2022]_).
 
-Official ressources
+Official resources
 ===================
 
 	

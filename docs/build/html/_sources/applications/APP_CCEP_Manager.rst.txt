@@ -7,7 +7,7 @@ CCEP Manager is a standalone implementation of the `F-Tract <https://f-tract.eu/
 of iEEG data coupled with electrical stimulation for the extraction of Cortico-Cortical Evoked Potentials features 
 and the generation of connectivity atlases.
 
-Official ressources
+Official resources
 ===================
 
 	

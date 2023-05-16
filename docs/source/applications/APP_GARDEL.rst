@@ -5,7 +5,7 @@ GARDEL
 
 GARDEL is a tool for automatic segmentation and labelization of SEEG contacts ([Medina_2018]_).
 
-Official ressources
+Official resources
 ===================
 
 	
