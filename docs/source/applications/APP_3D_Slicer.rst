@@ -15,10 +15,10 @@ Official resources
 	* `3D Slicer download <https://download.slicer.org/>`_ 
 	* `3D Slicer GitHub <https://github.com/Slicer/Slicer>`_
 	
-Configure 3D Slicer to use extra modules and extensions
-=========================================================
+Configure 3D Slicer on the HIP in order to use modules and extensions
+======================================================================
 
-.. warning::
+.. important::
 
    These configuration steps only need to be performed once. 
 
