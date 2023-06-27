@@ -1,14 +1,14 @@
-.. include:: hip_beta_warning.rst
+.. include:: hip_header_msg.rst
 
-.. figure:: /art/hip_documentation_header_beta_onboarding.png
+.. figure:: /art/hip_documentation_header.png
 	:width: 800px
 	:align: center
 
 	**The HIP.** *An open-source platform designed for large scale and optimized
 	collection, storage, curation, sharing and analysis of multiscale Human iEEG data at the international level.*
 
-HIP Beta onboarding
-********************
+HIP onboarding
+****************
 
 This quick start guide serves as an introduction to the HIP and briefly explains how to apply for a HIP account,
 access the platform and operate its main features and services.
@@ -54,7 +54,7 @@ HIP services overview
 `Log in the HIP portal <https://thehip.app/login>`_ using your EBRAINS account. Once connected to the HIP you will be automatically redirected to your home page from which you can access the platform main features using the side navigation menu.
 From this menu, it is possible to access the Dashboard which displays various information regarding your institution and its members to whom you can send messages using the :ref:`Talk <hip_service_talk>` service.
 The Dashboard also shows an overview of the opened :doc:`Desktops </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` and available BIDS databases in your Private Space.
-Please note that only the Private Space is available during the Beta phase. For more details regarding the various HIP Spaces, please refer
+Please note that only the Private Space is available at the moment. For more details regarding the various HIP Spaces, please refer
 to the :doc:`How to use the HIP spaces and share data with other users </guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>` guide.
 
 From the side navigation menu, it is also possible to access the App Catalog, which lists all the applications made available to the HIP users 
@@ -129,7 +129,7 @@ the following video (2'30''), from the :doc:`How to use Desktops and run applica
 	
 |
 
-.. include:: hip_beta_data_persistence.rst
+.. include:: hip_data_persistence.rst
 
 Tutorials
 ==========
@@ -156,6 +156,6 @@ There are several tutorials available that can be used to get familiar with the 
 Feedback
 =========
 
-The HIP is in closed beta and we need your feedback to improve our products and fix bugs on the platform. 
+The HIP is under active development and we need your feedback to improve our products and fix bugs on the platform. 
 Feel free to fill out the dedicated `feedback forms <https://thehip.app/apps/forms/>`_ available on the platform, your input is greatly appreciated.
 

@@ -1,4 +1,4 @@
-.. include:: ../hip_beta_warning.rst
+.. include:: ../hip_header_msg.rst
 
 Epileptogenicity map computation with Brainstorm
 **************************************************
@@ -72,7 +72,7 @@ Please, refer to the :doc:`How to use Desktops and run applications from the App
 Compute a map of epileptogenicity
 =================================
 
-.. include:: ../hip_beta_data_persistence.rst
+.. include:: ../hip_data_persistence.rst
 
 It is mandatory to have the 3D positions of the recording contacts of the SEEG electrodes to compute epileptogenicity maps. 
 The contact names and coordinates of the SEEG electrodes are provided in the *elec_pos_patient.txt* implantation file that will

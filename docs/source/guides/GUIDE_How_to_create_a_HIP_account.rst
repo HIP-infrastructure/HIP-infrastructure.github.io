@@ -1,4 +1,4 @@
-.. include:: ../hip_beta_warning.rst
+.. include:: ../hip_header_msg.rst
 
 How to create a HIP account
 *****************************
@@ -73,8 +73,7 @@ All HIP users are member of at least one group corresponding to pre-identified i
 
 .. admonition:: Unlisted institutions
 
-   The HIP is in closed beta and users from non-listed institutions will be able to request access to the platform upon release.
-   For more information please `contact HIP support <mailto:support@thehip.app?subject=New%20HIP%20institution%20request%20>`_.
+   Access to the HIP is restricted to users from registered institutions. For more information please `contact the HIP support <mailto:support@thehip.app?subject=New%20HIP%20institution%20request%20>`_.
 
 To register for a HIP account please send an `e-mail to HIP support <mailto:support@thehip.app?subject=HIP%20account%20request%20>`_ with the following information (items marked with an asterisk are mandatory):
 

@@ -1,12 +1,12 @@
 .. HIP user documentation documentation master file, created by
    sphinx-quickstart on Tue Feb 15 17:05:36 2022.
 
-.. include:: hip_beta_warning.rst
+.. include:: hip_header_msg.rst
 
 .. figure:: /art/hip_documentation_header.png
 	:align: center	
 	
-|	
+|
 	
 The `HIP <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_ is an open-source platform designed for large scale and optimized collection, storage, curation, sharing
 and analysis of multiscale Human iEEG data at the international level. The HIP covers the entire field of iEEG-based research; i.e. multi-scale investigation of cognition, consciousness, connectomics and related disorders.
@@ -56,7 +56,7 @@ It contains the following sections:
 .. toctree::
    :hidden:   
    
-   > > > > > HIP Beta onboarding < < < < < <hip_beta_onboarding>
+   > > > > > > > Onboarding < < < < < < < <hip_onboarding>
    
 .. toctree::
    :caption: HIP guides

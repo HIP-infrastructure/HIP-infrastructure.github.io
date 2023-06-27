@@ -1,4 +1,4 @@
-.. include:: ../hip_beta_warning.rst
+.. include:: ../hip_header_msg.rst
 
 SEEG electrode placement with Brainstorm
 *****************************************
@@ -61,7 +61,7 @@ Pleases refer to the :doc:`How to use Desktops and run applications from the App
 Place SEEG electrodes with Brainstorm
 =======================================
 
-.. include:: ../hip_beta_data_persistence.rst
+.. include:: ../hip_data_persistence.rst
 
 The accurate placement of SEEG electrodes requires some knowledge and a good understanding of the implantation procedure
 (an implantation scheme or equivalent) and of the type of material that has been implanted (SEEG electrode type/characteristics)

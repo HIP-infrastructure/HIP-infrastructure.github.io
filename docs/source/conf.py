@@ -18,11 +18,13 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'HIP user documentation'
-copyright = '2023, The Human Intracerebral EEG Platform. Contact: support@thehip.app'
+version = '1.0'
+copyright = '2023, The Human Intracerebral EEG Platform. Contact: support@thehip.app. v{}'.format(version)
 author = 'HIP documentation team'
 
+
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+#release = '0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -49,7 +51,7 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
-html_logo = 'art/hip_beta_logo.png'
+html_logo = 'art/hip_logo.png'
 
 # Cloud
 #html_theme = "cloud" # cloud

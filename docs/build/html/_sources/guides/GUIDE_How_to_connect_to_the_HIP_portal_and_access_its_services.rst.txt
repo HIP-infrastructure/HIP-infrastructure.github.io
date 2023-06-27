@@ -1,4 +1,4 @@
-.. include:: ../hip_beta_warning.rst
+.. include:: ../hip_header_msg.rst
 
 How to connect to the HIP portal and access its services
 **********************************************************
@@ -51,7 +51,7 @@ When connecting to the HIP you are automatically redirected to the **home page**
 	  as remote virtual computers where HIP users can run applications from the App Catalog to process 
 	  data :doc:`uploaded</guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>` or :ref:`shared in their Private Space <the_private_space>`.
 	* **BIDS**: :ref:`The BIDS importer <BIDS_importer>` is a step-by-step tool that can be used to import raw data into a BIDS database.
-	* **About**: The HIP home page. It contains links to the `HIP website <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_, the :doc:`onboarding guide <../hip_beta_onboarding>` and the `feedback forms <https://thehip.app/apps/forms/>`_.
+	* **About**: The HIP home page. It contains links to the `HIP website <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_, the :doc:`onboarding guide <../hip_onboarding>` and the `feedback forms <https://thehip.app/apps/forms/>`_.
 	* **App Catalog**: A comprehensive list of all the applications made available to the HIP users so they can process their data. 
 	* **Documentation**: The documentation page contains links to the :doc:`user documentation <../index>`, the `technical documentation <https://github.com/HIP-infrastructure/hip-doc>`_ and the `HIP website <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_.
 	* **Bug Report**: A direct link to the bug report form. 

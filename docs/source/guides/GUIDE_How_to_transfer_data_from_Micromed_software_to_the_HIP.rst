@@ -1,4 +1,4 @@
-.. include:: ../hip_beta_warning.rst
+.. include:: ../hip_header_msg.rst
 
 How to transfer data from Micromed software to the HIP
 *******************************************************

@@ -1,4 +1,4 @@
-.. include:: ../hip_beta_warning.rst
+.. include:: ../hip_header_msg.rst
 
 CCEP computation with Brainstorm
 **********************************
@@ -60,11 +60,11 @@ Please, refer to the :doc:`How to use Desktops and run applications from the App
 Compute cortico-cortical evoked potentials
 ===========================================
 
-.. include:: ../hip_beta_data_persistence.rst
+.. include:: ../hip_data_persistence.rst
 
 There are different ways to compute CCEPs depending on your data and the analyzes you want to perform.
 The processing steps used in this tutorial are derived from a pipeline developed during `The Functional Brain Tractography Project <https://f-tract.eu/>`_ 
-(see [Trebaul_2018]_ for full scientific details) which has been simplified for demonstration purposes. Notably, this tutorial shows how to: (1) import raw SEEG data into Brainstorm; (2) extract a stimulation train; (3) mark bad channels;
+(see [Trebaul_2018c]_ for full scientific details) which has been simplified for demonstration purposes. Notably, this tutorial shows how to: (1) import raw SEEG data into Brainstorm; (2) extract a stimulation train; (3) mark bad channels;
 (4) detect the stimulation artifacts (individual pulses); (5) apply bipolar montage; (6) remove stimulation artifacts; (7) apply a band-pass filter; (8) compute the average response
 across all pulses.
 Depending on your objective, some of these steps might not be relevant/necessary or might be executed in a different order. 
@@ -86,6 +86,6 @@ describes the different steps to compute CCEPs using Brainstorm:
 References
 ==========
 
-.. [Trebaul_2018] Trebaul, L., Deman, P., Tuyisenge, V., Jedynak, M., Hugues, E., Rudrauf, D., Bhattacharjee, M., Tadel, F., Chanteloup-Forêt, B., Saubat, C., Reyes Mejia, G.C., Adam, C., Nica, A., Pail, M., Dubeau, F., Rheims, S., Trébuchon, A., Wang, H., Liu, S., Blauwblomme, T., Garces, M., De Palma, L., Valentín, A., Metsahonkala, E.-L., Petrescu, A.M., Landré, E., Szurhaj, W., Hirsch, E., Valton, L., Rocamora, R., Schulze-Bonhage, A., Mîndruţă, I., Francione, S., Maillard, L., Taussig, D., Kahane, P., David, O., 2018. Probabilistic functional tractography of the human cortex revisited. NeuroImage 181, 414–429. doi:10.1016/j.neuroimage.2018.07.039.
+.. [Trebaul_2018c] Trebaul, L., Deman, P., Tuyisenge, V., Jedynak, M., Hugues, E., Rudrauf, D., Bhattacharjee, M., Tadel, F., Chanteloup-Forêt, B., Saubat, C., Reyes Mejia, G.C., Adam, C., Nica, A., Pail, M., Dubeau, F., Rheims, S., Trébuchon, A., Wang, H., Liu, S., Blauwblomme, T., Garces, M., De Palma, L., Valentín, A., Metsahonkala, E.-L., Petrescu, A.M., Landré, E., Szurhaj, W., Hirsch, E., Valton, L., Rocamora, R., Schulze-Bonhage, A., Mîndruţă, I., Francione, S., Maillard, L., Taussig, D., Kahane, P., David, O., 2018. Probabilistic functional tractography of the human cortex revisited. NeuroImage 181, 414–429. doi:10.1016/j.neuroimage.2018.07.039.
 
 
