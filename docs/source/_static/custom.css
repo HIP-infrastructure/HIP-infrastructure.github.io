@@ -1,0 +1,5 @@
+/* Make custom styles here */
+
+.wy-side-nav-search>div.version {
+ color:hsla(0,0%,100%,1);
+}

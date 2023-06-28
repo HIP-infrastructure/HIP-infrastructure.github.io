@@ -18,8 +18,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'HIP user documentation'
-version = '1.0'
-copyright = '2023, The Human Intracerebral EEG Platform. Contact: support@thehip.app. v{}'.format(version)
+version = '2.0'
+copyright = '2023, The Human Intracerebral EEG Platform. Contact: support@thehip.app'
 author = 'HIP documentation team'
 
 
@@ -75,7 +75,7 @@ html_theme_options = {
 #html_theme_options = {
 #'color_primary': 'blue',
 #'nav_title':'HIP user documentation',
-#'nav_links':[{'href':'toto','title':'tata','internal':'dunno'}],
+#'nav_links':[{'href':'a','title':'b','internal':'c'}],
 #'globaltoc_depth':'1'
 #}
 #html_sidebars = {
@@ -86,4 +86,5 @@ html_theme_options = {
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = [] #['_static']
+html_static_path = ['_static'] #['_static'] []
+html_css_files = ["custom.css"]
