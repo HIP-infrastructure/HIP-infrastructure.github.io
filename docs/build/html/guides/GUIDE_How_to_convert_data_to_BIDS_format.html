@@ -55,11 +55,7 @@
 <li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services.html">How to connect to the HIP portal and access its services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html">How to prepare and upload data to the HIP</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">How to convert data to BIDS format</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#about-this-tutorial">About this tutorial</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#objective">Objective</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#scope">Scope</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#about-this-tutorial">About this tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#the-brain-imaging-data-structure">The Brain Imaging Data Structure</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#bids-in-practice">BIDS in practice</a></li>
 </ul>
@@ -85,7 +81,6 @@
 <p class="caption" role="heading"><span class="caption-text">HIP datasets</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Epimap.html">Epimap tutorial dataset</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Cogepistim.html">COGEPISTIM database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Data_for_electrodes_labelling.html">Data for electrodes labelling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_iEEG_task_cognitive.html">iEEG cognitive task</a></li>
 </ul>
@@ -142,37 +137,20 @@
 <figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../_images/GUIDE_BIDS_importer.png"><img alt="../_images/GUIDE_BIDS_importer.png" src="../_images/GUIDE_BIDS_importer.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>The BIDS Importer.</strong> <em>The BIDS Importer is a step-by-step tool that can be used to import raw data into a BIDS database.</em></span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>The BIDS Importer.</strong> <em>The BIDS Importer is a step-by-step tool that can be used to import raw data into a BIDS dataset.</em></span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="about-this-tutorial">
 <h2>About this tutorial<a class="headerlink" href="#about-this-tutorial" title="Permalink to this headline"></a></h2>
-<section id="objective">
-<h3>Objective<a class="headerlink" href="#objective" title="Permalink to this headline"></a></h3>
 <p>The objective of this guide is to introduce HIP users to the BIDS Importer, a step-by-step tool designed specifically for the platform
-and allowing its users to import raw data into a BIDS database.</p>
-<p>This guide first gives a general introduction to the BIDS standard and its leading guidelines, so HIP users know its purpose and
-become familiar with its basic principles.
-It then focuses on the BIDS importer itself describing its main features and limitations, including a video guide explaining how to:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Create or select a BIDS database</p></li>
-<li><p>Create or update a subject with associated clinical information</p></li>
-<li><p>Select and describe data files to import using BIDS entities</p></li>
-<li><p>Import the prepared data into a new or existing BIDS database</p></li>
-</ul>
-</div></blockquote>
-</section>
-<section id="scope">
-<h3>Scope<a class="headerlink" href="#scope" title="Permalink to this headline"></a></h3>
-<p>This guide explains how to use the BIDS importer and gives the basics regarding the BIDS standard.
-This guide along with the advice found in the BIDS importer itself should be sufficient to perform basic data importation without further a
-priori knowledge regarding the standard.</p>
+and allowing its users to import raw data into a BIDS dataset.</p>
+<p>This guide first gives a general introduction to the BIDS standard and its leading guidelines, it then focuses on the BIDS importer itself describing its main features and limitations,
+including a video guide (not yet available).</p>
+<p>This guide along with the hints and tips found in the BIDS importer itself should be sufficient to perform basic data importation without further a
+priori knowledge regarding the BIDS standard.</p>
 <p>The importation process is fully guided but has a limited scalability and is time consuming. Therefore, advanced users should rely on scripting
-using the <a class="reference internal" href="../applications/APP_BIDS_Manager.html"><span class="doc">BIDS Manager</span></a>, available on the platform, so they can programmatically prepare and import their data into a BIDS database.</p>
-<p>This guide does not explain <a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html"><span class="doc">how to prepare and upload data to the HIP</span></a>,
-nor goes into all the intricacies of the <a class="reference external" href="https://bids-specification.readthedocs.io/en/stable/">BIDS standard</a>.</p>
-</section>
+using the <a class="reference internal" href="../applications/APP_BIDS_Manager.html"><span class="doc">BIDS Manager</span></a>, available on the platform, so they can programmatically prepare and import their data into a BIDS dataset.</p>
+<p>To upload data on the platform, please refer to the dedicated <a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html"><span class="doc">guide</span></a>.</p>
 </section>
 <section id="the-brain-imaging-data-structure">
 <span id="bids-introduction"></span><h2>The Brain Imaging Data Structure<a class="headerlink" href="#the-brain-imaging-data-structure" title="Permalink to this headline"></a></h2>
@@ -201,13 +179,13 @@ Several papers have been published covering the standard and its extensions:</p>
 <section id="bids-in-practice">
 <h3>BIDS in practice<a class="headerlink" href="#bids-in-practice" title="Permalink to this headline"></a></h3>
 <p>BIDS standardize the way to organize, name and describe files of a dataset.</p>
-<p>In practice, a BIDS database is a directory containing all the data, called the <strong>raw directory</strong>, with a unique folder per subject.
+<p>In practice, a BIDS dataset is a directory containing all the data, called the <strong>raw directory</strong>, with a unique folder per subject.
 Subject folders contain <strong>data types subfolders</strong> which group similar data together. Data files have to follow a specific naming convention relying
 on <strong>BIDS entities</strong> and only a selection of open-source formats are allowed.
 The dataset and its files are further described using <strong>metadata files</strong>.</p>
 <p><strong>BIDS directory tree</strong> can be summarized as follow:</p>
 <div class="line-block">
-<div class="line"><strong>/project</strong> - BIDS database raw directory.</div>
+<div class="line"><strong>/project</strong> - BIDS dataset raw directory.</div>
 <div class="line">└── <strong>/subject</strong> - Subject folder. 1 per subject.</div>
 <div class="line-block">
 <div class="line">└── <strong>/session(s)</strong> - Optional  session folder to group data (e.g. subject’s inclusions).</div>
@@ -238,7 +216,7 @@ be extended through <a class="reference external" href="https://bids.neuroimagin
 </div></blockquote>
 <p>The metadata used to describe the data files or the dataset itself is stored in companion <strong>.json</strong> or <strong>.tsv</strong> files, while the data files themselves
 must conform to a selection of open-source formats given by the standard.</p>
-<p><strong>BIDS file types</strong> that can be found in a BIDS database:</p>
+<p><strong>BIDS file types</strong> that can be found in a BIDS dataset:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>.json</strong>: contain “key: value” metadata.</p></li>
@@ -258,8 +236,8 @@ BIDS entities are key-value pairs chained with underscores and are used to struc
 <p>BIDS entities are used at the subject level on raw data and associated metadata files, between- and within-subjects,
 but may not be used on some study-level metadata files (e.g. <em>dataset_description.json</em>, <em>participants.tsv</em>, <em>*sessions.tsv</em>, <em>*scans.tsv</em>)</p>
 <p>BIDS entities have a definite order. Keys are alphanumeric while values can be either alphanumeric or integers depending on the considered entity.
-BIDS entities can be required or optional, depending on the modality and design choices of the BIDS database, and some have to be consistent across subjects/sessions when used.</p>
-<p>The following table is an example of BIDS entities which can be found in a BIDS database:</p>
+BIDS entities can be required or optional, depending on the modality and design choices of the BIDS dataset, and some have to be consistent across subjects/sessions when used.</p>
+<p>The following table is an example of BIDS entities which can be found in a BIDS dataset:</p>
 <table class="docutils align-center">
 <colgroup>
 <col style="width: 10%" />
@@ -354,7 +332,7 @@ BIDS entities can be required or optional, depending on the modality and design 
 </table>
 <div class="admonition-unsupported-data-files admonition">
 <p class="admonition-title">Unsupported data files</p>
-<p>Data files that are not covered by the standard may still be imported in a BIDS database. They should follow BIDS guidelines as much as
+<p>Data files that are not covered by the standard may still be imported in a BIDS dataset. They should follow BIDS guidelines as much as
 possible and have to be declared in a .bidsignore file in BIDS raw directory in order to pass BIDS validation. This is not supported by
 the BIDS importer.</p>
 </div>
@@ -367,7 +345,7 @@ the BIDS importer.</p>
 </section>
 <section id="the-bids-importer">
 <span id="bids-importer"></span><h2>The BIDS Importer<a class="headerlink" href="#the-bids-importer" title="Permalink to this headline"></a></h2>
-<p>The BIDS importer is a step-by-step tool designed specifically for the platform and allowing its users to import raw data into a BIDS database.
+<p>The BIDS importer is a step-by-step tool designed specifically for the platform and allowing its users to import raw data into a BIDS dataset.
 The BIDS importer emphasizes simplicity, readability and safeguarding. It purposefully restrains the importation procedure to a selection of modalities
 and is limited to mandatory BIDS entities with a few exceptions.</p>
 <p id="bids-importer-dtypes">Data types and corresponding BIDS modalities available in the BIDS importer are as follows:</p>
@@ -400,7 +378,7 @@ and is limited to mandatory BIDS entities with a few exceptions.</p>
 </div></blockquote>
 <section id="video-guide">
 <h3>Video guide<a class="headerlink" href="#video-guide" title="Permalink to this headline"></a></h3>
-<p>The following video guide (X’XX’’) serves as an introduction to the BIDS importer and how to import raw data into a BIDS database:</p>
+<p>The following video guide (not yet available) serves as an introduction to the BIDS importer and how to import raw data into a BIDS dataset:</p>
 <center>
 <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
 <source src="todo.mp4" type="video/mp4">

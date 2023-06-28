@@ -61,10 +61,10 @@ In order to publish your edits, you need push your local version of the document
 ```bash
 cd ..
 git add .
-git commit -a -m "My edits."
+git commit -m "My edits."
 git push
 ```
 
-Replace  `My edits.` with a message giving insights on the modifications you made to the documentation.
+Replace  `My edits.` with a message giving insights on the modifications you have made to the documentation.
 
 Wait a couple of minutes before checking the new version of the documentation at [hip-infrastructure.github.io](https://hip-infrastructure.github.io/build/html/index.html)

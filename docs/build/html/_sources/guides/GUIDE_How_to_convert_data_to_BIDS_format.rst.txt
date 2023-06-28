@@ -7,38 +7,24 @@ How to convert data to BIDS format
 	:width: 600px
 	:align: center
 
-	**The BIDS Importer.** *The BIDS Importer is a step-by-step tool that can be used to import raw data into a BIDS database.*
+	**The BIDS Importer.** *The BIDS Importer is a step-by-step tool that can be used to import raw data into a BIDS dataset.*
 
 About this tutorial
 ====================
 
-Objective
----------
-
 The objective of this guide is to introduce HIP users to the BIDS Importer, a step-by-step tool designed specifically for the platform
-and allowing its users to import raw data into a BIDS database.
+and allowing its users to import raw data into a BIDS dataset. 
 
-This guide first gives a general introduction to the BIDS standard and its leading guidelines, so HIP users know its purpose and
-become familiar with its basic principles.
-It then focuses on the BIDS importer itself describing its main features and limitations, including a video guide explaining how to:
+This guide first gives a general introduction to the BIDS standard and its leading guidelines, it then focuses on the BIDS importer itself describing its main features and limitations,
+including a video guide (not yet available).
 
-	* Create or select a BIDS database
-	* Create or update a subject with associated clinical information
-	* Select and describe data files to import using BIDS entities
-	* Import the prepared data into a new or existing BIDS database	
-	
-Scope 
-------
-
-This guide explains how to use the BIDS importer and gives the basics regarding the BIDS standard. 
-This guide along with the advice found in the BIDS importer itself should be sufficient to perform basic data importation without further a
-priori knowledge regarding the standard.
+This guide along with the hints and tips found in the BIDS importer itself should be sufficient to perform basic data importation without further a
+priori knowledge regarding the BIDS standard.
 
 The importation process is fully guided but has a limited scalability and is time consuming. Therefore, advanced users should rely on scripting
-using the :doc:`BIDS Manager </applications/APP_BIDS_Manager>`, available on the platform, so they can programmatically prepare and import their data into a BIDS database.
+using the :doc:`BIDS Manager </applications/APP_BIDS_Manager>`, available on the platform, so they can programmatically prepare and import their data into a BIDS dataset.
 
-This guide does not explain :doc:`how to prepare and upload data to the HIP </guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>`,
-nor goes into all the intricacies of the `BIDS standard <https://bids-specification.readthedocs.io/en/stable/>`_.
+To upload data on the platform, please refer to the dedicated :doc:`guide </guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>`.
 
 .. _BIDS_introduction:
 
@@ -69,14 +55,14 @@ BIDS in practice
 
 BIDS standardize the way to organize, name and describe files of a dataset.
 
-In practice, a BIDS database is a directory containing all the data, called the **raw directory**, with a unique folder per subject.
+In practice, a BIDS dataset is a directory containing all the data, called the **raw directory**, with a unique folder per subject.
 Subject folders contain **data types subfolders** which group similar data together. Data files have to follow a specific naming convention relying
 on **BIDS entities** and only a selection of open-source formats are allowed.
 The dataset and its files are further described using **metadata files**. 
 
 **BIDS directory tree** can be summarized as follow:
 
-| **/project** - BIDS database raw directory.
+| **/project** - BIDS dataset raw directory.
 | └── **/subject** - Subject folder. 1 per subject.
 |     └── **/session(s)** - Optional  session folder to group data (e.g. subject's inclusions).
 |        └── **/data type(s)** - Data type folder. Group data of the same type.
@@ -103,7 +89,7 @@ be extended through `BIDS extensions proposals <https://bids.neuroimaging.io/get
 The metadata used to describe the data files or the dataset itself is stored in companion **.json** or **.tsv** files, while the data files themselves
 must conform to a selection of open-source formats given by the standard.
 
-**BIDS file types** that can be found in a BIDS database:
+**BIDS file types** that can be found in a BIDS dataset:
 
 	* **.json**: contain "key: value" metadata.
 	* **.tsv**: contain tables of metadata.
@@ -124,9 +110,9 @@ BIDS entities are used at the subject level on raw data and associated metadata 
 but may not be used on some study-level metadata files (e.g. *dataset_description.json*, *participants.tsv*, *\*sessions.tsv*, *\*scans.tsv*)		
 	
 BIDS entities have a definite order. Keys are alphanumeric while values can be either alphanumeric or integers depending on the considered entity.
-BIDS entities can be required or optional, depending on the modality and design choices of the BIDS database, and some have to be consistent across subjects/sessions when used.	
+BIDS entities can be required or optional, depending on the modality and design choices of the BIDS dataset, and some have to be consistent across subjects/sessions when used.	
 
-The following table is an example of BIDS entities which can be found in a BIDS database:
+The following table is an example of BIDS entities which can be found in a BIDS dataset:
 
 .. table::
 	:align: center
@@ -168,7 +154,7 @@ The following table is an example of BIDS entities which can be found in a BIDS 
 
 .. admonition:: Unsupported data files
 
-   Data files that are not covered by the standard may still be imported in a BIDS database. They should follow BIDS guidelines as much as
+   Data files that are not covered by the standard may still be imported in a BIDS dataset. They should follow BIDS guidelines as much as
    possible and have to be declared in a .bidsignore file in BIDS raw directory in order to pass BIDS validation. This is not supported by 
    the BIDS importer.
    
@@ -182,7 +168,7 @@ The following table is an example of BIDS entities which can be found in a BIDS 
 The BIDS Importer
 ==================
 
-The BIDS importer is a step-by-step tool designed specifically for the platform and allowing its users to import raw data into a BIDS database.
+The BIDS importer is a step-by-step tool designed specifically for the platform and allowing its users to import raw data into a BIDS dataset.
 The BIDS importer emphasizes simplicity, readability and safeguarding. It purposefully restrains the importation procedure to a selection of modalities 
 and is limited to mandatory BIDS entities with a few exceptions. 
 
@@ -217,7 +203,7 @@ Data file formats compatible with the BIDS importer (with targeted file extensio
 Video guide
 ------------
 
-The following video guide (X'XX'') serves as an introduction to the BIDS importer and how to import raw data into a BIDS database:  
+The following video guide (not yet available) serves as an introduction to the BIDS importer and how to import raw data into a BIDS dataset:  
 
 .. raw:: html
 
