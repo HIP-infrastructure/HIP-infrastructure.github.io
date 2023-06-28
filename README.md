@@ -1,9 +1,9 @@
 # HIP user documentation
 
 User documentation for the Human Intracerebral EEG Platform, written with [Sphinx](https://www.sphinx-doc.org/en/master/index.html).
-The dedicated website [hip-infrastructure.github.io](https://hip-infrastructure.github.io/) is automatically deployed to the [github-pages](https://github.com/HIP-infrastructure/HIP-infrastructure.github.io/settings/pages) environment by the pages build and deployment workflow. In short, when a commit is pushed to the `master` branch, the documentation is automatically updated a few minutes later.
+The dedicated website [hip-infrastructure.github.io](https://hip-infrastructure.github.io/) is automatically [deployed](https://github.com/HIP-infrastructure/HIP-infrastructure.github.io/settings/pages) when a commit is pushed to the `master` branch (this takes a few minutes).
 
-# Requirements
+# Installation
 
 You need Python3, GIT and [Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html) installed on the computer you plan to use. Preferably, a computer running Ubuntu 20.04+ as it will make things easier.
 
@@ -17,7 +17,7 @@ sudo apt-get install -y python3-sphinx
 
 # How to use
 
-#### Copy
+#### Copy the repository
 First you need to clone [the repository](https://github.com/HIP-infrastructure/HIP-infrastructure.github.io), so you have a local version of the documentation on your computer:
 
 ```bash
@@ -30,7 +30,7 @@ Then you need to move inside the `docs` directory:
 cd HIP-infrastructure.github.io/docs
 ```
 
-#### Edit
+#### Edit the source files
 
 In the `docs` directory, you will find a `source` folder and a `build` folder:
 * The `build` folder contains the html pages used for the website. You do not want to edit those files.
@@ -38,7 +38,7 @@ In the `docs` directory, you will find a `source` folder and a `build` folder:
 
 Sphinx uses reStructuredText (reST) markup language and you may take a look at the [documentation](https://www.sphinx-doc.org/en/master/index.html) to learn how to edit `.rst ` files. You can also take the existing `.rst ` files as examples. You can use any text editor to edit those files, but do not change the extension.
 
-#### Check
+#### Check the website locally
 
 Once you have edited or created new `.rst ` files, you need to build the project using the following command:
 
@@ -54,9 +54,9 @@ make clean
 make html
 ```
 
-#### Publish
+#### Publish the documentation
 
-In order to publish your edits, you need push your local version of the documentation to the [remote repository](https://github.com/HIP-infrastructure/HIP-infrastructure.github.io):
+In order to publish your edits, you need to push your local version of the documentation to the [remote repository](https://github.com/HIP-infrastructure/HIP-infrastructure.github.io):
 
 ```bash
 cd ..
