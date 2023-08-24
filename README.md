@@ -68,3 +68,7 @@ git push
 Replace  `My edits.` with a message giving insights on the modifications you have made to the documentation.
 
 Wait a couple of minutes before checking the new version of the documentation at [hip-infrastructure.github.io](https://hip-infrastructure.github.io/build/html/index.html)
+
+# Acknowledgement
+
+This research was supported by the EBRAINS research infrastructure, funded from the European Union’s Horizon 2020 Framework Programme for Research and Innovation under the Specific Grant Agreement No. 945539 (Human Brain Project SGA3).
