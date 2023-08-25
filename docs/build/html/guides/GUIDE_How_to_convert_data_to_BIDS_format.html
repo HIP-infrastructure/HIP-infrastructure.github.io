@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How to convert data to BIDS format &mdash; HIP user documentation  documentation</title>
@@ -12,10 +12,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -107,6 +108,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../applications/APP_The_Virtual_Brain.html">The Virtual Brain</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../applications/APP_VisualStudioCode.html">Visual Studio Code</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Acknowledgement</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hip_acknowledgement.html">Human Brain Project</a></li>
+</ul>
 
         </div>
       </div>
@@ -133,15 +138,15 @@
            <div itemprop="articleBody">
              
   <section id="how-to-convert-data-to-bids-format">
-<h1>How to convert data to BIDS format<a class="headerlink" href="#how-to-convert-data-to-bids-format" title="Permalink to this headline"></a></h1>
+<h1>How to convert data to BIDS format<a class="headerlink" href="#how-to-convert-data-to-bids-format" title="Link to this heading"></a></h1>
 <figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../_images/GUIDE_BIDS_importer.png"><img alt="../_images/GUIDE_BIDS_importer.png" src="../_images/GUIDE_BIDS_importer.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>The BIDS Importer.</strong> <em>The BIDS Importer is a step-by-step tool that can be used to import raw data into a BIDS dataset.</em></span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>The BIDS Importer.</strong> <em>The BIDS Importer is a step-by-step tool that can be used to import raw data into a BIDS dataset.</em></span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <section id="about-this-tutorial">
-<h2>About this tutorial<a class="headerlink" href="#about-this-tutorial" title="Permalink to this headline"></a></h2>
+<h2>About this tutorial<a class="headerlink" href="#about-this-tutorial" title="Link to this heading"></a></h2>
 <p>The objective of this guide is to introduce HIP users to the BIDS Importer, a step-by-step tool designed specifically for the platform
 and allowing its users to import raw data into a BIDS dataset.</p>
 <p>This guide first gives a general introduction to the BIDS standard and its leading guidelines, it then focuses on the BIDS importer itself describing its main features and limitations,
@@ -153,7 +158,7 @@ using the <a class="reference internal" href="../applications/APP_BIDS_Manager.h
 <p>To upload data on the platform, please refer to the dedicated <a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html"><span class="doc">guide</span></a>.</p>
 </section>
 <section id="the-brain-imaging-data-structure">
-<span id="bids-introduction"></span><h2>The Brain Imaging Data Structure<a class="headerlink" href="#the-brain-imaging-data-structure" title="Permalink to this headline"></a></h2>
+<span id="bids-introduction"></span><h2>The Brain Imaging Data Structure<a class="headerlink" href="#the-brain-imaging-data-structure" title="Link to this heading"></a></h2>
 <p>The Brain Imaging Data Structure (BIDS) is a community driven standard for organizing, annotating, and describing neuroimaging, neurophysiological and
 behavioral data. It is a framework for organizing data that standardizes file organization and dataset description.</p>
 <p>For more details regarding the standard, please refer to the following external resources:</p>
@@ -177,7 +182,7 @@ Several papers have been published covering the standard and its extensions:</p>
 </ul>
 </div></blockquote>
 <section id="bids-in-practice">
-<h3>BIDS in practice<a class="headerlink" href="#bids-in-practice" title="Permalink to this headline"></a></h3>
+<h3>BIDS in practice<a class="headerlink" href="#bids-in-practice" title="Link to this heading"></a></h3>
 <p>BIDS standardize the way to organize, name and describe files of a dataset.</p>
 <p>In practice, a BIDS dataset is a directory containing all the data, called the <strong>raw directory</strong>, with a unique folder per subject.
 Subject folders contain <strong>data types subfolders</strong> which group similar data together. Data files have to follow a specific naming convention relying
@@ -230,7 +235,7 @@ BIDS entities are key-value pairs chained with underscores and are used to struc
 <figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../_images/GUIDE_BIDS_entities.png"><img alt="../_images/GUIDE_BIDS_entities.png" src="../_images/GUIDE_BIDS_entities.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>BIDS file naming.</strong> <em>File names are structured using BIDS entities (key-value pairs) connected with underscores and ending with a suffix and a file extension.</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>BIDS file naming.</strong> <em>File names are structured using BIDS entities (key-value pairs) connected with underscores and ending with a suffix and a file extension.</em></span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>BIDS entities are used at the subject level on raw data and associated metadata files, between- and within-subjects,
@@ -239,12 +244,6 @@ but may not be used on some study-level metadata files (e.g. <em>dataset_descrip
 BIDS entities can be required or optional, depending on the modality and design choices of the BIDS dataset, and some have to be consistent across subjects/sessions when used.</p>
 <p>The following table is an example of BIDS entities which can be found in a BIDS dataset:</p>
 <table class="docutils align-center">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 5%" />
-<col style="width: 76%" />
-<col style="width: 9%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Entity</p></th>
 <th class="head"><p>Key</p></th>
@@ -344,7 +343,7 @@ the BIDS importer.</p>
 </section>
 </section>
 <section id="the-bids-importer">
-<span id="bids-importer"></span><h2>The BIDS Importer<a class="headerlink" href="#the-bids-importer" title="Permalink to this headline"></a></h2>
+<span id="bids-importer"></span><h2>The BIDS Importer<a class="headerlink" href="#the-bids-importer" title="Link to this heading"></a></h2>
 <p>The BIDS importer is a step-by-step tool designed specifically for the platform and allowing its users to import raw data into a BIDS dataset.
 The BIDS importer emphasizes simplicity, readability and safeguarding. It purposefully restrains the importation procedure to a selection of modalities
 and is limited to mandatory BIDS entities with a few exceptions.</p>
@@ -377,7 +376,7 @@ and is limited to mandatory BIDS entities with a few exceptions.</p>
 </ul>
 </div></blockquote>
 <section id="video-guide">
-<h3>Video guide<a class="headerlink" href="#video-guide" title="Permalink to this headline"></a></h3>
+<h3>Video guide<a class="headerlink" href="#video-guide" title="Link to this heading"></a></h3>
 <p>The following video guide (not yet available) serves as an introduction to the BIDS importer and how to import raw data into a BIDS dataset:</p>
 <center>
 <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
@@ -390,27 +389,33 @@ Your browser does not support the video tag.
 </section>
 </section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>
-<dl class="citation">
-<dt class="label" id="gorgolewski-2016"><span class="brackets"><a class="fn-backref" href="#id1">Gorgolewski_2016</a></span></dt>
-<dd><p>Gorgolewski, K., Auer, T., Calhoun, V. et al. The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments. Sci Data 3, 160044 (2016).</p>
-</dd>
-<dt class="label" id="gorgolewski-2017"><span class="brackets"><a class="fn-backref" href="#id2">Gorgolewski_2017</a></span></dt>
-<dd><p>Gorgolewski KJ, Alfaro-Almagro F, Auer T, Bellec P, Capotă M, Chakravarty MM, et al. BIDS apps: Improving ease of use, accessibility, and reproducibility of neuroimaging data analysis methods. PLoS Comput Biol 13(3) (2017).</p>
-</dd>
-<dt class="label" id="pernet-2019"><span class="brackets"><a class="fn-backref" href="#id3">Pernet_2019</a></span></dt>
-<dd><p>Pernet CR, Appelhoff S, Gorgolewski KJ, Flandin G, Phillips C, Delorme A, Oostenveld R. EEG-BIDS, an extension to the brain imaging data structure for electroencephalography. Sci Data. 2019 Jun 25;6(1):103.</p>
-</dd>
-<dt class="label" id="niso-2018"><span class="brackets"><a class="fn-backref" href="#id4">Niso_2018</a></span></dt>
-<dd><p>Niso, G., Gorgolewski, K., Bock, E. et al. MEG-BIDS, The brain imaging data structure extended to magnetoencephalography. Sci Data 5, 180110 (2018).</p>
-</dd>
-<dt class="label" id="holdgraf-2018"><span class="brackets"><a class="fn-backref" href="#id5">Holdgraf_2018</a></span></dt>
-<dd><p>Holdgraf, Chris et al. “BIDS-iEEG: an extension to the brain imaging data structure (BIDS) specification for human intracranial electrophysiology.” (2018).</p>
-</dd>
-<dt class="label" id="moreau-2020"><span class="brackets"><a class="fn-backref" href="#id6">Moreau_2020</a></span></dt>
-<dd><p>Clara A Moreau, Martineau Jean-Louis, Ross Blair, Christopher J Markiewicz, Jessica A Turner, Vince D Calhoun, Thomas E Nichols, Cyril R Pernet, The genetics-BIDS extension: Easing the search for genetic data associated with human brain imaging, GigaScience, Volume 9, Issue 10 (2020).</p>
-</dd>
-</dl>
+<h2>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
+<div role="list" class="citation-list">
+<div class="citation" id="gorgolewski-2016" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Gorgolewski_2016</a><span class="fn-bracket">]</span></span>
+<p>Gorgolewski, K., Auer, T., Calhoun, V. et al. The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments. Sci Data 3, 160044 (2016).</p>
+</div>
+<div class="citation" id="gorgolewski-2017" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">Gorgolewski_2017</a><span class="fn-bracket">]</span></span>
+<p>Gorgolewski KJ, Alfaro-Almagro F, Auer T, Bellec P, Capotă M, Chakravarty MM, et al. BIDS apps: Improving ease of use, accessibility, and reproducibility of neuroimaging data analysis methods. PLoS Comput Biol 13(3) (2017).</p>
+</div>
+<div class="citation" id="pernet-2019" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">Pernet_2019</a><span class="fn-bracket">]</span></span>
+<p>Pernet CR, Appelhoff S, Gorgolewski KJ, Flandin G, Phillips C, Delorme A, Oostenveld R. EEG-BIDS, an extension to the brain imaging data structure for electroencephalography. Sci Data. 2019 Jun 25;6(1):103.</p>
+</div>
+<div class="citation" id="niso-2018" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">Niso_2018</a><span class="fn-bracket">]</span></span>
+<p>Niso, G., Gorgolewski, K., Bock, E. et al. MEG-BIDS, The brain imaging data structure extended to magnetoencephalography. Sci Data 5, 180110 (2018).</p>
+</div>
+<div class="citation" id="holdgraf-2018" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">Holdgraf_2018</a><span class="fn-bracket">]</span></span>
+<p>Holdgraf, Chris et al. “BIDS-iEEG: an extension to the brain imaging data structure (BIDS) specification for human intracranial electrophysiology.” (2018).</p>
+</div>
+<div class="citation" id="moreau-2020" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">Moreau_2020</a><span class="fn-bracket">]</span></span>
+<p>Clara A Moreau, Martineau Jean-Louis, Ross Blair, Christopher J Markiewicz, Jessica A Turner, Vince D Calhoun, Thomas E Nichols, Cyril R Pernet, The genetics-BIDS extension: Easing the search for genetic data associated with human brain imaging, GigaScience, Volume 9, Issue 10 (2020).</p>
+</div>
+</div>
 </section>
 </section>
 

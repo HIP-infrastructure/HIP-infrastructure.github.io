@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How to transfer data from Micromed software to the HIP &mdash; HIP user documentation  documentation</title>
@@ -12,10 +12,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -95,6 +96,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../applications/APP_The_Virtual_Brain.html">The Virtual Brain</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../applications/APP_VisualStudioCode.html">Visual Studio Code</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Acknowledgement</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hip_acknowledgement.html">Human Brain Project</a></li>
+</ul>
 
         </div>
       </div>
@@ -121,7 +126,7 @@
            <div itemprop="articleBody">
              
   <section id="how-to-transfer-data-from-micromed-software-to-the-hip">
-<h1>How to transfer data from Micromed software to the HIP<a class="headerlink" href="#how-to-transfer-data-from-micromed-software-to-the-hip" title="Permalink to this headline"></a></h1>
+<h1>How to transfer data from Micromed software to the HIP<a class="headerlink" href="#how-to-transfer-data-from-micromed-software-to-the-hip" title="Link to this heading"></a></h1>
 <p>It is possible to seamlessly synchronize a database created with Micromed software (<em>SystemPLUS EVOLUTION</em> software)
 so it is available in the HIP user’s Private Space. This requires to set up a synchronized folder using the Nextcloud client as explained
 in the <a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html#upload-nextcloud"><span class="std std-ref">How to prepare and upload data to the HIP</span></a> guide and then create the database in said folder.</p>
@@ -130,32 +135,32 @@ in the <a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_
 <a class="reference internal image-reference" href="../_images/GUIDE_mircromed_create_db.png"><img alt="../_images/GUIDE_mircromed_create_db.png" src="../_images/GUIDE_mircromed_create_db.png" style="width: 400px;" /></a>
 <figcaption>
 <p><span class="caption-text"><strong>1. Create a new database.</strong> <em>In the SystemPLUS EVOLUTION software, go to your System View and create a new Database.
-the name of the database must be “HIP-Micromed” and the path to the database should be inside the Nextcloud synchronized folder.</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+the name of the database must be “HIP-Micromed” and the path to the database should be inside the Nextcloud synchronized folder.</em></span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/GUIDE_mircromed_password.png"><img alt="../_images/GUIDE_mircromed_password.png" src="../_images/GUIDE_mircromed_password.png" style="width: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>2. Specify the password.</strong> <em>The password has to be “micromed” in order to initialize the database.</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>2. Specify the password.</strong> <em>The password has to be “micromed” in order to initialize the database.</em></span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../_images/GUIDE_mircromed_sysplus.png"><img alt="../_images/GUIDE_mircromed_sysplus.png" src="../_images/GUIDE_mircromed_sysplus.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>3. Check the new database.</strong> <em>Your new database is created and should be visible in the SystemPLUS EVOLUTION software.</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>3. Check the new database.</strong> <em>Your new database is created and should be visible in the SystemPLUS EVOLUTION software.</em></span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../_images/GUIDE_mircromed_nextcloud.png"><img alt="../_images/GUIDE_mircromed_nextcloud.png" src="../_images/GUIDE_mircromed_nextcloud.png" style="width: 400px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>4. Check the synchronization.</strong> <em>Check in Nextcloud settings that the newly created “HIP-Micromed” database appears in the synchronized folder.</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>4. Check the synchronization.</strong> <em>Check in Nextcloud settings that the newly created “HIP-Micromed” database appears in the synchronized folder.</em></span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../_images/GUIDE_mircromed_uploaded.png"><img alt="../_images/GUIDE_mircromed_uploaded.png" src="../_images/GUIDE_mircromed_uploaded.png" style="width: 300px;" /></a>
 <figcaption>
 <p><span class="caption-text"><strong>5. Transfer data to the HIP.</strong> <em>Any data imported into the “HIP-Micromed” database using the SystemPLUS EVOLUTION software
-are now accessible in the HIP user’s Private Space.</em></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+are now accessible in the HIP user’s Private Space.</em></span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>

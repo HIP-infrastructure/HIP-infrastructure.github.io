@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>3D Slicer &mdash; HIP user documentation  documentation</title>
@@ -12,10 +12,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -100,6 +101,10 @@
 <li class="toctree-l1"><a class="reference internal" href="APP_The_Virtual_Brain.html">The Virtual Brain</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_VisualStudioCode.html">Visual Studio Code</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Acknowledgement</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hip_acknowledgement.html">Human Brain Project</a></li>
+</ul>
 
         </div>
       </div>
@@ -126,11 +131,11 @@
            <div itemprop="articleBody">
              
   <section id="d-slicer">
-<h1>3D Slicer<a class="headerlink" href="#d-slicer" title="Permalink to this headline"></a></h1>
+<h1>3D Slicer<a class="headerlink" href="#d-slicer" title="Link to this heading"></a></h1>
 <p>3D Slicer is a free, open source and multi-platform software package widely used for medical, biomedical,
 and related imaging research (<a class="reference internal" href="#fedorov-2012" id="id1"><span>[Fedorov_2012]</span></a>).</p>
 <section id="official-resources">
-<h2>Official resources<a class="headerlink" href="#official-resources" title="Permalink to this headline"></a></h2>
+<h2>Official resources<a class="headerlink" href="#official-resources" title="Link to this heading"></a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><p><a class="reference external" href="https://www.slicer.org/">3D Slicer website</a></p></li>
@@ -143,7 +148,7 @@ and related imaging research (<a class="reference internal" href="#fedorov-2012"
 </div></blockquote>
 </section>
 <section id="configure-3d-slicer-on-the-hip-in-order-to-use-modules-and-extensions">
-<h2>Configure 3D Slicer on the HIP in order to use modules and extensions<a class="headerlink" href="#configure-3d-slicer-on-the-hip-in-order-to-use-modules-and-extensions" title="Permalink to this headline"></a></h2>
+<h2>Configure 3D Slicer on the HIP in order to use modules and extensions<a class="headerlink" href="#configure-3d-slicer-on-the-hip-in-order-to-use-modules-and-extensions" title="Link to this heading"></a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>These configuration steps only need to be performed once.</p>
@@ -153,33 +158,33 @@ and related imaging research (<a class="reference internal" href="#fedorov-2012"
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/APP_3DSLICER_settings.png"><img alt="../_images/APP_3DSLICER_settings.png" src="../_images/APP_3DSLICER_settings.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>1. Open 3D Slicer settings.</strong> In the menu bar, select “Edit” &gt; “Application Settings”.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>1. Open 3D Slicer settings.</strong> In the menu bar, select “Edit” &gt; “Application Settings”.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../_images/APP_3DSLICER_modules.png"><img alt="../_images/APP_3DSLICER_modules.png" src="../_images/APP_3DSLICER_modules.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>2. Add a new module path.</strong> In the “Settings” side menu, select “Modules” and click on the “Add” button under the “Paths” section. This will open a file browser.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>2. Add a new module path.</strong> In the “Settings” side menu, select “Modules” and click on the “Add” button under the “Paths” section. This will open a file browser.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../_images/APP_3DSLICER_browse.png"><img alt="../_images/APP_3DSLICER_browse.png" src="../_images/APP_3DSLICER_browse.png" style="width: 400px;" /></a>
 <figcaption>
 <p><span class="caption-text"><strong>3. Select your nextcloud folder.</strong> In the file browser, browse to your /home/&lt;HIP_USER&gt; directory where &lt;HIP_USER&gt; is your HIP username and select the “nextcloud” folder before clicking on the “Choose” button.
-The file browser will close itself.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+The file browser will close itself.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../_images/APP_3DSLICER_validate.png"><img alt="../_images/APP_3DSLICER_validate.png" src="../_images/APP_3DSLICER_validate.png" style="width: 600px;" /></a>
 <figcaption>
 <p><span class="caption-text"><strong>4. Save modifications.</strong> The path to your nextcloud folder should now appear in the panel titled “Additional module paths”.
-At the bottom of the “Settings” window, click on the “OK” button to save your modifications.</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+At the bottom of the “Settings” window, click on the “OK” button to save your modifications.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../_images/APP_3DSLICER_restart.png"><img alt="../_images/APP_3DSLICER_restart.png" src="../_images/APP_3DSLICER_restart.png" style="width: 300px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>5. Restart 3D Slicer.</strong> A pop-up window will ask you to restart 3D Slicer. Click “Yes”.</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>5. Restart 3D Slicer.</strong> A pop-up window will ask you to restart 3D Slicer. Click “Yes”.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>3D Slicer will automatically close itself but will not restart. Please wait for the application to be fully shutdown and restart it manually.</p>
@@ -187,7 +192,7 @@ At the bottom of the “Settings” window, click on the “OK” button to save
 <figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../_images/APP_3DSLICER_extmanager.png"><img alt="../_images/APP_3DSLICER_extmanager.png" src="../_images/APP_3DSLICER_extmanager.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>6. Open 3D Slicer Extensions Manager.</strong> In the menu bar, select “View” &gt; “Extensions Manager”.</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>6. Open 3D Slicer Extensions Manager.</strong> In the menu bar, select “View” &gt; “Extensions Manager”.</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id8">
@@ -196,17 +201,18 @@ At the bottom of the “Settings” window, click on the “OK” button to save
 <p><span class="caption-text"><strong>7. Install extensions.</strong> The middle tab “Install Extensions” lets you browse and install new extensions from an online catalog.
 Seamlessly install the desired extensions by clicking on the associated “INSTALL” button.
 You will have to restart 3D Slicer after installing new extensions as prompted in the interface. Remember that 3D Slicer will automatically close itself but needs to be restarted manually.
-The left tab “Manage Extensions (X)” where X is the number of installed extensions, lets you disable and/or uninstall any previously installed extensions.</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+The left tab “Manage Extensions (X)” where X is the number of installed extensions, lets you disable and/or uninstall any previously installed extensions.</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>
-<dl class="citation">
-<dt class="label" id="fedorov-2012"><span class="brackets"><a class="fn-backref" href="#id1">Fedorov_2012</a></span></dt>
-<dd><p>Fedorov A, Beichel R, Kalpathy-Cramer J, Finet J, Fillion-Robin J-C, Pujol S, Bauer C, Jennings D, Fennessy FM, Sonka M, Buatti J, Aylward SR, Miller JV, Pieper S, Kikinis R. 3D Slicer as an Image Computing Platform for the Quantitative Imaging Network. Magnetic Resonance Imaging., 2012, 30(9):1323-41.</p>
-</dd>
-</dl>
+<h2>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
+<div role="list" class="citation-list">
+<div class="citation" id="fedorov-2012" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Fedorov_2012</a><span class="fn-bracket">]</span></span>
+<p>Fedorov A, Beichel R, Kalpathy-Cramer J, Finet J, Fillion-Robin J-C, Pujol S, Bauer C, Jennings D, Fennessy FM, Sonka M, Buatti J, Aylward SR, Miller JV, Pieper S, Kikinis R. 3D Slicer as an Image Computing Platform for the Quantitative Imaging Network. Magnetic Resonance Imaging., 2012, 30(9):1323-41.</p>
+</div>
+</div>
 </section>
 </section>
 

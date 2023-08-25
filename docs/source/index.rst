@@ -115,3 +115,9 @@ It contains the following sections:
    MRI Deface<applications/APP_MRI_Deface>
    The Virtual Brain<applications/APP_The_Virtual_Brain>
    Visual Studio Code<applications/APP_VisualStudioCode>
+
+.. toctree::
+   :caption: Acknowledgement
+   :hidden:
+
+   Human Brain Project<hip_acknowledgement>
