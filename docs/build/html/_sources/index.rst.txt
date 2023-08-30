@@ -84,12 +84,10 @@ It contains the following sections:
    :hidden:
 	
    Epimap tutorial dataset<datasets/DATASET_Epimap>
+   COGEPISTIM dataset<datasets/DATASET_Cogepistim>
    Data for electrodes labelling<datasets/DATASET_Data_for_electrodes_labelling.rst>	
    iEEG cognitive task<datasets/DATASET_iEEG_task_cognitive.rst>	
- 
-.. comment
-   COGEPISTIM database<datasets/DATASET_Cogepistim> -> To be added when ready
-
+    
    
 .. toctree::
    :caption: HIP apps
@@ -115,9 +113,6 @@ It contains the following sections:
    MRI Deface<applications/APP_MRI_Deface>
    The Virtual Brain<applications/APP_The_Virtual_Brain>
    Visual Studio Code<applications/APP_VisualStudioCode>
-
-.. toctree::
-   :caption: Acknowledgement
-   :hidden:
-
-   Human Brain Project<hip_acknowledgement>
+   
+   
+.. include:: hip_acknowledgement.rst

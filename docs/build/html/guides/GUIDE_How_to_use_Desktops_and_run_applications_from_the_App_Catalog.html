@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How to use Desktops and run applications from the App Catalog &mdash; HIP user documentation  documentation</title>
@@ -12,11 +12,10 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -78,6 +77,7 @@
 <p class="caption" role="heading"><span class="caption-text">HIP datasets</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Epimap.html">Epimap tutorial dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Cogepistim.html">COGEPISTIM dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Data_for_electrodes_labelling.html">Data for electrodes labelling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_iEEG_task_cognitive.html">iEEG cognitive task</a></li>
 </ul>
@@ -103,10 +103,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../applications/APP_MRI_Deface.html">MRI Deface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../applications/APP_The_Virtual_Brain.html">The Virtual Brain</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../applications/APP_VisualStudioCode.html">Visual Studio Code</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Acknowledgement</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../hip_acknowledgement.html">Human Brain Project</a></li>
 </ul>
 
         </div>
@@ -134,15 +130,15 @@
            <div itemprop="articleBody">
              
   <section id="how-to-use-desktops-and-run-applications-from-the-app-catalog">
-<h1>How to use Desktops and run applications from the App Catalog<a class="headerlink" href="#how-to-use-desktops-and-run-applications-from-the-app-catalog" title="Link to this heading"></a></h1>
+<h1>How to use Desktops and run applications from the App Catalog<a class="headerlink" href="#how-to-use-desktops-and-run-applications-from-the-app-catalog" title="Permalink to this headline"></a></h1>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../_images/GUIDE_desktops_header.png"><img alt="../_images/GUIDE_desktops_header.png" src="../_images/GUIDE_desktops_header.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>Desktops on the HIP.</strong> <em>Desktops are persistent environments used to run applications from the App Catalog.</em></span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text"><strong>Desktops on the HIP.</strong> <em>Desktops are persistent environments used to run applications from the App Catalog.</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="about-this-tutorial">
-<h2>About this tutorial<a class="headerlink" href="#about-this-tutorial" title="Link to this heading"></a></h2>
+<h2>About this tutorial<a class="headerlink" href="#about-this-tutorial" title="Permalink to this headline"></a></h2>
 <p>The objective of this guide is to introduce Desktops, which operate as remote computers and are typically used to run the applications available in the App Catalog.
 This guide comes with a video showing how to manage Desktops (create, display, pause/resume and switch between Desktops) and run one or several applications simultaneously.
 It also explains essential rules regarding data access and persistence inside a Desktop environment. However, it does not cover the uses of the various applications
@@ -150,14 +146,14 @@ available in the App Catalog. In this perspective, the <em>HIP APPS</em> and <em
 links to external resources.</p>
 </section>
 <section id="use-desktops-and-run-applications-from-the-app-catalog">
-<h2>Use Desktops and run applications from the App Catalog<a class="headerlink" href="#use-desktops-and-run-applications-from-the-app-catalog" title="Link to this heading"></a></h2>
+<h2>Use Desktops and run applications from the App Catalog<a class="headerlink" href="#use-desktops-and-run-applications-from-the-app-catalog" title="Permalink to this headline"></a></h2>
 <p>Desktops are remote virtual computers running on a secure infrastructure where HIP users can run applications from the App Catalog
 to work on their data.
 Desktops operate similarly to a personal computer and support most common features (drag and drop, full screen mode, clipboard, virtual keyboard).
 Any application from the App Catalog, regardless if it is GUI- or CLI- based, can be run in a Desktop environment.
 Desktops are available in all 3 HIP spaces: the Private, Collaborative and Public spaces, and work in a similar way.</p>
 <section id="desktops-and-data-persistence">
-<h3>Desktops and data persistence<a class="headerlink" href="#desktops-and-data-persistence" title="Link to this heading"></a></h3>
+<h3>Desktops and data persistence<a class="headerlink" href="#desktops-and-data-persistence" title="Permalink to this headline"></a></h3>
 <p>Once it has been initiated, a Desktop will persist until it is manually terminated. HIP users can safely log off and/or close their web browser.
 Pending Desktops will remain unaltered and accessible for later use.</p>
 <div class="admonition important">
@@ -169,7 +165,7 @@ This is the only persistent directory as it is tied to the HIP user’s Private 
 </div>
 </section>
 <section id="video-guide">
-<h3>Video guide<a class="headerlink" href="#video-guide" title="Link to this heading"></a></h3>
+<h3>Video guide<a class="headerlink" href="#video-guide" title="Permalink to this headline"></a></h3>
 <p>The following video guide (2’30’’) serves as an introduction to Desktops and shows how to run applications from the App Catalog:</p>
 <center>
 <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Use%20Desktops%20and%20run%20Apps/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Use%20Desktops%20and%20run%20Apps.png" controls>

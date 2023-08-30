@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>COGEPISTIM database &mdash; HIP user documentation  documentation</title>
+  <title>COGEPISTIM dataset &mdash; HIP user documentation  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -12,14 +12,15 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Data for electrodes labelling" href="DATASET_Data_for_electrodes_labelling.html" />
+    <link rel="prev" title="Epimap tutorial dataset" href="DATASET_Epimap.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -66,8 +67,26 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_CCEP_computation_with_brainstorm.html">CCEP computation with Brainstorm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP datasets</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="DATASET_Epimap.html">Epimap tutorial dataset</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">COGEPISTIM dataset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-inventory">Data inventory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-structure">Data structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clinical-data">Clinical data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#electrode-coordinates">Electrode coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#seeg-and-imaging-data">SEEG and imaging data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#f-tract-data">F-TRACT data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#isd-seeg-epistim-and-mapcog-seeg-data">ISD SEEG, EPISTIM and MAPCOG-SEEG data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#license">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-availability">Code availability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#acknowledgments">Acknowledgments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="DATASET_Data_for_electrodes_labelling.html">Data for electrodes labelling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="DATASET_iEEG_task_cognitive.html">iEEG cognitive task</a></li>
 </ul>
@@ -94,10 +113,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../applications/APP_The_Virtual_Brain.html">The Virtual Brain</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../applications/APP_VisualStudioCode.html">Visual Studio Code</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Acknowledgement</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../hip_acknowledgement.html">Human Brain Project</a></li>
-</ul>
 
         </div>
       </div>
@@ -113,7 +128,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">COGEPISTIM database</li>
+      <li class="breadcrumb-item active">COGEPISTIM dataset</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/datasets/DATASET_Cogepistim.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -125,13 +140,13 @@
              
   <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The COGEPISTIM database is not yet available on the HIP.</p>
+<p>The COGEPISTIM dataset is not yet available on the HIP.</p>
 </div>
-<section id="cogepistim-database">
-<h1>COGEPISTIM database<a class="headerlink" href="#cogepistim-database" title="Link to this heading"></a></h1>
+<section id="cogepistim-dataset">
+<h1>COGEPISTIM dataset<a class="headerlink" href="#cogepistim-dataset" title="Permalink to this headline"></a></h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
-<p>The COGEPISTIM database includes SEEG recordings and imaging data of 242 (28/07/2022) patients retrospectively collected from different research protocols:</p>
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h2>
+<p>The COGEPISTIM dataset reuses SEEG, imaging and clinical data from 241 (29/08/2023) subjects initially collected through 4 studies:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>F-TRACT: <a class="reference external" href="https://f-tract.eu/">The Functional Brain Tractography Project</a>.</p></li>
@@ -140,30 +155,61 @@
 <li><p>MAPCOG-SEEG: <a class="reference external" href="https://clinicaltrials.gov/ct2/show/NCT03644732">Atlas of Human Cognition by SEEG</a>.</p></li>
 </ul>
 </div></blockquote>
-<p>The COGEPISTIM database is BIDS compliant and contains imaging (T1, T2, CT, FLAIR) and SEEG (baselines, seizures, electrical stimulations, localizers) data with associated electrode coordinates.
-Electrical stimulation, seizure and baseline SEEG come from the F-TRACT project, whereas localizers come from the ISD SEEG, EPISTIM and MAPCOG-SEEG research protocols.</p>
-<p>SEEG data include:</p>
+<p>The dataset ensures privacy through pseudonymization and adheres to the BIDS standard. It encompasses defaced imaging data (T1, T2, CT, FLAIR) and de-identified SEEG recordings
+(baselines, seizures, electrical stimulations, localizers) accompanied by corresponding electrode coordinates. The SEEG data for baselines, seizures, and stimulations originate from the F-TRACT project,
+while localizers are derived from the ISD SEEG, EPISTIM, and MAPCOG-SEEG clinical trials. Additionally, the dataset provides a limited set of clinical details like age categories and epileptogenic zones for each subject.</p>
+</section>
+<section id="data-inventory">
+<h2>Data inventory<a class="headerlink" href="#data-inventory" title="Permalink to this headline"></a></h2>
+<p>The complete and up-to-date data inventory can be found inside the dedicated <em>data_inventory.tsv</em> file, which is located in the <em>/derivatives/inventory</em> folder of the COGEPISTIM dataset (see <a class="reference internal" href="#coge-structure"><span class="std std-ref">Fig.1</span></a>).
+This file lists all data available for each subject and is generated whenever the database is updated.</p>
+<p>SEEG data summary (30/08/2023):</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>171 subjects with localizers.</p></li>
-<li><p>176 subjects with electrical stimulation data.</p></li>
-<li><p>105 subjects with both localizers and electrical stimulation data.</p></li>
-<li><p>75 subjects with seizure data.</p></li>
-<li><p>54 subjects with baseline data.</p></li>
-<li><p>34 subjects with localizers, electrical stimulation, seizure and baseline data.</p></li>
+<li><p>167 subjects have localizer data.</p></li>
+<li><p>200 subjects have electrical stimulation data.</p></li>
+<li><p>75 subjects have seizure data.</p></li>
+<li><p>58 subjects have baseline data.</p></li>
+<li><p>34 subjects have localizer, electrical stimulation, seizure and baseline data.</p></li>
 </ul>
 </div></blockquote>
-<p>All subjects have post-implantation imaging data (T1 or CT) and may have pre-implantation and postoperative imaging data.
-Imaging data was defaced using SPM defacing feature (<a class="reference external" href="https://www.fil.ion.ucl.ac.uk/spm/software/spm12/">www.fil.ion.ucl.ac.uk/spm/software/spm12</a>).</p>
-<section id="directories-and-files">
-<h3>Directories and files<a class="headerlink" href="#directories-and-files" title="Link to this heading"></a></h3>
-<p>The COGEPISTIM database has been generated using <a class="reference internal" href="../applications/APP_BIDS_Manager.html"><span class="doc">BIDS Manager</span></a> and follows BIDS guidelines
-(<a class="reference external" href="https://bids.neuroimaging.io/">BIDS website</a>) (BIDS-iEEG specifications available in <a class="reference internal" href="#holdgraf-2019" id="id1"><span>[Holdgraf_2019]</span></a>).</p>
-<p>File and directory structure:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">root</span>
+<p>Imaging data summary (30/08/2023):</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>239 subjects have pre-implantation imaging data.</p></li>
+<li><p>237 subjects have post-implantation imaging data.</p></li>
+<li><p>84 subjects have post-operative imaging data.</p></li>
+<li><p>235 subjects have pre-implantation and post-implantation imaging data.</p></li>
+<li><p>81 subjects have pre-implantation, post-implantation, and post-operative imaging data.</p></li>
+</ul>
+</div></blockquote>
+<p>Subjects typically possess at least one variety of SEEG data alongside the related electrode coordinates and the corresponding post-implantation volume,
+either in the form of an MRI or a CT scan. Clinical data may be incomplete or missing for several subjects.</p>
+</section>
+<section id="data-preparation">
+<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
+<p>The COGEPISTIM dataset has been prepared using <a class="reference external" href="https://github.com/Dynamap/BIDS_Manager">BIDS Manager</a> (0.3.4) (<a class="reference internal" href="#roehri-2021a" id="id1"><span>[Roehri_2021a]</span></a>), a Python package to collect, organise and manage neuroscience data in BIDS format.
+The dataset follows <a class="reference external" href="https://bids.neuroimaging.io/">BIDS specifications</a> (see <a class="reference internal" href="#holdgraf-2019" id="id2"><span>[Holdgraf_2019]</span></a> for BIDS-iEEG specifications) and has been validated using <a class="reference external" href="https://www.npmjs.com/package/bids-validator">BIDS-Validator</a>
+(1.12.0) (<a class="reference internal" href="#blair-2022" id="id3"><span>[Blair_2022]</span></a>).
+Data have been pseudonymized. Subjects were assigned a unique identifier and personally identifiable information have been removed from the (meta)data of all files that have been imported into the dataset,
+this includes events and notes typically found in SEEG data. Imaging data have been defaced using <a class="reference external" href="https://www.fil.ion.ucl.ac.uk/spm/software/spm12/">SPM12’s</a> dedicated
+<a class="reference external" href="https://github.com/neurodebian/spm12/blob/master/spm_deface.m">defacing feature</a> which strips the face from the volumes.
+Clinical information has been kept to a minimum and is limited to the sex, handedness, age category and epileptogenic zone(s) of each subject, when available.</p>
+</section>
+<section id="data-structure">
+<h2>Data structure<a class="headerlink" href="#data-structure" title="Permalink to this headline"></a></h2>
+<p>The COGEPISTIM dataset follows BIDS specifications. The arrangement of files and folders is depicted in <a class="reference internal" href="#coge-structure"><span class="std std-ref">Fig.1</span></a>, while the corresponding naming conventions are outlined in <a class="reference internal" href="#coge-naming-convention"><span class="std std-ref">Tab.1</span></a>.
+Files and folders are further described in <a class="reference internal" href="#coge-file-desc"><span class="std std-ref">Tab.2</span></a> and <a class="reference internal" href="#coge-folder-desc"><span class="std std-ref">Tab.3</span></a> respectively. For further insights into data formats, refer to <a class="reference internal" href="#coge-file-format"><span class="std std-ref">Tab.4</span></a>.
+The COGEPISTIM dataset encompasses longitudinal data, where subjects undergo data acquisitions both prior to and after the implantation of SEEG electrodes,
+as well as after their subsequent surgical removal. Moreover, a single subject might have undergone several implantations. To effectively organize this data, the COGEPISTIM dataset employs BIDS session folders as follows:
+The <em>/ses-preimpXX</em>, <em>/ses-postimpXX</em>, and <em>/ses-postopXX</em> session folders correspond to data collected before implantation, after implantation, and after surgical electrode removal, respectively.
+<em>XX</em> denotes a two-digit number that serves as an index for different implantation instances.</p>
+<div class="highlight-default notranslate" id="coge-structure"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">raw</span>
 <span class="o">..</span> <span class="n">dataset_description</span><span class="o">.</span><span class="n">json</span>
 <span class="o">..</span> <span class="n">participants</span><span class="o">.</span><span class="n">tsv</span>
 <span class="o">..</span> <span class="o">/</span><span class="n">derivatives</span>
+<span class="o">....</span> <span class="o">/</span><span class="n">data_inventory</span>
+<span class="o">......</span> <span class="n">data_inventory</span><span class="o">.</span><span class="n">tsv</span>
 <span class="o">....</span> <span class="o">/</span><span class="n">cognition</span>
 <span class="o">......</span> <span class="o">/</span><span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span>
 <span class="o">........</span> <span class="o">/</span><span class="n">ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span>
@@ -192,280 +238,435 @@ Imaging data was defaced using SPM defacing feature (<a class="reference externa
 <span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_FLAIR</span><span class="o">.</span><span class="n">nii</span>
 </pre></div>
 </div>
-<p>Complementary information regarding file formats and file-internal data structures:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Tab-Separted Value format (.tsv): Labels in first row. Data of same type in columns.</p></li>
-<li><p>JavaScript Object Notation (.json): 1D (non-nested) key-value pairs.</p></li>
-<li><p>Neuroimaging Informatics Technology Initiative (.nii): Defaced imaging, native space.</p></li>
-<li><p>BrainVision data format (.vhdr, .vmrk, .eeg): Unprocessed SEEG data (in BIDS <em>raw</em> directory).</p></li>
-</ul>
-</div></blockquote>
-<p>Directory description:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>/sub-&lt;cogepistim_id&gt; → Subject directory. BIDS subject entity.</p></li>
-<li><p>/ses-&lt;session&gt; →  Session directory. BIDS session entity.</p></li>
-<li><p>/derivatives → Derivatives directory. BIDS derivatives. Processing pipeline and software outputs. Follows BIDS data structure.</p></li>
-<li><p>/anat → Structural imaging data. BIDS data type. T1, T2, CT, FLAIR data.</p></li>
-<li><p>/ieeg → intracranial electroencephalography data. BIDS data type. SEEG data with electrode coordinates.</p></li>
-</ul>
-</div></blockquote>
-<p>File description:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>dataset_description.json → short description of the dataset.</p></li>
-<li><p>participants.tsv → Clinical information of the subjects.</p></li>
-<li><p>*_sessions.tsv → Session-specific clinical information of the subjects.</p></li>
-<li><p>*._scans.tsv → Session-wise file listing.</p></li>
-<li><p>*ieeg.vhdr → BrainVision text file. Header.</p></li>
-<li><p>*_ieeg.vmrk → BrainVision text file. Events.</p></li>
-<li><p>*_ieeg.eeg → BrainVision binary file. Voltage values.</p></li>
-<li><p>*_ieeg.json → BIDS acquisition infos. e.g. task, stimulation parameters, recording mode.</p></li>
-<li><p>*_events.tsv → BIDS event infos. e.g. onset, duration, type.</p></li>
-<li><p>*_channels.tsv → BIDS channel infos. e.g. name, type, sampling frequency.</p></li>
-<li><p>*_coordsystem.json → BIDS (i)EEG specific. Coordinate system info / spatial reference.</p></li>
-<li><p>*_electrodes.tsv → BIDS (i)EEG specific. (i)EEG electrode location.</p></li>
-<li><p>*_T1w.nii → T1 weighted MRI.</p></li>
-<li><p>*_T2w.nii → T2 weighted MRI.</p></li>
-<li><p>*_CT.nii → Computerized Tomography.</p></li>
-<li><p>*_FLAIR.nii → FLAIR MRI.</p></li>
-</ul>
-</div></blockquote>
-<p id="cogepistim-bids-entities">BIDS entities:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>&lt;cogepistim_id&gt; → COGEPISTIM unique identifier. CES&lt;center&gt; where &lt;center&gt; is a 4-digit number. e.g. CES1003, CES2097.</p></li>
-<li><p>&lt;session&gt; → Subject implantation.  preimp&lt;XX&gt; (before implantation), postimp&lt;XX&gt; (after implantation), postop&lt;XX&gt; (postoperative) where &lt;XX&gt; is a 2-digit number indexing implantations. e.g. preimp01 and postimp01 are the pre- and post- implanation sessions for the first implantation, whereas postimp02 is the post-implantation session for the second implantation.</p></li>
-<li><p>&lt;ieeg_task&gt; → SEEG task. stimulation, baseline, seizure, VISU, LEC1, LEC2, MVIS, MVEB, AUDI, CSC, MCSE, REST1, REST2, REST3, MOTO, ARFA, JUMPY, STAB, MLAH.</p></li>
-<li><p>&lt;ieeg_acq&gt; → &lt;&gt;&lt;&gt;&lt;&gt; localizers results.</p></li>
-<li><p>&lt;ieeg_space&gt; → Spatial reference to interpret electrode coordinates. e.g. MNI152Lin.</p></li>
-<li><p>&lt;anat_ce&gt; → Contrast agent. e.g. gadolinium.</p></li>
-<li><p>&lt;run&gt; → Repetition number of an acquisition. e.g. 01, 02, 03…</p></li>
-</ul>
-</div></blockquote>
+<center>
+     <b>Fig.1</b> <i>File and folder organization.</i>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-center" id="coge-naming-convention">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 79%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>BIDS value</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>&lt;cogepistim_id&gt;</p></td>
+<td><p>COGEPISTIM unique identifier. CESXXXX where XXXX is a 4-digit number.</p></td>
+<td><p>CES1003, CES2037</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;session&gt;</p></td>
+<td><p>Subject session. preimpXX (before implantation), postimpXX (after implantation), postopXX (postoperative) <br /> where XX is a 2-digit number indexing implantations for a given subject.</p></td>
+<td><p>preimp01, postimp01, postop01, preim02, postimp02</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;ieeg_task&gt;</p></td>
+<td><p>SEEG task.</p></td>
+<td><p>stimulation, baseline, seizure, VISU, MOTO</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;ieeg_acq&gt;</p></td>
+<td><p>Processing parameters used on localizers. The first two numbers are the low and high cut-off frequencies of the bandpass filter,  <br /> the third number is the downsampling factor and the last number is the width of the smoothing window in milliseconds.</p></td>
+<td><p>f8f24ds8sm500</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;ieeg_space&gt;</p></td>
+<td><p>Spatial reference to interpret electrode coordinates.</p></td>
+<td><p>MNI152Lin</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;anat_ce&gt;</p></td>
+<td><p>Contrast agent.</p></td>
+<td><p>gadolinium</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;run&gt;</p></td>
+<td><p>Repetition number of an identical acquisition</p></td>
+<td><p>01, 02, 03</p></td>
+</tr>
+</tbody>
+</table>
+<center>
+     <b>Tab.1</b> <i>Naming convention.</i>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-center" id="coge-file-desc">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>File</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>dataset_description.json</p></td>
+<td><p>Short description of the dataset.</p></td>
+</tr>
+<tr class="row-odd"><td><p>participants.tsv</p></td>
+<td><p>Clinical data for all subjects.</p></td>
+</tr>
+<tr class="row-even"><td><p>data_inventory.tsv</p></td>
+<td><p>Table listing the data available for each subject.</p></td>
+</tr>
+<tr class="row-odd"><td><p>*_sessions.tsv</p></td>
+<td><p>Session-specific clinical data for a given subject.</p></td>
+</tr>
+<tr class="row-even"><td><p>*._scans.tsv</p></td>
+<td><p>Session-specific file listing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>*_ieeg.vhdr</p></td>
+<td><p>BrainVision text file. Header.</p></td>
+</tr>
+<tr class="row-even"><td><p>*_ieeg.vmrk</p></td>
+<td><p>BrainVision text file. Events.</p></td>
+</tr>
+<tr class="row-odd"><td><p>*_ieeg.eeg</p></td>
+<td><p>BrainVision binary file. Voltage values.</p></td>
+</tr>
+<tr class="row-even"><td><p>*_ieeg.json</p></td>
+<td><p>Acquisition info. e.g. task, stimulation parameters, recording mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p>*_events.tsv</p></td>
+<td><p>Event info. e.g. onset, duration, type.</p></td>
+</tr>
+<tr class="row-even"><td><p>*_channels.tsv</p></td>
+<td><p>Channel info. e.g. name, type, sampling frequency.</p></td>
+</tr>
+<tr class="row-odd"><td><p>*_coordsystem.json</p></td>
+<td><p>Coordinate system info / spatial reference.</p></td>
+</tr>
+<tr class="row-even"><td><p>*_electrodes.tsv</p></td>
+<td><p>(i)EEG electrode location.</p></td>
+</tr>
+<tr class="row-odd"><td><p>*_T1w.nii</p></td>
+<td><p>T1 weighted MRI.</p></td>
+</tr>
+<tr class="row-even"><td><p>*_T2w.nii</p></td>
+<td><p>T2 weighted MRI.</p></td>
+</tr>
+<tr class="row-odd"><td><p>*_CT.nii</p></td>
+<td><p>Computerized Tomography.</p></td>
+</tr>
+<tr class="row-even"><td><p>*_FLAIR.nii</p></td>
+<td><p>FLAIR MRI.</p></td>
+</tr>
+</tbody>
+</table>
+<center>
+     <b>Tab.2</b> <i>File description.</i>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-center" id="coge-folder-desc">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Folder</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>/sub-&lt;cogepistim_id&gt;</p></td>
+<td><p>Subject directory.</p></td>
+</tr>
+<tr class="row-odd"><td><p>/ses-&lt;session&gt;</p></td>
+<td><p>Session directory.</p></td>
+</tr>
+<tr class="row-even"><td><p>/derivatives</p></td>
+<td><p>Derivatives directory. Contains analysis outputs.</p></td>
+</tr>
+<tr class="row-odd"><td><p>/cognition</p></td>
+<td><p>Cognition data directory. Processed localizers.</p></td>
+</tr>
+<tr class="row-even"><td><p>/inventory</p></td>
+<td><p>Data inventory directory.</p></td>
+</tr>
+<tr class="row-odd"><td><p>/anat</p></td>
+<td><p>Structural imaging data. Contains T1, T2, CT, FLAIR volumes.</p></td>
+</tr>
+<tr class="row-even"><td><p>/ieeg</p></td>
+<td><p>iEEG data. Contains SEEG data with corresponding electrode coordinates.</p></td>
+</tr>
+</tbody>
+</table>
+<center>
+     <b>Tab.3</b> <i>Folder description.</i>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-center" id="coge-file-format">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 17%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Format</p></th>
+<th class="head"><p>Extension</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Tab-Separted Value format</p></td>
+<td><p>.tsv</p></td>
+<td><p>Labels in first row. Data of same type in columns.</p></td>
+</tr>
+<tr class="row-odd"><td><p>JavaScript Object Notation</p></td>
+<td><p>.json</p></td>
+<td><p>1D (non-nested) key-value pairs.</p></td>
+</tr>
+<tr class="row-even"><td><p>Neuroimaging Informatics Technology Initiative</p></td>
+<td><p>.nii</p></td>
+<td><p>Defaced imaging data. Native space.</p></td>
+</tr>
+<tr class="row-odd"><td><p>BrainVision data format</p></td>
+<td><p>.vhdr, .vmrk, .eeg</p></td>
+<td><p>SEEG data.</p></td>
+</tr>
+</tbody>
+</table>
+<center>
+     <b>Tab.4</b> <i>Files formats.</i>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
+<section id="clinical-data">
+<h2>Clinical data<a class="headerlink" href="#clinical-data" title="Permalink to this headline"></a></h2>
+<p>Clinical data is limited to sex, handedness, age category and epileptogenic zone(s) for each subject. Sex can be found in the <em>participants.tsv</em> file, in the <em>/raw</em> directory. Handedness, age group and epileptogenic zone(s)
+are session-specific and can be found in <em>sub-&lt;cogepistim_id&gt;_sessions.tsv</em> files, in <em>/sub-&lt;cogepistim_id&gt;</em> directories (see <a class="reference internal" href="#coge-structure"><span class="std std-ref">Fig.1</span></a>).
+The clinical data found in the COGEPISTIM dataset is detailed in <a class="reference internal" href="#coge-clinical"><span class="std std-ref">Tab.5</span></a>.</p>
+<table class="docutils align-center" id="coge-clinical">
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 21%" />
+<col style="width: 2%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Clinical data</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Key</p></th>
+<th class="head"><p>Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Sex</p></td>
+<td><p>Biological sex.</p></td>
+<td><p>sex</p></td>
+<td><p>F (female), M (male), U (unspecified)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Handedness</p></td>
+<td><p>Dominant hand.</p></td>
+<td><p>handedness</p></td>
+<td><p>R (right), L (left), A (ambidextrous), U (unspecified)</p></td>
+</tr>
+<tr class="row-even"><td><p>Age category</p></td>
+<td><p>Age classified according to arbitrary categories.</p></td>
+<td><p>age</p></td>
+<td><p>Infant (Between 1 and 4 years old), Juvenile (Between 5 and 16 years old), <br /> Young adult (Between 17 and 25 years old), Adult (26 years old and more)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Epileptogenic zone(s)</p></td>
+<td><p>Cortical area necessary for the generation <br /> of clinical epileptic seizures. <br /> Entry is a combination of anatomical landmarks.</p></td>
+<td><p>epilepsy</p></td>
+<td><p>Temporal (temporal lobe), Frontal (frontal lobe), Parietal (parietal lobe), <br /> Occipital (occipital lobe), Central (paracentral lobule), Paracentral (paracentral lobule), <br /> Insular (insular lobe), Cingular (cingulate cortex), Multifocal (multifocal epileptic activity), <br /> Polar (temporal pole), Hippocampus (hippocampus), Indeterminate (indeterminate or unspecified), <br /> Left (left hemisphere), Right (right hemisphere), Bilateral (left and right hemispheres)</p></td>
+</tr>
+</tbody>
+</table>
+<center>
+     <b>Tab.5</b> <i>Clinical data.</i>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
-<section id="f-tract-data-description">
-<h2>F-TRACT data description<a class="headerlink" href="#f-tract-data-description" title="Link to this heading"></a></h2>
-<p>Electrical stimulation, seizure and baseline SEEG data where extracted from the F-TRACT project.
-Data were initially collected for the F-TRACT study, following the ethical procedures for conducting international multicenter post-processing
+<section id="electrode-coordinates">
+<h2>Electrode coordinates<a class="headerlink" href="#electrode-coordinates" title="Permalink to this headline"></a></h2>
+<p>SEEG electrode coordinates and associated metadata can be found in dedicated <em>*_electrodes.tsv</em> and <em>*_coordsystem.json</em> files respectively. Those files are only found in the post-implantation session folder
+of a given subject (see <a class="reference internal" href="#coge-structure"><span class="std std-ref">Fig.1</span></a>). Coordinates are specified in both native and MNI152 spaces (ICBM Average Brain, 152 T1-weighted MRI scans) (<a class="reference internal" href="#evans-2001" id="id4"><span>[Evans_2001]</span></a>, <a class="reference internal" href="#mazziotta-2001" id="id5"><span>[Mazziotta_2001]</span></a>).</p>
+<p>SEEG data gathered from the F-TRACT project also have anatomical parcels extracted from a set of atlases assigned to each contact (see <a class="reference internal" href="#trebaul-2018" id="id6"><span>[Trebaul_2018]</span></a>) (e.g. MarsAtlas, Freesurfer, AAL, Broadman, Hammers, HCP_MMP1, AICHA, Lausanne2008).</p>
+</section>
+<section id="seeg-and-imaging-data">
+<h2>SEEG and imaging data<a class="headerlink" href="#seeg-and-imaging-data" title="Permalink to this headline"></a></h2>
+<section id="f-tract-data">
+<h3>F-TRACT data<a class="headerlink" href="#f-tract-data" title="Permalink to this headline"></a></h3>
+<p>Baseline, seizure, stimulation SEEG data and associated imaging data come from the F-TRACT project and were initially collected following the ethical procedures for conducting international multicenter post-processing
 of clinical data defined by the International Review Board at <a class="reference external" href="https://www.inserm.fr/en/home/">INSERM</a>.</p>
-<section id="methods">
-<h3>Methods<a class="headerlink" href="#methods" title="Link to this heading"></a></h3>
-<p>The F-TRACT project contains structural (imaging) and functional (neurophysiological) SEEG data from adult epileptic patients who were candidates
-to resective surgery and undergone intracortical stimulations. The data were collected from a multicenter patient population.
-Methods and materials for recording the data differed between epilepsy surgery units, and followed strict clinical procedures as defined
-in every hospital. The recording procedures were not standardized in research perspective which sole objective was data-reuse.</p>
-<p>For each patient, at least one anatomical MRI (T1 contrast if available, sometimes associated to a T2 and/or FLAIR contrast)
-and an image with SEEG electrodes (T1 MRI or CT scan and accessory implantation scheme) were obtained in order to localise SEEG electrodes.
-The average number of recording bipolar contacts per patient was about 150.</p>
-<p>Baselines, seizures and low-frequency stimulations were recorded as part of a pre-surgical evaluation of drug-resistant epilepsy.
-In the database, we considered only stimulations performed at low frequency (&lt;5 Hz) for a limited amount of time per stimulated area
-(typically less than 40 pulses). Bipolar stimuli were delivered using a constant current rectangular pulse generator designed for a safe
-diagnostic stimulation of the human brain, according to parameters proved to produce no structural damage.
-All stimulations were performed between two contiguous contacts in the grey matter, and sometimes in the white matter, using monophasic
-or biphasic pulses. Pulse width and intensity of stimulation could vary (typically 1 ms duration pulses at 3 mA).
-The clinical goals of the stimulations were the reproduction of the aura, the induction of an electroclinical seizure,
-and/or the localisation of an eloquent cortical area that has to be spared during surgery.
-Signals were acquired at a sampling frequency which varied between 512 Hz and 2048 Hz.</p>
-<p>The main steps required to generate the database are as follows (see <a class="reference internal" href="#trebaul-2018" id="id2"><span>[Trebaul_2018]</span></a> for full scientific details):</p>
-<blockquote id="ftract-imaging-method">
-<div><ul class="simple">
-<li><p><strong>Imaging</strong> - The electrode contacts were localised and anatomically labelled using
-the <a class="reference internal" href="../applications/APP_IntrAnat.html"><span class="doc">IntrAnat Electrodes software</span></a> (<a class="reference internal" href="#deman-2018" id="id3"><span>[Deman_2018]</span></a>) compatible with the <a class="reference external" href="http://brainvisa.info">BrainVisa software</a>
-(<a class="reference internal" href="#riviere-2009" id="id4"><span>[Rivière_2009]</span></a>). Briefly, the volumetric images acquired before and after the electrode implantation were co-registered using a rigid-body
-transformation computed either by ANTs (<a class="reference internal" href="#avants-2011" id="id5"><span>[Avants_2011]</span></a>) or SPM12 (<a class="reference internal" href="#ashburner-2009" id="id6"><span>[Ashburner_2009]</span></a>) software.
-The grey and white matter volumes were segmented from the pre-implantation MRI using Morphologist as included in BrainVisa.
-The electrode contact positions were computed in the native and MNI referentials using the spatial normalisation of SPM12 software.
-For each patient, cortical parcels were obtained for different anatomical atlases defined either in the MRI native space
-(MarsAtlas (<a class="reference internal" href="#auzias-2016" id="id7"><span>[Auzias_2016]</span></a>), Freesurfer (<a class="reference internal" href="#destrieux-2010" id="id8"><span>[Destrieux_2010]</span></a>), Lausanne Atlas (<a class="reference internal" href="#hagmann-2008" id="id9"><span>[Hagmann_2008]</span></a>)) or in the MNI space
-(Brodmann (<a class="reference internal" href="#brodmann-1909" id="id10"><span>[Brodmann_1909]</span></a>), Automated Anatomical Labeling AAL (<a class="reference internal" href="#tzourio-mazoyer-2002" id="id11"><span>[Tzourio-Mazoyer_2002]</span></a>), MaxProbMap (<a class="reference internal" href="#hammers-2003" id="id12"><span>[Hammers_2003]</span></a>),
-and Human Connectome Project (<a class="reference internal" href="#glasser-2016" id="id13"><span>[Glasser_2016]</span></a>)).
-Each electrode contact was assigned to the grey or white matter and to specific anatomical parcels by taking the most frequent voxel
-label in a sphere of 3 mm radius around each contact centre (<a class="reference internal" href="#deman-2018" id="id14"><span>[Deman_2018]</span></a>).</p></li>
-<li><p><strong>Neurophysiology</strong>  - The SEEG signals were pre-processed automatically using a pipeline composed of the following steps,
-supervised at the end for data quality check: i) detection and cropping of each stimulation run from stimulation artefacts
-in raw iEEG files (i.e. a set a pulses consecutively applied between the same pair of contacts); ii) bad channels detection
-with a machine learning approach (<a class="reference internal" href="#tuyisenge-2018" id="id15"><span>[Tuyisenge_2018]</span></a>). The detection of bad channels was based on a supervised machine-learning
-model trained on a learning database with channels already classified by experts and using a set of features quantifying the signal
-variance, spatio-temporal correlation and non-linear properties.</p></li>
-</ul>
-</div></blockquote>
-<p>Operationally, the data was extracted from the F-TRACT infrastructure of <a class="reference external" href="https://www.univ-grenoble-alpes.fr/">Université Grenoble Alpes (UGA)</a> , as an independent folder created
-by a F-TRACT to BIDS converter developed by <a class="reference external" href="https://www.univ-amu.fr/">Aix-Marseille Université (AMU)</a>  for UGA’s use.
-F-TRACT to BIDS converter is a module of <a class="reference internal" href="../applications/APP_BIDS_Manager.html"><span class="doc">BIDS Manager software</span></a> (BIDS Manager and Pipeline, version 0.2.4) developed by AMU to organise any database in BIDS format (<a class="reference internal" href="#roehri-2021a" id="id16"><span>[Roehri_2021a]</span></a>).</p>
+<p>The F-TRACT project contains structural (imaging) and functional (neurophysiological) SEEG data from adult epileptic patients who were candidates to resective surgery and undergone intracortical stimulations.
+The data were collected from a multicenter patient population. Methods and materials for recording the data differed between epilepsy surgery units, and followed strict clinical procedures as defined in every hospital.
+The recording procedures were not standardized in research perspective which sole objective was data-reuse.
+For each patient, at least one anatomical MRI (T1 contrast if available, sometimes associated to a T2 and/or FLAIR contrast) and an image with SEEG electrodes (T1 MRI or CT scan and accessory implantation scheme)
+were obtained in order to localise SEEG electrodes. The average number of recording bipolar contacts per patient was about 150.
+Baselines, seizures and low-frequency stimulations were recorded as part of a pre-surgical evaluation of drug-resistant epilepsy. Only stimulations performed at low frequency (&lt;5 Hz) for a limited amount of time
+per stimulated area (typically less than 40 pulses) were considered. Bipolar stimuli were delivered using a constant current rectangular pulse generator designed for a safe diagnostic stimulation of the human brain,
+according to parameters proved to produce no structural damage. All stimulations were performed between two contiguous contacts in the grey matter, and sometimes in the white matter, using monophasic or biphasic pulses.
+Pulse width and intensity of stimulation could vary (typically 1 ms duration pulses at 3 mA). The clinical goals of the stimulations were the reproduction of the aura, the induction of an electroclinical seizure,
+and/or the localisation of an eloquent cortical area that has to be spared during surgery. Signals were acquired at a sampling frequency which varied between 512 Hz and 2048 Hz.</p>
+<p>See <a class="reference internal" href="#trebaul-2018" id="id7"><span>[Trebaul_2018]</span></a> for additional scientific details regarding the necessary procedures to generate the F-TRACT database.</p>
 </section>
+<section id="isd-seeg-epistim-and-mapcog-seeg-data">
+<h3>ISD SEEG, EPISTIM and MAPCOG-SEEG data<a class="headerlink" href="#isd-seeg-epistim-and-mapcog-seeg-data" title="Permalink to this headline"></a></h3>
+<p>Cognition SEEG data and associated imaging data come from 3 clinical trials:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ISD SEEG: <a class="reference external" href="https://clinicaltrials.gov/ct2/show/NCT03094312">Evaluation of the Risk of Cognitive Deficit After Surgery of Epilepsy by Dynamic Spectral Imaging (ISD) of the Cognitive Functions in Patients Explored in StereoElectroEncephaloGraphy</a>.</p></li>
+<li><p>EPISTIM: <a class="reference external" href="https://clinicaltrials.gov/ct2/show/NCT02844374">Epileptogenic Zone’s Cartography by Quantification of EEG’s Signal and Intracerebral Stimulation</a>.</p></li>
+<li><p>MAPCOG-SEEG: <a class="reference external" href="https://clinicaltrials.gov/ct2/show/NCT03644732">Atlas of Human Cognition by SEEG</a>.</p></li>
+</ul>
+</div></blockquote>
+<p>These clinical trials encompass brain cognition recordings conducted as part of the standard clinical practice for patients experiencing focal drug-resistant epilepsy and who are explored using intracranial electrodes.
+During their pre-surgical SEEG assessment, each patient went through a series of short cognitive tests, also known as localizers (<a class="reference internal" href="#coge-localizers"><span class="std std-ref">Tab.6</span></a>), lasting about ten minutes each, and designed to generate task-specific,
+and stimulus-specific high-frequency activity in several major functional systems, including language processing (LEC1 and LEC2), verbal and visuo-spatial working memory (MVEB and MVIS), visual attention (VISU),
+motor behavior (MOTO), high-level visual (MCSE) and auditory perception (AUDI). Furthermore, patients were also recorded during resting state (REST) and during a series of tests designed to evaluate whether specific
+types of actions can generate artefacts (ARFA).</p>
+<p>Additional information regarding the aforementioned tasks and the corresponding SEEG data acquisitions can be found in <a class="reference internal" href="#vidal-2011" id="id11"><span>[Vidal_2011]</span></a>, <a class="reference internal" href="#vidal-2012" id="id12"><span>[Vidal_2012]</span></a> and <a class="reference internal" href="#ossandon-2012" id="id13"><span>[Ossandón_2012]</span></a>.</p>
+<table class="docutils align-center" id="coge-localizers">
+<colgroup>
+<col style="width: 1%" />
+<col style="width: 9%" />
+<col style="width: 35%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Instructions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ARFA</p></td>
+<td><p>Resting State Paradigm</p></td>
+<td><p>A series of tests designed to evaluate whether specific types of actions can generate artefacts.</p></td>
+<td><p>Participants had to make different types of movements known to occasionally elicit noise in SEEG signals.</p></td>
+</tr>
+<tr class="row-odd"><td><p>AUDI</p></td>
+<td><p>Auditory Perception Task</p></td>
+<td><p>The subject listens to sounds of different types (voice, city noise, animals), <br /> lasting 12 seconds, with a break of 3 seconds between each sound.</p></td>
+<td><p>At the end of the experiment, the subject will listen to sounds and tell if he heard them before.</p></td>
+</tr>
+<tr class="row-even"><td><p>LEC1</p></td>
+<td><p>Word Recognition task</p></td>
+<td><p>The subject reads strings of 5 characters. There are 3 types of strings: regular words, <br /> pseudowords and unpronounceable words.</p></td>
+<td><p>If the string is a word, the subject has to say if it is alive or not. If the string is a pseudoword, <br /> he has to say if the word contains 2 syllables or only 1. If the string is unpronounceable, he has to say if it is uppercase or lowercase.</p></td>
+</tr>
+<tr class="row-odd"><td><p>LEC2</p></td>
+<td><p>Visual Selective Attention task</p></td>
+<td><p>The subject briefly reads words on the screen.</p></td>
+<td><p>The subject must read the story written in grey and ignore the story written in white.</p></td>
+</tr>
+<tr class="row-even"><td><p>MCSE</p></td>
+<td><p>Visual Search Task</p></td>
+<td><p>The subject sees an array filled with distractor symbols and a target. <br /> Distractors and target follow different color schemes to increase difficulty.</p></td>
+<td><p>The subject has to press a button to indicate as fast as possible whether the target was in the upper or lower part of the array.</p></td>
+</tr>
+<tr class="row-odd"><td><p>MOTO</p></td>
+<td><p>Instructed Moto-Coordination Task</p></td>
+<td><p>The subject sees squares on a screen. Either the square on the left or the right side is lit up, <br /> indicating a body side.</p></td>
+<td><p>The participant is required to sequentially move various body parts while adhering to the body side indicated on the screen. <br /> One of the movements involved pressing a button using either the left or right index finger.</p></td>
+</tr>
+<tr class="row-even"><td><p>MVEB</p></td>
+<td><p>Sternberg’s Verbal Working Memory task</p></td>
+<td><p>The subject sees a string of 6 characters, some are letters, some are #.</p></td>
+<td><p>The subject must read and memorize these characters. Then another letter appears, and he must tell if this letter was part of those presented earlier.</p></td>
+</tr>
+<tr class="row-odd"><td><p>MVIS</p></td>
+<td><p>Visuo-Spatial Working Memory Task</p></td>
+<td><p>The subject sees circles on a grid.</p></td>
+<td><p>The subject must remember the position of these circles. After 3 seconds, a single circle is presented in the same grid. <br /> The subject has to tell if this circle was already present in the first image.</p></td>
+</tr>
+<tr class="row-even"><td><p>REST</p></td>
+<td><p>Resting State Paradigm</p></td>
+<td><p>Participants were recorded at rest.</p></td>
+<td><p>No other instruction than to keep their eyes closed for 5 minutes in a mind wandering state.</p></td>
+</tr>
+<tr class="row-odd"><td><p>VISU</p></td>
+<td><p>Visual Oddball Task</p></td>
+<td><p>Series of 5 images are presented to the subject, followed by a short break to blink.</p></td>
+<td><p>The subject has to push a button whenever he sees a FRUIT (visual oddball).</p></td>
+</tr>
+</tbody>
+</table>
+<center>
+     <b>Tab.6</b> <i>Localizers.</i>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The cognition SEEG data found in the <em>/derivatives/cognition</em> folder of the COGEPISTIM dataset (see <a class="reference internal" href="#coge-structure"><span class="std std-ref">Fig.1</span></a>) correspond to amplitude modulations extracted in two specific frequency bands:
+8-24 Hz and 50-150 Hz. The method is fully detailed in <a class="reference internal" href="#ossandon-2012" id="id14"><span>[Ossandón_2012]</span></a>.</p>
 </section>
-<section id="isd-data-description">
-<h2>ISD data description<a class="headerlink" href="#isd-data-description" title="Link to this heading"></a></h2>
-<p><strong>COGNITIVE DATA DESCRIPTION</strong></p>
-</section>
-<section id="seeg-electrode-coordinates">
-<h2>SEEG Electrode coordinates<a class="headerlink" href="#seeg-electrode-coordinates" title="Link to this heading"></a></h2>
-<p>SEEG electrode spatial reference and coordinates can be found for each subject in the following files (see :ref:` COGEPISTIM BIDS entities &lt;cogepistim_bids_entities&gt;`)):</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_space-&lt;ieeg_space&gt;_coordsystem.json (spatial reference).</p></li>
-<li><p>sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_space-&lt;ieeg_space&gt;_electrodes.tsv (electrode coordinates).</p></li>
-</ul>
-</div></blockquote>
-<p>Electrode coordinates are specified in both native and MNI152 (ICBM Average Brain, 152 T1-weighted MRI scans,
-using linear coregistration to the MNI305 space) spaces (<a class="reference internal" href="#evans-2001" id="id17"><span>[Evans_2001]</span></a>; <a class="reference internal" href="#mazziotta-2001" id="id18"><span>[Mazziotta_2001]</span></a>).</p>
-<p>For SEEG data coming from the F-TRACT project, each electrode contact was also assigned to specific anatomical parcels of a set of atlases (see <a class="reference internal" href="#ftract-imaging-method"><span class="std std-ref">F-TRACT methods</span></a>),
-namely: MarsAtlas, Freesurfer, AAL, Broadman, Hammers, HCP_MMP1, AICHA, Lausanne2008.</p>
-</section>
-<section id="clinical-information">
-<h2>Clinical information<a class="headerlink" href="#clinical-information" title="Link to this heading"></a></h2>
-<p>Clinical information is limited to sex, handedness, age group and epilepsy location.
-<em>Sex</em> can be found in the <em>participants.tsv</em> file in BIDS <em>raw</em> directory.
-Subjects underwent one or several implantations which correspond to BIDS <em>sessions</em>.
-<em>Handedness</em>, <em>age group</em> and <em>epilepsy location</em> can be found in the <em>&lt;subject&gt;_sessions.tsv</em> file which reside in each subject’s folder.</p>
-<p>Sex:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>F</strong>: Female.</p></li>
-<li><p><strong>M</strong>: Male.</p></li>
-</ul>
-</div></blockquote>
-<p>Handedness:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>R</strong>: Right hand.</p></li>
-<li><p><strong>L</strong>: Left hand.</p></li>
-<li><p><strong>A</strong>: Ambidextrous.</p></li>
-<li><p><strong>U</strong>: Unspecified.</p></li>
-</ul>
-</div></blockquote>
-<p>Age group:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>Infant</strong>: Between 1 and 4 years old.</p></li>
-<li><p><strong>Juvenile</strong>: Between 5 and 16 years old.</p></li>
-<li><p><strong>Young adult</strong>: Between 17 and 25 years old.</p></li>
-<li><p><strong>Adult</strong>: 26 years old and more.</p></li>
-</ul>
-</div></blockquote>
-<p>Epilepsy location (can be a combination, e.g. temporal left, frontal left):</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>Temporal</strong>: Temporal lobe.</p></li>
-<li><p><strong>Frontal</strong>: Frontal lobe.</p></li>
-<li><p><strong>Parietal</strong>: Parietal lobe.</p></li>
-<li><p><strong>Occipital</strong>: Occipital lobe.</p></li>
-<li><p><strong>Central</strong>: Paracentral lobule.</p></li>
-<li><p><strong>Insular</strong>: Insular lobe.</p></li>
-<li><p><strong>Multifocal</strong>: Multifocal epileptic activity.</p></li>
-<li><p><strong>Indeterminate</strong>: Indeterminate / Unspecified.</p></li>
-<li><p><strong>Left</strong>: Left hemisphere.</p></li>
-<li><p><strong>Right</strong>: Right hemisphere.</p></li>
-<li><p><strong>Bilateral</strong>: Left and right hemisphere.</p></li>
-</ul>
-</div></blockquote>
 </section>
 <section id="license">
-<h2>License<a class="headerlink" href="#license" title="Link to this heading"></a></h2>
-<p>The COGEPISTIM database (iEEG and imaging data) is the property of <a class="reference external" href="https://www.univ-amu.fr/">Aix-Marseille Université (AMU)</a>, France.
-Its transfer and use outside the HIP, e.g. for research purposes, is prohibited without written consent.
-For questions, please contact <a class="reference external" href="mailto:Olivier&#46;David&#37;&#52;&#48;univ-amu&#46;fr?subject=HIP%20COGEPISTIM%20dataset%20">Olivier David, PhD</a>.</p>
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline"></a></h2>
+<p>The COGEPISTIM database is the property of <a class="reference external" href="https://www.univ-amu.fr/">Aix-Marseille University</a>, France.
+Its transfer and use, e.g. for research or clinical purposes, is prohibited without written consent.
+For questions, please contact <a class="reference external" href="mailto:Olivier&#46;David&#37;&#52;&#48;univ-amu&#46;fr?subject=COGEPISTIM%20dataset">Olivier David, PhD</a>.</p>
 </section>
 <section id="code-availability">
-<h2>Code availability<a class="headerlink" href="#code-availability" title="Link to this heading"></a></h2>
-<p>The data have been prepared using a collection of processing toolboxes, namely:</p>
+<h2>Code availability<a class="headerlink" href="#code-availability" title="Permalink to this headline"></a></h2>
+<p>The data have been prepared using a collection of software, namely:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Freesurfer (6.0.0, surfer.nmr.mgh.harvard.edu)</p></li>
-<li><p>BrainVisa (4.5.0, brainvisa.info)</p></li>
-<li><p>ANTs (1.9, svn release 1781, stnava.github.io/ANTs)</p></li>
-<li><p>SPM12 (12b, fil.ion.ucl.ac.uk/spm/software/spm12)</p></li>
-<li><p>ImaGIN and IntrAnat Electrodes (no versioning, f-tract.eu/software)</p></li>
+<li><p><a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/">Freesurfer</a> (6.0.0)</p></li>
+<li><p><a class="reference external" href="https://brainvisa.info/">BrainVisa</a> (4.5.0)</p></li>
+<li><p><a class="reference external" href="https://stnava.github.io/ANTs/">ANTs</a> (1.9, svn release 1781)</p></li>
+<li><p><a class="reference external" href="https://www.fil.ion.ucl.ac.uk/spm/software/spm12/">SPM12</a> SPM12 (12b)</p></li>
+<li><p><a class="reference external" href="https://f-tract.eu/software/">ImaGIN and IntrAnat Electrodes</a> (no versioning)</p></li>
+<li><p><a class="reference external" href="https://github.com/Dynamap/BIDS_Manager/">BIDS Manager</a> (0.3.4)</p></li>
+<li><p><a class="reference external" href="https://www.npmjs.com/package/bids-validator/">BIDS-Validator</a> (1.12.0)</p></li>
 </ul>
 </div></blockquote>
 </section>
 <section id="acknowledgments">
-<h2>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Link to this heading"></a></h2>
-<p>The research leading to these results has received funding from the European Research Council under the European Union’s Seventh Framework Programme (FP/2007-2013)/ERC Grant Agreement no. 616268 F-TRACT.</p>
+<h2>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline"></a></h2>
+<p>The F-TRACT project, whose data has been partly reused, has received funding from the European Research Council under the European Union’s Seventh Framework Programme
+(FP/2007-2013)/ERC Grant Agreement no. 616268 F-TRACT.</p>
 </section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
-<div role="list" class="citation-list">
-<div class="citation" id="ashburner-2009" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">Ashburner_2009</a><span class="fn-bracket">]</span></span>
-<p>Ashburner, J., 2009. Computational anatomy with the SPM software. Magn Reson Imaging 27, 1163–1174. doi:10.1016/j.mri.2009.01.006</p>
-</div>
-<div class="citation" id="auzias-2016" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">Auzias_2016</a><span class="fn-bracket">]</span></span>
-<p>Auzias, G., Coulon, O., Brovelli, A., 2016. MarsAtlas: A cortical parcellation atlas for functional mapping. 37, 1573–1592. doi:10.1002/hbm.23121</p>
-</div>
-<div class="citation" id="avants-2011" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">Avants_2011</a><span class="fn-bracket">]</span></span>
-<p>Avants, B.B., Tustison, N.J., Wu, J., Cook, P.A., Gee, J.C., 2011. An open source multivariate framework for n-tissue segmentation with evaluation on public data. Neuroinformatics 9, 381–400. doi:10.1007/s12021-011-9109-y.</p>
-</div>
-<div class="citation" id="brodmann-1909" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id10">Brodmann_1909</a><span class="fn-bracket">]</span></span>
-<p>Brodmann, K., 1909. Vergleichende Lokalisationslehre der Grosshirnrinde. Johann Ambrosius Barth, Leipzig.</p>
-</div>
-<div class="citation" id="deman-2018" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span>Deman_2018<span class="fn-bracket">]</span></span>
-<span class="backrefs">(<a role="doc-backlink" href="#id3">1</a>,<a role="doc-backlink" href="#id14">2</a>)</span>
-<p>Deman, P., Bhattacharjee, M., Rivière, D., Tadel, F., Cointepas, Y., David, O., 2018. IntrAnat Electrodes: A free database software to visualize intracranial electroencephalographic data in patient’s referential and to initiate group studies. Front. Neuroinform. 12, 40.</p>
-</div>
-<div class="citation" id="destrieux-2010" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">Destrieux_2010</a><span class="fn-bracket">]</span></span>
-<p>Destrieux C, Fischl B, Dale A, Halgren E. Automatic parcellation of human cortical gyri and sulci using standard anatomical nomenclature. Neuroimage. 2010 Oct 15;53(1):1-15. doi: 10.1016/j.neuroimage.2010.06.010. Epub 2010 Jun 12. PMID: 20547229; PMCID: PMC2937159.</p>
-</div>
-<div class="citation" id="evans-2001" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id17">Evans_2001</a><span class="fn-bracket">]</span></span>
-<p>Evans, A.C., Fox, P.T., Lancaster, J., Zilles, K., Woods, R., Paus, T., Simpson, G., Pike, B., Holmes, C., Collins, D.L., Thompson, P., MacDonald, D., Iacoboni, M., Schormann, T., Amunts, K., Palomero-Gallagher, N., Geyer, S., Parsons, L., Narr, K., Kabani, N., LeGoualher, G., Boomsma, D., Cannon, T., Kawashima, R., Mazoyer, B., 2001a. A probabilistic atlas and reference system for the human brain: International Consortium for Brain Mapping (ICBM). Philos. Trans. R. Soc. London B Biol. Sci. 356, 1293–1322.</p>
-</div>
-<div class="citation" id="glasser-2016" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id13">Glasser_2016</a><span class="fn-bracket">]</span></span>
-<p>Glasser MF, Coalson TS, Robinson EC, Hacker CD, Harwell J, Yacoub E, Ugurbil K, Andersson J, Beckmann CF, Jenkinson M, Smith SM, Van Essen DC. A multi-modal parcellation of human cerebral cortex. Nature. 2016 Aug 11;536(7615):171-178. doi: 10.1038/nature18933. Epub 2016 Jul 20. PMID: 27437579; PMCID: PMC4990127.</p>
-</div>
-<div class="citation" id="hagmann-2008" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">Hagmann_2008</a><span class="fn-bracket">]</span></span>
-<p>Hagmann P, Cammoun L, Gigandet X, Meuli R, Honey CJ, Wedeen VJ, Sporns O. Mapping the structural core of human cerebral cortex. PLoS Biol. 2008 Jul 1;6(7):e159. doi: 10.1371/journal.pbio.0060159. PMID: 18597554; PMCID: PMC2443193.</p>
-</div>
-<div class="citation" id="hammers-2003" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id12">Hammers_2003</a><span class="fn-bracket">]</span></span>
-<p>Hammers, A., Allom, R., Koepp, M.J., Free, S.L., Myers, R., Lemieux, L., Mitchell, T.N., Brooks, D.J., Duncan, J.S., 2003. Three-dimensional maximum probability atlas of the human brain, with particular reference to the temporal lobe 19, 224–247. doi:10.1002/hbm.10123.</p>
-</div>
-<div class="citation" id="holdgraf-2019" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Holdgraf_2019</a><span class="fn-bracket">]</span></span>
-<p>Holdgraf, C., Appelhoff, S., Bickel, S., Bouchard, K., D’Ambrosio, S., David, O., Devinsky, O., Dichter, B., Flinker, A., Foster, B., Gorgolewski, K., Groen, I., Groppe, D., Gunduz, A., Hamilton, L., Honey, C., Jas, M., Knight, K., Lachaux, J.P., Lau, J., N. Lundstrom, B., Lee-Messer, C., Miller, K., G. Ojemann, J., Oostenveld, R., Piantoni, G., Petridou, N., Pigorini, A., Pouratian, N., Ramsey, N., Stolk, A., C. Swann, N., Tadel, F., Voytek, B., Wandell, B., Winawer, J., Zehl, L., Hermes, D., 2019. BIDS-iEEG: an extension to the brain imaging data structure (BIDS) specification for human intracranial electrophysiology. Sci Data. 6(1):102.</p>
-</div>
-<div class="citation" id="mazziotta-2001" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id18">Mazziotta_2001</a><span class="fn-bracket">]</span></span>
-<p>Mazziotta J, Toga A, Evans A, Fox P, Lancaster J, Zilles K, Woods R, Paus T, Simpson G, Pike B, Holmes C, Collins L, Thompson P, MacDonald D, Iacoboni M, Schormann T, Amunts K, Palomero-Gallagher N, Geyer S, Parsons L, Narr K, Kabani N, Le Goualher G, Boomsma D, Cannon T, Kawashima R, Mazoyer B. A probabilistic atlas and reference system for the human brain: International Consortium for Brain Mapping (ICBM). Philos Trans R Soc Lond B Biol Sci. 2001 Aug 29;356(1412):1293-322. doi: 10.1098/rstb.2001.0915. PMID: 11545704; PMCID: PMC1088516.</p>
-</div>
-<div class="citation" id="riviere-2009" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">Rivière_2009</a><span class="fn-bracket">]</span></span>
-<p>Rivière, D., Geffroy, D., Denghien, I., Souedet, N., Cointepas, Y., 2009. BrainVISA: an extensible software environment for sharing multimodal neuroimaging data and processing tools. NeuroImage 47, S163. doi:10.1016/S1053-8119(09)71720-3.</p>
-</div>
-<div class="citation" id="roehri-2021a" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id16">Roehri_2021a</a><span class="fn-bracket">]</span></span>
-<p>Roehri N, Medina Villalon S, Jegou A, Colombet B, Giusiano B, Ponz A, Bartolomeo F, Bénar CG. Transfer, Collection and Organisation of Electrophysiological and Imaging Data for Multicentre Studies. Neuroinform., 2021.</p>
-</div>
-<div class="citation" id="trebaul-2018" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">Trebaul_2018</a><span class="fn-bracket">]</span></span>
-<p>Trebaul, L., Deman, P., Tuyisenge, V., Jedynak, M., Hugues, E., Rudrauf, D., Bhattacharjee, M., Tadel, F., Chanteloup-Forêt, B., Saubat, C., Reyes Mejia, G.C., Adam, C., Nica, A., Pail, M., Dubeau, F., Rheims, S., Trébuchon, A., Wang, H., Liu, S., Blauwblomme, T., Garces, M., De Palma, L., Valentín, A., Metsahonkala, E.-L., Petrescu, A.M., Landré, E., Szurhaj, W., Hirsch, E., Valton, L., Rocamora, R., Schulze-Bonhage, A., Mîndruţă, I., Francione, S., Maillard, L., Taussig, D., Kahane, P., David, O., 2018. Probabilistic functional tractography of the human cortex revisited. NeuroImage 181, 414–429. doi:10.1016/j.neuroimage.2018.07.039.</p>
-</div>
-<div class="citation" id="tuyisenge-2018" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id15">Tuyisenge_2018</a><span class="fn-bracket">]</span></span>
-<p>Tuyisenge, V., Trebaul, L., Bhattacharjee, M., Chanteloup-Forêt, B., Saubat-Guigui, C., Mîndruţă, I., Rheims, S., Maillard, L., Kahane, P., Taussig, D., David, O., 2018. Automatic bad channel detection in intracranial electroencephalographic recordings using ensemble machine learning. Clin Neurophysiol 129, 548–554. doi:10.1016/j.clinph.2017.12.013.</p>
-</div>
-<div class="citation" id="tzourio-mazoyer-2002" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id11">Tzourio-Mazoyer_2002</a><span class="fn-bracket">]</span></span>
-<p>Tzourio-Mazoyer, N., Landeau, B., Papathanassiou, D., Crivello, F., Etard, O., Delcroix, N., Mazoyer, B., Joliot, M., 2002. Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain. NeuroImage 15, 273–289. doi:10.1006/nimg.2001.0978.</p>
-</div>
-</div>
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>
+<dl class="citation">
+<dt class="label" id="blair-2022"><span class="brackets"><a class="fn-backref" href="#id3">Blair_2022</a></span></dt>
+<dd><p>Blair, Ross, Michael, Zack, Gorgolewski, Krzysztof J., Hardcastle, Nell, Hobson-Lowther, Teal, Nishikawa, David, Bhogawar, Suyash, Appelhoff, Stefan, Jas, Mainak, Grass, Brian, Markiewicz, Christopher J., Holdgraf, Chris, Jones, Alexander, Goyal, Rohan, Oostenveld, Robert, Noack, Gregory, Triplett, William, Naveau, Mikaël, Zito, Matthew, … Zulfikar, Wazeer. (2022). bids-validator (v1.9.3). Zenodo.</p>
+</dd>
+<dt class="label" id="evans-2001"><span class="brackets"><a class="fn-backref" href="#id4">Evans_2001</a></span></dt>
+<dd><p>Evans, A.C., Fox, P.T., Lancaster, J., Zilles, K., Woods, R., Paus, T., Simpson, G., Pike, B., Holmes, C., Collins, D.L., Thompson, P., MacDonald, D., Iacoboni, M., Schormann, T., Amunts, K., Palomero-Gallagher, N., Geyer, S., Parsons, L., Narr, K., Kabani, N., LeGoualher, G., Boomsma, D., Cannon, T., Kawashima, R., Mazoyer, B., 2001a. A probabilistic atlas and reference system for the human brain: International Consortium for Brain Mapping (ICBM). Philos. Trans. R. Soc. London B Biol. Sci. 356, 1293–1322.</p>
+</dd>
+<dt class="label" id="holdgraf-2019"><span class="brackets"><a class="fn-backref" href="#id2">Holdgraf_2019</a></span></dt>
+<dd><p>Holdgraf, C., Appelhoff, S., Bickel, S., Bouchard, K., D’Ambrosio, S., David, O., Devinsky, O., Dichter, B., Flinker, A., Foster, B., Gorgolewski, K., Groen, I., Groppe, D., Gunduz, A., Hamilton, L., Honey, C., Jas, M., Knight, K., Lachaux, J.P., Lau, J., N. Lundstrom, B., Lee-Messer, C., Miller, K., G. Ojemann, J., Oostenveld, R., Piantoni, G., Petridou, N., Pigorini, A., Pouratian, N., Ramsey, N., Stolk, A., C. Swann, N., Tadel, F., Voytek, B., Wandell, B., Winawer, J., Zehl, L., Hermes, D., 2019. BIDS-iEEG: an extension to the brain imaging data structure (BIDS) specification for human intracranial electrophysiology. Sci Data. 6(1):102.</p>
+</dd>
+<dt class="label" id="mazziotta-2001"><span class="brackets"><a class="fn-backref" href="#id5">Mazziotta_2001</a></span></dt>
+<dd><p>Mazziotta J, Toga A, Evans A, Fox P, Lancaster J, Zilles K, Woods R, Paus T, Simpson G, Pike B, Holmes C, Collins L, Thompson P, MacDonald D, Iacoboni M, Schormann T, Amunts K, Palomero-Gallagher N, Geyer S, Parsons L, Narr K, Kabani N, Le Goualher G, Boomsma D, Cannon T, Kawashima R, Mazoyer B. A probabilistic atlas and reference system for the human brain: International Consortium for Brain Mapping (ICBM). Philos Trans R Soc Lond B Biol Sci. 2001 Aug 29;356(1412):1293-322. doi: 10.1098/rstb.2001.0915. PMID: 11545704; PMCID: PMC1088516.</p>
+</dd>
+<dt class="label" id="roehri-2021a"><span class="brackets"><a class="fn-backref" href="#id1">Roehri_2021a</a></span></dt>
+<dd><p>Roehri N, Medina Villalon S, Jegou A, Colombet B, Giusiano B, Ponz A, Bartolomeo F, Bénar CG. Transfer, Collection and Organisation of Electrophysiological and Imaging Data for Multicentre Studies. Neuroinform., 2021.</p>
+</dd>
+<dt class="label" id="trebaul-2018"><span class="brackets">Trebaul_2018</span><span class="fn-backref">(<a href="#id6">1</a>,<a href="#id7">2</a>)</span></dt>
+<dd><p>Trebaul, L., Deman, P., Tuyisenge, V., Jedynak, M., Hugues, E., Rudrauf, D., Bhattacharjee, M., Tadel, F., Chanteloup-Forêt, B., Saubat, C., Reyes Mejia, G.C., Adam, C., Nica, A., Pail, M., Dubeau, F., Rheims, S., Trébuchon, A., Wang, H., Liu, S., Blauwblomme, T., Garces, M., De Palma, L., Valentín, A., Metsahonkala, E.-L., Petrescu, A.M., Landré, E., Szurhaj, W., Hirsch, E., Valton, L., Rocamora, R., Schulze-Bonhage, A., Mîndruţă, I., Francione, S., Maillard, L., Taussig, D., Kahane, P., David, O., 2018. Probabilistic functional tractography of the human cortex revisited. NeuroImage 181, 414–429. doi:10.1016/j.neuroimage.2018.07.039.</p>
+</dd>
+<dt class="label" id="vidal-2011"><span class="brackets"><a class="fn-backref" href="#id11">Vidal_2011</a></span></dt>
+<dd><p>Vidal, J.; Hamame, C.; Jerbi, K.; Dalal, S.; Ciumas, C.; Perrone-Bertolotti, M.; Ossandon, T.; Minotti, L.; Kahane, P.; Lachaux, J. Localizing cognitive functions in epilepsy with intracranial gammaband dynamic responses. In: Helmstaedter, C.; Lassonde, M.; Hermann, B.; Kahane, P.; Arzimanoglou, A., editors. Neuropsychology in the Care of People with Epilepsy. John Libbey Eurotext; Paris: 2011.</p>
+</dd>
+<dt class="label" id="vidal-2012"><span class="brackets"><a class="fn-backref" href="#id12">Vidal_2012</a></span></dt>
+<dd><p>Vidal, J. R., Freyermuth, S., Jerbi, K., Hamame, C. M., Ossandon, T., Bertrand, O., … Lachaux, J.-P. (2012). Long-Distance Amplitude Correlations in the High Gamma Band Reveal Segregation and Integration within the Reading Network. Journal of Neuroscience, 32(19), 6421–6434.</p>
+</dd>
+<dt class="label" id="ossandon-2012"><span class="brackets">Ossandón_2012</span><span class="fn-backref">(<a href="#id13">1</a>,<a href="#id14">2</a>)</span></dt>
+<dd><p>Ossandón T, Vidal JR, Ciumas C, Jerbi K, Hamamé CM, Dalal SS, Bertrand O, Minotti L, Kahane P, Lachaux JP. Efficient “pop-out” visual search elicits sustained broadband γ activity in the dorsal attention network. J Neurosci. 2012 Mar 7;32(10):3414-21. doi: 10.1523/JNEUROSCI.6048-11.2012. PMID: 22399764; PMCID: PMC6621042.</p>
+</dd>
+</dl>
 </section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="DATASET_Epimap.html" class="btn btn-neutral float-left" title="Epimap tutorial dataset" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="DATASET_Data_for_electrodes_labelling.html" class="btn btn-neutral float-right" title="Data for electrodes labelling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
