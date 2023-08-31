@@ -188,8 +188,8 @@ either in the form of an MRI or a CT scan. Clinical data may be incomplete or mi
 </section>
 <section id="data-preparation">
 <h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
-<p>The COGEPISTIM dataset has been prepared using <a class="reference external" href="https://github.com/Dynamap/BIDS_Manager">BIDS Manager</a> (0.3.4) (<a class="reference internal" href="#roehri-2021a" id="id1"><span>[Roehri_2021a]</span></a>), a Python package to collect, organise and manage neuroscience data in BIDS format.
-The dataset follows <a class="reference external" href="https://bids.neuroimaging.io/">BIDS specifications</a> (see <a class="reference internal" href="#holdgraf-2019" id="id2"><span>[Holdgraf_2019]</span></a> for BIDS-iEEG specifications) and has been validated using <a class="reference external" href="https://www.npmjs.com/package/bids-validator">BIDS-Validator</a>
+<p>The COGEPISTIM dataset has been prepared using <a class="reference external" href="https://github.com/Dynamap/BIDS_Manager">BIDS Manager software</a> (0.3.4) (<a class="reference internal" href="#roehri-2021a" id="id1"><span>[Roehri_2021a]</span></a>), a Python package to collect, organise and manage neuroscience data in BIDS format.
+The dataset follows <a class="reference external" href="https://bids.neuroimaging.io/">BIDS specifications</a> (see <a class="reference internal" href="#holdgraf-2019" id="id2"><span>[Holdgraf_2019]</span></a> for BIDS-iEEG specifications) and has been validated using <a class="reference external" href="https://www.npmjs.com/package/bids-validator">BIDS-Validator tool</a>
 (1.12.0) (<a class="reference internal" href="#blair-2022" id="id3"><span>[Blair_2022]</span></a>).
 Data have been pseudonymized. Subjects were assigned a unique identifier and personally identifiable information have been removed from the (meta)data of all files that have been imported into the dataset,
 this includes events and notes typically found in SEEG data. Imaging data have been defaced using <a class="reference external" href="https://www.fil.ion.ucl.ac.uk/spm/software/spm12/">SPM12’s</a> dedicated
@@ -541,53 +541,53 @@ types of actions can generate artefacts (ARFA).</p>
 <tbody>
 <tr class="row-even"><td><p>ARFA</p></td>
 <td><p>Resting State Paradigm</p></td>
-<td><p>A series of tests designed to evaluate whether specific types of actions can generate artefacts.</p></td>
-<td><p>Participants had to make different types of movements known to occasionally elicit noise in SEEG signals.</p></td>
+<td><p>Subject does series of tests designed to evaluate whether specific types of actions can generate artefacts.</p></td>
+<td><p>Subjects had to make different types of movements known to occasionally elicit noise in SEEG signals.</p></td>
 </tr>
 <tr class="row-odd"><td><p>AUDI</p></td>
 <td><p>Auditory Perception Task</p></td>
-<td><p>The subject listens to sounds of different types (voice, city noise, animals), <br /> lasting 12 seconds, with a break of 3 seconds between each sound.</p></td>
-<td><p>At the end of the experiment, the subject will listen to sounds and tell if he heard them before.</p></td>
+<td><p>Subject listens to sounds of different types (voice, city noise, animals), <br /> lasting 12 seconds, with a break of 3 seconds between each sound.</p></td>
+<td><p>At the end of the experiment, subjects will listen to sounds and tell if they heard them before.</p></td>
 </tr>
 <tr class="row-even"><td><p>LEC1</p></td>
 <td><p>Word Recognition task</p></td>
-<td><p>The subject reads strings of 5 characters. There are 3 types of strings: regular words, <br /> pseudowords and unpronounceable words.</p></td>
-<td><p>If the string is a word, the subject has to say if it is alive or not. If the string is a pseudoword, <br /> he has to say if the word contains 2 syllables or only 1. If the string is unpronounceable, he has to say if it is uppercase or lowercase.</p></td>
+<td><p>Subject reads strings of 5 characters. There are 3 types of strings: regular words, <br /> pseudowords and unpronounceable words.</p></td>
+<td><p>If the string is a word, the subject has to say if it is alive or not. If the string is a pseudoword, <br /> they have to say if the word contains 1 or 2 syllables. If the string is unpronounceable, they have to say if it is uppercase or lowercase.</p></td>
 </tr>
 <tr class="row-odd"><td><p>LEC2</p></td>
 <td><p>Visual Selective Attention task</p></td>
-<td><p>The subject briefly reads words on the screen.</p></td>
+<td><p>Subject briefly reads words on the screen.</p></td>
 <td><p>The subject must read the story written in grey and ignore the story written in white.</p></td>
 </tr>
 <tr class="row-even"><td><p>MCSE</p></td>
 <td><p>Visual Search Task</p></td>
-<td><p>The subject sees an array filled with distractor symbols and a target. <br /> Distractors and target follow different color schemes to increase difficulty.</p></td>
+<td><p>Subject sees an array filled with distractor symbols and a target. <br /> Distractors and target follow different color schemes to increase difficulty.</p></td>
 <td><p>The subject has to press a button to indicate as fast as possible whether the target was in the upper or lower part of the array.</p></td>
 </tr>
 <tr class="row-odd"><td><p>MOTO</p></td>
 <td><p>Instructed Moto-Coordination Task</p></td>
-<td><p>The subject sees squares on a screen. Either the square on the left or the right side is lit up, <br /> indicating a body side.</p></td>
+<td><p>Subject sees squares on a screen. Either the square on the left or the right side is lit up, <br /> indicating a body side.</p></td>
 <td><p>The participant is required to sequentially move various body parts while adhering to the body side indicated on the screen. <br /> One of the movements involved pressing a button using either the left or right index finger.</p></td>
 </tr>
 <tr class="row-even"><td><p>MVEB</p></td>
 <td><p>Sternberg’s Verbal Working Memory task</p></td>
-<td><p>The subject sees a string of 6 characters, some are letters, some are #.</p></td>
-<td><p>The subject must read and memorize these characters. Then another letter appears, and he must tell if this letter was part of those presented earlier.</p></td>
+<td><p>Subject sees a string of 6 characters, some are letters, some are #.</p></td>
+<td><p>The subject must read and memorize these characters. Then another letter appears, and they must tell if this letter was part of those presented earlier.</p></td>
 </tr>
 <tr class="row-odd"><td><p>MVIS</p></td>
 <td><p>Visuo-Spatial Working Memory Task</p></td>
-<td><p>The subject sees circles on a grid.</p></td>
+<td><p>Subject sees circles on a grid.</p></td>
 <td><p>The subject must remember the position of these circles. After 3 seconds, a single circle is presented in the same grid. <br /> The subject has to tell if this circle was already present in the first image.</p></td>
 </tr>
 <tr class="row-even"><td><p>REST</p></td>
 <td><p>Resting State Paradigm</p></td>
-<td><p>Participants were recorded at rest.</p></td>
+<td><p>Subject were recorded at rest.</p></td>
 <td><p>No other instruction than to keep their eyes closed for 5 minutes in a mind wandering state.</p></td>
 </tr>
 <tr class="row-odd"><td><p>VISU</p></td>
 <td><p>Visual Oddball Task</p></td>
-<td><p>Series of 5 images are presented to the subject, followed by a short break to blink.</p></td>
-<td><p>The subject has to push a button whenever he sees a FRUIT (visual oddball).</p></td>
+<td><p>Subject sees series of 5 images, followed by a short break to blink.</p></td>
+<td><p>The subject has to push a button whenever they see a FRUIT (visual oddball).</p></td>
 </tr>
 </tbody>
 </table>
@@ -602,9 +602,9 @@ types of actions can generate artefacts (ARFA).</p>
 </section>
 <section id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline"></a></h2>
-<p>The COGEPISTIM database is the property of <a class="reference external" href="https://www.univ-amu.fr/">Aix-Marseille University</a>, France.
+<p>The COGEPISTIM database is the property of <a class="reference external" href="https://www.chu-grenoble.fr/">CHU Grenoble Alpes</a>, France.
 Its transfer and use, e.g. for research or clinical purposes, is prohibited without written consent.
-For questions, please contact <a class="reference external" href="mailto:Olivier&#46;David&#37;&#52;&#48;univ-amu&#46;fr?subject=COGEPISTIM%20dataset">Olivier David, PhD</a>.</p>
+For questions, please contact <a class="reference external" href="mailto:PKahane&#37;&#52;&#48;chu-grenoble&#46;fr?subject=COGEPISTIM%20dataset">Philippe KAHANE, MD, PhD</a>.</p>
 </section>
 <section id="code-availability">
 <h2>Code availability<a class="headerlink" href="#code-availability" title="Permalink to this headline"></a></h2>
@@ -623,8 +623,12 @@ For questions, please contact <a class="reference external" href="mailto:Olivier
 </section>
 <section id="acknowledgments">
 <h2>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline"></a></h2>
+<p>This research was supported by the EBRAINS research infrastructure, funded from the European Union’s Horizon 2020 Framework Programme for Research and Innovation under the Specific Grant Agreement
+No. 945539 (<a class="reference external" href="https://cordis.europa.eu/project/id/945539/">Human Brain Project SGA3</a>).</p>
 <p>The F-TRACT project, whose data has been partly reused, has received funding from the European Research Council under the European Union’s Seventh Framework Programme
 (FP/2007-2013)/ERC Grant Agreement no. 616268 F-TRACT.</p>
+<p>This reseach was made in collaboration with the <a class="reference external" href="https://www.chuv.ch/fr/chuv-home">Lausanne University Hospital (Centre Hospitalier Universitaire Vaudois)</a> and the
+<a class="reference external" href="https://www.chu-lyon.fr/">University Hospital of Lyon (Hospices Civils de Lyon)</a>.</p>
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>
