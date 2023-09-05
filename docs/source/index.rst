@@ -69,6 +69,7 @@ It contains the following sections:
    How to use Desktops and run applications from the App Catalog<guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>
    How to transfer data from Micromed software to the HIP<guides/GUIDE_How_to_transfer_data_from_Micromed_software_to_the_HIP>
    How to use the HIP spaces and share data with other users<guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>
+   How to use Collaborative Projects<guides/GUIDE_How_to_use_collaborative_projects>
    
 .. toctree::
    :caption: HIP tutorials 

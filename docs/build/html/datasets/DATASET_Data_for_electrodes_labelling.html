@@ -58,6 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html">How to use Desktops and run applications from the App Catalog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/GUIDE_How_to_transfer_data_from_Micromed_software_to_the_HIP.html">How to transfer data from Micromed software to the HIP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html">How to use the HIP spaces and share data with other users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/GUIDE_How_to_use_collaborative_projects.html">How to use Collaborative Projects</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP tutorials</span></p>
 <ul>
@@ -137,9 +138,11 @@ imaging data (T1, T2, CT, braincase, DTI) and SEEG recordings (ictal, interictal
 with corresponding implantation scheme.</p>
 <section id="data-files">
 <h3>Data files<a class="headerlink" href="#data-files" title="Permalink to this headline"></a></h3>
-<p>The dataset is accessible in a <a class="reference external" href="https://thehip.app/apps/files/?dir=/tutorial_data/Data_for_electrodes_labelling&amp;fileid=717735">publicly shared folder</a>.</p>
-<p>File and directory structure:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">Data_for_electrodes_labelling</span>
+<p>The dataset is stored in a folder called “<a class="reference external" href="https://thehip.app/apps/files/?dir=/tutorial_data/Data_for_electrodes_labelling&amp;fileid=717735">Data_for_electrodes_labelling</a>” located inside the “<em>tutorial_data</em>” folder
+accessible from the Private Space.</p>
+<p>The arrangement of files and folders is depicted in <a class="reference internal" href="#labelling-structure"><span class="std std-ref">Fig.1</span></a>, while the corresponding naming conventions are outlined in <a class="reference internal" href="#labelling-naming-convention"><span class="std std-ref">Tab.1</span></a>.
+Files and folders are further described in <a class="reference internal" href="#labelling-file-desc"><span class="std std-ref">Tab.2</span></a> and <a class="reference internal" href="#labelling-folder-desc"><span class="std std-ref">Tab.3</span></a> respectively. For further insights into data formats, refer to <a class="reference internal" href="#labelling-file-format"><span class="std std-ref">Tab.4</span></a>.</p>
+<div class="highlight-default notranslate" id="labelling-structure"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">Data_for_electrodes_labelling</span>
 <span class="o">..</span> <span class="o">/</span><span class="n">Case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span>
 <span class="o">....</span> <span class="o">/</span><span class="n">Anatomical_data</span>
 <span class="o">......</span> <span class="n">anon_t1_mprage_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">nii</span>
@@ -172,55 +175,168 @@ with corresponding implantation scheme.</p>
 <span class="o">......</span> <span class="n">case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span><span class="n">EEG_</span><span class="o">&lt;</span><span class="n">stim_run</span><span class="o">&gt;&lt;</span><span class="n">task</span><span class="o">&gt;.</span><span class="n">TRC</span>
 </pre></div>
 </div>
-<p>Complementary information regarding file formats and file-internal data structures:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>JavaScript Object Notation (.json): 1D (non-nested) key-value pairs. Metadata.</p></li>
-<li><p>Neuroimaging Informatics Technology Initiative (.nii): Imaging, native space.</p></li>
-<li><p>Micromed raw SEEG data (.TRC): Unprocessed SEEG data.</p></li>
-<li><p>b-vectors (.bvec): Diffusion gradient vectors. Text file.</p></li>
-<li><p>b-values (.bval): Diffusion gradient values. Text file.</p></li>
-<li><p>Portable Network Graphic (.png): Implantation pictures.</p></li>
-</ul>
-</div></blockquote>
-<p>Directory description:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>/Case&lt;case_nb&gt; → Subject directory.</p></li>
-<li><p>/Implatation schema →  Implantation schemes.</p></li>
-<li><p>/DTI_case&lt;case_nb&gt; → Diffusion Tensor Imaging data.</p></li>
-<li><p>/Anatomical_data → Anatomical imaging (T1, T2, CT) and Diffusion Tensor Imaging data.</p></li>
-<li><p>/SEEG and /Stimulation_data → SEEG data.</p></li>
-</ul>
-</div></blockquote>
-<p>File description:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>*t1* →  T1 weighted MRI.</p></li>
-<li><p>*t2* →  T2 weighted MRI.</p></li>
-<li><p>*ct* →  Computerized Tomography.</p></li>
-<li><p>*TRACEW* →  Trace weight.</p></li>
-<li><p>*FA* →  Fractional Anisotropy.</p></li>
-<li><p>*ADC* →  Apparent Diffusion Coefficient.</p></li>
-<li><p>*DTI* →  Diffusion Tensor Imaging.</p></li>
-<li><p>*(S)EEG* →  SEEG recording.</p></li>
-</ul>
-</div></blockquote>
-<p>Naming convention:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>&lt;case_nb&gt; → Case number. Integer.</p></li>
-<li><p>&lt;scheme_idx&gt; and &lt;map_idx&gt; → Implantation scheme index. Integer.</p></li>
-<li><p>&lt;hip_id&gt; → Unique identifier of a SEEG file. Alphanumeric.</p></li>
-<li><p>&lt;stim_run&gt; → Stimulation run. Integer.</p></li>
-<li><p>&lt;task&gt; → Task identifier of a SEEG files. Alphanumeric.</p></li>
-</ul>
-</div></blockquote>
+<center>
+     <b>Fig.1</b> <i>File and folder organization.</i>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-center" id="labelling-naming-convention">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>BIDS value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>&lt;case_nb&gt;</p></td>
+<td><p>Case number. Integer.</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;scheme_idx&gt; and &lt;map_idx&gt;</p></td>
+<td><p>Implantation scheme index. Integer.</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;hip_id&gt;</p></td>
+<td><p>Unique identifier of a SEEG file. Alphanumeric.</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;stim_run&gt;</p></td>
+<td><p>Stimulation run. Integer.</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;task&gt;</p></td>
+<td><p>Task identifier of a SEEG files. Alphanumeric.</p></td>
+</tr>
+</tbody>
+</table>
+<center>
+     <b>Tab.1</b> <i>Naming convention.</i>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-center" id="labelling-file-desc">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>File</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>*t1*</p></td>
+<td><p>T1 weighted MRI.</p></td>
+</tr>
+<tr class="row-odd"><td><p>*t2*</p></td>
+<td><p>T2 weighted MRI.</p></td>
+</tr>
+<tr class="row-even"><td><p>*ct*</p></td>
+<td><p>Computerized Tomography.</p></td>
+</tr>
+<tr class="row-odd"><td><p>*TRACEW*</p></td>
+<td><p>Trace weight.</p></td>
+</tr>
+<tr class="row-even"><td><p>*FA*</p></td>
+<td><p>Fractional Anisotropy.</p></td>
+</tr>
+<tr class="row-odd"><td><p>*ADC*</p></td>
+<td><p>Apparent Diffusion Coefficient.</p></td>
+</tr>
+<tr class="row-even"><td><p>*DTI*</p></td>
+<td><p>Diffusion Tensor Imaging.</p></td>
+</tr>
+<tr class="row-odd"><td><p>*(S)EEG*</p></td>
+<td><p>SEEG recording.</p></td>
+</tr>
+</tbody>
+</table>
+<center>
+     <b>Tab.2</b> <i>File description.</i>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-center" id="labelling-folder-desc">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Folder</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>/Case&lt;case_nb&gt;</p></td>
+<td><p>Subject directory.</p></td>
+</tr>
+<tr class="row-odd"><td><p>/Implatation schema</p></td>
+<td><p>Implantation schemes.</p></td>
+</tr>
+<tr class="row-even"><td><p>/DTI_case&lt;case_nb&gt;</p></td>
+<td><p>Diffusion Tensor Imaging data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>/Anatomical_data</p></td>
+<td><p>Anatomical imaging (T1, T2, CT) and Diffusion Tensor Imaging data.</p></td>
+</tr>
+<tr class="row-even"><td><p>/SEEG and /Stimulation_data</p></td>
+<td><p>SEEG data.</p></td>
+</tr>
+</tbody>
+</table>
+<center>
+     <b>Tab.3</b> <i>Folder description.</i>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils align-center" id="labelling-file-format">
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 11%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Format</p></th>
+<th class="head"><p>Extension</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>JavaScript Object Notation</p></td>
+<td><p>.json</p></td>
+<td><p>1D (non-nested) key-value pairs. Metadata.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Neuroimaging Informatics Technology Initiative</p></td>
+<td><p>.nii</p></td>
+<td><p>Imaging data. Native space.</p></td>
+</tr>
+<tr class="row-even"><td><p>Micromed raw SEEG data</p></td>
+<td><p>.TRC</p></td>
+<td><p>Raw SEEG data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>b-vectors</p></td>
+<td><p>.bvec</p></td>
+<td><p>Diffusion gradient vectors. Text file.</p></td>
+</tr>
+<tr class="row-even"><td><p>b-values</p></td>
+<td><p>.bval</p></td>
+<td><p>Diffusion gradient values. Text file.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Portable Network Graphic</p></td>
+<td><p>.png</p></td>
+<td><p>Implantation pictures.</p></td>
+</tr>
+</tbody>
+</table>
+<center>
+     <b>Tab.4</b> <i>Files formats.</i>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 </section>
 <section id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline"></a></h2>
-<p>This tutorial dataset (SEEG and imaging data) is the property of the Centre Hospitalier Universitaire de Lausanne, Swiss.
+<p>This tutorial dataset is the property of the <a class="reference external" href="https://www.chuv.ch/fr/chuv-home">Lausanne University Hospital (Centre Hospitalier Universitaire Vaudois)</a>, Switzerland.
 Its use and transfer outside this HIP tutorial, e.g. for research purposes, is prohibited without written consent.
 For questions, please contact <a class="reference external" href="mailto:Carolina&#46;Ciumas&#37;&#52;&#48;chuv&#46;ch?subject=HIP%20Cico%20dataset%20">Carolina Ciumas, MD, PhD</a>.</p>
 </section>

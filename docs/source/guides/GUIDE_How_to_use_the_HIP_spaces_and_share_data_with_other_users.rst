@@ -14,7 +14,7 @@ The Private Space, the Collaborative Space and the Public Space.
 
 .. admonition:: Data policy
 
-   The HIP will endeavor to comply with national and international laws and regulations, comprising principles
+   The HIP endeavor to comply with national and international laws and regulations, comprising principles
    such as intellectual property rights and the protection of privacy, ethical considerations and security regulations
    when designing rules and conditions for access and the use of the platform in any of the aforementioned spaces.
 
@@ -42,20 +42,28 @@ Please refer to the :doc:`How to prepare and upload data to the HIP </guides/GUI
 for more information regarding the :ref:`Data Controller responsibilities <data_controller_responsabilities>` and the tools available :ref:`to transfer data to and from the HIP <uploading_data>`. 
 
 
-The Collaborative Space (not yet available)
---------------------------------------------
+.. _the_collaborative_space:
 
-The Collaborative Space is an access-restricted space where curated and pseudonymised data following the Collaborative Space
-guidelines may be shared with other accredited HIP Data Controllers and HIP users. 
+The Collaborative Space
+------------------------
 
-The decision to transfer data from the Private Space to the Collaborative Space, for collaborative use, can only be taken by the Data Controller
-of the corresponding data and can only be performed using the dedicated HIP integrated tool. 
-No direct extraction is possible to prevent unauthorized exfiltration.
+The Collaborative Space is a project-specific and access-restricted space where curated and pseudonymised data following the Collaborative Space guidelines may be shared with other accredited HIP users.
+To share data within the Collaborative Space, users must utilize :doc:`Collaborative Projects </guides/GUIDE_How_to_use_collaborative_projects>`, which facilitate the controlled transfer of curated data from
+the Private Space to the Collaborative Space.
 
-The Data Controller decides to share part or all of their data by transferring them in the Collaborative Space. 
-They specify the working groups and research projects to which they wish to contribute with their data.
-Their data placed in the Collaborative Space will only be available for the specified research activities, under the responsibility of the HIP users
-in charge of running these research projects.
+By default, the creation of Collaborative Projects is a privilege reserved for :ref:`group leaders <list_identified_hip_groups>`, limited to their respective institutions. HIP users seeking permission to create
+Collaborative Projects for their institution can make such requests through the `HIP support team <mailto:support@thehip.app?subject=HIP%20Collaborative%20project%20request%20>`_. 
+These requests are subject to review and validation by the Group Leader.
+
+The HIP user initiating a Collaborative Project assumes the role of Project Leader, concurrently becoming the :ref:`Data Controller <data_controller_responsabilities>` for that project.
+The Project Leader holds the authority to add or remove HIP users from any projects under their responsibility and possesses the capability to delete projects entirely. 
+
+Members of a project, referred to as Collaborators, are granted access to a set of services enabling them to transfer data and/or documents from their Private Space to the project's dedicated space.
+This data transfer can only be performed using HIP's integrated tools, with no direct extraction options to prevent unauthorized data exfiltration. Once shared, the data can be managed and processed
+using project-specific :doc:`BIDS tools </guides/GUIDE_How_to_convert_data_to_BIDS_format>` and Collaborative :doc:`Desktops </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>`.
+
+The decision to move data from the Private Space to the project's space for collaborative purposes must always be approved by the Project Leader.
+The Project Leader retains sole responsibility for the data, although each collaborator should exercise caution in sharing data and adhere to HIP data policies.
 
 
 The Public Space (not yet available)

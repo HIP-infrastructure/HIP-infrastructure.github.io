@@ -15,8 +15,8 @@ from the lesion towards the temporal lobe, bilaterally.
 Data files
 -----------
 
-The dataset is accessible in a `publicly shared folder <https://thehip.app/apps/files/?dir=/tutorial_data/Epimap%20tutorial%20dataset&fileid=717246>`_
-and includes the following files:
+The dataset is stored in a folder called “`Epimap tutorial dataset <https://thehip.app/apps/files/?dir=/tutorial_data/Epimap%20tutorial%20dataset&fileid=717246>`_” located inside the "*tutorial_data*" folder
+accessible from the Private Space. It includes the following files:
 
 	* anat/MRI/3DT1\*_deface.nii: Subject T1 MRI before and after SEEG implantation, de-identified with FreeSurfer's mri_deface
 	* anat/MRI/brainvisa: Cortical surface extracted with BrainVISA 4.5
@@ -41,7 +41,7 @@ The depth electrodes used in this example dataset are DIXI D08-\**AM Microdeep e
 License
 =======
 
-This tutorial dataset (SEEG and MRI data) is the property of the Grenoble University Hospital, France.
+This tutorial dataset is the property of the Grenoble University Hospital, France.
 Its use and transfer outside the ImaGIN tutorial, e.g. for research purposes, is prohibited without written consent.
 For questions, please contact `Olivier David, PhD <mailto:Olivier.David@univ-amu.fr?subject=HIP%20Epimap%20dataset%20>`_.
 

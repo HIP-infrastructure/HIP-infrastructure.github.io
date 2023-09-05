@@ -20,9 +20,16 @@ with corresponding implantation scheme.
 Data files
 -----------
 
-The dataset is accessible in a `publicly shared folder <https://thehip.app/apps/files/?dir=/tutorial_data/Data_for_electrodes_labelling&fileid=717735>`_.
+The dataset is stored in a folder called “`Data_for_electrodes_labelling <https://thehip.app/apps/files/?dir=/tutorial_data/Data_for_electrodes_labelling&fileid=717735>`_” located inside the "*tutorial_data*" folder
+accessible from the Private Space.
 
-File and directory structure:
+
+The arrangement of files and folders is depicted in :ref:`Fig.1 <labelling_structure>`, while the corresponding naming conventions are outlined in :ref:`Tab.1 <labelling_naming_convention>`. 
+Files and folders are further described in :ref:`Tab.2 <labelling_file_desc>` and :ref:`Tab.3 <labelling_folder_desc>` respectively. For further insights into data formats, refer to :ref:`Tab.4 <labelling_file_format>`.
+
+
+.. _labelling_structure:
+
 
 ::
 
@@ -58,46 +65,141 @@ File and directory structure:
 	.... /Stimulation_data	
 	...... case<case_nb>EEG_<stim_run><task>.TRC	
 	
-Complementary information regarding file formats and file-internal data structures:
+.. raw:: html
 
-	* JavaScript Object Notation (.json): 1D (non-nested) key-value pairs. Metadata.
-	* Neuroimaging Informatics Technology Initiative (.nii): Imaging, native space.
-	* Micromed raw SEEG data (.TRC): Unprocessed SEEG data.
-	* b-vectors (.bvec): Diffusion gradient vectors. Text file.
-	* b-values (.bval): Diffusion gradient values. Text file.
-	* Portable Network Graphic (.png): Implantation pictures.
-
-Directory description:
-
-	* /Case<case_nb> → Subject directory. 
-	* /Implatation schema →  Implantation schemes.
-	* /DTI_case<case_nb> → Diffusion Tensor Imaging data.
-	* /Anatomical_data → Anatomical imaging (T1, T2, CT) and Diffusion Tensor Imaging data.
-	* /SEEG and /Stimulation_data → SEEG data.
+   <center>	
+	<b>Fig.1</b> <i>File and folder organization.</i>
+   </center>
 	
-File description:
+|
 
-	* \*t1\* →  T1 weighted MRI. 
-	* \*t2\* →  T2 weighted MRI.
-	* \*ct\* →  Computerized Tomography.
-	* \*TRACEW\* →  Trace weight.
-	* \*FA\* →  Fractional Anisotropy.
-	* \*ADC\* →  Apparent Diffusion Coefficient.
-	* \*DTI\* →  Diffusion Tensor Imaging.
-	* \*(S)EEG\* →  SEEG recording.
+.. _labelling_naming_convention:
 
-Naming convention:
+.. table::
+	:align: center
+	
+	+----------------------------+-------------------------------------------------+
+	| BIDS value                 | Description                                     |
+	+============================+=================================================+
+	| <case_nb>                  | Case number. Integer.                           |
+	+----------------------------+-------------------------------------------------+
+	| <scheme_idx> and <map_idx> | Implantation scheme index. Integer.             |
+	+----------------------------+-------------------------------------------------+
+	| <hip_id>                   | Unique identifier of a SEEG file. Alphanumeric. |
+	+----------------------------+-------------------------------------------------+
+	| <stim_run>                 | Stimulation run. Integer.                       |
+	+----------------------------+-------------------------------------------------+
+	| <task>                     | Task identifier of a SEEG files. Alphanumeric.  |
+	+----------------------------+-------------------------------------------------+
 
-	* <case_nb> → Case number. Integer.
-	* <scheme_idx> and <map_idx> → Implantation scheme index. Integer.
-	* <hip_id> → Unique identifier of a SEEG file. Alphanumeric.
-	* <stim_run> → Stimulation run. Integer.
-	* <task> → Task identifier of a SEEG files. Alphanumeric.
+
+.. raw:: html
+
+   <center>	
+	<b>Tab.1</b> <i>Naming convention.</i>
+   </center>
+	
+|
+
+
+.. _labelling_file_desc:
+
+.. table::
+	:align: center
+	
+	+-------------+---------------------------------+
+	| File        | Description                     |
+	+=============+=================================+
+	| \*t1\*      | T1 weighted MRI.                |
+	+-------------+---------------------------------+
+	| \*t2\*      | T2 weighted MRI.                |
+	+-------------+---------------------------------+
+	| \*ct\*      | Computerized Tomography.        |
+	+-------------+---------------------------------+
+	| \*TRACEW\*  | Trace weight.                   |
+	+-------------+---------------------------------+
+	| \*FA\*      | Fractional Anisotropy.          |
+	+-------------+---------------------------------+
+	| \*ADC\*     | Apparent Diffusion Coefficient. |
+	+-------------+---------------------------------+
+	| \*DTI\*     | Diffusion Tensor Imaging.       |
+	+-------------+---------------------------------+
+	| \*(S)EEG\*  | SEEG recording.                 |
+	+-------------+---------------------------------+
+
+
+.. raw:: html
+
+   <center>	
+	<b>Tab.2</b> <i>File description.</i>
+   </center>
+	
+|
+
+.. _labelling_folder_desc:
+
+.. table::
+	:align: center
+	
+	+-----------------------------+--------------------------------------------------------------------+
+	| Folder                      | Description                                                        |
+	+=============================+====================================================================+
+	| /Case<case_nb>              | Subject directory.                                                 |
+	+-----------------------------+--------------------------------------------------------------------+
+	| /Implatation schema         | Implantation schemes.                                              |
+	+-----------------------------+--------------------------------------------------------------------+
+	| /DTI_case<case_nb>          | Diffusion Tensor Imaging data.                                     |
+	+-----------------------------+--------------------------------------------------------------------+
+	| /Anatomical_data            | Anatomical imaging (T1, T2, CT) and Diffusion Tensor Imaging data. |
+	+-----------------------------+--------------------------------------------------------------------+
+	| /SEEG and /Stimulation_data | SEEG data.                                                         |
+	+-----------------------------+--------------------------------------------------------------------+
+
+
+.. raw:: html
+
+   <center>	
+	<b>Tab.3</b> <i>Folder description.</i>
+   </center>
+	
+|
+
+.. _labelling_file_format:
+
+.. table::
+	:align: center
+	
+	+------------------------------------------------+-----------+--------------------------------------------+
+	| Format                                         | Extension | Description                                |
+	+================================================+===========+============================================+
+	| JavaScript Object Notation                     | .json     | 1D (non-nested) key-value pairs. Metadata. |
+	+------------------------------------------------+-----------+--------------------------------------------+
+	| Neuroimaging Informatics Technology Initiative | .nii      | Imaging data. Native space.                |
+	+------------------------------------------------+-----------+--------------------------------------------+
+	| Micromed raw SEEG data                         | .TRC      | Raw SEEG data.                             |
+	+------------------------------------------------+-----------+--------------------------------------------+
+	| b-vectors                                      | .bvec     | Diffusion gradient vectors. Text file.     |
+	+------------------------------------------------+-----------+--------------------------------------------+
+	| b-values                                       | .bval     | Diffusion gradient values. Text file.      |
+	+------------------------------------------------+-----------+--------------------------------------------+
+	| Portable Network Graphic                       | .png      | Implantation pictures.                     |
+	+------------------------------------------------+-----------+--------------------------------------------+
+
+
+.. raw:: html
+
+   <center>	
+	<b>Tab.4</b> <i>Files formats.</i>
+   </center>
+	
+|
+	
+
 	
 License
 =======
 
-This tutorial dataset (SEEG and imaging data) is the property of the Centre Hospitalier Universitaire de Lausanne, Swiss.
+This tutorial dataset is the property of the `Lausanne University Hospital (Centre Hospitalier Universitaire Vaudois) <https://www.chuv.ch/fr/chuv-home>`_, Switzerland.
 Its use and transfer outside this HIP tutorial, e.g. for research purposes, is prohibited without written consent.
 For questions, please contact `Carolina Ciumas, MD, PhD <mailto:Carolina.Ciumas@chuv.ch?subject=HIP%20Cico%20dataset%20>`_.
 
