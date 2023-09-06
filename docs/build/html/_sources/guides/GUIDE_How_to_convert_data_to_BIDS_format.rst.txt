@@ -1,10 +1,13 @@
+.. comment:
+   tables made with https://tableconvert.com/restructuredtext-generator
+
 .. include:: ../hip_header_msg.rst
 
 How to convert data to BIDS format
 ***********************************
 
 .. figure:: /guides/art/GUIDE_How_to_convert_data_to_BIDS_format/GUIDE_BIDS_importer.png
-	:width: 600px
+	:width: 800px
 	:align: center
 
 	**The BIDS Importer.** *The BIDS Importer is a step-by-step tool that can be used to import raw data into a BIDS dataset.*
@@ -12,26 +15,24 @@ How to convert data to BIDS format
 About this tutorial
 ====================
 
-The objective of this guide is to introduce HIP users to the BIDS Importer, a step-by-step tool designed specifically for the platform
-and allowing its users to import raw data into a BIDS dataset. 
+The purpose of this guide is to familiarize HIP users with the BIDS tools accessible on the platform.
+These tools are tailored for the platform and enable users to easily generate, populate, and oversee BIDS datasets through a step-by-step approach.
 
-This guide first gives a general introduction to the BIDS standard and its leading guidelines, it then focuses on the BIDS importer itself describing its main features and limitations,
-including a video guide (not yet available).
+Having a fundamental understanding of the BIDS standard is crucial for utilizing the BIDS tools on the platform.
+Therefore, this guide initially provides an overview of the BIDS standard and its key principles. Subsequently, it delves into the BIDS tools, outlining their primary functionalities and limitations via a video guide.
+This guide, combined with the tips available in the BIDS tools, should should be sufficient to perform basic operation on BIDS datasets without requiring prior knowledge of the BIDS standard.
 
-This guide along with the hints and tips found in the BIDS importer itself should be sufficient to perform basic data importation without further a
-priori knowledge regarding the BIDS standard.
 
 The importation process is fully guided but has a limited scalability and is time consuming. Therefore, advanced users should rely on scripting
-using the :doc:`BIDS Manager </applications/APP_BIDS_Manager>`, available on the platform, so they can programmatically prepare and import their data into a BIDS dataset.
+using the :doc:`BIDS Manager </applications/APP_BIDS_Manager>`, available on the platform, so they can programmatically prepare and import data into BIDS datasets.
 
-To upload data on the platform, please refer to the dedicated :doc:`guide </guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>`.
 
 .. _BIDS_introduction:
 
-The Brain Imaging Data Structure
-=================================
+BIDS at a glance
+=================
 
-The Brain Imaging Data Structure (BIDS) is a community driven standard for organizing, annotating, and describing neuroimaging, neurophysiological and 
+The Brain Imaging Data Structure (BIDS) is a standard for organizing, annotating, and describing neuroimaging, neurophysiological and 
 behavioral data. It is a framework for organizing data that standardizes file organization and dataset description.
 
 For more details regarding the standard, please refer to the following external resources:
@@ -40,7 +41,7 @@ For more details regarding the standard, please refer to the following external 
 	* `BIDS Git (BIDS validator, examples and starter kit) <https://github.com/bids-standard>`_
 	* `BIDS website (BIDS extension proposals and converters) <https://bids.neuroimaging.io/>`_
 
-BIDS is a community effort and specification can be extended to new data types using the guide for `BIDS extensions proposals <https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification>`_ . 
+BIDS is a community-driven and its specifications can be extended to new data types using `the guide for BIDS extensions proposals <https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification>`_ . 
 Several papers have been published covering the standard and its extensions:
 
 	* [Gorgolewski_2016]_
@@ -50,46 +51,64 @@ Several papers have been published covering the standard and its extensions:
 	* [Holdgraf_2018]_
 	* [Moreau_2020]_
 	
-BIDS in practice
-----------------
+BIDS basics
+============
 
 BIDS standardize the way to organize, name and describe files of a dataset.
 
-In practice, a BIDS dataset is a directory containing all the data, called the **raw directory**, with a unique folder per subject.
-Subject folders contain **data types subfolders** which group similar data together. Data files have to follow a specific naming convention relying
-on **BIDS entities** and only a selection of open-source formats are allowed.
-The dataset and its files are further described using **metadata files**. 
 
-**BIDS directory tree** can be summarized as follow:
+In practical terms, a BIDS dataset comprises a directory that houses all the data, known as the **raw directory**,
+with a dedicated folder for each subject. Within these subject folders, there are subfolders for different data types, organizing similar data together.
+Data files must adhere to a specific naming convention based on **BIDS entities**, and only certain open-source formats are permitted.
+To provide additional information about the dataset and its files, metadata files are used for description.
 
-| **/project** - BIDS dataset raw directory.
+
+The BIDS directory structure can be summarized as follows:
+
+| **/dataset** - BIDS dataset raw directory.
 | └── **/subject** - Subject folder. 1 per subject.
-|     └── **/session(s)** - Optional  session folder to group data (e.g. subject's inclusions).
+|     └── **/session(s)** - Optional  session folder to group data (e.g. clinical visits).
 |        └── **/data type(s)** - Data type folder. Group data of the same type.
 
-The database name should be as descriptive as possible and subject folder have to be unique. Session subfolders can be used to group data
-in a logical manner, for example, a session folder for each subject's inclusion in a longitudinal study.
-If used, session subfolders are required for all subjects to keep the directory tree consistent across subjects.
-Data type folders group similar acquisition modalities together but not all types of data are supported by the standard which can
-be extended through `BIDS extensions proposals <https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification>`_ . 
 
-**BIDS data types** that are currently supported:
+The dataset name should be highly descriptive, and it's essential for subject folders to have distinct names. Session subfolders can be employed to organize data logically,
+such as creating separate session subfolders for each visit by a subject in a longitudinal study. If session subfolders are utilized, they must be consistently used for all subjects
+to maintain uniformity in the directory structure. Data type folders are designed to group together similar acquisition modalities. However, it's important to note that not all data types are supported by the standard,
+although it can be extended through `BIDS extensions proposals <https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification>`_ to include additional data types.
 
-	* **func**:  functional MRI data
-	* **dwi**:   diffusion weighted imaging data
-	* **fmap**:  field inhomogeneity mapping data
-	* **anat**:  structural imaging data
-	* **meg**:   magnetoencephalography data
-	* **eeg**:   electroencephalography data
-	* **ieeg**:  intracranial electroencephalography data
-	* **beh**:   behavioral data
-	* **pet**:   positron emission tomography data
-	* **perf**:  perfusion imaging data
 
-The metadata used to describe the data files or the dataset itself is stored in companion **.json** or **.tsv** files, while the data files themselves
-must conform to a selection of open-source formats given by the standard.
+Supported BIDS data types are as follows:
 
-**BIDS file types** that can be found in a BIDS dataset:
+.. table::
+	:align: center
+
+	+----------------+-------------------------------------------+
+	| BIDS data type | Description                               |
+	+================+===========================================+
+	| func           | Functional MRI data.                      |
+	+----------------+-------------------------------------------+
+	| dwi            | Diffusion weighted imaging data.          |
+	+----------------+-------------------------------------------+
+	| fmap           | Field inhomogeneity mapping data.         |
+	+----------------+-------------------------------------------+
+	| anat           | Structural imaging data.                  |
+	+----------------+-------------------------------------------+
+	| meg            | Magnetoencephalography data.              |
+	+----------------+-------------------------------------------+
+	| eeg            | Electroencephalography data.              |
+	+----------------+-------------------------------------------+
+	| ieeg           | Intracranial electroencephalography data. |
+	+----------------+-------------------------------------------+
+	| beh            | Behavioral data.                          |
+	+----------------+-------------------------------------------+
+	| pet            | Positron emission tomography data.        |
+	+----------------+-------------------------------------------+
+	| perf           | Perfusion imaging data.                   |
+	+----------------+-------------------------------------------+
+
+Data files must conform to a selection of open-source formats given by the standard. Metadata files are used to describe data files or the dataset itself and are stored in companion *\*.json* or *\*.tsv* files.
+
+Supported BIDS file types are as follows:
 
 	* **.json**: contain "key: value" metadata.
 	* **.tsv**: contain tables of metadata.
@@ -98,7 +117,7 @@ must conform to a selection of open-source formats given by the standard.
 An important aspect of the standard is that data file names have to use BIDS entities so they are unique and informative. 
 BIDS entities are key-value pairs chained with underscores and are used to structure file names.
 
-**BIDS file naming** convention is illustrated in the figure below:
+BIDS file naming convention is illustrated in the figure below:
 
 .. figure:: /guides/art/GUIDE_How_to_convert_data_to_BIDS_format/GUIDE_BIDS_entities.png
 	:width: 800px
@@ -106,7 +125,7 @@ BIDS entities are key-value pairs chained with underscores and are used to struc
 
 	**BIDS file naming.** *File names are structured using BIDS entities (key-value pairs) connected with underscores and ending with a suffix and a file extension.*
 
-BIDS entities are used at the subject level on raw data and associated metadata files, between- and within-subjects, 
+BIDS entities are used at the subject level on raw data and associated metadata files, between- and within- subjects, 
 but may not be used on some study-level metadata files (e.g. *dataset_description.json*, *participants.tsv*, *\*sessions.tsv*, *\*scans.tsv*)		
 	
 BIDS entities have a definite order. Keys are alphanumeric while values can be either alphanumeric or integers depending on the considered entity.
@@ -156,54 +175,86 @@ The following table is an example of BIDS entities which can be found in a BIDS 
 
    Data files that are not covered by the standard may still be imported in a BIDS dataset. They should follow BIDS guidelines as much as
    possible and have to be declared in a .bidsignore file in BIDS raw directory in order to pass BIDS validation. This is not supported by 
-   the BIDS importer.
+   the BIDS tools available on the platform.
    
 .. admonition:: Derivatives files
 
-   Data files which have been processed and that cannot be considered as raw data anymore should go to BIDS *derivatives* folder. This is not supported by 
-   the BIDS importer.	
+   Data files which have been processed and that cannot be considered as raw data anymore should go to the BIDS *derivatives* folder. This is not supported by 
+   the BIDS tools available on the platform.	
 	
 .. _BIDS_importer:
 
-The BIDS Importer
-==================
+BIDS tools
+=============
 
-The BIDS importer is a step-by-step tool designed specifically for the platform and allowing its users to import raw data into a BIDS dataset.
-The BIDS importer emphasizes simplicity, readability and safeguarding. It purposefully restrains the importation procedure to a selection of modalities 
-and is limited to mandatory BIDS entities with a few exceptions. 
+The BIDS tools are custom-built to facilitate the straightforward creation, population, and management of BIDS datasets, employing a user-friendly, 
+step-by-step process. These tools prioritize simplicity, readability, and data integrity. Their actions are intentionally limited to prevent unintended changes.
+For instance, the importation tool is constrained to essential BIDS entities, and most metadata files cannot be directly edited through the interface, with only a few exceptions.
 
 .. _BIDS_importer_dtypes:
 
-Data types and corresponding BIDS modalities available in the BIDS importer are as follows:
+Supported data types and corresponding BIDS modalities are as follows:
 
-	* **anat**: T1w, T2w, T1rho, T1map, T2map, T2start, FLAIR, PD, Pdmap, PDT2, inplanteT1, inplanteT2, angio, defacemask, CT
-	* **pet**: pet, petmr, petct
-	* **func**: bold, sbref
-	* **fmap**: phasediff, phase1, phase2, magnitude, magnitude1, magnitude2, fieldmap, epi
-	* **dwi**: dwi
-	* **ieeg**: ieeg
-	* **eeg**: eeg
-	* **meg**: meg
-	* **ieegGlobalSidecars**: electrodes, coordsystem, photo
-	* **eegGlobalSidecars**: electrodes, coordsystem, photo
-	* **petGlobalSidecars**: blood
+.. table::
+	:align: center
+	
+	+--------------------+---------------------------------------------------------------------------------------------------------------+
+	| BIDS data type     | BIDS modalities                                                                                               |
+	+====================+===============================================================================================================+
+	| anat               | T1w, T2w, T1rho, T1map, T2map, T2start, FLAIR, PD, Pdmap, PDT2, inplanteT1, inplanteT2, angio, defacemask, CT |
+	+--------------------+---------------------------------------------------------------------------------------------------------------+
+	| pet                | pet, petmr, petct                                                                                             |
+	+--------------------+---------------------------------------------------------------------------------------------------------------+
+	| func               | bold, sbref                                                                                                   |
+	+--------------------+---------------------------------------------------------------------------------------------------------------+
+	| fmap               | phasediff, phase1, phase2, magnitude, magnitude1, magnitude2, fieldmap, epi                                   |
+	+--------------------+---------------------------------------------------------------------------------------------------------------+
+	| dwi                | dwi                                                                                                           |
+	+--------------------+---------------------------------------------------------------------------------------------------------------+
+	| ieeg               | ieeg                                                                                                          |
+	+--------------------+---------------------------------------------------------------------------------------------------------------+
+	| eeg                | eeg                                                                                                           |
+	+--------------------+---------------------------------------------------------------------------------------------------------------+
+	| meg                | meg                                                                                                           |
+	+--------------------+---------------------------------------------------------------------------------------------------------------+
+	| ieegGlobalSidecars | electrodes, coordsystem, photo                                                                                |
+	+--------------------+---------------------------------------------------------------------------------------------------------------+
+	| eegGlobalSidecars  | electrodes, coordsystem, photo                                                                                |
+	+--------------------+---------------------------------------------------------------------------------------------------------------+
+	| petGlobalSidecars  | blood                                                                                                         |
+	+--------------------+---------------------------------------------------------------------------------------------------------------+
+
 
 .. _BIDS_importer_formats:	
 
-Data file formats compatible with the BIDS importer (with targeted file extension) are as follows:
+Supported data file formats are as follows:
 
-	* **Micromed**: .trc (.trc)
-	* **BrainVision**: .vhdr, .vmrk, .eeg (.vhdr)
-	* **European data format**: .edf (.edf)
-	* **BioSemi data format**: .bdf (.bdf)
-	* **EEGLAB files**: .set (.set)
-	* **DICOM**: .dcm (root directory of .dcm files)
-	* **NifTi**: .nii (.nii)
+.. table::
+	:align: center
+	
+	+----------------------+-------------------------------------+
+	| File format          | Extension                           |
+	+======================+=====================================+
+	| Micromed             | .trc (.trc)                         |
+	+----------------------+-------------------------------------+
+	| BrainVision          | .vhdr, .vmrk, .eeg (.vhdr)          |
+	+----------------------+-------------------------------------+
+	| European data format | .edf (.edf)                         |
+	+----------------------+-------------------------------------+
+	| BioSemi data format  | .bdf (.bdf)                         |
+	+----------------------+-------------------------------------+
+	| EEGLAB files         | .set (.set)                         |
+	+----------------------+-------------------------------------+
+	| DICOM                | .dcm (root directory of .dcm files) |
+	+----------------------+-------------------------------------+
+	| NifTi                | .nii (.nii)                         |
+	+----------------------+-------------------------------------+
+	
 
 Video guide
 ------------
 
-The following video guide (not yet available) serves as an introduction to the BIDS importer and how to import raw data into a BIDS dataset:  
+The following video guide (not yet available) serves as an introduction to the BIDS tools and shows how to import raw data into a new BIDS dataset:  
 
 .. raw:: html
 

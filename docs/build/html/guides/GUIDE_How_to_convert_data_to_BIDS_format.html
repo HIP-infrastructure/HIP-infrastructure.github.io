@@ -56,11 +56,9 @@
 <li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html">How to prepare and upload data to the HIP</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">How to convert data to BIDS format</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#about-this-tutorial">About this tutorial</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#the-brain-imaging-data-structure">The Brain Imaging Data Structure</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#bids-in-practice">BIDS in practice</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#the-bids-importer">The BIDS Importer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bids-at-a-glance">BIDS at a glance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bids-basics">BIDS basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bids-tools">BIDS tools</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#video-guide">Video guide</a></li>
 </ul>
 </li>
@@ -136,27 +134,25 @@
              
   <section id="how-to-convert-data-to-bids-format">
 <h1>How to convert data to BIDS format<a class="headerlink" href="#how-to-convert-data-to-bids-format" title="Permalink to this headline"></a></h1>
-<figure class="align-center" id="id8">
-<a class="reference internal image-reference" href="../_images/GUIDE_BIDS_importer.png"><img alt="../_images/GUIDE_BIDS_importer.png" src="../_images/GUIDE_BIDS_importer.png" style="width: 600px;" /></a>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/GUIDE_BIDS_importer.png"><img alt="../_images/GUIDE_BIDS_importer.png" src="../_images/GUIDE_BIDS_importer.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>The BIDS Importer.</strong> <em>The BIDS Importer is a step-by-step tool that can be used to import raw data into a BIDS dataset.</em></span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>The BIDS Importer.</strong> <em>The BIDS Importer is a step-by-step tool that can be used to import raw data into a BIDS dataset.</em></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="about-this-tutorial">
 <h2>About this tutorial<a class="headerlink" href="#about-this-tutorial" title="Permalink to this headline"></a></h2>
-<p>The objective of this guide is to introduce HIP users to the BIDS Importer, a step-by-step tool designed specifically for the platform
-and allowing its users to import raw data into a BIDS dataset.</p>
-<p>This guide first gives a general introduction to the BIDS standard and its leading guidelines, it then focuses on the BIDS importer itself describing its main features and limitations,
-including a video guide (not yet available).</p>
-<p>This guide along with the hints and tips found in the BIDS importer itself should be sufficient to perform basic data importation without further a
-priori knowledge regarding the BIDS standard.</p>
+<p>The purpose of this guide is to familiarize HIP users with the BIDS tools accessible on the platform.
+These tools are tailored for the platform and enable users to easily generate, populate, and oversee BIDS datasets through a step-by-step approach.</p>
+<p>Having a fundamental understanding of the BIDS standard is crucial for utilizing the BIDS tools on the platform.
+Therefore, this guide initially provides an overview of the BIDS standard and its key principles. Subsequently, it delves into the BIDS tools, outlining their primary functionalities and limitations via a video guide.
+This guide, combined with the tips available in the BIDS tools, should should be sufficient to perform basic operation on BIDS datasets without requiring prior knowledge of the BIDS standard.</p>
 <p>The importation process is fully guided but has a limited scalability and is time consuming. Therefore, advanced users should rely on scripting
-using the <a class="reference internal" href="../applications/APP_BIDS_Manager.html"><span class="doc">BIDS Manager</span></a>, available on the platform, so they can programmatically prepare and import their data into a BIDS dataset.</p>
-<p>To upload data on the platform, please refer to the dedicated <a class="reference internal" href="GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html"><span class="doc">guide</span></a>.</p>
+using the <a class="reference internal" href="../applications/APP_BIDS_Manager.html"><span class="doc">BIDS Manager</span></a>, available on the platform, so they can programmatically prepare and import data into BIDS datasets.</p>
 </section>
-<section id="the-brain-imaging-data-structure">
-<span id="bids-introduction"></span><h2>The Brain Imaging Data Structure<a class="headerlink" href="#the-brain-imaging-data-structure" title="Permalink to this headline"></a></h2>
-<p>The Brain Imaging Data Structure (BIDS) is a community driven standard for organizing, annotating, and describing neuroimaging, neurophysiological and
+<section id="bids-at-a-glance">
+<span id="bids-introduction"></span><h2>BIDS at a glance<a class="headerlink" href="#bids-at-a-glance" title="Permalink to this headline"></a></h2>
+<p>The Brain Imaging Data Structure (BIDS) is a standard for organizing, annotating, and describing neuroimaging, neurophysiological and
 behavioral data. It is a framework for organizing data that standardizes file organization and dataset description.</p>
 <p>For more details regarding the standard, please refer to the following external resources:</p>
 <blockquote>
@@ -166,7 +162,7 @@ behavioral data. It is a framework for organizing data that standardizes file or
 <li><p><a class="reference external" href="https://bids.neuroimaging.io/">BIDS website (BIDS extension proposals and converters)</a></p></li>
 </ul>
 </div></blockquote>
-<p>BIDS is a community effort and specification can be extended to new data types using the guide for <a class="reference external" href="https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification">BIDS extensions proposals</a> .
+<p>BIDS is a community-driven and its specifications can be extended to new data types using <a class="reference external" href="https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification">the guide for BIDS extensions proposals</a> .
 Several papers have been published covering the standard and its extensions:</p>
 <blockquote>
 <div><ul class="simple">
@@ -178,47 +174,75 @@ Several papers have been published covering the standard and its extensions:</p>
 <li><p><a class="reference internal" href="#moreau-2020" id="id6"><span>[Moreau_2020]</span></a></p></li>
 </ul>
 </div></blockquote>
-<section id="bids-in-practice">
-<h3>BIDS in practice<a class="headerlink" href="#bids-in-practice" title="Permalink to this headline"></a></h3>
+</section>
+<section id="bids-basics">
+<h2>BIDS basics<a class="headerlink" href="#bids-basics" title="Permalink to this headline"></a></h2>
 <p>BIDS standardize the way to organize, name and describe files of a dataset.</p>
-<p>In practice, a BIDS dataset is a directory containing all the data, called the <strong>raw directory</strong>, with a unique folder per subject.
-Subject folders contain <strong>data types subfolders</strong> which group similar data together. Data files have to follow a specific naming convention relying
-on <strong>BIDS entities</strong> and only a selection of open-source formats are allowed.
-The dataset and its files are further described using <strong>metadata files</strong>.</p>
-<p><strong>BIDS directory tree</strong> can be summarized as follow:</p>
+<p>In practical terms, a BIDS dataset comprises a directory that houses all the data, known as the <strong>raw directory</strong>,
+with a dedicated folder for each subject. Within these subject folders, there are subfolders for different data types, organizing similar data together.
+Data files must adhere to a specific naming convention based on <strong>BIDS entities</strong>, and only certain open-source formats are permitted.
+To provide additional information about the dataset and its files, metadata files are used for description.</p>
+<p>The BIDS directory structure can be summarized as follows:</p>
 <div class="line-block">
-<div class="line"><strong>/project</strong> - BIDS dataset raw directory.</div>
+<div class="line"><strong>/dataset</strong> - BIDS dataset raw directory.</div>
 <div class="line">└── <strong>/subject</strong> - Subject folder. 1 per subject.</div>
 <div class="line-block">
-<div class="line">└── <strong>/session(s)</strong> - Optional  session folder to group data (e.g. subject’s inclusions).</div>
+<div class="line">└── <strong>/session(s)</strong> - Optional  session folder to group data (e.g. clinical visits).</div>
 <div class="line-block">
 <div class="line">└── <strong>/data type(s)</strong> - Data type folder. Group data of the same type.</div>
 </div>
 </div>
 </div>
-<p>The database name should be as descriptive as possible and subject folder have to be unique. Session subfolders can be used to group data
-in a logical manner, for example, a session folder for each subject’s inclusion in a longitudinal study.
-If used, session subfolders are required for all subjects to keep the directory tree consistent across subjects.
-Data type folders group similar acquisition modalities together but not all types of data are supported by the standard which can
-be extended through <a class="reference external" href="https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification">BIDS extensions proposals</a> .</p>
-<p><strong>BIDS data types</strong> that are currently supported:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>func</strong>:  functional MRI data</p></li>
-<li><p><strong>dwi</strong>:   diffusion weighted imaging data</p></li>
-<li><p><strong>fmap</strong>:  field inhomogeneity mapping data</p></li>
-<li><p><strong>anat</strong>:  structural imaging data</p></li>
-<li><p><strong>meg</strong>:   magnetoencephalography data</p></li>
-<li><p><strong>eeg</strong>:   electroencephalography data</p></li>
-<li><p><strong>ieeg</strong>:  intracranial electroencephalography data</p></li>
-<li><p><strong>beh</strong>:   behavioral data</p></li>
-<li><p><strong>pet</strong>:   positron emission tomography data</p></li>
-<li><p><strong>perf</strong>:  perfusion imaging data</p></li>
-</ul>
-</div></blockquote>
-<p>The metadata used to describe the data files or the dataset itself is stored in companion <strong>.json</strong> or <strong>.tsv</strong> files, while the data files themselves
-must conform to a selection of open-source formats given by the standard.</p>
-<p><strong>BIDS file types</strong> that can be found in a BIDS dataset:</p>
+<p>The dataset name should be highly descriptive, and it’s essential for subject folders to have distinct names. Session subfolders can be employed to organize data logically,
+such as creating separate session subfolders for each visit by a subject in a longitudinal study. If session subfolders are utilized, they must be consistently used for all subjects
+to maintain uniformity in the directory structure. Data type folders are designed to group together similar acquisition modalities. However, it’s important to note that not all data types are supported by the standard,
+although it can be extended through <a class="reference external" href="https://bids.neuroimaging.io/get_involved.html#extending-the-bids-specification">BIDS extensions proposals</a> to include additional data types.</p>
+<p>Supported BIDS data types are as follows:</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>BIDS data type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>func</p></td>
+<td><p>Functional MRI data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>dwi</p></td>
+<td><p>Diffusion weighted imaging data.</p></td>
+</tr>
+<tr class="row-even"><td><p>fmap</p></td>
+<td><p>Field inhomogeneity mapping data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>anat</p></td>
+<td><p>Structural imaging data.</p></td>
+</tr>
+<tr class="row-even"><td><p>meg</p></td>
+<td><p>Magnetoencephalography data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>eeg</p></td>
+<td><p>Electroencephalography data.</p></td>
+</tr>
+<tr class="row-even"><td><p>ieeg</p></td>
+<td><p>Intracranial electroencephalography data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>beh</p></td>
+<td><p>Behavioral data.</p></td>
+</tr>
+<tr class="row-even"><td><p>pet</p></td>
+<td><p>Positron emission tomography data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>perf</p></td>
+<td><p>Perfusion imaging data.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Data files must conform to a selection of open-source formats given by the standard. Metadata files are used to describe data files or the dataset itself and are stored in companion <em>*.json</em> or <em>*.tsv</em> files.</p>
+<p>Supported BIDS file types are as follows:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>.json</strong>: contain “key: value” metadata.</p></li>
@@ -228,14 +252,14 @@ must conform to a selection of open-source formats given by the standard.</p>
 </div></blockquote>
 <p>An important aspect of the standard is that data file names have to use BIDS entities so they are unique and informative.
 BIDS entities are key-value pairs chained with underscores and are used to structure file names.</p>
-<p><strong>BIDS file naming</strong> convention is illustrated in the figure below:</p>
-<figure class="align-center" id="id9">
+<p>BIDS file naming convention is illustrated in the figure below:</p>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../_images/GUIDE_BIDS_entities.png"><img alt="../_images/GUIDE_BIDS_entities.png" src="../_images/GUIDE_BIDS_entities.png" style="width: 800px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>BIDS file naming.</strong> <em>File names are structured using BIDS entities (key-value pairs) connected with underscores and ending with a suffix and a file extension.</em></span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>BIDS file naming.</strong> <em>File names are structured using BIDS entities (key-value pairs) connected with underscores and ending with a suffix and a file extension.</em></span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>BIDS entities are used at the subject level on raw data and associated metadata files, between- and within-subjects,
+<p>BIDS entities are used at the subject level on raw data and associated metadata files, between- and within- subjects,
 but may not be used on some study-level metadata files (e.g. <em>dataset_description.json</em>, <em>participants.tsv</em>, <em>*sessions.tsv</em>, <em>*scans.tsv</em>)</p>
 <p>BIDS entities have a definite order. Keys are alphanumeric while values can be either alphanumeric or integers depending on the considered entity.
 BIDS entities can be required or optional, depending on the modality and design choices of the BIDS dataset, and some have to be consistent across subjects/sessions when used.</p>
@@ -336,51 +360,104 @@ BIDS entities can be required or optional, depending on the modality and design 
 <p class="admonition-title">Unsupported data files</p>
 <p>Data files that are not covered by the standard may still be imported in a BIDS dataset. They should follow BIDS guidelines as much as
 possible and have to be declared in a .bidsignore file in BIDS raw directory in order to pass BIDS validation. This is not supported by
-the BIDS importer.</p>
+the BIDS tools available on the platform.</p>
 </div>
 <div class="admonition-derivatives-files admonition">
 <p class="admonition-title">Derivatives files</p>
-<p>Data files which have been processed and that cannot be considered as raw data anymore should go to BIDS <em>derivatives</em> folder. This is not supported by
-the BIDS importer.</p>
+<p>Data files which have been processed and that cannot be considered as raw data anymore should go to the BIDS <em>derivatives</em> folder. This is not supported by
+the BIDS tools available on the platform.</p>
 </div>
 </section>
-</section>
-<section id="the-bids-importer">
-<span id="bids-importer"></span><h2>The BIDS Importer<a class="headerlink" href="#the-bids-importer" title="Permalink to this headline"></a></h2>
-<p>The BIDS importer is a step-by-step tool designed specifically for the platform and allowing its users to import raw data into a BIDS dataset.
-The BIDS importer emphasizes simplicity, readability and safeguarding. It purposefully restrains the importation procedure to a selection of modalities
-and is limited to mandatory BIDS entities with a few exceptions.</p>
-<p id="bids-importer-dtypes">Data types and corresponding BIDS modalities available in the BIDS importer are as follows:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>anat</strong>: T1w, T2w, T1rho, T1map, T2map, T2start, FLAIR, PD, Pdmap, PDT2, inplanteT1, inplanteT2, angio, defacemask, CT</p></li>
-<li><p><strong>pet</strong>: pet, petmr, petct</p></li>
-<li><p><strong>func</strong>: bold, sbref</p></li>
-<li><p><strong>fmap</strong>: phasediff, phase1, phase2, magnitude, magnitude1, magnitude2, fieldmap, epi</p></li>
-<li><p><strong>dwi</strong>: dwi</p></li>
-<li><p><strong>ieeg</strong>: ieeg</p></li>
-<li><p><strong>eeg</strong>: eeg</p></li>
-<li><p><strong>meg</strong>: meg</p></li>
-<li><p><strong>ieegGlobalSidecars</strong>: electrodes, coordsystem, photo</p></li>
-<li><p><strong>eegGlobalSidecars</strong>: electrodes, coordsystem, photo</p></li>
-<li><p><strong>petGlobalSidecars</strong>: blood</p></li>
-</ul>
-</div></blockquote>
-<p id="bids-importer-formats">Data file formats compatible with the BIDS importer (with targeted file extension) are as follows:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>Micromed</strong>: .trc (.trc)</p></li>
-<li><p><strong>BrainVision</strong>: .vhdr, .vmrk, .eeg (.vhdr)</p></li>
-<li><p><strong>European data format</strong>: .edf (.edf)</p></li>
-<li><p><strong>BioSemi data format</strong>: .bdf (.bdf)</p></li>
-<li><p><strong>EEGLAB files</strong>: .set (.set)</p></li>
-<li><p><strong>DICOM</strong>: .dcm (root directory of .dcm files)</p></li>
-<li><p><strong>NifTi</strong>: .nii (.nii)</p></li>
-</ul>
-</div></blockquote>
+<section id="bids-tools">
+<span id="bids-importer"></span><h2>BIDS tools<a class="headerlink" href="#bids-tools" title="Permalink to this headline"></a></h2>
+<p>The BIDS tools are custom-built to facilitate the straightforward creation, population, and management of BIDS datasets, employing a user-friendly,
+step-by-step process. These tools prioritize simplicity, readability, and data integrity. Their actions are intentionally limited to prevent unintended changes.
+For instance, the importation tool is constrained to essential BIDS entities, and most metadata files cannot be directly edited through the interface, with only a few exceptions.</p>
+<p id="bids-importer-dtypes">Supported data types and corresponding BIDS modalities are as follows:</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 85%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>BIDS data type</p></th>
+<th class="head"><p>BIDS modalities</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>anat</p></td>
+<td><p>T1w, T2w, T1rho, T1map, T2map, T2start, FLAIR, PD, Pdmap, PDT2, inplanteT1, inplanteT2, angio, defacemask, CT</p></td>
+</tr>
+<tr class="row-odd"><td><p>pet</p></td>
+<td><p>pet, petmr, petct</p></td>
+</tr>
+<tr class="row-even"><td><p>func</p></td>
+<td><p>bold, sbref</p></td>
+</tr>
+<tr class="row-odd"><td><p>fmap</p></td>
+<td><p>phasediff, phase1, phase2, magnitude, magnitude1, magnitude2, fieldmap, epi</p></td>
+</tr>
+<tr class="row-even"><td><p>dwi</p></td>
+<td><p>dwi</p></td>
+</tr>
+<tr class="row-odd"><td><p>ieeg</p></td>
+<td><p>ieeg</p></td>
+</tr>
+<tr class="row-even"><td><p>eeg</p></td>
+<td><p>eeg</p></td>
+</tr>
+<tr class="row-odd"><td><p>meg</p></td>
+<td><p>meg</p></td>
+</tr>
+<tr class="row-even"><td><p>ieegGlobalSidecars</p></td>
+<td><p>electrodes, coordsystem, photo</p></td>
+</tr>
+<tr class="row-odd"><td><p>eegGlobalSidecars</p></td>
+<td><p>electrodes, coordsystem, photo</p></td>
+</tr>
+<tr class="row-even"><td><p>petGlobalSidecars</p></td>
+<td><p>blood</p></td>
+</tr>
+</tbody>
+</table>
+<p id="bids-importer-formats">Supported data file formats are as follows:</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>File format</p></th>
+<th class="head"><p>Extension</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Micromed</p></td>
+<td><p>.trc (.trc)</p></td>
+</tr>
+<tr class="row-odd"><td><p>BrainVision</p></td>
+<td><p>.vhdr, .vmrk, .eeg (.vhdr)</p></td>
+</tr>
+<tr class="row-even"><td><p>European data format</p></td>
+<td><p>.edf (.edf)</p></td>
+</tr>
+<tr class="row-odd"><td><p>BioSemi data format</p></td>
+<td><p>.bdf (.bdf)</p></td>
+</tr>
+<tr class="row-even"><td><p>EEGLAB files</p></td>
+<td><p>.set (.set)</p></td>
+</tr>
+<tr class="row-odd"><td><p>DICOM</p></td>
+<td><p>.dcm (root directory of .dcm files)</p></td>
+</tr>
+<tr class="row-even"><td><p>NifTi</p></td>
+<td><p>.nii (.nii)</p></td>
+</tr>
+</tbody>
+</table>
 <section id="video-guide">
 <h3>Video guide<a class="headerlink" href="#video-guide" title="Permalink to this headline"></a></h3>
-<p>The following video guide (not yet available) serves as an introduction to the BIDS importer and how to import raw data into a BIDS dataset:</p>
+<p>The following video guide (not yet available) serves as an introduction to the BIDS tools and shows how to import raw data into a new BIDS dataset:</p>
 <center>
 <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
 <source src="todo.mp4" type="video/mp4">

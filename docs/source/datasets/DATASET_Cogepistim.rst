@@ -387,7 +387,7 @@ License
 =======
 
 The COGEPISTIM database is the property of `CHU Grenoble Alpes <https://www.chu-grenoble.fr/>`_, France.
-Its transfer and use, e.g. for research or clinical purposes, is prohibited without written consent.
+Its transfer and use, e.g. for research or clinical purposes, is prohibited without signed data transfer agreement.
 For questions, please contact `Philippe KAHANE, MD, PhD <mailto:PKahane@chu-grenoble.fr?subject=COGEPISTIM%20dataset>`_.
  
 Code availability
@@ -409,11 +409,27 @@ Acknowledgments
 This research was supported by the EBRAINS research infrastructure, funded from the European Union’s Horizon 2020 Framework Programme for Research and Innovation under the Specific Grant Agreement
 No. 945539 (`Human Brain Project SGA3 <https://cordis.europa.eu/project/id/945539/>`_).
 
-The F-TRACT project, whose data has been partly reused, has received funding from the European Research Council under the European Union’s Seventh Framework Programme
+The F-TRACT project, whose code has been used to preprocess the data, has received funding from the European Research Council under the European Union’s Seventh Framework Programme
 (FP/2007-2013)/ERC Grant Agreement no. 616268 F-TRACT.
 
-This reseach was made in collaboration with the `Lausanne University Hospital (Centre Hospitalier Universitaire Vaudois) <https://www.chuv.ch/fr/chuv-home>`_ and the
-`University Hospital of Lyon (Hospices Civils de Lyon) <https://www.chu-lyon.fr/>`_.
+This reseach was made in collaboration with `Aix Marseille University <https://www.univ-amu.fr/>`_, `Université Grenoble Alpes <https://www.univ-grenoble-alpes.fr/>`_, `CHU Grenoble Alpes <https://www.chu-grenoble.fr/>`_,
+`University Hospital of Lyon (Hospices Civils de Lyon) <https://www.chu-lyon.fr/>`_ and `Lausanne University Hospital (Centre Hospitalier Universitaire Vaudois) <https://www.chuv.ch/fr/chuv-home>`_.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 References
 ==========
