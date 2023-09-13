@@ -21,48 +21,17 @@ Official resources
 How to start The Virtual Brain on the HIP 
 ===========================================
 
-.. important::
-
-   These configuration steps must be performed each time the TVB app is started. These steps will be automated in the future.
-   
-Start the TVB app in a new :doc:`Desktop</guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>`. A terminal should appear.
-In the terminal type the following commands:
-
-.. code-block:: console
-
-	source /apps/tvb/conda/bin/activate
-	python -m ipykernel install --user --name tvb
-	jlab
-
-Those commands will ensure that the TVB libraries are found and will then start the JupyterLab interface.
-	
-.. figure:: /applications/art/APP_The_Virtual_Brain/APP_TVB_commands.png
-	:width: 600px
-	:align: center
-
-	**TVB's terminal.** Starting the TVB app will launch a terminal that will be used to configure the application.
-	
-A "JupyterLab Server Configuration" pop-up should appear asking for extra configuration steps. Click on the "Select Python path" button in order to navigate and select the correct 
-Python environment located in */apps/tvb/jlabserver/bin/python*. Once selected, click the "Apply and restart" button.
-
-.. figure:: /applications/art/APP_The_Virtual_Brain/APP_TVB_path.png
-	:width: 600px
-	:align: center
-
-	**Select Python environment.** JupyterLab will ask which Python environment to use. Once specified, click the "Apply and restart" button.
-	
-The JupyterLab interface should restart and it is now possible to interact with notebooks which have access to the full set of TVB libraries.
-	
-.. figure:: /applications/art/APP_The_Virtual_Brain/APP_TVB_jlab.jpg
-	:width: 600px
-	:align: center
-
-	**Jupyter Notebook.** Use notebooks to process data with The Virtual Brain.
-	
-
+Starting the Virtual Brain app on the HIP just requires clicking the TVB icon on the app list,
+towards the bottom.  The app will start in the form of a JupyterLab Desktop.
 For additional information regarding notebooks, please consult the official `Jupyter Notebook Documentation <https://jupyter-notebook.readthedocs.io/en/latest/>`_.
-	
 
+
+Simulation Workflow example
+===========================
+
+Once the app has started, you can double click the file named "simulation.ipynb" in the left sidebar.
+
+.. include:: simulation.rst
 
 References
 ===========
