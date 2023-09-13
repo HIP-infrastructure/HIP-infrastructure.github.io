@@ -1,5 +1,5 @@
 The Virtual Brain
-******************
+*******************
 
 The Virtual Brain (TVB) offers software for constructing, simulating and analysing brain network models including the TVB simulator;
 magnetic resonance imaging (MRI) processing pipelines to extract structural and functional brain networks;
@@ -9,7 +9,7 @@ Bayesian parameter optimization in epilepsy patient models; data and software fo
 and extensive educational material ([Sanz_Leon_2013]_, [Schirner_2022]_).
 
 Official resources
-===================
+====================
 
 	
 	* `TVB website <https://www.thevirtualbrain.org/tvb/zwei>`_ 
@@ -18,20 +18,21 @@ Official resources
 	* `TVB Pipeline GitHub <https://github.com/ins-amu/tvb-pipeline>`_
 	* `The Bayesian Virtual Epileptic Patient GitHub <https://github.com/ins-amu/BVEP>`_
 	
-How to start The Virtual Brain on the HIP 
-===========================================
+HIP resources
+===============
 
-Starting the Virtual Brain app on the HIP just requires clicking the TVB icon on the app list,
-towards the bottom.  The app will start in the form of a JupyterLab Desktop.
-For additional information regarding notebooks, please consult the official `Jupyter Notebook Documentation <https://jupyter-notebook.readthedocs.io/en/latest/>`_.
+The following HIP tutorials are available:
 
+	* :doc:`Simulation workflow with The Virtual Brain</tutorials/TUTORIAL_stimulation_workflow_tvb>`
 
-Simulation Workflow example
-===========================
+	
+The Virtual Brain on the HIP 
+==============================
 
-Once the app has started, you can double click the file named "simulation.ipynb" in the left sidebar.
+The Virtual Brain app on the HIP relies on Jupyter notebooks. Starting the app will actually starts `JupyterLab Desktop <https://github.com/jupyterlab/jupyterlab-desktop/blob/master/user-guide.md>`_,
+a cross-platform desktop application for JupyterLab.
+For additional information regarding Jupyter notebooks, please consult the `official documentation <https://jupyter-notebook.readthedocs.io/en/latest/>`_.
 
-.. include:: simulation.rst
 
 References
 ===========

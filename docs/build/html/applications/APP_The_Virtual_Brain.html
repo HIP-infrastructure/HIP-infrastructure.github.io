@@ -66,6 +66,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_SEEG_electrode_placement_with_3D_slicer.html">SEEG electrode placement with 3D Slicer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html">Epileptogenicity map computation with Brainstorm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_CCEP_computation_with_brainstorm.html">CCEP computation with Brainstorm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_stimulation_workflow_tvb.html">Simulation workflow with The Virtual Brain</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP datasets</span></p>
 <ul>
@@ -96,7 +97,8 @@
 <li class="toctree-l1"><a class="reference internal" href="APP_MRI_Deface.html">MRI Deface</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">The Virtual Brain</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#official-resources">Official resources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-start-the-virtual-brain-on-the-hip">How to start The Virtual Brain on the HIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hip-resources">HIP resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-virtual-brain-on-the-hip">The Virtual Brain on the HIP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
 </ul>
 </li>
@@ -147,42 +149,20 @@ and extensive educational material (<a class="reference internal" href="#sanz-le
 </ul>
 </div></blockquote>
 </section>
-<section id="how-to-start-the-virtual-brain-on-the-hip">
-<h2>How to start The Virtual Brain on the HIP<a class="headerlink" href="#how-to-start-the-virtual-brain-on-the-hip" title="Permalink to this headline"></a></h2>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>These configuration steps must be performed each time the TVB app is started. These steps will be automated in the future.</p>
-</div>
-<p>Start the TVB app in a new <a class="reference internal" href="../guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html"><span class="doc">Desktop</span></a>. A terminal should appear.
-In the terminal type the following commands:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">source /apps/tvb/conda/bin/activate</span>
-<span class="go">python -m ipykernel install --user --name tvb</span>
-<span class="go">jlab</span>
-</pre></div>
-</div>
-<p>Those commands will ensure that the TVB libraries are found and will then start the JupyterLab interface.</p>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../_images/APP_TVB_commands.png"><img alt="../_images/APP_TVB_commands.png" src="../_images/APP_TVB_commands.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-text"><strong>TVB’s terminal.</strong> Starting the TVB app will launch a terminal that will be used to configure the application.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-<p>A “JupyterLab Server Configuration” pop-up should appear asking for extra configuration steps. Click on the “Select Python path” button in order to navigate and select the correct
-Python environment located in <em>/apps/tvb/jlabserver/bin/python</em>. Once selected, click the “Apply and restart” button.</p>
-<figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../_images/APP_TVB_path.png"><img alt="../_images/APP_TVB_path.png" src="../_images/APP_TVB_path.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-text"><strong>Select Python environment.</strong> JupyterLab will ask which Python environment to use. Once specified, click the “Apply and restart” button.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-<p>The JupyterLab interface should restart and it is now possible to interact with notebooks which have access to the full set of TVB libraries.</p>
-<figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="../_images/APP_TVB_jlab.jpg"><img alt="../_images/APP_TVB_jlab.jpg" src="../_images/APP_TVB_jlab.jpg" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-text"><strong>Jupyter Notebook.</strong> Use notebooks to process data with The Virtual Brain.</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-<p>For additional information regarding notebooks, please consult the official <a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/latest/">Jupyter Notebook Documentation</a>.</p>
+<section id="hip-resources">
+<h2>HIP resources<a class="headerlink" href="#hip-resources" title="Permalink to this headline"></a></h2>
+<p>The following HIP tutorials are available:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="../tutorials/TUTORIAL_stimulation_workflow_tvb.html"><span class="doc">Simulation workflow with The Virtual Brain</span></a></p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="the-virtual-brain-on-the-hip">
+<h2>The Virtual Brain on the HIP<a class="headerlink" href="#the-virtual-brain-on-the-hip" title="Permalink to this headline"></a></h2>
+<p>The Virtual Brain app on the HIP relies on Jupyter notebooks. Starting the app will actually starts <a class="reference external" href="https://github.com/jupyterlab/jupyterlab-desktop/blob/master/user-guide.md">JupyterLab Desktop</a>,
+a cross-platform desktop application for JupyterLab.
+For additional information regarding Jupyter notebooks, please consult the <a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/latest/">official documentation</a>.</p>
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>

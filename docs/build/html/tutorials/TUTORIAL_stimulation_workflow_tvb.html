@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulation Workflow with The Virtual Brain &mdash; HIP user documentation  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Epimap tutorial dataset" href="../datasets/DATASET_Epimap.html" />
+    <link rel="prev" title="CCEP computation with Brainstorm" href="TUTORIAL_CCEP_computation_with_brainstorm.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: black" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            HIP user documentation
+              <img src="../_static/hip_logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../hip_onboarding.html">&gt; &gt; &gt; &gt; &gt; &gt; &gt; Onboarding &lt; &lt; &lt; &lt; &lt; &lt; &lt;</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HIP guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guides/GUIDE_How_to_create_a_HIP_account.html">How to create a HIP account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services.html">How to connect to the HIP portal and access its services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP.html">How to prepare and upload data to the HIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/GUIDE_How_to_convert_data_to_BIDS_format.html">How to convert data to BIDS format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html">How to use Desktops and run applications from the App Catalog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/GUIDE_How_to_transfer_data_from_Micromed_software_to_the_HIP.html">How to transfer data from Micromed software to the HIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html">How to use the HIP spaces and share data with other users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/GUIDE_How_to_use_collaborative_projects.html">How to use Collaborative Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HIP tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="TUTORIAL_SEEG_electrode_placement_with_brainstorm.html">SEEG electrode placement with Brainstorm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TUTORIAL_SEEG_electrode_placement_with_3D_slicer.html">SEEG electrode placement with 3D Slicer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html">Epileptogenicity map computation with Brainstorm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TUTORIAL_CCEP_computation_with_brainstorm.html">CCEP computation with Brainstorm</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Simulation workflow with The Virtual Brain</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HIP datasets</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Epimap.html">Epimap tutorial dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Cogepistim.html">COGEPISTIM dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Data_for_electrodes_labelling.html">Data for electrodes labelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_iEEG_task_cognitive.html">iEEG cognitive task</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HIP apps</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_3D_Slicer.html">3D Slicer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_AnyWave.html">AnyWave</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_BIDS_Manager.html">BIDS Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_Brainstorm.html">Brainstorm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_CCEP_Manager.html">CCEP Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_dcm2niix.html">dcm2niix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_GARDEL.html">GARDEL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_FileManager.html">FileManager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_Freesurfer.html">Freesurfer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_Frites.html">Frites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_FSL.html">FSL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_HiBoP.html">HiBoP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_IntrAnat.html">IntrAnat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_LibreOffice.html">LibreOffice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_Localizer.html">Localizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_MNE.html">MNE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_MRIcroGL.html">MRIcroGL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_MRI_Deface.html">MRI Deface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_The_Virtual_Brain.html">The Virtual Brain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_VisualStudioCode.html">Visual Studio Code</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: black" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">HIP user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Simulation Workflow with The Virtual Brain</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tutorials/TUTORIAL_stimulation_workflow_tvb.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The tutorial is still in the process of being finalized.</p>
+</div>
+<section id="simulation-workflow-with-the-virtual-brain">
+<h1>Simulation Workflow with The Virtual Brain<a class="headerlink" href="#simulation-workflow-with-the-virtual-brain" title="Permalink to this headline"></a></h1>
+<div class="admonition-jupyter-notebook admonition">
+<p class="admonition-title">Jupyter Notebook</p>
+<p>Once The Virtual Brain app has started, you can view this tutorial in the form of an interactive Jupyter Notebook by
+double clicking the file named “simulation.ipynb” in the left sidebar.</p>
+</div>
+<p>Here we will show a short demonstration of using data from HIP
+partners to do simulation, with parameters guessed from one of the
+patient’s seizures.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">pylab</span> <span class="n">inline</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">mne</span>
+<span class="kn">import</span> <span class="nn">nibabel</span>
+<span class="kn">from</span> <span class="nn">tvb.simulator.lab</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>%pylab is deprecated, use %matplotlib inline and import the required libraries.
+Populating the interactive namespace from numpy and matplotlib
+
+/usr/local/lib/python3.10/dist-packages/tvb/datatypes/surfaces.py:60: UserWarning: Geodesic distance module is unavailable; some functionality for surfaces will be unavailable.
+  warnings.warn(msg)
+</pre></div>
+</div>
+<p>Let’s check our access to some data.</p>
+<p>First sEEG contacts: use your favorite 3D tool to localize sEEG contacts
+in T1 space as in the following example:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>!head ~/nextcloud/tvb-preprocessed-tutorial-data/fs/hip1/elec/seeg.xyz
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>L1      -12.20   53.60   67.20
+L2       -8.70   53.65   67.20
+L3       -5.20   53.69   67.20
+L4       -1.70   53.74   67.20
+L5        1.80   53.78   67.20
+L6        5.30   53.83   67.20
+L7        8.80   53.88   67.20
+L8       12.30   53.92   67.20
+L9       15.80   53.97   67.20
+L10      19.30   54.02   67.20
+</pre></div>
+</div>
+<p>Then we load them:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pl_names</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">pl_xyz</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">fsdir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s1">&#39;~/nextcloud/tvb-preprocessed-tutorial-data/fs/hip1&#39;</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">fsdir</span><span class="si">}</span><span class="s1">/elec/seeg.xyz&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fd</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fd</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;plot&#39;</span><span class="p">):</span>
+            <span class="k">continue</span>
+        <span class="n">name</span><span class="p">,</span> <span class="o">*</span><span class="n">xyz</span> <span class="o">=</span> <span class="p">[</span><span class="n">_</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">_</span><span class="o">.</span><span class="n">strip</span><span class="p">()]</span>
+        <span class="n">pl_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="n">pl_xyz</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="nb">float</span><span class="p">(</span><span class="n">_</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">xyz</span><span class="p">]))</span>
+</pre></div>
+</div>
+<p>Load connectivity &amp; one seizure:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">conn</span> <span class="o">=</span> <span class="n">connectivity</span><span class="o">.</span><span class="n">Connectivity</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">fsdir</span><span class="si">}</span><span class="s1">/tvb/connectivity.vep.zip&#39;</span><span class="p">)</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">configure</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">weights</span><span class="p">[:]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">conn</span><span class="o">.</span><span class="n">weights</span><span class="p">)</span>
+<span class="n">imshow</span><span class="p">(</span><span class="n">conn</span><span class="o">.</span><span class="n">weights</span><span class="p">);</span> <span class="n">colorbar</span><span class="p">();</span> <span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;ROI (VEP atlas)&#39;</span><span class="p">),</span> <span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;ROI&#39;</span><span class="p">);</span> <span class="n">show</span><span class="p">();</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>2023-09-12 13:37:58,933 - WARNING - tvb.basic.readers - File &#39;hemispheres&#39; not found in ZIP.
+</pre></div>
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/simulation_8_1.png"><img alt="../_images/simulation_8_1.png" src="../_images/simulation_8_1.png" style="width: 500px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If seizure is not in VHDR, convert first with Anywave:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>!ls ~/nextcloud/tutorial_data/Data_for_electrodes_labelling/Case1/SEEG
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">case1EEG_12HIP_RAS</span><span class="o">.</span><span class="n">TRC</span>          <span class="n">case1EEG_13HIP_seizure</span><span class="o">.</span><span class="n">TRC</span><span class="o">.</span><span class="n">mrk</span>
+<span class="n">case1EEG_13HIP_seizure</span><span class="o">.</span><span class="n">TRC</span>      <span class="n">case1EEG_13HIP_seizure</span><span class="o">.</span><span class="n">TRC</span><span class="o">.</span><span class="n">mtg</span>
+<span class="n">case1EEG_13HIP_seizure</span><span class="o">.</span><span class="n">TRC</span><span class="o">.</span><span class="n">bad</span>      <span class="n">case1EEG_14HIP_seizure</span><span class="o">.</span><span class="n">TRC</span>
+<span class="n">case1EEG_13HIP_seizure</span><span class="o">.</span><span class="n">TRC</span><span class="o">.</span><span class="n">display</span>
+</pre></div>
+</div>
+<p>We open the TRC w/ Anywave, mark bad channels, isolate the section with
+the seizure with a marker for that section:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/25918a70-0c87-470c-8c56-371dc53b75a9.png"><img alt="../_images/25918a70-0c87-470c-8c56-371dc53b75a9.png" src="../_images/25918a70-0c87-470c-8c56-371dc53b75a9.png" style="width: 600px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Start an export:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/aca046d5-e2db-412c-8a98-4e21d461718f.png"><img alt="../_images/aca046d5-e2db-412c-8a98-4e21d461718f.png" src="../_images/aca046d5-e2db-412c-8a98-4e21d461718f.png" style="width: 500px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Set file name w/ marker name:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/c5c8d755-dcf7-4f10-9efe-c2488f0a2877.png"><img alt="../_images/c5c8d755-dcf7-4f10-9efe-c2488f0a2877.png" src="../_images/c5c8d755-dcf7-4f10-9efe-c2488f0a2877.png" style="width: 500px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Save to the tvb folder, then load with MNE:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>!ls ~/nextcloud/tvb-preprocessed-tutorial-data/fs/hip1/seeg/tvb-hip1
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>seizure-bipolar.eeg   seizure-monopolar.eeg   seizure.eeg
+seizure-bipolar.vhdr  seizure-monopolar.vhdr  seizure.vhdr
+seizure-bipolar.vmrk  seizure-monopolar.vmrk  seizure.vmrk
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">raw</span> <span class="o">=</span> <span class="n">mne</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">read_raw_brainvision</span><span class="p">(</span>
+    <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">fsdir</span><span class="si">}</span><span class="s1">/seeg/tvb-hip1/seizure-bipolar.vhdr&#39;</span><span class="p">,</span>
+    <span class="n">preload</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Extracting parameters from /home/woodman/nextcloud/tvb-preprocessed-tutorial-data/fs/hip1/seeg/tvb-hip1/seizure-bipolar.vhdr...
+Setting channel info structure...
+Reading 0 ... 25378  =      0.000 ...    99.133 secs...
+
+
+/tmp/ipykernel_421/3985157263.py:1: RuntimeWarning: Limited 1 annotation(s) that were expanding outside the data range.
+  raw = mne.io.read_raw_brainvision(
+</pre></div>
+</div>
+<p>Construct gain matrix for bipolar electrodes in recording:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">re_one</span> <span class="o">=</span> <span class="s1">&#39;([A-Z][A-Za-z]*</span><span class="se">\&#39;</span><span class="s1">?) ([0-9]+)&#39;</span>
+<span class="n">re_bip</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">re_one</span><span class="si">}</span><span class="s1">-</span><span class="si">{</span><span class="n">re_one</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">ch_bip_idx</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">bip_gain</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">electrodes</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">picks</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">pick_names</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i_ch</span><span class="p">,</span> <span class="n">ch</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">raw</span><span class="o">.</span><span class="n">ch_names</span><span class="p">):</span>
+    <span class="n">match</span> <span class="o">=</span> <span class="n">re_bip</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">ch</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+        <span class="n">picks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i_ch</span><span class="p">)</span>
+        <span class="n">pick_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ch</span><span class="p">)</span>
+        <span class="n">e</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">groups</span><span class="p">()</span>
+        <span class="n">electrodes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+        <span class="n">e</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">)</span>
+        <span class="n">ch_bip_idx</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">e</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">))</span>
+        <span class="c1">#pl_names.index(</span>
+        <span class="c1">#r = np.sqrt(np.sum((cxyz(e,np.c_[i,j].T)[:,None] - conn.centres)**2, axis=2))</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">cxyz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span><span class="n">pl_xyz</span><span class="p">[</span><span class="n">pl_names</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">e</span><span class="si">}{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)],</span>
+                         <span class="n">pl_xyz</span><span class="p">[</span><span class="n">pl_names</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">e</span><span class="si">}{</span><span class="n">j</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)]]</span><span class="o">.</span><span class="n">T</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="k">pass</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">cxyz</span> <span class="o">-</span> <span class="n">conn</span><span class="o">.</span><span class="n">centres</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+        <span class="n">g</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">r</span><span class="o">**</span><span class="mi">3</span>
+        <span class="n">bip_gain</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">g</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">picks</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">picks</span><span class="p">)</span>
+<span class="n">bip_gain</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">bip_gain</span><span class="p">)</span>
+<span class="n">bip_gain</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">bip_gain</span><span class="p">,</span> <span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">bip_gain</span><span class="o">.</span><span class="n">flat</span><span class="p">[:],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">99</span><span class="p">]))</span>
+<span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">imshow</span><span class="p">(</span><span class="n">bip_gain</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;bwr&#39;</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">),</span> <span class="n">colorbar</span><span class="p">(),</span> <span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Region DK atlas&#39;</span><span class="p">),</span> <span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Sensor&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/simulation_15_0.png"><img alt="../_images/simulation_15_0.png" src="../_images/simulation_15_0.png" style="width: 500px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Pick out seizure from recording:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">snip</span> <span class="o">=</span> <span class="n">raw</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">snip</span><span class="o">.</span><span class="n">pick_channels</span><span class="p">(</span><span class="n">pick_names</span><span class="p">)</span>
+<span class="n">snip</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
+<span class="n">snip</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">snip</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+<span class="n">snip</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n_channels</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span><span class="n">scalings</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;eeg&#39;</span><span class="p">:</span><span class="mf">1e-3</span><span class="p">});</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>NOTE: pick_channels() is a legacy function. New code should use inst.pick(...).
+Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 1 - 30 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Upper passband edge: 30.00 Hz
+- Upper transition bandwidth: 7.50 Hz (-6 dB cutoff frequency: 33.75 Hz)
+- Filter length: 845 samples (3.301 s)
+
+Using matplotlib as 2D backend.
+
+
+[Parallel(n_jobs=1)]: Done  17 tasks      | elapsed:    0.0s
+</pre></div>
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/simulation_17_2.png"><img alt="../_images/simulation_17_2.png" src="../_images/simulation_17_2.png" style="width: 500px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>We construct the envelop of the data, per 1 s windows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y</span><span class="p">,</span> <span class="n">t</span> <span class="o">=</span> <span class="n">snip</span><span class="p">[:]</span>
+<span class="n">ysd</span> <span class="o">=</span> <span class="n">y</span><span class="p">[:,:</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">//</span><span class="mi">64</span><span class="o">*</span><span class="mi">64</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">),</span> <span class="mi">64</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">scl</span> <span class="o">=</span> <span class="mf">1e-3</span>
+<span class="n">imshow</span><span class="p">(</span><span class="n">ysd</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;bwr&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=-</span><span class="n">scl</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">scl</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">),</span> <span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;sEEG&#39;</span><span class="p">);</span> <span class="n">show</span><span class="p">();</span>
+</pre></div>
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/simulation_19_0.png"><img alt="../_images/simulation_19_0.png" src="../_images/simulation_19_0.png" style="width: 500px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Projecting to TVB sources, we can determine a prior for the Epileptor x0
+parameter based onset times:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ssd</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">bip_gain</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">ysd</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">0</span><span class="p">:</span><span class="mi">64</span><span class="n">j</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span>
+<span class="n">x0p</span> <span class="o">=</span> <span class="n">ssd</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">x0p</span> <span class="o">/=</span> <span class="n">x0p</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">x0p</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.5</span> <span class="o">+</span> <span class="n">x0p</span>
+<span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">));</span> <span class="n">plot</span><span class="p">(</span><span class="n">x0p</span><span class="p">);</span> <span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;ROI [LH, RH, subcort]&#39;</span><span class="p">);</span> <span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;p(x0)&#39;</span><span class="p">);</span> <span class="n">show</span><span class="p">();</span>
+</pre></div>
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/simulation_21_0.png"><img alt="../_images/simulation_21_0.png" src="../_images/simulation_21_0.png" style="width: 500px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>With a few examples for the ranking:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">x0p</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">][:</span><span class="mi">5</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x0p</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">conn</span><span class="o">.</span><span class="n">region_labels</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>87 -1.5 Right-Inferior-frontal-sulcus
+99 -1.5861556255555924 Right-Precentral-sulcus-inferior-part
+86 -1.6136127237070008 Right-F3-pars-opercularis
+85 -1.8120990493471199 Right-F3-Pars-triangularis
+91 -1.9098045348007213 Right-SFS-rostral
+</pre></div>
+</div>
+<p>Now construct a simulation:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">epileptor</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">Epileptor</span><span class="p">(</span><span class="n">Ks</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="o">-</span><span class="mf">0.2</span><span class="p">],</span> <span class="n">Kf</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mf">0.1</span><span class="p">],</span> <span class="n">r</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mf">0.00015</span><span class="p">])</span>
+<span class="n">epileptor</span><span class="o">.</span><span class="n">x0</span> <span class="o">=</span> <span class="n">x0p</span>
+<span class="n">nsig</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.0005</span><span class="p">,</span> <span class="mf">0.0005</span><span class="p">,</span> <span class="mf">0.</span><span class="p">]</span>
+<span class="n">addnoise</span> <span class="o">=</span> <span class="n">noise</span><span class="o">.</span><span class="n">Additive</span><span class="p">(</span><span class="n">nsig</span><span class="o">=</span><span class="n">nsig</span><span class="p">,</span> <span class="n">ntau</span><span class="o">=</span><span class="mf">5.0</span><span class="p">)</span>
+<span class="n">initial</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="o">-</span><span class="mf">1.9</span><span class="p">,</span> <span class="o">-</span><span class="mf">17.</span><span class="p">,</span> <span class="mf">3.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.04</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.17</span><span class="p">]</span>
+<span class="n">initial</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">conn</span><span class="o">.</span><span class="n">number_of_regions</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="n">initial</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span>
+<span class="n">sim</span> <span class="o">=</span> <span class="n">simulator</span><span class="o">.</span><span class="n">Simulator</span><span class="p">(</span>
+    <span class="n">connectivity</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span>
+    <span class="n">coupling</span><span class="o">=</span><span class="n">coupling</span><span class="o">.</span><span class="n">Difference</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mf">0.03</span><span class="p">]),</span>
+    <span class="n">model</span><span class="o">=</span><span class="n">epileptor</span><span class="p">,</span>
+    <span class="n">integrator</span><span class="o">=</span><span class="n">integrators</span><span class="o">.</span><span class="n">HeunStochastic</span><span class="p">(</span><span class="n">dt</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span><span class="n">noise</span><span class="o">=</span><span class="n">addnoise</span><span class="p">),</span>
+    <span class="n">initial_conditions</span><span class="o">=</span><span class="n">initial</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">sim</span><span class="o">.</span><span class="n">configure</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Simulator: A Simulator assembles components required to perform simulations.</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Type</p></td>
+<td><p>Simulator</p></td>
+</tr>
+<tr class="row-odd"><td><p>conduction_speed</p></td>
+<td><p>3.0</p></td>
+</tr>
+<tr class="row-even"><td><p>connectivity</p></td>
+<td><p>Connectivity gid: b7b9f755-2761-4bc2-8115-ae8b475c11d2</p></td>
+</tr>
+<tr class="row-odd"><td><p>coupling</p></td>
+<td><p>Difference gid: ba86c269-6714-4fe3-a7ae-7cce73061bc1</p></td>
+</tr>
+<tr class="row-even"><td><p>gid</p></td>
+<td><p>UUID(‘93b83c19-43a9-4da0-8a05-2d11e0756aa4’)</p></td>
+</tr>
+<tr class="row-odd"><td><p>initial_conditions</p></td>
+<td><p>[min, median, max] = [-17, -0.585, 3.1] dtype = float64 shape = (100, 6, 162, 1)</p></td>
+</tr>
+<tr class="row-even"><td><p>integrator</p></td>
+<td><p>HeunStochastic gid: 17b17c7b-69ac-437e-81a1-18932deef33c</p></td>
+</tr>
+<tr class="row-odd"><td><p>model</p></td>
+<td><p>Epileptor gid: a883a1cb-d9f6-4e64-93e2-42d1347b40ef</p></td>
+</tr>
+<tr class="row-even"><td><p>monitors</p></td>
+<td><p>(‘TemporalAverage’,)</p></td>
+</tr>
+<tr class="row-odd"><td><p>simulation_length</p></td>
+<td><p>1000.0</p></td>
+</tr>
+<tr class="row-even"><td><p>stimulus</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-odd"><td><p>surface</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-even"><td><p>title</p></td>
+<td><p>Simulator gid: 93b83c19-43a9-4da0-8a05-2d11e0756aa4</p></td>
+</tr>
+</tbody>
+</table>
+<p>Run the simulation:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">),</span> <span class="o">=</span> <span class="n">sim</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">simulation_length</span><span class="o">=</span><span class="mf">4000.0</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">+=</span> <span class="n">randn</span><span class="p">(</span><span class="o">*</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span><span class="o">/</span><span class="mi">10</span> <span class="c1"># observation noise</span>
+</pre></div>
+</div>
+<p>Butterfly plot of source activity for seizure:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">y</span><span class="p">[:,</span><span class="mi">0</span><span class="p">,:,</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">);</span> <span class="n">show</span><span class="p">();</span>
+</pre></div>
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/simulation_29_0.png"><img alt="../_images/simulation_29_0.png" src="../_images/simulation_29_0.png" style="width: 500px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Projecting the source activity back to sources and creating an MNE Raw
+object from that, for analysis:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">seeg</span> <span class="o">=</span> <span class="n">bip_gain</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">y</span><span class="p">[:,</span><span class="mi">0</span><span class="p">,:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+<span class="n">seeg</span> <span class="o">/=</span> <span class="n">seeg</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="n">seeg</span> <span class="o">*=</span> <span class="n">snip</span><span class="p">[:][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="n">info</span> <span class="o">=</span> <span class="n">mne</span><span class="o">.</span><span class="n">create_info</span><span class="p">(</span><span class="n">pick_names</span><span class="p">,</span> <span class="mf">1e3</span><span class="o">/</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">/</span><span class="mi">8</span><span class="p">,</span> <span class="s1">&#39;eeg&#39;</span><span class="p">)</span>
+<span class="n">raw_sim</span> <span class="o">=</span> <span class="n">mne</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">RawArray</span><span class="p">(</span><span class="n">seeg</span><span class="p">,</span> <span class="n">info</span><span class="p">)</span>
+<span class="n">raw_sim</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;sfreq&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Creating RawArray with float64 data, n_channels=59, n_times=4000
+    Range : 0 ... 3999 =      0.000 ...    31.992 secs
+Ready.
+
+
+125.0
+</pre></div>
+</div>
+<p>Then filter and inspect seizure:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">raw_sim</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="n">n_jobs</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">raw_sim</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n_channels</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">scalings</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;eeg&#39;</span><span class="p">:</span><span class="mf">2e-4</span><span class="p">});</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Filtering raw data in 1 contiguous segment
+Setting up band-pass filter from 1 - 50 Hz
+
+FIR filter parameters
+---------------------
+Designing a one-pass, zero-phase, non-causal bandpass filter:
+- Windowed time-domain design (firwin) method
+- Hamming window with 0.0194 passband ripple and 53 dB stopband attenuation
+- Lower passband edge: 1.00
+- Lower transition bandwidth: 1.00 Hz (-6 dB cutoff frequency: 0.50 Hz)
+- Upper passband edge: 50.00 Hz
+- Upper transition bandwidth: 12.50 Hz (-6 dB cutoff frequency: 56.25 Hz)
+- Filter length: 413 samples (3.304 s)
+
+
+
+[Parallel(n_jobs=4)]: Using backend LokyBackend with 4 concurrent workers.
+[Parallel(n_jobs=4)]: Done  14 tasks      | elapsed:    0.8s
+[Parallel(n_jobs=4)]: Done  59 out of  59 | elapsed:    0.8s finished
+</pre></div>
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/simulation_33_2.png"><img alt="../_images/simulation_33_2.png" src="../_images/simulation_33_2.png" style="width: 500px;" /></a>
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This shows that we can quickly reproduce a seizure similar the patient’s
+with a TVB model, with an seizure onset heuristic. For a more precise
+match, the <code class="docutils literal notranslate"><span class="pre">x0</span></code> parameter of the model requires some tuning. This can
+be done by hand or automatically, via Bayesian inference, which will be
+the subject of another workflow example.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="TUTORIAL_CCEP_computation_with_brainstorm.html" class="btn btn-neutral float-left" title="CCEP computation with Brainstorm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../datasets/DATASET_Epimap.html" class="btn btn-neutral float-right" title="Epimap tutorial dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, The Human Intracerebral EEG Platform. Contact: support@thehip.app.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

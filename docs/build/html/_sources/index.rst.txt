@@ -79,6 +79,7 @@ It contains the following sections:
    SEEG electrode placement with 3D Slicer<tutorials/TUTORIAL_SEEG_electrode_placement_with_3D_slicer>
    Epileptogenicity map computation with Brainstorm<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>
    CCEP computation with Brainstorm<tutorials/TUTORIAL_CCEP_computation_with_brainstorm>
+   Simulation workflow with The Virtual Brain<tutorials/TUTORIAL_stimulation_workflow_tvb>
 
 .. toctree:: 
    :caption: HIP datasets
