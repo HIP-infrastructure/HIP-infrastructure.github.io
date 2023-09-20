@@ -41,17 +41,6 @@ It contains the following sections:
 	  HIP users agree to be bound by the terms and conditions of their respective licences. Softwares are provided “as is”
 	  and without warranty of any kind, express, implied or otherwise.
 	  
-.. TOADD:
-       
-   Frequently Asked Questions
-   ==========================
-
-   The most frequently asked questions.
-
-   Troubleshooting
-   ================
-
-   The most commonly encountered issues and their solution.
 
 .. toctree::
    :hidden:   
@@ -99,22 +88,29 @@ It contains the following sections:
    AnyWave<applications/APP_AnyWave>
    BIDS Manager<applications/APP_BIDS_Manager>
    Brainstorm<applications/APP_Brainstorm>
-   CCEP Manager<applications/APP_CCEP_Manager>
    dcm2niix<applications/APP_dcm2niix>
-   GARDEL<applications/APP_GARDEL>
    FileManager<applications/APP_FileManager>
    Freesurfer<applications/APP_Freesurfer>
    Frites<applications/APP_Frites>
    FSL<applications/APP_FSL>
+   GARDEL<applications/APP_GARDEL>
    HiBoP<applications/APP_HiBoP>
    IntrAnat<applications/APP_IntrAnat>
    LibreOffice<applications/APP_LibreOffice>
    Localizer<applications/APP_Localizer>
-   MNE<applications/APP_MNE>
-   MRIcroGL<applications/APP_MRIcroGL>
+   MATLAB<applications/APP_MATLAB>
+   MNE-Python<applications/APP_MNE>
    MRI Deface<applications/APP_MRI_Deface>
+   MRIcroGL<applications/APP_MRIcroGL>
+   NiftyReg<applications/APP_NiftyReg>
+   RStudio<applications/APP_RStudio>
    The Virtual Brain<applications/APP_The_Virtual_Brain>
+   TRCAnonymizer<applications/APP_TRCAnonymizer>
    Visual Studio Code<applications/APP_VisualStudioCode>
+   
+.. comment:
+   CCEP Manager<applications/APP_CCEP_Manager>
+   
    
    
 .. include:: hip_acknowledgement.rst

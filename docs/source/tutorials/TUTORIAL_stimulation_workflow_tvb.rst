@@ -6,7 +6,7 @@
     The tutorial is still in the process of being finalized.
 
 
-Simulation Workflow with The Virtual Brain
+Simulation workflow with The Virtual Brain
 ********************************************
 
 .. admonition:: Jupyter Notebook

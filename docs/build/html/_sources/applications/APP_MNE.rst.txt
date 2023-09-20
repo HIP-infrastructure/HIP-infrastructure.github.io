@@ -1,9 +1,7 @@
-.. include:: ../hip_app_not_available.rst
-	
-MNE
-****
+MNE-Python
+***********
 
-MNE is an open-source Python package for exploring, visualizing, and analyzing human neurophysiological data:
+MNE-Python is an open-source Python package for exploring, visualizing, and analyzing human neurophysiological data:
 MEG, EEG, sEEG, ECoG, NIRS ([Gramfort_2013]_).
 
 Official resources

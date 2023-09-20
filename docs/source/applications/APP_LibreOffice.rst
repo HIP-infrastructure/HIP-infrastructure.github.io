@@ -1,5 +1,3 @@
-.. include:: ../hip_app_not_available.rst
-
 LibreOffice
 ************
 
