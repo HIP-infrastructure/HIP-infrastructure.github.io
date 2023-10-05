@@ -254,7 +254,7 @@ Supported data file formats are as follows:
 Video guide
 ------------
 
-The following video guide (not yet available) serves as an introduction to the BIDS tools and shows how to import raw data into a new BIDS dataset:  
+The following video guide (6’09’’) serves as an introduction to the BIDS tools and shows how to import raw data into a new BIDS dataset:  
 
 .. raw:: html
 
