@@ -22,107 +22,15 @@ Data files
 The dataset is stored in a folder called “`iEEG_task_cognitive <https://thehip.app/apps/files/?dir=/tutorial_data/iEEG_task_cognitive&fileid=715791>`_” located inside the "*tutorial_data*" folder
 accessible from the Private Space.
 
+It includes the following files:
 
-The arrangement of files and folders is depicted in :ref:`Fig.1 <cogtask_structure>`, while the corresponding naming conventions are outlined in :ref:`Tab.1 <cogtask_naming_convention>`. 
-Files and folders are further described in :ref:`Tab.2 <cogtask_file_desc>` and :ref:`Tab.3 <cogtask_folder_desc>` respectively. For further insights into data formats, refer to :ref:`Tab.4 <cogtask_file_format>`.
+	* /Anatomical_data: T1 weighted MRI and Diffusion Tensor Imaging.
+	* /Data_HiBoP: Data used by HiBoP for display purposes.
+	* /SEEG_<digit>HIP: Task SEEG recordings. 
 
-
-.. _cogtask_structure:
-
-::
-
-	.. /iEEG_task_cognitive
-	.... /Anatomical_data
-	...... anon_T1_implated-cognitive-dataset.nii
-	...... anon_T1_mprage-cognitive-dataset.nii
-	...... Diffusion-cognitive-dataset.bval
-	...... Diffusion-cognitive-dataset.bvec
-	...... Diffusion-cognitive-dataset.json
-	...... Diffusion-cognitive-dataset.nii
-	...... T1_implanted-cognitive-dataset.json
-	...... T1_mprage-cognitive-dataset.json
-	.... /TRC	
-	...... task-SEEG_<hip_id>.TRC
-	...... task-SEEG_<hip_id>.TRC	
-	
-.. raw:: html
-
-   <center>	
-	<b>Fig.1</b> <i>File and folder organization.</i>
-   </center>
-	
-|
-
-.. _cogtask_naming_convention:
-
-.. table::
-	:align: center
-	
-	+----------------------------+-------------------------------------------------+
-	| BIDS value                 | Description                                     |
-	+============================+=================================================+
-	| <hip_id>                   | Unique identifier of a SEEG file. Alphanumeric. |
-	+----------------------------+-------------------------------------------------+
-
-
-
-.. raw:: html
-
-   <center>	
-	<b>Tab.1</b> <i>Naming convention.</i>
-   </center>
-	
-|
-
-
-.. _cogtask_file_desc:
-
-.. table::
-	:align: center
-	
-	+----------------+---------------------------------+
-	| File           | Description                     |
-	+================+=================================+
-	| \*T1\*         | T1 weighted MRI.                |
-	+----------------+---------------------------------+
-	| \*Diffusion\*  | Diffusion Tensor Imaging.       |
-	+----------------+---------------------------------+
-	| \*(S)EEG\*     | SEEG recording.                 |
-	+----------------+---------------------------------+
-
-
-.. raw:: html
-
-   <center>	
-	<b>Tab.2</b> <i>File description.</i>
-   </center>
-	
-|
-
-.. _cogtask_folder_desc:
-
-.. table::
-	:align: center
-	
-	+-----------------------------+--------------------------------------------------------------------+
-	| Folder                      | Description                                                        |
-	+=============================+====================================================================+
-	| /Anatomical_data            | Anatomical imaging (T1, DTI).                                      |
-	+-----------------------------+--------------------------------------------------------------------+
-	| /TRC                        | SEEG data.                                                         |
-	+-----------------------------+--------------------------------------------------------------------+
-
-
-.. raw:: html
-
-   <center>	
-	<b>Tab.3</b> <i>Folder description.</i>
-   </center>
-	
-|
+For further insights into data formats, refer to :ref:`Tab.1 <cogtask_file_format>`.
 
 	
-
 .. _cogtask_file_format:
 
 .. table::
@@ -145,7 +53,7 @@ Files and folders are further described in :ref:`Tab.2 <cogtask_file_desc>` and 
 .. raw:: html
 
    <center>	
-	<b>Tab.4</b> <i>Files formats.</i>
+	<b>Tab.1</b> <i>Files formats.</i>
    </center>
 	
 |

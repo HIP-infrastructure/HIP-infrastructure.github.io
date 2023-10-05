@@ -91,6 +91,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="DATASET_Data_for_electrodes_labelling.html">Data for electrodes labelling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="DATASET_iEEG_task_cognitive.html">iEEG cognitive task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DATASET_HIP_iEEG_seizure_data.html">HIP iEEG seizure dataset</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP apps</span></p>
 <ul>
@@ -145,7 +146,7 @@
              
   <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The COGEPISTIM dataset is not yet available on the HIP.</p>
+<p>The COGEPISTIM dataset is available in a <a class="reference external" href="https://thehip.app/apps/hip/projects/HIP-COGEPISTIM">dedicated Collaborative Space</a> with restricted access.</p>
 </div>
 <section id="cogepistim-dataset">
 <h1>COGEPISTIM dataset<a class="headerlink" href="#cogepistim-dataset" title="Permalink to this headline"></a></h1>
@@ -209,38 +210,38 @@ The COGEPISTIM dataset encompasses longitudinal data, where subjects undergo dat
 as well as after their subsequent surgical removal. Moreover, a single subject might have undergone several implantations. To effectively organize this data, the COGEPISTIM dataset employs BIDS session folders as follows:
 The <em>/ses-preimpXX</em>, <em>/ses-postimpXX</em>, and <em>/ses-postopXX</em> session folders correspond to data collected before implantation, after implantation, and after surgical electrode removal, respectively.
 <em>XX</em> denotes a two-digit number that serves as an index for different implantation instances.</p>
-<div class="highlight-default notranslate" id="coge-structure"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">raw</span>
-<span class="o">..</span> <span class="n">dataset_description</span><span class="o">.</span><span class="n">json</span>
-<span class="o">..</span> <span class="n">participants</span><span class="o">.</span><span class="n">tsv</span>
-<span class="o">..</span> <span class="o">/</span><span class="n">derivatives</span>
-<span class="o">....</span> <span class="o">/</span><span class="n">data_inventory</span>
-<span class="o">......</span> <span class="n">data_inventory</span><span class="o">.</span><span class="n">tsv</span>
-<span class="o">....</span> <span class="o">/</span><span class="n">cognition</span>
-<span class="o">......</span> <span class="o">/</span><span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span>
-<span class="o">........</span> <span class="o">/</span><span class="n">ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span>
-<span class="o">..........</span> <span class="o">/</span><span class="n">ieeg</span>
-<span class="o">............</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_task</span><span class="o">-&lt;</span><span class="n">ieeg_task</span><span class="o">&gt;</span><span class="n">_acq</span><span class="o">-&lt;</span><span class="n">ieeg_acq</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_ieeg</span><span class="o">.</span><span class="n">vhdr</span>
-<span class="o">............</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_task</span><span class="o">-&lt;</span><span class="n">ieeg_task</span><span class="o">&gt;</span><span class="n">_acq</span><span class="o">-&lt;</span><span class="n">ieeg_acq</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_ieeg</span><span class="o">.</span><span class="n">vmrk</span>
-<span class="o">............</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_task</span><span class="o">-&lt;</span><span class="n">ieeg_task</span><span class="o">&gt;</span><span class="n">_acq</span><span class="o">-&lt;</span><span class="n">ieeg_acq</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_ieeg</span><span class="o">.</span><span class="n">eeg</span>
-<span class="o">..</span> <span class="o">/</span><span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span>
-<span class="o">....</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_sessions</span><span class="o">.</span><span class="n">tsv</span>
-<span class="o">....</span> <span class="o">/</span><span class="n">ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span>
-<span class="o">......</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_scans</span><span class="o">.</span><span class="n">tsv</span>
-<span class="o">......</span> <span class="o">/</span><span class="n">ieeg</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_task</span><span class="o">-&lt;</span><span class="n">ieeg_task</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_ieeg</span><span class="o">.</span><span class="n">vhdr</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_task</span><span class="o">-&lt;</span><span class="n">ieeg_task</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_ieeg</span><span class="o">.</span><span class="n">vmrk</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_task</span><span class="o">-&lt;</span><span class="n">ieeg_task</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_ieeg</span><span class="o">.</span><span class="n">eeg</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_task</span><span class="o">-&lt;</span><span class="n">ieeg_task</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_ieeg</span><span class="o">.</span><span class="n">json</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_task</span><span class="o">-&lt;</span><span class="n">ieeg_task</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_events</span><span class="o">.</span><span class="n">tsv</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_task</span><span class="o">-&lt;</span><span class="n">ieeg_task</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_channels</span><span class="o">.</span><span class="n">tsv</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_space</span><span class="o">-&lt;</span><span class="n">ieeg_space</span><span class="o">&gt;</span><span class="n">_coordsystem</span><span class="o">.</span><span class="n">json</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_space</span><span class="o">-&lt;</span><span class="n">ieeg_space</span><span class="o">&gt;</span><span class="n">_electrodes</span><span class="o">.</span><span class="n">tsv</span>
-<span class="o">......</span> <span class="o">/</span><span class="n">anat</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_T1w</span><span class="o">.</span><span class="n">nii</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_ce</span><span class="o">-&lt;</span><span class="n">anat_ce</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_T1w</span><span class="o">.</span><span class="n">nii</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_T2w</span><span class="o">.</span><span class="n">nii</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_CT</span><span class="o">.</span><span class="n">nii</span>
-<span class="o">........</span> <span class="n">sub</span><span class="o">-&lt;</span><span class="n">cogepistim_id</span><span class="o">&gt;</span><span class="n">_ses</span><span class="o">-&lt;</span><span class="n">session</span><span class="o">&gt;</span><span class="n">_run</span><span class="o">-&lt;</span><span class="n">run</span><span class="o">&gt;</span><span class="n">_FLAIR</span><span class="o">.</span><span class="n">nii</span>
+<div class="highlight-text notranslate" id="coge-structure"><div class="highlight"><pre><span></span>/raw
+.. dataset_description.json
+.. participants.tsv
+.. /derivatives
+.... /data_inventory
+...... data_inventory.tsv
+.... /cognition
+...... /sub-&lt;cogepistim_id&gt;
+........ /ses-&lt;session&gt;
+.......... /ieeg
+............ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_task-&lt;ieeg_task&gt;_acq-&lt;ieeg_acq&gt;_run-&lt;run&gt;_ieeg.vhdr
+............ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_task-&lt;ieeg_task&gt;_acq-&lt;ieeg_acq&gt;_run-&lt;run&gt;_ieeg.vmrk
+............ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_task-&lt;ieeg_task&gt;_acq-&lt;ieeg_acq&gt;_run-&lt;run&gt;_ieeg.eeg
+.. /sub-&lt;cogepistim_id&gt;
+.... sub-&lt;cogepistim_id&gt;_sessions.tsv
+.... /ses-&lt;session&gt;
+...... sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_scans.tsv
+...... /ieeg
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_task-&lt;ieeg_task&gt;_run-&lt;run&gt;_ieeg.vhdr
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_task-&lt;ieeg_task&gt;_run-&lt;run&gt;_ieeg.vmrk
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_task-&lt;ieeg_task&gt;_run-&lt;run&gt;_ieeg.eeg
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_task-&lt;ieeg_task&gt;_run-&lt;run&gt;_ieeg.json
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_task-&lt;ieeg_task&gt;_run-&lt;run&gt;_events.tsv
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_task-&lt;ieeg_task&gt;_run-&lt;run&gt;_channels.tsv
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_space-&lt;ieeg_space&gt;_coordsystem.json
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_space-&lt;ieeg_space&gt;_electrodes.tsv
+...... /anat
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_run-&lt;run&gt;_T1w.nii
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_ce-&lt;anat_ce&gt;_run-&lt;run&gt;_T1w.nii
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_run-&lt;run&gt;_T2w.nii
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_run-&lt;run&gt;_CT.nii
+........ sub-&lt;cogepistim_id&gt;_ses-&lt;session&gt;_run-&lt;run&gt;_FLAIR.nii
 </pre></div>
 </div>
 <center>

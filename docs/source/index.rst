@@ -78,7 +78,7 @@ It contains the following sections:
    COGEPISTIM dataset<datasets/DATASET_Cogepistim>
    Data for electrodes labelling<datasets/DATASET_Data_for_electrodes_labelling.rst>	
    iEEG cognitive task<datasets/DATASET_iEEG_task_cognitive.rst>	
-    
+   HIP iEEG seizure dataset<datasets/DATASET_HIP_iEEG_seizure_data.rst>	
    
 .. toctree::
    :caption: HIP apps

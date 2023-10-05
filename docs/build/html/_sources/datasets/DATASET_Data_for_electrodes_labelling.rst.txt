@@ -31,7 +31,7 @@ Files and folders are further described in :ref:`Tab.2 <labelling_file_desc>` an
 .. _labelling_structure:
 
 
-::
+.. code-block:: text
 
 	/Data_for_electrodes_labelling
 	.. /Case<case_nb>

@@ -81,6 +81,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="DATASET_iEEG_task_cognitive.html">iEEG cognitive task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DATASET_HIP_iEEG_seizure_data.html">HIP iEEG seizure dataset</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">HIP apps</span></p>
 <ul>
@@ -146,37 +147,37 @@ with corresponding implantation scheme.</p>
 accessible from the Private Space.</p>
 <p>The arrangement of files and folders is depicted in <a class="reference internal" href="#labelling-structure"><span class="std std-ref">Fig.1</span></a>, while the corresponding naming conventions are outlined in <a class="reference internal" href="#labelling-naming-convention"><span class="std std-ref">Tab.1</span></a>.
 Files and folders are further described in <a class="reference internal" href="#labelling-file-desc"><span class="std std-ref">Tab.2</span></a> and <a class="reference internal" href="#labelling-folder-desc"><span class="std std-ref">Tab.3</span></a> respectively. For further insights into data formats, refer to <a class="reference internal" href="#labelling-file-format"><span class="std std-ref">Tab.4</span></a>.</p>
-<div class="highlight-default notranslate" id="labelling-structure"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">Data_for_electrodes_labelling</span>
-<span class="o">..</span> <span class="o">/</span><span class="n">Case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span>
-<span class="o">....</span> <span class="o">/</span><span class="n">Anatomical_data</span>
-<span class="o">......</span> <span class="n">anon_t1_mprage_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">nii</span>
-<span class="o">......</span> <span class="n">t1_mprage_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">json</span>
-<span class="o">......</span> <span class="n">anon_CT_with_electrodes_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">nii</span>
-<span class="o">......</span> <span class="n">CT_with_electrodes_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">json</span>
-<span class="o">......</span> <span class="n">anon_t2_mprage_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">nii</span>
-<span class="o">......</span> <span class="n">t2_mprage_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">json</span>
-<span class="o">......</span> <span class="n">anon_Bone_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">nii</span>
-<span class="o">......</span> <span class="n">Bone_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">json</span>
-<span class="o">....</span> <span class="o">/</span><span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span>
-<span class="o">......</span> <span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span><span class="n">_TRACEW</span><span class="o">.</span><span class="n">nii</span>
-<span class="o">......</span> <span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span><span class="n">_TRACEW</span><span class="o">.</span><span class="n">json</span>
-<span class="o">......</span> <span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span><span class="n">_TRACEW</span><span class="o">.</span><span class="n">bvec</span>
-<span class="o">......</span> <span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span><span class="n">_TRACEW</span><span class="o">.</span><span class="n">bval</span>
-<span class="o">......</span> <span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span><span class="n">_FA</span><span class="o">.</span><span class="n">nii</span>
-<span class="o">......</span> <span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span><span class="n">_FA</span><span class="o">.</span><span class="n">json</span>
-<span class="o">......</span> <span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span><span class="n">_ADC</span><span class="o">.</span><span class="n">nii</span>
-<span class="o">......</span> <span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span><span class="n">_ADC</span><span class="o">.</span><span class="n">json</span>
-<span class="o">......</span> <span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">nii</span>
-<span class="o">......</span> <span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">json</span>
-<span class="o">......</span> <span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">bvec</span>
-<span class="o">......</span> <span class="n">DTI_case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;.</span><span class="n">bval</span>
-<span class="o">....</span> <span class="o">/</span><span class="n">Implatation</span> <span class="n">schema</span>
-<span class="o">......</span> <span class="n">case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span><span class="n">_schema</span><span class="o">&lt;</span><span class="n">scheme_idx</span><span class="o">&gt;.</span><span class="n">png</span>
-<span class="o">......</span> <span class="n">case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;-</span><span class="n">implantation</span><span class="o">-</span><span class="nb">map</span><span class="o">&lt;</span><span class="n">map_idx</span><span class="o">&gt;.</span><span class="n">png</span>
-<span class="o">....</span> <span class="o">/</span><span class="n">SEEG</span>
-<span class="o">......</span> <span class="n">case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span><span class="n">EEG_</span><span class="o">&lt;</span><span class="n">hip_id</span><span class="o">&gt;</span><span class="n">_</span><span class="o">&lt;</span><span class="n">task</span><span class="o">&gt;.</span><span class="n">TRC</span>
-<span class="o">....</span> <span class="o">/</span><span class="n">Stimulation_data</span>
-<span class="o">......</span> <span class="n">case</span><span class="o">&lt;</span><span class="n">case_nb</span><span class="o">&gt;</span><span class="n">EEG_</span><span class="o">&lt;</span><span class="n">stim_run</span><span class="o">&gt;&lt;</span><span class="n">task</span><span class="o">&gt;.</span><span class="n">TRC</span>
+<div class="highlight-text notranslate" id="labelling-structure"><div class="highlight"><pre><span></span>/Data_for_electrodes_labelling
+.. /Case&lt;case_nb&gt;
+.... /Anatomical_data
+...... anon_t1_mprage_case&lt;case_nb&gt;.nii
+...... t1_mprage_case&lt;case_nb&gt;.json
+...... anon_CT_with_electrodes_case&lt;case_nb&gt;.nii
+...... CT_with_electrodes_case&lt;case_nb&gt;.json
+...... anon_t2_mprage_case&lt;case_nb&gt;.nii
+...... t2_mprage_case&lt;case_nb&gt;.json
+...... anon_Bone_case&lt;case_nb&gt;.nii
+...... Bone_case&lt;case_nb&gt;.json
+.... /DTI_case&lt;case_nb&gt;
+...... DTI_case&lt;case_nb&gt;_TRACEW.nii
+...... DTI_case&lt;case_nb&gt;_TRACEW.json
+...... DTI_case&lt;case_nb&gt;_TRACEW.bvec
+...... DTI_case&lt;case_nb&gt;_TRACEW.bval
+...... DTI_case&lt;case_nb&gt;_FA.nii
+...... DTI_case&lt;case_nb&gt;_FA.json
+...... DTI_case&lt;case_nb&gt;_ADC.nii
+...... DTI_case&lt;case_nb&gt;_ADC.json
+...... DTI_case&lt;case_nb&gt;.nii
+...... DTI_case&lt;case_nb&gt;.json
+...... DTI_case&lt;case_nb&gt;.bvec
+...... DTI_case&lt;case_nb&gt;.bval
+.... /Implatation schema
+...... case&lt;case_nb&gt;_schema&lt;scheme_idx&gt;.png
+...... case&lt;case_nb&gt;-implantation-map&lt;map_idx&gt;.png
+.... /SEEG
+...... case&lt;case_nb&gt;EEG_&lt;hip_id&gt;_&lt;task&gt;.TRC
+.... /Stimulation_data
+...... case&lt;case_nb&gt;EEG_&lt;stim_run&gt;&lt;task&gt;.TRC
 </pre></div>
 </div>
 <center>

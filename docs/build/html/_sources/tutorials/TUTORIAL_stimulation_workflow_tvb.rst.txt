@@ -9,6 +9,35 @@
 Simulation workflow with The Virtual Brain
 ********************************************
 
+Disclaimer
+==========
+
+The methods and software used in this tutorial have not been certified for clinical practice and should be considered for 
+research purposes only.  
+
+
+Requirements
+=============
+
+There are no technical requirements to follow this tutorial because the dataset and software are available on the HIP.
+
+HIP software used in this tutorial:
+
+	* :doc:`The Virtual Brain</applications/APP_The_Virtual_Brain>`
+
+HIP dataset used in this tutorial:
+
+	* "tvb-preprocessed-tutorial-data" located in the shared :ref:`tutorial_data <tutorial_data>` folder.
+	
+Prepare the working environment
+==================================
+
+This tutorial requires to use The Virtual Brain, which is available on the HIP, and it is advised to initiate a new Desktop.
+Please, refer to the :doc:`How to use Desktops and run applications from the App Catalog </guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>` guide if you need help with this step.
+
+Simulation workflow
+=========================
+
 .. admonition:: Jupyter Notebook
 
    Once The Virtual Brain app has started, you can view this tutorial in the form of an interactive Jupyter Notebook by

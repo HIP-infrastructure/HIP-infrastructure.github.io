@@ -18,10 +18,10 @@ Data files
 The dataset is stored in a folder called “`Epimap tutorial dataset <https://thehip.app/apps/files/?dir=/tutorial_data/Epimap%20tutorial%20dataset&fileid=717246>`_” located inside the "*tutorial_data*" folder
 accessible from the Private Space. It includes the following files:
 
-	* anat/MRI/3DT1\*_deface.nii: Subject T1 MRI before and after SEEG implantation, de-identified with FreeSurfer's mri_deface
-	* anat/MRI/brainvisa: Cortical surface extracted with BrainVISA 4.5
-	* anat/implantation/\*.txt: Positions of the sEEG contacts in various formats (MNI coordinates or subjecy coordinates)
-	* seeg/SZ*.TRC: Seizure recordings in Micromed format, one seizure per file
+	* /anat/MRI/3DT1\*_deface.nii: Subject T1 MRI before and after SEEG implantation, de-identified with FreeSurfer's mri_deface
+	* /anat/MRI/brainvisa: Cortical surface extracted with BrainVISA 4.5
+	* /anat/implantation/\*.txt: Positions of the sEEG contacts in various formats (MNI coordinates or subjecy coordinates)
+	* /seeg/SZ*.TRC: Seizure recordings in Micromed format, one seizure per file
 	
 It can also be downloaded from the original publisher on `f-tract.eu <https://f-tract.eu/ImaGIN_datasets/tutorial_epimap>`_.
 

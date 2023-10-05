@@ -10,7 +10,7 @@
 
 .. warning::
 
-    The COGEPISTIM dataset is not yet available on the HIP.
+    The COGEPISTIM dataset is available in a `dedicated Collaborative Space <https://thehip.app/apps/hip/projects/HIP-COGEPISTIM>`_ with restricted access.
 
 COGEPISTIM dataset
 ********************
@@ -77,7 +77,7 @@ The */ses-preimpXX*, */ses-postimpXX*, and */ses-postopXX* session folders corre
 
 .. _coge_structure:
 
-::
+.. code-block:: text
 
 	/raw
 	.. dataset_description.json
@@ -414,21 +414,6 @@ The F-TRACT project, whose code has been used to preprocess the data, has receiv
 
 This reseach was made in collaboration with `Aix Marseille University <https://www.univ-amu.fr/>`_, `Université Grenoble Alpes <https://www.univ-grenoble-alpes.fr/>`_, `CHU Grenoble Alpes <https://www.chu-grenoble.fr/>`_,
 `University Hospital of Lyon (Hospices Civils de Lyon) <https://www.chu-lyon.fr/>`_ and `Lausanne University Hospital (Centre Hospitalier Universitaire Vaudois) <https://www.chuv.ch/fr/chuv-home>`_.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 References
