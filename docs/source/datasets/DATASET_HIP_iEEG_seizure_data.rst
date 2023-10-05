@@ -7,6 +7,9 @@
 HIP iEEG seizure dataset
 *************************
 
+Description
+===========
+
 HIP iEEG seizure data is a curated collection of neuroimaging and iEEG data from 11 patients as of September 28, 2023. This dataset was created by compiling iEEG data from seizure occurrences in patients who underwent phase 2 presurgical investigation using a SEEG approach. 
 
 HIP iEEG seizure data consist of:
