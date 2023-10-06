@@ -13,10 +13,9 @@ Data for electrodes labelling
 Description
 ===========
 
-This dataset includes imaging data and SEEG recordings for 3 subjects. Data include pre- and post- implantation
-imaging data (T1, T2, CT, braincase, DTI) and SEEG recordings (ictal, interictal, sleep, electrical stimulation)
+This dataset includes imaging data and SEEG recordings for 3 subjects. Data include pre- and post- implantation volumes
+(T1, T2, CT, braincase, DTI) and SEEG acquisitions (ictal, interictal, sleep, electrical stimulation)
 with corresponding implantation scheme.
-
 The dataset is stored in a folder called “`Data_for_electrodes_labelling <https://thehip.app/apps/files/?dir=/tutorial_data/Data_for_electrodes_labelling&fileid=717735>`_” located inside the "*tutorial_data*" folder
 accessible from the Private Space.
 

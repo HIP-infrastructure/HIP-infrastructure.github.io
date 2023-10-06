@@ -37,13 +37,13 @@ Collaborative projects are the only way to share data between users from differe
 Video guide
 ------------
 
-The following video guide (not yet available) serves as an introduction to Collaborative Projects:  
+The following video guide (4'59'') serves as an introduction to Collaborative Projects:  
 
 .. raw:: html
 
    <center>	
-   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/HIP%20Guide%20-%20Thumbnail%20-%20Blank.png" controls>
-   <source src="todo.mp4" type="video/mp4">
+   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Projects/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Projects.png" controls>
+   <source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Projects/Videos/HIP%20Guide%20-%20Projects.mp4" type="video/mp4">
    Your browser does not support the video tag.
    </video>
    </center>

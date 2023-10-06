@@ -14,7 +14,6 @@ Description
 ===========
 
 This dataset includes 1 subject with pre- and post- implantation imaging data (T1, DTI) and SEEG data recorded while performing a cognitive task.
-
 The dataset is stored in a folder called “`iEEG_task_cognitive <https://thehip.app/apps/files/?dir=/tutorial_data/iEEG_task_cognitive&fileid=715791>`_” located inside the "*tutorial_data*" folder
 accessible from the Private Space.
 
