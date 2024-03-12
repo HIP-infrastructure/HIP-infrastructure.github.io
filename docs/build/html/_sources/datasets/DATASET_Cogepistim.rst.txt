@@ -415,6 +415,13 @@ The F-TRACT project, whose code has been used to preprocess the data, has receiv
 This reseach was made in collaboration with `Aix Marseille University <https://www.univ-amu.fr/>`_, `Université Grenoble Alpes <https://www.univ-grenoble-alpes.fr/>`_, `CHU Grenoble Alpes <https://www.chu-grenoble.fr/>`_,
 `University Hospital of Lyon (Hospices Civils de Lyon) <https://www.chu-lyon.fr/>`_ and `Lausanne University Hospital (Centre Hospitalier Universitaire Vaudois) <https://www.chuv.ch/fr/chuv-home>`_.
 
+Patches
+=========
+
+V1.1
+-----
+
+Improved *\*_ieeg.vmrk* files associated with stimulation SEEG data so the events match those found in the associated *\*_events.tsv* file.
 
 References
 ==========
