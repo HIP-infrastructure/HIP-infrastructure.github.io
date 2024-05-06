@@ -421,7 +421,14 @@ Patches
 V1.1
 -----
 
-Improved *\*_ieeg.vmrk* files associated with stimulation SEEG data so the events match those found in the associated *\*_events.tsv* file.
+	* Improved *\*_ieeg.vmrk* files associated with stimulation SEEG data so the events match those found in the associated *\*_events.tsv* file.
+
+V1.2
+-----
+
+	* Fixed commas in the notes of stimulation SEEG data to prevent breaking .vmrk files.
+	* Updated the notes for '0Hz' stimulation in certain SEEG data to reflect the correct stimulation frequency.
+
 
 References
 ==========
