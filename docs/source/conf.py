@@ -19,7 +19,7 @@ import sphinx_rtd_theme
 
 project = 'HIP user documentation'
 version = '2.0'
-copyright = '2023, The Human Intracerebral EEG Platform. Contact: support@thehip.app'
+copyright = '2022-2024, The Human Intracerebral EEG Platform. Contact: support@thehip.app'
 author = 'HIP documentation team'
 
 
@@ -33,7 +33,7 @@ author = 'HIP documentation team'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-'sphinx_rtd_theme',
+    'sphinx_rtd_theme',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -66,8 +66,8 @@ html_logo = 'art/hip_logo.png'
 # Read the doc
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
-'style_nav_header_background': 'black',
-'includehidden': True
+    'style_nav_header_background': 'black',
+    'includehidden': True
 }
 
 # Material
@@ -88,3 +88,11 @@ html_theme_options = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static'] #['_static'] []
 html_css_files = ["custom.css"]
+
+html_context = {
+    "display_github": True, # Integrate GitHub
+    "github_user": "HIP-infrastructure", # Username
+    "github_repo": "HIP-infrastructure.github.io", # Repo name
+    "github_version": "master", # Version
+    "conf_py_path": "/source/", # Path in the checkout to the docs root
+}
