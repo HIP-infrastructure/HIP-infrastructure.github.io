@@ -46,29 +46,29 @@ All HIP users are member of at least one group corresponding to pre-identified i
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
 	| HIP group      | Provider                                                                                                  |  Group leader                 |
 	+================+===========================================================================================================+===============================+
-	| **AMU-NS**     | Aix-Marseille University, Institut de Neurosciences des Systèmes, Neurostimulation team, France           | Dr. Olivier David             | 
+	| **AMU-NS**     | Aix-Marseille University, Institut de Neurosciences des Systèmes, Neurostimulation team, France           | Dr Olivier David              |
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
-	| **AMU-TNG**    | Aix-Marseille University, Institut de Neurosciences des Systèmes, Theoretical Neurosciences Group, France | Dr. Viktor Jirsa              | 
+	| **AMU-TNG**    | Aix-Marseille University, Institut de Neurosciences des Systèmes, Theoretical Neurosciences Group, France | Dr Viktor Jirsa               |
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
-	| **APHM**       | University Hospitals of Marseille, Epilepsy department, France                                            | Pr. Fabrice Bartolomei        | 
+	| **APHM**       | University Hospitals of Marseille, Epilepsy department, France                                            | Prof. Fabrice Bartolomei      |
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
-	| **CHRU-LILLE** | Centre Hospitalier Universitaire de Lille, Epilepsy unit, France                                          | Pr. Philippe Derambure        | 
+	| **CHRU-LILLE** | Centre Hospitalier Universitaire de Lille, Epilepsy unit, France                                          | Prof. Philippe Derambure      |
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
-	| **CHU-LYON**   | Hospices Civils de Lyon - Centre Hospitalier Universitaire, France                                        | Pr. Alexis Arzimanoglou       | 
+	| **CHU-LYON**   | Hospices Civils de Lyon - Centre Hospitalier Universitaire, France                                        | Prof. Alexis Arzimanoglou     |
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
-	| **CHUV**       | Centre Hospitalier Universitaire de Lausanne, Swiss                                                       | Pr. Philippe Ryvlin           | 
+	| **CHUV**       | Centre Hospitalier Universitaire de Lausanne, Switzerland                                                 | Prof. Philippe Ryvlin         |
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
-	| **HUS**        | Helsinki University Hospital, Hospital Disctrict of Helsinki and Uusimaa, Finland                         | Pr. Eeeva-Liisa Metsähonkala  | 
+	| **HUS**        | Helsinki University Hospital, Hospital Disctrict of Helsinki and Uusimaa, Finland                         | Prof. Eeva-Liisa Metsähonkala |
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
-	| **OU-SSE**     | The Norwegian National Unit for Epilepsy, Oslo universitetssykehus, Norway                                | Pr. Morten Lossius            | 
+	| **OU-SSE**     | The Norwegian National Unit for Epilepsy, Oslo universitetssykehus, Norway                                | Prof. Morten Lossius          |
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
-	| **PSMAR**      | Hospital del Mar-Parc de Salut Mar, Spain                                                                 | Pr. Rodrigo Rocamora Zuniga   | 
+	| **PSMAR**      | Hospital del Mar-Parc de Salut Mar, Spain                                                                 | Prof. Rodrigo Rocamora Zuniga |
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
-	| **SAUH**       | St. Anne's University Hospital, Czech Republic                                                            | Pr. Milan Brazdil             | 
+	| **SAUH**       | St. Anne's University Hospital, Czech Republic                                                            | Prof. Milan Brazdil           |
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
-	| **UCBL**       | Université Claude Bernard Lyon 1, France                                                                  | Dr. Jean-Philippe Lachaux     | 
+	| **UCBL**       | Université Claude Bernard Lyon 1, France                                                                  | Dr Jean-Philippe Lachaux      |
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
-	| **UMCU**       | University Medical Center Utrecht (Brain Center Rudolf Magnus), Netherlands                               | Pr. Kees Braun                | 
+	| **UMCU**       | University Medical Center Utrecht (Brain Center Rudolf Magnus), Netherlands                               | Prof. Kees Braun              |
 	+----------------+-----------------------------------------------------------------------------------------------------------+-------------------------------+
 
 .. admonition:: Unlisted institutions
