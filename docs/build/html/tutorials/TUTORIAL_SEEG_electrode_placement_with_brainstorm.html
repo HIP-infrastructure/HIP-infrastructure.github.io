@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SEEG electrode placement with Brainstorm &mdash; HIP user documentation  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=d0ebb8d1" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -126,7 +129,7 @@
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">SEEG electrode placement with Brainstorm</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm.rst.txt" rel="nofollow"> View page source</a>
+              <a href="https://github.com/HIP-infrastructure/HIP-infrastructure.github.io/blob/master/source/tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -135,20 +138,20 @@
            <div itemprop="articleBody">
              
   <section id="seeg-electrode-placement-with-brainstorm">
-<h1>SEEG electrode placement with Brainstorm<a class="headerlink" href="#seeg-electrode-placement-with-brainstorm" title="Permalink to this headline"></a></h1>
+<h1>SEEG electrode placement with Brainstorm<a class="headerlink" href="#seeg-electrode-placement-with-brainstorm" title="Link to this heading"></a></h1>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../_images/tutorial_seeg_placement_brainstorm_header.png"><img alt="../_images/tutorial_seeg_placement_brainstorm_header.png" src="../_images/tutorial_seeg_placement_brainstorm_header.png" style="width: 600px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>3D visualization of SEEG electrodes.</strong> <em>SEEG electrodes have been generated and placed using</em> <a class="reference internal" href="../applications/APP_Brainstorm.html"><span class="doc">Brainstorm</span></a> <em>.</em></span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text"><strong>3D visualization of SEEG electrodes.</strong> <em>SEEG electrodes have been generated and placed using</em> <a class="reference internal" href="../applications/APP_Brainstorm.html"><span class="doc">Brainstorm</span></a> <em>.</em></span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <section id="disclaimer">
-<h2>Disclaimer<a class="headerlink" href="#disclaimer" title="Permalink to this headline"></a></h2>
+<h2>Disclaimer<a class="headerlink" href="#disclaimer" title="Link to this heading"></a></h2>
 <p>The methods and software used in this tutorial have not been certified for clinical practice and should be considered for
 research purposes only.</p>
 </section>
 <section id="about-this-tutorial">
-<h2>About this tutorial<a class="headerlink" href="#about-this-tutorial" title="Permalink to this headline"></a></h2>
+<h2>About this tutorial<a class="headerlink" href="#about-this-tutorial" title="Link to this heading"></a></h2>
 <p>The objective of this tutorial is to guide HIP users in placing SEEG electrodes on a post-implantation volume using Brainstorm.
 It primarily consists of a video demonstration and should be viewed as an introductory tutorial because it does not go into all the intricacies of
 the placement of SEEG electrodes.</p>
@@ -162,7 +165,7 @@ please refer to the following official tutorials:</p>
 </div></blockquote>
 </section>
 <section id="requirements">
-<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline"></a></h2>
+<h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading"></a></h2>
 <p>There are no technical requirements to follow this tutorial because the dataset and software are available on the HIP.</p>
 <p>HIP software used in this tutorial:</p>
 <blockquote>
@@ -178,7 +181,7 @@ please refer to the following official tutorials:</p>
 </div></blockquote>
 </section>
 <section id="prepare-the-working-environment">
-<span id="prepare-environment-seeg-placement-brainstorm"></span><h2>Prepare the working environment<a class="headerlink" href="#prepare-the-working-environment" title="Permalink to this headline"></a></h2>
+<span id="prepare-environment-seeg-placement-brainstorm"></span><h2>Prepare the working environment<a class="headerlink" href="#prepare-the-working-environment" title="Link to this heading"></a></h2>
 <p>This tutorial relies on data available in the <a class="reference internal" href="../datasets/DATASET_Epimap.html"><span class="doc">Epimap tutorial dataset</span></a>,
 and the following file will be used:</p>
 <blockquote>
@@ -192,7 +195,7 @@ It is also advised to initiate a new Desktop.
 Pleases refer to the <a class="reference internal" href="../guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html"><span class="doc">How to use Desktops and run applications from the App Catalog</span></a> guide if you need help with this step.</p>
 </section>
 <section id="place-seeg-electrodes-with-brainstorm">
-<span id="place-seeg-brainstorm"></span><h2>Place SEEG electrodes with Brainstorm<a class="headerlink" href="#place-seeg-electrodes-with-brainstorm" title="Permalink to this headline"></a></h2>
+<span id="place-seeg-brainstorm"></span><h2>Place SEEG electrodes with Brainstorm<a class="headerlink" href="#place-seeg-electrodes-with-brainstorm" title="Link to this heading"></a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Applications running in a Desktop environment have access to your Private Space data under the <em>/home/&lt;HIP_USER&gt;/nextcloud</em> directory.
@@ -229,7 +232,7 @@ Your browser does not support the video tag.
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, The Human Intracerebral EEG Platform. Contact: support@thehip.app.</p>
+    <p>&#169; Copyright 2022-2024, The Human Intracerebral EEG Platform. Contact: support@thehip.app.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
