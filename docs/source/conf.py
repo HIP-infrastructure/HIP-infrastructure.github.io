@@ -15,6 +15,8 @@
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
 
+assert (7, 3) <= sphinx_rtd_theme.sphinx_version <= (8, 0), "Please upgrade Sphinx"
+
 # -- Project information -----------------------------------------------------
 
 project = 'HIP user documentation'
@@ -94,5 +96,5 @@ html_context = {
     "github_user": "HIP-infrastructure", # Username
     "github_repo": "HIP-infrastructure.github.io", # Repo name
     "github_version": "master", # Version
-    "conf_py_path": "/", # Path in the checkout to the docs root
+    "conf_py_path": "/docs/source/", # Path in the checkout to the docs root
 }
