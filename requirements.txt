@@ -1,3 +1,3 @@
-Sphinx
-sphinx-autobuild<2024.04.12 # see the issue 155 in that project
-sphinx-rtd-theme
+Sphinx>=7.3,<8
+sphinx-autobuild
+sphinx-rtd-theme>=2.0,<3
