@@ -102,6 +102,7 @@ It contains the following sections:
    MNE-Python<applications/APP_MNE>
    MRI Deface<applications/APP_MRI_Deface>
    MRIcroGL<applications/APP_MRIcroGL>
+   Mrtrix3<applications/APP_Mrtrix3>
    NiftyReg<applications/APP_NiftyReg>
    RStudio<applications/APP_RStudio>
    The Virtual Brain<applications/APP_The_Virtual_Brain>
