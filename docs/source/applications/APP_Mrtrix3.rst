@@ -7,9 +7,9 @@ Official resources
 ===================
 
   * `Mrtrix3 website <https://www.mrtrix3.org/>`_
-	* `Mrtrix3 documentation <https://mrtrix.readthedocs.io/en/latest/>`_
-	* `Mrtrix3 download <https://www.mrtrix.org/download/>`_ 
-	
+  * `Mrtrix3 documentation <https://mrtrix.readthedocs.io/en/latest/>`_
+  * `Mrtrix3 download <https://www.mrtrix.org/download/>`_
+
 References
 ===========
 
