@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AnyWave &mdash; HIP user documentation  documentation</title>
+  <title>Mrtrix3 &mdash; HIP user documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=d0ebb8d1" />
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="BIDS Manager" href="APP_BIDS_Manager.html" />
-    <link rel="prev" title="3D Slicer" href="APP_3D_Slicer.html" /> 
+    <link rel="next" title="NiftyReg" href="APP_NiftyReg.html" />
+    <link rel="prev" title="MRIcroGL" href="APP_MRIcroGL.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -82,11 +82,7 @@
 <p class="caption" role="heading"><span class="caption-text">HIP apps</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="APP_3D_Slicer.html">3D Slicer</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">AnyWave</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#official-resources">Official resources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="APP_AnyWave.html">AnyWave</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_BIDS_Manager.html">BIDS Manager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_Brainstorm.html">Brainstorm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_dcm2niix.html">dcm2niix</a></li>
@@ -103,7 +99,11 @@
 <li class="toctree-l1"><a class="reference internal" href="APP_MNE.html">MNE-Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_MRI_Deface.html">MRI Deface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_MRIcroGL.html">MRIcroGL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="APP_Mrtrix3.html">Mrtrix3</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Mrtrix3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#official-resources">Official resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="APP_NiftyReg.html">NiftyReg</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_RStudio.html">RStudio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="APP_The_Virtual_Brain.html">The Virtual Brain</a></li>
@@ -125,9 +125,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">AnyWave</li>
+      <li class="breadcrumb-item active">Mrtrix3</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/HIP-infrastructure/HIP-infrastructure.github.io/blob/master/docs/source/applications/APP_AnyWave.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/HIP-infrastructure/HIP-infrastructure.github.io/blob/master/docs/source/applications/APP_Mrtrix3.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -135,28 +135,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="anywave">
-<h1>AnyWave<a class="headerlink" href="#anywave" title="Link to this heading"></a></h1>
-<p>AnyWave is a software designed to easily open and view data recorded by EEG or MEG acquisition systems.
-AnyWave is modular and can load additionnal plug-ins to enhance its features and capabilities (<a class="reference internal" href="#colombet-2015" id="id1"><span>[Colombet_2015]</span></a>).</p>
+  <section id="mrtrix3">
+<h1>Mrtrix3<a class="headerlink" href="#mrtrix3" title="Link to this heading"></a></h1>
+<p>MRtrix3 provides a set of tools to perform various types of diffusion MRI analyses, from various forms of tractography through to next-generation group-level analyses (<a class="reference internal" href="#tournier-2019" id="id1"><span>[Tournier_2019]</span></a>).</p>
 <section id="official-resources">
 <h2>Official resources<a class="headerlink" href="#official-resources" title="Link to this heading"></a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="reference external" href="https://meg.univ-amu.fr/wiki/AnyWave">AnyWave wiki</a></p></li>
-<li><p><a class="reference external" href="https://meg.univ-amu.fr/wiki/AnyWave:Tutorials">AnyWave tutorials</a></p></li>
-<li><p><a class="reference external" href="https://meg.univ-amu.fr/wiki/AnyWave:Download">AnyWave download</a></p></li>
-<li><p><a class="reference external" href="https://gitlab-dynamap.timone.univ-amu.fr/anywave/anywave">AnyWave GitLab</a></p></li>
-<li><p><a class="reference external" href="https://gitlab-dynamap.timone.univ-amu.fr/anywave/anywave/-/wikis/home">AnyWave GitLab’s wiki</a></p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://www.mrtrix3.org/">Mrtrix3 website</a></dt><dd><ul>
+<li><p><a class="reference external" href="https://mrtrix.readthedocs.io/en/latest/">Mrtrix3 documentation</a></p></li>
+<li><p><a class="reference external" href="https://www.mrtrix.org/download/">Mrtrix3 download</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </div></blockquote>
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
 <div role="list" class="citation-list">
-<div class="citation" id="colombet-2015" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Colombet_2015</a><span class="fn-bracket">]</span></span>
-<p>Colombet B, Woodman M, Badier JM, Bénar CG. AnyWave: a cross-platform and modular software for visualizing and processing electrophysiological signals. Journal of neuroscience methods 242., 2015, 118-26.</p>
+<div class="citation" id="tournier-2019" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Tournier_2019</a><span class="fn-bracket">]</span></span>
+<p>Tournier, J-Donald, et al. “MRtrix3: A fast, flexible and open software framework for medical image processing and visualisation.” Neuroimage 202 (2019): 116137.</p>
 </div>
 </div>
 </section>
@@ -166,8 +168,8 @@ AnyWave is modular and can load additionnal plug-ins to enhance its features and
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="APP_3D_Slicer.html" class="btn btn-neutral float-left" title="3D Slicer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="APP_BIDS_Manager.html" class="btn btn-neutral float-right" title="BIDS Manager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="APP_MRIcroGL.html" class="btn btn-neutral float-left" title="MRIcroGL" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="APP_NiftyReg.html" class="btn btn-neutral float-right" title="NiftyReg" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
