@@ -15,6 +15,18 @@ sudo apt-get install -y git
 sudo apt-get install -y python3-sphinx
 ```
 
+## Using dev container (VS Code)
+1. Read [Getting started](https://code.visualstudio.com/docs/devcontainers/containers#_getting-started) with dev containers.
+1. Open the command palette (Ctrl+Shift+P on Windows, Command+Shift+P on MacOS)
+1. Click on "Dev Containers: Open Folder in Container"
+1. Select the current folder
+1. Start typing "Ubuntu"
+1. Select "Ubuntu" container
+1. Accept the default release
+1. Select "Create Dev Container"
+1. Wait, this can take a while the first time you create a container
+1. Make sure that you are now in the dev container by looking at the bottom left of the VS Code window
+
 # How to use
 
 #### Copy the repository
@@ -47,6 +59,11 @@ make html
 ```
 
 You can then check the result by opening the `HIP-infrastructure.github.io/docs/build/html/index.html` file in any web browser.
+
+```bash
+open -a"your favorit browser" index.html
+```
+
 You will be able to navigate a local version of the website. If you are making several builds, don't forget to refresh the webpage you are viewing so the changes are taken into account. If this does not work, you may try to re-build the html pages from scratch using the commands:
 
 ```bash
