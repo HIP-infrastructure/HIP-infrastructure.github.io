@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to prepare and upload data to the HIP &mdash; HIP user documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=d0ebb8d1" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How to convert data to BIDS format" href="GUIDE_How_to_convert_data_to_BIDS_format.html" />
+    <link rel="prev" title="How to connect to the HIP portal and access its services" href="GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: black" >
+
+          
+          
+          <a href="../user_doc.html">
+            
+              <img src="../_static/HIP_LOGO_PRIMAIRE_RVB_Blanc.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Take me back to the welcome page</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Onboarding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../onboarding/hip_account.html">Get a HIP account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../onboarding/hip_services_overview.html">Services overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../onboarding/hip_desktops.html">Desktop and apps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../onboarding/hip_data_transfer.html">Data transfer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../onboarding/hip_tutorials.html">Tutorials overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../onboarding/hip_feedback.html">Feedback</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HIP guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_create_a_HIP_account.html">How to create a HIP account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services.html">How to connect to the HIP portal and access its services</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to prepare and upload data to the HIP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#before-uploading-data-to-the-hip">Before uploading data to the HIP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-data-controller-responsibilities">The Data Controller responsibilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-formats">File formats</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#uploading-data-to-the-hip">Uploading data to the HIP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-web-browser">Using the web browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-nextcloud-client">Using the Nextcloud client</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_convert_data_to_BIDS_format.html">How to convert data to BIDS format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog.html">How to use Desktops and run applications from the App Catalog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_transfer_data_from_Micromed_software_to_the_HIP.html">How to transfer data from Micromed software to the HIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html">How to use the HIP spaces and share data with other users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GUIDE_How_to_use_collaborative_projects.html">How to use Collaborative Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HIP tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm.html">SEEG electrode placement with Brainstorm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_SEEG_electrode_placement_with_3D_slicer.html">SEEG electrode placement with 3D Slicer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm.html">Epileptogenicity map computation with Brainstorm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_CCEP_computation_with_brainstorm.html">CCEP computation with Brainstorm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/TUTORIAL_stimulation_workflow_tvb.html">Simulation workflow with The Virtual Brain</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HIP datasets</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Epimap.html">Epimap tutorial dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Cogepistim.html">COGEPISTIM dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_Data_for_electrodes_labelling.html">Data for electrodes labelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_iEEG_task_cognitive.html">iEEG cognitive task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/DATASET_HIP_iEEG_seizure_data.html">HIP iEEG seizure dataset</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HIP apps</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_3D_Slicer.html">3D Slicer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_AnyWave.html">AnyWave</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_BIDS_Manager.html">BIDS Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_Brainstorm.html">Brainstorm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_dcm2niix.html">dcm2niix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_FileManager.html">FileManager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_Freesurfer.html">Freesurfer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_Frites.html">Frites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_FSL.html">FSL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_GARDEL.html">GARDEL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_HiBoP.html">HiBoP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_IntrAnat.html">IntrAnat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_LibreOffice.html">LibreOffice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_Localizer.html">Localizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_MATLAB.html">MATLAB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_MNE.html">MNE-Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_MRI_Deface.html">MRI Deface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_MRIcroGL.html">MRIcroGL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_Mrtrix3.html">Mrtrix3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_NiftyReg.html">NiftyReg</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_RStudio.html">RStudio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_The_Virtual_Brain.html">The Virtual Brain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_TRCAnonymizer.html">TRCAnonymizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../applications/APP_VisualStudioCode.html">Visual Studio Code</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: black" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../user_doc.html">HIP user documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../user_doc.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">How to prepare and upload data to the HIP</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/HIP-infrastructure/HIP-infrastructure.github.io/blob/master/docs/source/guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-prepare-and-upload-data-to-the-hip">
+<h1>How to prepare and upload data to the HIP<a class="headerlink" href="#how-to-prepare-and-upload-data-to-the-hip" title="Link to this heading"></a></h1>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/GUIDE_upload_hip.png"><img alt="../_images/GUIDE_upload_hip.png" src="../_images/GUIDE_upload_hip.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Upload data to the HIP.</strong> <em>Upload data directly from the web browser or using the Nextcloud client.</em></span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>A Data Transfer Agreement (DTA) has to be signed between the participating institution and the CHUV prior to any data transfer taking place.</p>
+<p>Data can only be uploaded in the Private Space of the HIP user doing the transfer. The Private Space enables the HIP user to curate the data to make
+them eligible for collaboration.
+Transferring data to the Collaborative or Public Spaces requires to adhere to the specifics of those spaces which are detailed in the
+<a class="reference internal" href="GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html"><span class="doc">how to use the HIP spaces and share data with other users</span></a> guide.
+It is not possible to upload or download data directly to or from the Collaborative or Public Spaces.</p>
+<div class="admonition-data-stored-on-the-hip admonition">
+<p class="admonition-title">Data stored on the HIP</p>
+<p>The HIP iEEG data is organized according to the FAIR principles within the ethics and regulatory frameworks that apply to medical personal data.
+User and application data on the HIP are primarily stored as files and folders either
+in the Private, Collaborative and Public Spaces.
+Please refer to the <a class="reference internal" href="GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users.html"><span class="doc">associated guide</span></a> for more information regarding the HIP spaces.</p>
+</div>
+<section id="before-uploading-data-to-the-hip">
+<h2>Before uploading data to the HIP<a class="headerlink" href="#before-uploading-data-to-the-hip" title="Link to this heading"></a></h2>
+<p>The HIP is an open-source European platform dedicated to Human intracerebral EEG data and
+only iEEG data and relevant health-related or research-related data should be uploaded to the platform.</p>
+<p>This includes but is not limited to:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>iEEG raw data, as well as the corresponding neuroimaging raw data used to identify the anatomical location of iEEG electrodes,
+all collected during clinical activities.</p></li>
+<li><p>Health-related data collected during clinical activities such as patients’ characteristics (e.g. age, gender, MRI findings, localization of the epileptogenic zone)
+and anatomical localization of iEEG recording leads.</p></li>
+<li><p>Research-related data specifically collected for a research purpose during iEEG (e.g. the  <a class="reference internal" href="../datasets/DATASET_Cogepistim.html"><span class="doc">COGEPISTIM dataset</span></a>),
+and typically informing on the behavioral performance of patients during the research protocol
+(e.g. seizure recording, functional electrical stimulation, neuroanatomical imaging, cognitive research tasks or response time).</p></li>
+</ul>
+</div></blockquote>
+<p>Data types and formats are not monitored or controlled, primarily due to the security principles of the HIP.
+Do not upload non-iEEG related data as it goes against HIP policy and such actions might be referred.</p>
+<div class="admonition-international-hip-registry admonition">
+<p class="admonition-title">International HIP Registry</p>
+<p>All HIP data are included in the international HIP Registry coordinated by the CHUV Project Leader and Management Team,
+providing a sustained regulatory framework for collecting and storing these data.</p>
+</div>
+<section id="the-data-controller-responsibilities">
+<span id="data-controller-responsabilities"></span><h3>The Data Controller responsibilities<a class="headerlink" href="#the-data-controller-responsibilities" title="Link to this heading"></a></h3>
+<p>The HIP user uploading data from patients onto the HIP is affiliated with at least one of the <a class="reference internal" href="GUIDE_How_to_create_a_HIP_account.html#list-identified-hip-groups"><span class="std std-ref">HIP groups</span></a>
+and will qualify as Data Controller for the corresponding data.</p>
+<p>It is the Data Controller responsibility to secure proper data anonymization.
+Data has to be pseudonymised/anonymised prior to being stored on the HIP platform depending on the DTA.</p>
+<p>Data will be uploaded in the Data Controller’s Private Space, where they cannot be shared with HIP users from other iEEG centers,
+yet can be processed with all available HIP functionalities.</p>
+</section>
+<section id="file-formats">
+<h3>File formats<a class="headerlink" href="#file-formats" title="Link to this heading"></a></h3>
+<p>The HIP primarily relies on BIDS as a common format and database and it is strongly recommended to upload data following BIDS guidelines.
+For more information regarding the BIDS standard, please refer to the <a class="reference internal" href="GUIDE_How_to_convert_data_to_BIDS_format.html#bids-introduction"><span class="std std-ref">Brain Imaging Data Structure section</span></a> of the
+<a class="reference internal" href="GUIDE_How_to_convert_data_to_BIDS_format.html"><span class="doc">How to convert data to BIDS format</span></a> guide.</p>
+<p>Uploaded data can be processed with all available HIP functionalities but not be shared in the Collaborative of Public Space
+unless they adhere to the specifics of those spaces which include BIDS validation.</p>
+<p>The HIP provides a fully integrated tool called <a class="reference internal" href="GUIDE_How_to_convert_data_to_BIDS_format.html#bids-importer"><span class="std std-ref">BIDS importer</span></a> which can be used to import the uploaded data
+into a (new) BIDS database, taking care of data pseudonymization, normalization of formats, samplings, coordinates and other relevant metadata.
+Note that the BIDS importer can only convert a limited number of <a class="reference internal" href="GUIDE_How_to_convert_data_to_BIDS_format.html#bids-importer-formats"><span class="std std-ref">input formats</span></a> and covers a subset of
+<a class="reference internal" href="GUIDE_How_to_convert_data_to_BIDS_format.html#bids-importer-dtypes"><span class="std std-ref">BIDS data types</span></a>.</p>
+</section>
+</section>
+<section id="uploading-data-to-the-hip">
+<span id="uploading-data"></span><h2>Uploading data to the HIP<a class="headerlink" href="#uploading-data-to-the-hip" title="Link to this heading"></a></h2>
+<p>There are currently 2 solutions for uploading data to the HIP: either directly from the web browser or using the Nextcloud client.
+It is advised to use the Nextcloud client as it uses WebDAV protocol, a more robust way to upload large/numerous files.</p>
+<section id="using-the-web-browser">
+<h3>Using the web browser<a class="headerlink" href="#using-the-web-browser" title="Link to this heading"></a></h3>
+<p>It is possible to upload data by simply selecting the files and folders to transfer and drag and drop
+them into the web browser while the Private Space web page is opened. Alternatively, it is possible to use the dedicated <em>Upload file</em>
+button on the said web page to upload data. Both solutions are illustrated in the video clips below:</p>
+<center>
+<video width="340" controls loop autoplay muted>
+<source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Upload%20data/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Upload_clip_dragndrop.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<video width="340" controls loop autoplay muted>
+<source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Upload%20data/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Upload_clip_select.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Note that closing the web browser before the uploading/downloading process is over will abort the operation and the transfer
+will not resume where it stopped.</p>
+</section>
+<section id="using-the-nextcloud-client">
+<span id="upload-nextcloud"></span><h3>Using the Nextcloud client<a class="headerlink" href="#using-the-nextcloud-client" title="Link to this heading"></a></h3>
+<p>The Nextcloud client uses the WebDAV protocol to seamlessly synchronize data between the HIP user’s Private Space and the local desktop where
+the client is installed.</p>
+<p>The following video guide (2’27’’) shows how to download, install and configure the Nextcloud client to set up a synchronized folder:</p>
+<center>
+<video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Upload%20data/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Upload%20data.png" controls>
+<source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Upload%20data/Videos/HIP%20Guide%20-%20Thumbnail%20-%20Upload%20data.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</center><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services.html" class="btn btn-neutral float-left" title="How to connect to the HIP portal and access its services" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="GUIDE_How_to_convert_data_to_BIDS_format.html" class="btn btn-neutral float-right" title="How to convert data to BIDS format" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2025, The Human Intracerebral EEG Platform. Contact: support@thehip.app.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
