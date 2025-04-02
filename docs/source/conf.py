@@ -53,7 +53,7 @@ html_extra_path = ['welcome.html']
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
-html_logo = 'art/hip_logo.png'
+html_logo = '_static/HIP_LOGO_PRIMAIRE_RVB_Blanc.png'
 
 # Cloud
 #html_theme = "cloud" # cloud
@@ -69,8 +69,11 @@ html_logo = 'art/hip_logo.png'
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
     'style_nav_header_background': 'black',
-    'includehidden': True
+    'includehidden': True,
+    'logo_only': True
 }
+
+master_doc = 'user_doc'
 
 # Material
 #html_theme = "sphinx_material"

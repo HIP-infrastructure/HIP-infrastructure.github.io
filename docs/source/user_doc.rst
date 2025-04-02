@@ -1,12 +1,4 @@
-.. HIP user documentation documentation master file, created by
-   sphinx-quickstart on Tue Feb 15 17:05:36 2022.
-
 .. include:: hip_header_msg.rst
-
-.. figure:: /art/hip_documentation_header.png
-	:align: center	
-	
-|
 	
 The `HIP <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_ is an open-source platform designed for large scale and optimized collection, storage, curation, sharing
 and analysis of multiscale Human iEEG data at the international level. The HIP covers the entire field of iEEG-based research; i.e. multi-scale investigation of cognition, consciousness, connectomics and related disorders.
@@ -40,13 +32,23 @@ It contains the following sections:
 	* **HIP Apps**: A catalog of applications is available to explore and process data. Through the use of softwares,
 	  HIP users agree to be bound by the terms and conditions of their respective licences. Softwares are provided “as is”
 	  and without warranty of any kind, express, implied or otherwise.
-	  
+
+.. toctree:: 
+   :hidden:
+
+   Take me back to the welcome page<index>
 
 .. toctree::
-   :hidden:   
-   
-   > > > > > > > Onboarding < < < < < < < <hip_onboarding>
-   
+   :caption: Onboarding 
+   :hidden:
+
+   Get a HIP account<onboarding/hip_account>
+   Services overview<onboarding/hip_services_overview>
+   Desktop and apps<onboarding/hip_desktops>
+   Data transfer<onboarding/hip_data_transfer>
+   Tutorials overview<onboarding/hip_tutorials>
+   Feedback<onboarding/hip_feedback>
+
 .. toctree::
    :caption: HIP guides
    :hidden:
@@ -108,10 +110,5 @@ It contains the following sections:
    The Virtual Brain<applications/APP_The_Virtual_Brain>
    TRCAnonymizer<applications/APP_TRCAnonymizer>
    Visual Studio Code<applications/APP_VisualStudioCode>
-   
-.. comment:
-   CCEP Manager<applications/APP_CCEP_Manager>
-   
-   
    
 .. include:: hip_acknowledgement.rst

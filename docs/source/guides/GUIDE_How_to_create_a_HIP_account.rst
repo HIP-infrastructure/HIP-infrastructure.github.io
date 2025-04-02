@@ -2,12 +2,6 @@
 
 How to create a HIP account
 *****************************
-
-.. figure:: /guides/art/GUIDE_How_to_create_a_HIP_account/GUIDE_create_account.png
-	:width: 800px
-	:align: center
-
-	**The HIP.** *A platform for state-of-the-art processing and international sharing of HUMAN iEEG data.*
 	
 The HIP is fully integrated in `EBRAINS <https://ebrains.eu/>`_ and an EBRAINS account is required in order to access the HIP 
 and use all of its services. 
