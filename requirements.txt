@@ -1,3 +1,4 @@
-Sphinx>=7.3,<8
-sphinx-autobuild
-sphinx-rtd-theme>=2.0,<3
+Sphinx==8.1.3
+sphinx-autobuild==2024.10.3
+sphinx-rtd-theme==3.0.2
+sphinx-new-tab-link==0.8.0

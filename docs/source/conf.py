@@ -14,14 +14,13 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
-
-assert (7, 3) <= sphinx_rtd_theme.sphinx_version <= (8, 0), "Please upgrade Sphinx"
+from datetime import datetime
 
 # -- Project information -----------------------------------------------------
 
 project = 'HIP user documentation'
 version = '2.0'
-copyright = '2022-2024, The Human Intracerebral EEG Platform. Contact: support@thehip.app'
+copyright = '2022-' + str(datetime.now().year) + ', The Human Intracerebral EEG Platform. Contact: support@thehip.app'
 author = 'HIP documentation team'
 
 
@@ -46,6 +45,7 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+html_extra_path = ['welcome.html']
 
 # -- Options for HTML output -------------------------------------------------
 
