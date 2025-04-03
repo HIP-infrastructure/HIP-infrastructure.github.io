@@ -1,4 +1,4 @@
-.. include:: hip_header_msg.rst
+.. include:: ../hip_header_msg.rst
 
 
 Tutorials
