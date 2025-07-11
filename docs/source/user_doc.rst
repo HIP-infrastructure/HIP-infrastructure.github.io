@@ -1,5 +1,9 @@
 .. include:: hip_header_msg.rst
-	
+
+====================================
+The Human iEEG Platform
+====================================
+
 The `HIP <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_ is an open-source platform designed for large scale and optimized collection, storage, curation, sharing
 and analysis of multiscale Human iEEG data at the international level. The HIP covers the entire field of iEEG-based research; i.e. multi-scale investigation of cognition, consciousness, connectomics and related disorders.
 
@@ -19,9 +23,10 @@ In line with the `FAIR principles <https://www.go-fair.org/fair-principles/>`_ ,
    </center>
 
 |
-	
+
+==================
 User documentation
-**********************
+==================
 
 All user documentation is accessible from the table of contents.
 It contains the following sections:
