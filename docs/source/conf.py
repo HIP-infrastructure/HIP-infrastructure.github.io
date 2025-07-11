@@ -71,6 +71,7 @@ html_theme_options = {
     'sticky_navigation': False,
     'style_nav_header_background': 'black',
     'logo_only': True,
+    'prev_next_buttons_location': None
 }
 
 master_doc = 'user_doc'
