@@ -8,5 +8,5 @@ ONBOARDING
 .. include:: hip_services_overview.rst
 .. include:: hip_desktops.rst
 .. include:: hip_data_transfer.rst
-.. nclude:: hip_tutorials.rst
+.. include:: hip_tutorials.rst
 .. include:: hip_feedback.rst
