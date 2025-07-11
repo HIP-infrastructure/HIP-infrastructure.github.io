@@ -1,7 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
 iEEG cognitive task
-********************
+-------------------
 
 .. TOADD:
    De-identification procedure ?
@@ -11,7 +9,7 @@ iEEG cognitive task
    References ?
 
 Description
-===========
+:::::::::::
 
 This dataset includes 1 subject with pre- and post- implantation imaging data (T1, DTI) and SEEG data recorded while performing a cognitive task.
 The dataset is stored in a folder called “`iEEG_task_cognitive <https://thehip.app/apps/files/?dir=/tutorial_data/iEEG_task_cognitive&fileid=715791>`_” located inside the "*tutorial_data*" folder
@@ -53,12 +51,9 @@ For further insights into data formats, refer to :ref:`Tab.1 <cogtask_file_forma
 	
 |
 	
-
-	
 License
-=======
+:::::::
 
 This tutorial dataset is the property of the `Lausanne University Hospital (Centre Hospitalier Universitaire Vaudois) <https://www.chuv.ch/fr/chuv-home>`_, Switzerland.
 Its use and transfer outside this HIP tutorial, e.g. for research purposes, is prohibited without written consent.
 For questions, please contact `Carolina Ciumas, MD, PhD <mailto:Carolina.Ciumas@chuv.ch?subject=HIP%20Cico%20dataset%20>`_.
-

@@ -1,8 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
-
 Use desktops and run applications
-**********************************
+---------------------------------
 
 Desktops operate as remote virtual computers where HIP users can run applications from the App Catalog to process data located in their Private Space. 
 Once it has been initiated, a Desktop will persist until it is manually terminated. HIP users can safely log off and/or close their web browser.

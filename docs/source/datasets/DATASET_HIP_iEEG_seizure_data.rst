@@ -1,14 +1,12 @@
-.. include:: ../hip_header_msg.rst
-
 .. warning::
 
     The HIP iEEG seizure dataset is available in a `dedicated Collaborative Space <https://thehip.app/apps/hip/projects/HIP-HIP-Seizure-data-SEEG>`_ with restricted access.
 
 HIP iEEG seizure dataset
-*************************
+------------------------
 
 Description
-===========
+:::::::::::
 
 HIP iEEG seizure data is a curated collection of neuroimaging and iEEG data from 11 patients as of September 28, 2023. This dataset was created by compiling iEEG data from seizure occurrences in patients who underwent phase 2 presurgical investigation using a SEEG approach. 
 
@@ -25,7 +23,7 @@ All data files, including event logs and notes commonly associated with iEEG rec
 HIP iEEG seizures data offer a unique tool for researchers interested in delving into the emergence and complexities of brain activity during epileptic seizures.
 
 License
-=======
+:::::::
 
 This tutorial dataset is the property of the `Lausanne University Hospital (Centre Hospitalier Universitaire Vaudois) <https://www.chuv.ch/fr/chuv-home>`_, Switzerland.
 Its use and transfer outside this HIP tutorial, e.g. for research purposes, is prohibited without written consent.

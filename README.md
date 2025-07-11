@@ -5,6 +5,26 @@ The dedicated website [hip-infrastructure.github.io](https://hip-infrastructure.
 
 # Development
 
+## Headings Convention
+
+Please repect the following heading convention when making changes
+
+```
+===============
+Level 1 Heading
+===============
+
+Level 2 Heading
+---------------
+
+Level 3 Heading
+:::::::::::::::
+
+Level 4 Heading
+...............
+
+```
+
 ## Setting up your environment
 
 ### Using dev container (VS Code)

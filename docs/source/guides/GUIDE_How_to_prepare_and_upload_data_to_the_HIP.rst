@@ -1,7 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
 How to prepare and upload data to the HIP
-******************************************
+-----------------------------------------
 
 .. figure:: /guides/art/GUIDE_How_to_prepare_and_upload_data_to_the_HIP/GUIDE_upload_hip.png
 	:width: 600px
@@ -28,7 +26,7 @@ It is not possible to upload or download data directly to or from the Collaborat
 
 
 Before uploading data to the HIP
-=================================
+::::::::::::::::::::::::::::::::
 
 The HIP is an open-source European platform dedicated to Human intracerebral EEG data and
 only iEEG data and relevant health-related or research-related data should be uploaded to the platform.
@@ -54,9 +52,9 @@ Do not upload non-iEEG related data as it goes against HIP policy and such actio
 .. _data_controller_responsabilities:
 
 The Data Controller responsibilities
--------------------------------------
+....................................
 
-The HIP user uploading data from patients onto the HIP is affiliated with at least one of the :ref:`HIP groups <list_identified_hip_groups>`
+The HIP user uploading data fr`m patients onto the HIP is affiliated with at least one of the :ref:`HIP groups <list_identified_hip_groups>`
 and will qualify as Data Controller for the corresponding data.
 
 It is the Data Controller responsibility to secure proper data anonymization.
@@ -67,7 +65,7 @@ yet can be processed with all available HIP functionalities.
 
 
 File formats
-------------
+............
 
 The HIP primarily relies on BIDS as a common format and database and it is strongly recommended to upload data following BIDS guidelines.
 For more information regarding the BIDS standard, please refer to the :ref:`Brain Imaging Data Structure section <BIDS_introduction>` of the
@@ -84,13 +82,13 @@ Note that the BIDS importer can only convert a limited number of :ref:`input for
 .. _uploading_data:
 
 Uploading data to the HIP
-==========================
+:::::::::::::::::::::::::
 
 There are currently 2 solutions for uploading data to the HIP: either directly from the web browser or using the Nextcloud client.
 It is advised to use the Nextcloud client as it uses WebDAV protocol, a more robust way to upload large/numerous files.
 
 Using the web browser
-----------------------
+.....................
 
 It is possible to upload data by simply selecting the files and folders to transfer and drag and drop
 them into the web browser while the Private Space web page is opened. Alternatively, it is possible to use the dedicated *Upload file* 
@@ -118,7 +116,7 @@ will not resume where it stopped.
 .. _upload_nextcloud:
 
 Using the Nextcloud client
---------------------------
+..........................
 
 The Nextcloud client uses the WebDAV protocol to seamlessly synchronize data between the HIP user's Private Space and the local desktop where 
 the client is installed.
@@ -135,6 +133,3 @@ The following video guide (2'27'') shows how to download, install and configure 
    </center>
 	
 |
-
-
-

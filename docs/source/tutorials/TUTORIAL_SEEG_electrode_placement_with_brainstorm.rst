@@ -1,7 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
 SEEG electrode placement with Brainstorm
-*****************************************
+----------------------------------------
 
 .. figure:: /tutorials/art/TUTORIAL_SEEG_electrode_placement_with_brainstorm/tutorial_seeg_placement_brainstorm_header.png
 	:width: 600px
@@ -10,13 +8,13 @@ SEEG electrode placement with Brainstorm
 	**3D visualization of SEEG electrodes.** *SEEG electrodes have been generated and placed using* :doc:`Brainstorm</applications/APP_Brainstorm>` *.*
 
 Disclaimer
-==========
+::::::::::
 
 The methods and software used in this tutorial have not been certified for clinical practice and should be considered for 
 research purposes only.  
 
 About this tutorial
-====================
+:::::::::::::::::::
 
 The objective of this tutorial is to guide HIP users in placing SEEG electrodes on a post-implantation volume using Brainstorm.
 It primarily consists of a video demonstration and should be viewed as an introductory tutorial because it does not go into all the intricacies of
@@ -29,7 +27,7 @@ please refer to the following official tutorials:
 	* `Brainstorm's "Edit the contacts positions" tutorial <https://neuroimage.usc.edu/brainstorm/Tutorials/Epileptogenicity#Edit_the_contacts_positions>`_
 
 Requirements
-=============
+::::::::::::
 
 There are no technical requirements to follow this tutorial because the dataset and software are available on the HIP.
 
@@ -44,7 +42,7 @@ HIP dataset used in this tutorial:
 .. _prepare_environment_SEEG_placement_brainstorm:
 
 Prepare the working environment
-==================================
+:::::::::::::::::::::::::::::::
 
 This tutorial relies on data available in the :doc:`Epimap tutorial dataset </datasets/DATASET_Epimap>`, 
 and the following file will be used:
@@ -59,7 +57,7 @@ Pleases refer to the :doc:`How to use Desktops and run applications from the App
 .. _place_SEEG_brainstorm:
 
 Place SEEG electrodes with Brainstorm
-=======================================
+:::::::::::::::::::::::::::::::::::::
 
 .. include:: ../hip_data_persistence.rst
 

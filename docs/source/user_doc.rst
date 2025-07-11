@@ -36,79 +36,11 @@ It contains the following sections:
 .. toctree:: 
    :hidden:
 
-   Take me back to the welcome page<index>
-
-.. toctree::
-   :caption: Onboarding 
-   :hidden:
-
-   Get a HIP account<onboarding/hip_account>
-   Services overview<onboarding/hip_services_overview>
-   Desktop and apps<onboarding/hip_desktops>
-   Data transfer<onboarding/hip_data_transfer>
-   Tutorials overview<onboarding/hip_tutorials>
-   Feedback<onboarding/hip_feedback>
-
-.. toctree::
-   :caption: HIP guides
-   :hidden:
-   
-   How to create a HIP account<guides/GUIDE_How_to_create_a_HIP_account>
-   How to connect to the HIP portal and access its services<guides/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services>
-   How to prepare and upload data to the HIP<guides/GUIDE_How_to_prepare_and_upload_data_to_the_HIP>
-   How to convert data to BIDS format<guides/GUIDE_How_to_convert_data_to_BIDS_format>
-   How to use Desktops and run applications from the App Catalog<guides/GUIDE_How_to_use_Desktops_and_run_applications_from_the_App_Catalog>
-   How to transfer data from Micromed software to the HIP<guides/GUIDE_How_to_transfer_data_from_Micromed_software_to_the_HIP>
-   How to use the HIP spaces and share data with other users<guides/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users>
-   How to use Collaborative Projects<guides/GUIDE_How_to_use_collaborative_projects>
-   
-.. toctree::
-   :caption: HIP tutorials 
-   :hidden:   
-   
-   SEEG electrode placement with Brainstorm<tutorials/TUTORIAL_SEEG_electrode_placement_with_brainstorm>
-   SEEG electrode placement with 3D Slicer<tutorials/TUTORIAL_SEEG_electrode_placement_with_3D_slicer>
-   Epileptogenicity map computation with Brainstorm<tutorials/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm>
-   CCEP computation with Brainstorm<tutorials/TUTORIAL_CCEP_computation_with_brainstorm>
-   Simulation workflow with The Virtual Brain<tutorials/TUTORIAL_stimulation_workflow_tvb>
-
-.. toctree:: 
-   :caption: HIP datasets
-   :hidden:
-	
-   Epimap tutorial dataset<datasets/DATASET_Epimap>
-   COGEPISTIM dataset<datasets/DATASET_Cogepistim>
-   Data for electrodes labelling<datasets/DATASET_Data_for_electrodes_labelling.rst>	
-   iEEG cognitive task<datasets/DATASET_iEEG_task_cognitive.rst>	
-   HIP iEEG seizure dataset<datasets/DATASET_HIP_iEEG_seizure_data.rst>	
-   
-.. toctree::
-   :caption: HIP apps
-   :hidden:   
-   
-   3D Slicer<applications/APP_3D_Slicer>
-   AnyWave<applications/APP_AnyWave>
-   BIDS Manager<applications/APP_BIDS_Manager>
-   Brainstorm<applications/APP_Brainstorm>
-   dcm2niix<applications/APP_dcm2niix>
-   FileManager<applications/APP_FileManager>
-   Freesurfer<applications/APP_Freesurfer>
-   Frites<applications/APP_Frites>
-   FSL<applications/APP_FSL>
-   GARDEL<applications/APP_GARDEL>
-   HiBoP<applications/APP_HiBoP>
-   IntrAnat<applications/APP_IntrAnat>
-   LibreOffice<applications/APP_LibreOffice>
-   Localizer<applications/APP_Localizer>
-   MATLAB<applications/APP_MATLAB>
-   MNE-Python<applications/APP_MNE>
-   MRI Deface<applications/APP_MRI_Deface>
-   MRIcroGL<applications/APP_MRIcroGL>
-   Mrtrix3<applications/APP_Mrtrix3>
-   NiftyReg<applications/APP_NiftyReg>
-   RStudio<applications/APP_RStudio>
-   The Virtual Brain<applications/APP_The_Virtual_Brain>
-   TRCAnonymizer<applications/APP_TRCAnonymizer>
-   Visual Studio Code<applications/APP_VisualStudioCode>
+   Welcome page<index>
+   onboarding/onboarding
+   guides/guides
+   tutorials/tutorials
+   datasets/datasets
+   applications/applications
    
 .. include:: hip_acknowledgement.rst

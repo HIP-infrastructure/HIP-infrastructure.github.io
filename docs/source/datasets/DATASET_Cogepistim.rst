@@ -5,18 +5,16 @@
    
 .. comment:
    tables made with https://tableconvert.com/restructuredtext-generator
-   
-.. include:: ../hip_header_msg.rst
 
 .. warning::
 
     The COGEPISTIM dataset is available in a `dedicated Collaborative Space <https://thehip.app/apps/hip/projects/HIP-COGEPISTIM>`_ with restricted access.
 
 COGEPISTIM dataset
-********************
+------------------
 
 Overview
-=========
+::::::::
 
 The COGEPISTIM dataset reuses SEEG, imaging and clinical data from 241 (29/08/2023) subjects initially collected through 4 studies:
 
@@ -30,7 +28,7 @@ The dataset ensures privacy through pseudonymization and adheres to the BIDS sta
 while localizers are derived from the ISD SEEG, EPISTIM, and MAPCOG-SEEG clinical trials. Additionally, the dataset provides a limited set of clinical details like age categories and epileptogenic zones for each subject.
 
 Data inventory
-===============
+::::::::::::::
 
 The complete and up-to-date data inventory can be found inside the dedicated *data_inventory.tsv* file, which is located in the */derivatives/inventory* folder of the COGEPISTIM dataset (see :ref:`Fig.1 <coge_structure>`).
 This file lists all data available for each subject and is generated whenever the database is updated.
@@ -55,7 +53,7 @@ Subjects typically possess at least one variety of SEEG data alongside the relat
 either in the form of an MRI or a CT scan. Clinical data may be incomplete or missing for several subjects.
 
 Data preparation
-=================
+::::::::::::::::
 
 The COGEPISTIM dataset has been prepared using `BIDS Manager software <https://github.com/Dynamap/BIDS_Manager>`_ (0.3.4) ([Roehri_2021a]_), a Python package to collect, organise and manage neuroscience data in BIDS format.
 The dataset follows `BIDS specifications <https://bids.neuroimaging.io/>`_ (see [Holdgraf_2019]_ for BIDS-iEEG specifications) and has been validated using `BIDS-Validator tool <https://www.npmjs.com/package/bids-validator>`_
@@ -66,7 +64,7 @@ this includes events and notes typically found in SEEG data. Imaging data have b
 Clinical information has been kept to a minimum and is limited to the sex, handedness, age category and epileptogenic zone(s) of each subject, when available.
 
 Data structure
-===============
+::::::::::::::
 
 The COGEPISTIM dataset follows BIDS specifications. The arrangement of files and folders is depicted in :ref:`Fig.1 <coge_structure>`, while the corresponding naming conventions are outlined in :ref:`Tab.1 <coge_naming_convention>`. 
 Files and folders are further described in :ref:`Tab.2 <coge_file_desc>` and :ref:`Tab.3 <coge_folder_desc>` respectively. For further insights into data formats, refer to :ref:`Tab.4 <coge_file_format>`.
@@ -263,7 +261,7 @@ The */ses-preimpXX*, */ses-postimpXX*, and */ses-postopXX* session folders corre
 |
 
 Clinical data
-===============
+:::::::::::::
 
 Clinical data is limited to sex, handedness, age category and epileptogenic zone(s) for each subject. Sex can be found in the *participants.tsv* file, in the */raw* directory. Handedness, age group and epileptogenic zone(s)
 are session-specific and can be found in *sub-<cogepistim_id>_sessions.tsv* files, in */sub-<cogepistim_id>* directories (see :ref:`Fig.1 <coge_structure>`). 
@@ -296,7 +294,7 @@ The clinical data found in the COGEPISTIM dataset is detailed in :ref:`Tab.5 <co
 |
 
 Electrode coordinates
-=====================
+:::::::::::::::::::::
 
 SEEG electrode coordinates and associated metadata can be found in dedicated *\*_electrodes.tsv* and *\*_coordsystem.json* files respectively. Those files are only found in the post-implantation session folder 
 of a given subject (see :ref:`Fig.1 <coge_structure>`). Coordinates are specified in both native and MNI152 spaces (ICBM Average Brain, 152 T1-weighted MRI scans) ([Evans_2001]_, [Mazziotta_2001]_).
@@ -304,10 +302,10 @@ of a given subject (see :ref:`Fig.1 <coge_structure>`). Coordinates are specifie
 SEEG data gathered from the F-TRACT project also have anatomical parcels extracted from a set of atlases assigned to each contact (see [Trebaul_2018]_) (e.g. MarsAtlas, Freesurfer, AAL, Broadman, Hammers, HCP_MMP1, AICHA, Lausanne2008).
 
 SEEG and imaging data
-=====================
+:::::::::::::::::::::
 
 F-TRACT data
-------------
+............
 
 Baseline, seizure, stimulation SEEG data and associated imaging data come from the F-TRACT project and were initially collected following the ethical procedures for conducting international multicenter post-processing
 of clinical data defined by the International Review Board at `INSERM <https://www.inserm.fr/en/home/>`_.
@@ -326,7 +324,7 @@ and/or the localisation of an eloquent cortical area that has to be spared durin
 See [Trebaul_2018]_ for additional scientific details regarding the necessary procedures to generate the F-TRACT database.
 
 ISD SEEG, EPISTIM and MAPCOG-SEEG data
----------------------------------------
+......................................
 
 Cognition SEEG data and associated imaging data come from 3 clinical trials:
 
@@ -384,14 +382,14 @@ The cognition SEEG data found in the */derivatives/cognition* folder of the COGE
 8-24 Hz and 50-150 Hz. The method is fully detailed in [Ossandón_2012]_.
 
 License
-=======
+:::::::
 
 The COGEPISTIM database is the property of `CHU Grenoble Alpes <https://www.chu-grenoble.fr/>`_, France.
 Its transfer and use, e.g. for research or clinical purposes, is prohibited without signed data transfer agreement.
 For questions, please contact `Philippe KAHANE, MD, PhD <mailto:PKahane@chu-grenoble.fr?subject=COGEPISTIM%20dataset>`_.
  
 Code availability
-===================
+:::::::::::::::::
 
 The data have been prepared using a collection of software, namely:
 
@@ -404,7 +402,7 @@ The data have been prepared using a collection of software, namely:
 	* `BIDS-Validator <https://www.npmjs.com/package/bids-validator/>`_ (1.12.0)
 
 Acknowledgments
-===================
+:::::::::::::::
 
 This research was supported by the EBRAINS research infrastructure, funded from the European Union’s Horizon 2020 Framework Programme for Research and Innovation under the Specific Grant Agreement
 No. 945539 (`Human Brain Project SGA3 <https://cordis.europa.eu/project/id/945539/>`_).
@@ -416,22 +414,22 @@ This reseach was made in collaboration with `Aix Marseille University <https://w
 `University Hospital of Lyon (Hospices Civils de Lyon) <https://www.chu-lyon.fr/>`_ and `Lausanne University Hospital (Centre Hospitalier Universitaire Vaudois) <https://www.chuv.ch/fr/chuv-home>`_.
 
 Patches
-=========
+:::::::
 
 V1.1
------
+....
 
 	* Improved *\*_ieeg.vmrk* files associated with stimulation SEEG data so the events match those found in the associated *\*_events.tsv* file.
 
 V1.2
------
+....
 
 	* Fixed commas in the notes of stimulation SEEG data to prevent breaking .vmrk files.
 	* Updated the notes for '0Hz' stimulation in certain SEEG data to reflect the correct stimulation frequency.
 
 
 References
-==========
+::::::::::
 
 .. [Blair_2022] Blair, Ross, Michael, Zack, Gorgolewski, Krzysztof J., Hardcastle, Nell, Hobson-Lowther, Teal, Nishikawa, David, Bhogawar, Suyash, Appelhoff, Stefan, Jas, Mainak, Grass, Brian, Markiewicz, Christopher J., Holdgraf, Chris, Jones, Alexander, Goyal, Rohan, Oostenveld, Robert, Noack, Gregory, Triplett, William, Naveau, Mikaël, Zito, Matthew, … Zulfikar, Wazeer. (2022). bids-validator (v1.9.3). Zenodo.
 .. [Evans_2001] Evans, A.C., Fox, P.T., Lancaster, J., Zilles, K., Woods, R., Paus, T., Simpson, G., Pike, B., Holmes, C., Collins, D.L., Thompson, P., MacDonald, D., Iacoboni, M., Schormann, T., Amunts, K., Palomero-Gallagher, N., Geyer, S., Parsons, L., Narr, K., Kabani, N., LeGoualher, G., Boomsma, D., Cannon, T., Kawashima, R., Mazoyer, B., 2001a. A probabilistic atlas and reference system for the human brain: International Consortium for Brain Mapping (ICBM). Philos. Trans. R. Soc. London B Biol. Sci. 356, 1293–1322.

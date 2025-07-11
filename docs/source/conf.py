@@ -68,9 +68,9 @@ html_logo = '_static/HIP_LOGO_PRIMAIRE_RVB_Blanc.png'
 # Read the doc
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
+    'sticky_navigation': False,
     'style_nav_header_background': 'black',
-    'includehidden': True,
-    'logo_only': True
+    'logo_only': True,
 }
 
 master_doc = 'user_doc'

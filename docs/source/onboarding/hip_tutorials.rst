@@ -1,8 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
-
 Tutorials
-**********
+---------
 
 There are several tutorials available that can be used to get familiar with the platform:
 
