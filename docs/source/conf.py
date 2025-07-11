@@ -53,7 +53,7 @@ html_extra_path = ['welcome.html']
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
-html_logo = '_static/HIP_LOGO_PRIMAIRE_RVB_Blanc.png'
+html_logo = '_static/HIP_LOGO_BASELINE_RVB_Blanc.png'
 
 # Cloud
 #html_theme = "cloud" # cloud

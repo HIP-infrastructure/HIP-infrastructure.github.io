@@ -1,7 +1,7 @@
 .. include:: ../hip_header_msg.rst
 
 ==========
-How to
+HOW TO
 ==========
 
 .. include:: GUIDE_How_to_create_a_HIP_account.rst

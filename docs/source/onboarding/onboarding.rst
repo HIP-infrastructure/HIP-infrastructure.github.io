@@ -1,7 +1,7 @@
 .. include:: ../hip_header_msg.rst
 
 ==========
-Onboarding
+ONBOARDING
 ==========
 
 .. include:: hip_account.rst
