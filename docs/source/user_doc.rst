@@ -31,17 +31,17 @@ User documentation
 All user documentation is accessible from the table of contents.
 It contains the following sections:
 
-	* **HIP guides**: Guides are standardized procedures designed to assist end users access the platform and operate all of its services.
-	* **HIP tutorials**: Tutorials are fully documented use-cases about data processing and visualization on the platform.
-	* **HIP datasets**: Datasets are available in the shared space and include tutorial datasets and BIDS-iEEG databases.
-	* **HIP Apps**: A catalog of applications is available to explore and process data. Through the use of softwares,
+	* **How to**: Guides are standardized procedures designed to assist end users access the platform and operate all of its services.
+	* **Tutorials**: Tutorials are fully documented use-cases about data processing and visualization on the platform.
+	* **Datasets**: Datasets are available in the shared space and include tutorial datasets and BIDS-iEEG databases.
+	* **Applications**: A catalog of applications is available to explore and process data. Through the use of softwares,
 	  HIP users agree to be bound by the terms and conditions of their respective licences. Softwares are provided “as is”
 	  and without warranty of any kind, express, implied or otherwise.
 
 .. toctree:: 
    :hidden:
 
-   Welcome page<index>
+   WELCOME PAGE<index>
    onboarding/onboarding
    guides/guides
    tutorials/tutorials

@@ -1,7 +1,7 @@
 .. include:: ../hip_header_msg.rst
 
 ==========
-Datasets
+DATASETS
 ==========
 
 .. include:: DATASET_Epimap.rst

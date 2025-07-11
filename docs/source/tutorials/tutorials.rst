@@ -1,7 +1,7 @@
 .. include:: ../hip_header_msg.rst
 
 ==========
-Tutorials
+TUTORIALS
 ==========
 
 .. include:: TUTORIAL_SEEG_electrode_placement_with_brainstorm.rst

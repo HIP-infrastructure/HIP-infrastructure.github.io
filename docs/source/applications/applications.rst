@@ -1,7 +1,7 @@
 .. include:: ../hip_header_msg.rst
 
 ============
-Applications
+APPLICATIONS
 ============
 
 .. include:: APP_3D_Slicer.rst
