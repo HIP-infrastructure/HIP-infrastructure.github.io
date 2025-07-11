@@ -1,7 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
 SEEG electrode placement with 3D Slicer
-*****************************************
+---------------------------------------
 
 .. figure:: /tutorials/art/TUTORIAL_SEEG_electrode_placement_with_3D_slicer/tutorial_3dslicer_header.png
 	:width: 650px
@@ -10,13 +8,13 @@ SEEG electrode placement with 3D Slicer
 	**3D visualization of SEEG electrodes.** *SEEG electrodes have been generated and placed using* :doc:`3D Slicer</applications/APP_3D_Slicer>` *.*
 
 Disclaimer
-==========
+::::::::::
 
 The methods and software used in this tutorial have not been certified for clinical practice and should be considered for 
 research purposes only.  
 
 About this tutorial
-====================
+:::::::::::::::::::
 
 The objective of this tutorial is to guide HIP users in placing (non-rigid) SEEG electrodes on a post-implantation volume using 3D Slicer.
 It primarily  consists of a video demonstration and should be viewed as an introductory tutorial because it does not go into all
@@ -25,7 +23,7 @@ For more in-depth information regarding electrode placement using 3D Slicer, ple
 the `dedicated documentation <https://slicer.readthedocs.io/en/latest/user_guide/modules/markups.html>`_.
 
 Requirements
-=============
+::::::::::::
 
 There are no technical requirements to follow this tutorial because the dataset and software are available on the HIP.
 
@@ -42,7 +40,7 @@ HIP dataset used in this tutorial:
 .. _prepare_environment_cico:
 
 Prepare the working environment
-==================================
+:::::::::::::::::::::::::::::::
 
 This tutorial relies on data available in the dataset named :doc:`Data for electrodes labelling </datasets/DATASET_Data_for_electrodes_labelling>`, 
 and the following folder has to be copied in your Private Space (this is demonstrated in the video tutorial):
@@ -56,7 +54,7 @@ Please, refer to the :doc:`How to use Desktops and run applications from the App
 .. _place_SEEG_cico:
 
 Place SEEG electrodes with 3D Slicer
-====================================
+::::::::::::::::::::::::::::::::::::
 
 .. include:: ../hip_data_persistence.rst
 

@@ -1,8 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
-
 Upload and download data
-*************************
+------------------------
 
 .. admonition:: Data Transfer Agreement (DTA)
 

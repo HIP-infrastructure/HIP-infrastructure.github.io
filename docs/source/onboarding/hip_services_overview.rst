@@ -1,7 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
 HIP services overview
-**********************
+---------------------
 
 .. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_homepage.png
 	:width: 600px

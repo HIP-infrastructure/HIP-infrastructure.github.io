@@ -1,10 +1,8 @@
-.. include:: ../hip_header_msg.rst
-
 Epimap tutorial dataset
-************************
+-----------------------
 
 Description
-===========
+:::::::::::
 
 This dataset includes recordings for a patient that was not reported in associated articles ([David_2011]_, [Lamarche_2016]_),
 but is part of the same study. The patient presents a focal epilepsy of the left temporo-occipital junction, MRI-negative,
@@ -13,7 +11,7 @@ The subfolder "seeg" contains the recordings of three seizures, all of them show
 from the lesion towards the temporal lobe, bilaterally.
 
 Data files
------------
+..........
 
 The dataset is stored in a folder called “`Epimap tutorial dataset <https://thehip.app/apps/files/?dir=/tutorial_data/Epimap%20tutorial%20dataset&fileid=717246>`_” located inside the "*tutorial_data*" folder
 accessible from the Private Space. It includes the following files:
@@ -27,7 +25,7 @@ It can also be downloaded from the original publisher on `f-tract.eu <https://f-
 
 	
 Electrode description
----------------------
+.....................
 
 The depth electrodes used in this example dataset are DIXI D08-\**AM Microdeep electrodes, with the following specifications:
 
@@ -39,20 +37,17 @@ The depth electrodes used in this example dataset are DIXI D08-\**AM Microdeep e
 	
 
 License
-=======
+:::::::
 
 This tutorial dataset is the property of the Grenoble University Hospital, France.
 Its use and transfer outside the ImaGIN tutorial, e.g. for research purposes, is prohibited without written consent.
 For questions, please contact `Olivier David, PhD <mailto:Olivier.David@univ-amu.fr?subject=HIP%20Epimap%20dataset%20>`_.
 
 References
-==========
+::::::::::
 
 The acquisition methodology is described in the following articles :
 
 .. [David_2011] David O, Blauwblomme T, Job AS, Chabardès S, Hoffmann D, Minotti L, Kahane P. "Imaging the seizure onset zone with stereo-electroencephalography Brain." Brain., 2011: 134(10):2898-911.
 
 .. [Lamarche_2016] Lamarche F, Job AS, Deman P, Bhattacharjee M, Hoffmann D, Gallazzini-Crépin C, Bouvard S, Minotti L, Kahane P, David O. "Correlation of FDG-PET hypometabolism and SEEG epileptogenicity mapping in patients with drug-resistant focal epilepsy Epilepsia." Epilepsia., 2016: 57(12):2045–2055.
-
-
-

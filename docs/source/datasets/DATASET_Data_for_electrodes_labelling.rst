@@ -1,7 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
 Data for electrodes labelling
-******************************
+-----------------------------
 
 .. TOADD:
    De-identification procedure ?
@@ -11,7 +9,7 @@ Data for electrodes labelling
    References ?
 
 Description
-===========
+:::::::::::
 
 This dataset includes imaging data and SEEG recordings for 3 subjects. Data include pre- and post- implantation volumes
 (T1, T2, CT, braincase, DTI) and SEEG acquisitions (ictal, interictal, sleep, electrical stimulation)
@@ -189,13 +187,10 @@ Files and folders are further described in :ref:`Tab.2 <labelling_file_desc>` an
    </center>
 	
 |
-	
 
-	
 License
-=======
+:::::::
 
 This tutorial dataset is the property of the `Lausanne University Hospital (Centre Hospitalier Universitaire Vaudois) <https://www.chuv.ch/fr/chuv-home>`_, Switzerland.
 Its use and transfer outside this HIP tutorial, e.g. for research purposes, is prohibited without written consent.
 For questions, please contact `Carolina Ciumas, MD, PhD <mailto:Carolina.Ciumas@chuv.ch?subject=HIP%20Cico%20dataset%20>`_.
-

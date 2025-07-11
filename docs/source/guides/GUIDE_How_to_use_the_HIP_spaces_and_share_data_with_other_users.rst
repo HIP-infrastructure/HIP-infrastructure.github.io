@@ -1,7 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
 How to use the HIP spaces and share data with other users
-**********************************************************
+---------------------------------------------------------
 
 .. figure:: /guides/art/GUIDE_How_to_use_the_HIP_spaces_and_share_data_with_other_users/GUIDE_spaces_header.png
 	:width: 800px
@@ -19,12 +17,12 @@ The Private Space, the Collaborative Space and the Public Space.
    when designing rules and conditions for access and the use of the platform in any of the aforementioned spaces.
 
 The HIP Spaces
-================
+::::::::::::::
 
 .. _the_private_space:
 
 The Private Space
------------------
+.................
 
 The Private Space is where a HIP users from :ref:`an institution contributing to the iEEG data collection <list_identified_hip_groups>`
 may upload, store and process their pseudonymised/anonymised data. 
@@ -45,7 +43,7 @@ for more information regarding the :ref:`Data Controller responsibilities <data_
 .. _the_collaborative_space:
 
 The Collaborative Space
-------------------------
+.......................
 
 The Collaborative Space is a project-specific and access-restricted space where curated and pseudonymised data following the Collaborative Space guidelines may be shared with other accredited HIP users.
 To share data within the Collaborative Space, users must utilize :doc:`Collaborative Projects </guides/GUIDE_How_to_use_collaborative_projects>`, which facilitate the controlled transfer of curated data from
@@ -67,7 +65,7 @@ The Project Leader retains sole responsibility for the data, although each colla
 
 
 The Public Space (not yet available)
--------------------------------------
+....................................
 
 The Public Space is where public anonymised iEEG data is made available to the general public through EBRAINS.
 Pursuant to the EBRAINS Access Policy, access to such data shall not require an EBRAINS accreditation.
@@ -77,7 +75,7 @@ corresponding data, provided that the latter has been fully anonymised and patie
 .. _tutorial_data:
 
 Tutorial data
-==============
+:::::::::::::
 
 The HIP provides several datasets which are listed in the *HIP DATASETS* section of this documentation and which come with different terms of use.
 Their transfer and/or use outside their intended framework, e.g. for research purposes, is prohibited without written consent.
@@ -91,7 +89,7 @@ In practice, those datasets are available in a dedicated read-only shared folder
 
 
 Research studies and publications
-==================================
+:::::::::::::::::::::::::::::::::
 	
 The Data Controller defines the research studies and publications to which his data can contribute in the Collaborative Space,
 and can decide to remove his data from this space at any time. All agreements regarding publications and authorship will be discussed

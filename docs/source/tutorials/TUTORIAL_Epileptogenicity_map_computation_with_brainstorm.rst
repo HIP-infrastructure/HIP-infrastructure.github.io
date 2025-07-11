@@ -1,7 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
 Epileptogenicity map computation with Brainstorm
-**************************************************
+------------------------------------------------
 
 .. figure:: /tutorials/art/TUTORIAL_Epileptogenicity_map_computation_with_brainstorm/tutorial_epileptogenicity_header.png
 	:width: 600px
@@ -10,13 +8,13 @@ Epileptogenicity map computation with Brainstorm
 	**Epileptogenicity map.** *Epileptogenicity map computed and visualized using* :doc:`Brainstorm</applications/APP_Brainstorm>` *.*
 
 Disclaimer
-==========
+::::::::::
 
 The methods and software used in this tutorial have not been certified for clinical practice and should be considered for 
 research purposes only.  
 
 About this tutorial
-====================
+:::::::::::::::::::
 
 The objective of this tutorial is to guide HIP users in computing maps of epileptogenicity from ictal iEEG recordings.
 Epileptogenicity maps show the spatial distribution, and eventually the temporal evolution,
@@ -34,7 +32,7 @@ please refer to the official tutorial:
 	* `Brainstorm's SEEG epileptogenicity maps tutorial <https://neuroimage.usc.edu/brainstorm/Tutorials/Epileptogenicity>`_
 
 Requirements
-=============
+::::::::::::
 
 There are no technical requirements to follow this tutorial because the dataset and software are available on the HIP.
 
@@ -49,7 +47,7 @@ HIP dataset used in this tutorial:
 .. _prepare_environment_epileptogenicity_brainstorm:
 
 Prepare the working environment
-==================================
+:::::::::::::::::::::::::::::::
 
 This tutorial relies on data available in the :doc:`Epimap tutorial dataset </datasets/DATASET_Epimap>`,
 and the following files will be used:
@@ -70,7 +68,7 @@ Please, refer to the :doc:`How to use Desktops and run applications from the App
 .. _compute_epileptogenicity_brainstorm:
 
 Compute a map of epileptogenicity
-=================================
+:::::::::::::::::::::::::::::::::
 
 .. include:: ../hip_data_persistence.rst
 
@@ -92,7 +90,7 @@ the :doc:`SEEG electrode placement with Brainstorm </tutorials/TUTORIAL_SEEG_ele
 |
 
 References
-==========
+::::::::::
 
 .. [Bartolomei_2008] Bartolomei F, Chauvel P, Wendling F. Epileptogenicity of brain structures in human temporal lobe epilepsy: a quantified study from intracerebral EEG. Brain., 2008, 131(Pt 7):1818-30.
 

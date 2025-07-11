@@ -1,7 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
 How to transfer data from Micromed software to the HIP
-*******************************************************
+------------------------------------------------------
 
 It is possible to seamlessly synchronize a database created with Micromed software (*SystemPLUS EVOLUTION* software)
 so it is available in the HIP user's Private Space. This requires to set up a synchronized folder using the Nextcloud client as explained

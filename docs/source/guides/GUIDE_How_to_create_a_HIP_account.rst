@@ -1,7 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
-How to create a HIP account
-*****************************
+Create a HIP account
+---------------------------
 	
 The HIP is fully integrated in `EBRAINS <https://ebrains.eu/>`_ and an EBRAINS account is required in order to access the HIP 
 and use all of its services. 
@@ -13,7 +11,7 @@ and use all of its services.
    Regulation (GDPR). They also adhere to the HIP Charter which defines the principles, rules and processes that govern the management of the data and research outputs.
 
 Create an EBRAINS account
-=========================
+:::::::::::::::::::::::::
 
 `EBRAINS <https://ebrains.eu/>`_ is a sustainable European Research Infrastructure providing tools and services in brain
 research and brain-inspired technologies created by the EU-funded `Human Brain Project <https://www.humanbrainproject.eu>`_.
@@ -26,7 +24,7 @@ or fill in the `dedicated form <https://ebrains.eu/support/>`_.
 If you cannot provide an institutional e-mail, it is still possible to request an EBRAINS account from a personal e-mail `with a short motivation <mailto:support@ebrains.eu?subject=Request%20for%20a%20user%20account>`_ (max 100 words).
 
 Create a HIP account
-======================
+::::::::::::::::::::
 
 You need an EBRAINS account to apply for a HIP account.
 

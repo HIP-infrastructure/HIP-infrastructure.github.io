@@ -1,10 +1,8 @@
 .. comment:
    tables made with https://tableconvert.com/restructuredtext-generator
 
-.. include:: ../hip_header_msg.rst
-
 How to convert data to BIDS format
-***********************************
+----------------------------------
 
 .. figure:: /guides/art/GUIDE_How_to_convert_data_to_BIDS_format/GUIDE_BIDS_importer.png
 	:width: 800px
@@ -13,7 +11,7 @@ How to convert data to BIDS format
 	**The BIDS Importer.** *The BIDS Importer is a step-by-step tool that can be used to import raw data into a BIDS dataset.*
 
 About this tutorial
-====================
+:::::::::::::::::::
 
 The purpose of this guide is to familiarize HIP users with the BIDS tools accessible on the platform.
 These tools are tailored for the platform and enable users to easily generate, populate, and oversee BIDS datasets through a step-by-step approach.
@@ -30,10 +28,10 @@ using the :doc:`BIDS Manager </applications/APP_BIDS_Manager>`, available on the
 .. _BIDS_introduction:
 
 BIDS at a glance
-=================
+::::::::::::::::
 
 The Brain Imaging Data Structure (BIDS) is a standard for organizing, annotating, and describing neuroimaging, neurophysiological and 
-behavioral data. It is a framework for organizing data that standardizes file organization and dataset description.
+behavioral data. It is a fra`ework for organizing data that standardizes file organization and dataset description.
 
 For more details regarding the standard, please refer to the following external resources:
 
@@ -52,7 +50,7 @@ Several papers have been published covering the standard and its extensions:
 	* [Moreau_2020]_
 	
 BIDS basics
-============
+:::::::::::
 
 BIDS standardize the way to organize, name and describe files of a dataset.
 
@@ -185,7 +183,7 @@ The following table is an example of BIDS entities which can be found in a BIDS 
 .. _BIDS_importer:
 
 BIDS tools
-=============
+::::::::::
 
 The BIDS tools are custom-built to facilitate the straightforward creation, population, and management of BIDS datasets, employing a user-friendly, 
 step-by-step process. These tools prioritize simplicity, readability, and data integrity. Their actions are intentionally limited to prevent unintended changes.
@@ -252,7 +250,7 @@ Supported data file formats are as follows:
 	
 
 Video guide
-------------
+:::::::::::
 
 The following video guide (6’09’’) serves as an introduction to the BIDS tools and shows how to import raw data into a new BIDS dataset:  
 
@@ -268,8 +266,8 @@ The following video guide (6’09’’) serves as an introduction to the BIDS t
 |
 
 
-References
-===========
+Reference
+:::::::::
 
 .. [Gorgolewski_2016] Gorgolewski, K., Auer, T., Calhoun, V. et al. The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments. Sci Data 3, 160044 (2016).
 

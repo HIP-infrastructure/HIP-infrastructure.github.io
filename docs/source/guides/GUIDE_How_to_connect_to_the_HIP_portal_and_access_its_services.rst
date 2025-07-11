@@ -1,12 +1,10 @@
-.. include:: ../hip_header_msg.rst
-
 How to connect to the HIP portal and access its services
-**********************************************************
+--------------------------------------------------------
 
 Connect to the HIP
-=================== 
+:::::::::::::::::: 
 
-The HIP is a web-based platform which can be accessed using any recent web browser. 
+The HIP is a w`b-based platform which can be accessed using any recent web browser. 
 For the best experience with the HIP web interface, we recommend that you use the latest and supported version of a browser from the following list:
 
 	* Microsoft Edge
@@ -24,10 +22,10 @@ Once your :doc:`HIP account has been created </guides/GUIDE_How_to_create_a_HIP_
 you will be automatically redirected to the HIP home page.
 
 HIP services
-=============
+::::::::::::
 
 Home page
----------
+.........
 
 .. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_homepage.png
 	:width: 600px
@@ -60,7 +58,7 @@ The HIP offers several services, all available at the top of the home page:
 	* **HIP**: The HIP home page. 
 
 Forms
-------
+.....
 
 .. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_forms.png
 	:width: 600px
@@ -81,7 +79,7 @@ that you can restrict to some HIP users (specific users or groups) or share publ
 
 
 Talk
------
+....
 
 .. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_talk.png
 	:width: 600px
@@ -103,7 +101,7 @@ There are currently 3 conversations visible to all HIP users:
 
 
 Files
-------
+.....
 
 .. figure:: /guides/art/GUIDE_How_to_connect_to_the_HIP_portal_and_access_its_services/GUIDE_HIP_files.png
 	:width: 600px
@@ -118,7 +116,7 @@ The Private Space also contains the shared folders of the :ref:`HIP groups <list
 
 
 Video guide
-===========
+:::::::::::
 
 The following video (2’15’’) shows the connection procedure and gives an overview of HIP services.
 

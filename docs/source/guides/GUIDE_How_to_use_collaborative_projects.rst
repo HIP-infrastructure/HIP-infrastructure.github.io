@@ -1,7 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
 How to use Collaborative Projects
-**********************************
+---------------------------------
 
 .. figure:: /guides/art/GUIDE_How_to_use_collaborative_projects/GUIDE_projects.png
 	:width: 600px
@@ -10,7 +8,7 @@ How to use Collaborative Projects
 	**Collaborative Project.** *Create a new Collaborative Project and share data with HIP users.*
 
 About this tutorial
-====================
+:::::::::::::::::::
 
 The purpose of this guide is to provide an overview of Collaborative Projects, including their objectives and primary utilization.
 It comes with a video tutorial demonstrating key operations such as creating a new Collaborative Project, adding members, and transferring and processing data using the integrated tools.
@@ -20,7 +18,7 @@ or :doc:`BIDS tools </guides/GUIDE_How_to_convert_data_to_BIDS_format>`, as thes
 
 
 What are Collaborative Projects
-================================
+:::::::::::::::::::::::::::::::
 
 A Collaborative Project represents a work group assigned to a research project, contributing through data sharing and/or processing.
 
@@ -35,7 +33,7 @@ Collaborative projects are the only way to share data between users from differe
 
 
 Video guide
-------------
+:::::::::::
 
 The following video guide (4'59'') serves as an introduction to Collaborative Projects:  
 

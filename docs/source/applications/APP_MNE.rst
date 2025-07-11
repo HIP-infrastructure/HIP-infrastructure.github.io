@@ -1,11 +1,11 @@
 MNE-Python
-***********
+----------
 
 MNE-Python is an open-source Python package for exploring, visualizing, and analyzing human neurophysiological data:
 MEG, EEG, sEEG, ECoG, NIRS ([Gramfort_2013]_).
 
 Official resources
-===================
+::::::::::::::::::
 
 	
 	* `MNE website <https://mne.tools/stable/index.html>`_ 
@@ -15,6 +15,6 @@ Official resources
 
 
 References
-===========
+::::::::::
 
 .. [Gramfort_2013] Alexandre Gramfort, Martin Luessi, Eric Larson, Denis A. Engemann, Daniel Strohmeier, Christian Brodbeck, Roman Goj, Mainak Jas, Teon Brooks, Lauri Parkkonen, and Matti S. Hämäläinen. MEG and EEG data analysis with MNE-Python. Frontiers in Neuroscience, 7(267):1–13, 2013. doi:10.3389/fnins.2013.00267.

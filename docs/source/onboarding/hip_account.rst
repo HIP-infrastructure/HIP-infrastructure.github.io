@@ -1,7 +1,5 @@
-.. include:: ../hip_header_msg.rst
-
 Get a HIP account
-******************
+-----------------
 
 An `EBRAINS <https://ebrains.eu/>`_ account is required to access the HIP and use all of its services. 
 Apply for an EBRAINS account using the following `registration form <https://iam.ebrains.eu/auth/realms/hbp/protocol/openid-connect/registrations?response_type=code&client_id=xwiki&redirect_uri=https://wiki.ebrains.eu>`_.
