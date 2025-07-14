@@ -6,57 +6,92 @@
     <title>The HIP</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            color: black;
-            background: #f2f2f2;
-            margin: 10;
+            font-family: -apple-system, BlinkMacMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #333;
+            background: #f0f2f5;
+            margin: 0;
             padding: 0;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         .main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 50px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             text-align: center;
-            padding: 50px 50px;
-            height: 100%;
             position: relative;
             z-index: 100;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
+            color: #2b33e9;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .intro-paragraph {
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 30px auto;
+            max-width: 600px;
+            text-align: left;
         }
         li {
             text-align: left;
+            margin-bottom: 15px;
         }
         a {
-            color: #2B33E9; /* color based on the hip logo*/
+            color: #2B33E9;
             text-decoration: none;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+            font-weight: bold;
         }
         a:hover {
+            color: #1a20a8;
             text-decoration: underline;
         }
         .hiplogo {
-            width: 250px;
-            height: 100px;
-            margin: 20px 0;
+            width: 200px;
+            height: auto;
+            margin: 0 auto 30px auto;
+            display: block;
         }
         .participating-centers-container {
             display: none;
+            position: relative;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+            margin-top: 40px;
         }
         @media screen and (min-height: 600px) {
             .participating-centers-container {
                 display: block;
-                position: absolute;
-                width: 100%;
-                background-color: white;
-                height: 200px;
-                bottom: 0;
+                position: static;
+                bottom: auto;
+                height: auto;
             }
         }
         .logos {
             overflow: hidden;
-            padding: 10px;
-            left: 0;
-            right: 0;
+            padding: 10px 0;
             white-space: nowrap;
-            position: relative
+            position: relative;
         }
         .logos:hover .logos-slide {
             animation-play-state: paused;
@@ -65,31 +100,34 @@
         .logos:after {
             position: absolute;
             top: 0;
-            width: 250px;
+            width: 150px;
             height: 100%;
             content: "";
             z-index: 2;
         }
         .logos:before {
             left: 0;
-            background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
         }
         .logos:after {
             right: 0;
-            background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
         } 
         .logos-slide {
             display: inline-block;
-            animation: 60s slide infinite linear;
+            animation: 40s slide infinite linear;
         }
         .logos-slide img {
-            height: 100px;
-            margin: 0 80px;
+            height: 80px;
+            margin: 0 40px;
+            vertical-align: middle;
         }
         .participating-centers-title {
-            justify-content: left;
-            font-size: 1.2em;
-            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #555;
         }
 
         @keyframes slide {
@@ -106,8 +144,8 @@
     <div class="main">
         <img src="_static/HIP_LOGO_PRIMAIRE_RVB_Couleur.png" alt="HIP" class="hiplogo">
         <h1>Welcome to the HIP Documentation Portal</h1>
-        <p>
-            This portal provides comprehensive resources to help you navigate and use the Human Intracerebral EEG Platform (HIP).
+        <p class="intro-paragraph">
+            This portal provides comprehensive resources to help you navigate and use the Human Intracerebral EEG Platform.
             Whether you're just getting started or diving into advanced analyses, this site is your central reference.
         </p>
         <p>
