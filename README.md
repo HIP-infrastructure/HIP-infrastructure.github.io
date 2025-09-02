@@ -72,7 +72,7 @@ make html
 You can then check the result by opening the `HIP-infrastructure.github.io/docs/build/html/index.html` file in any web browser.
 
 ```bash
-open -a"your favorit browser" index.html
+open index.html
 ```
 
 You will be able to navigate a local version of the website. If you are making several builds, don't forget to refresh the webpage you are viewing so the changes are taken into account. If this does not work, you may try to re-build the html pages from scratch using the commands:

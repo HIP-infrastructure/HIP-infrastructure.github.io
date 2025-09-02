@@ -1,10 +1,10 @@
 .. include:: hip_header_msg.rst
 
 ====================================
-The Human iEEG Platform
+THE HIP
 ====================================
 
-The `HIP <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_ is an open-source platform designed for large scale and optimized collection, storage, curation, sharing
+The `Human iEEG Platform <https://www.humanbrainproject.eu/en/medicine/human-intracerebral-eeg-platform/>`_ is an open-source platform designed for large scale and optimized collection, storage, curation, sharing
 and analysis of multiscale Human iEEG data at the international level. The HIP covers the entire field of iEEG-based research; i.e. multi-scale investigation of cognition, consciousness, connectomics and related disorders.
 
 The HIP is also fully integrated in `EBRAINS <https://ebrains.eu/>`_ , a sustainable European Research Infrastructure providing tools and services in brain
@@ -16,8 +16,8 @@ In line with the `FAIR principles <https://www.go-fair.org/fair-principles/>`_ ,
 .. raw:: html
 
    <center>	
-   <video width="680"  poster="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Quick%20overview/Videos/HIP%20Guide%20-%20Thumbnail%20-%20quick%20overview.png" controls>
-   <source src="https://thehip.app/apps/sharingpath/anthonyboyer/Public/Guide%20-%20Quick%20overview/Videos/HIP%20Guide%20-%20quick%20overview.mp4" type="video/mp4">
+   <video width="680"  poster="https://thehip.app/apps/sharingpath/johaab/Public/Final-HIP.png" controls>
+   <source src="https://thehip.app/apps/sharingpath/johaab/Public/Final-HIP.mp4" type="video/mp4">
    Your browser does not support the video tag.
    </video>
    </center>
@@ -42,6 +42,7 @@ It contains the following sections:
    :hidden:
 
    WELCOME PAGE<index>
+   self
    onboarding/onboarding
    guides/guides
    tutorials/tutorials
